@@ -414,9 +414,9 @@ def Event701():
 def Event702():
     """ 702: Event 702 """
     DisableFlag(702)
-    await FlagDisabled(11800210) and InsideMap(KILN_OF_THE_FIRST_FLAME) # type: ignore
+    Await(FlagDisabled(11800210) and InsideMap(KILN_OF_THE_FIRST_FLAME))
     EnableFlag(702)
-    await OutsideMap(KILN_OF_THE_FIRST_FLAME) or FlagEnabled(11800210) # type: ignore
+    Await(OutsideMap(KILN_OF_THE_FIRST_FLAME) or FlagEnabled(11800210))
     DisableFlag(702)
     Restart()
 
@@ -424,13 +424,9 @@ def Event702():
 def Event717():
     """ 717: Event 717 """
     DisableFlag(717)
-    IfFlagOff(1, 710)
-    IfInsideMap(1, game_map=NEW_LONDO_RUINS)
-    IfStandingOnCollision(1, 1603300)
-    IfConditionTrue(0, input_condition=1)
+    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and PlayerStandingOnCollision(1603300))
     EnableFlag(717)
-    IfStandingOnCollision(2, 1603300)
-    IfConditionFalse(0, input_condition=2)
+    Await(not PlayerStandingOnCollision(1603300))
     DisableFlag(717)
     Restart()
 
