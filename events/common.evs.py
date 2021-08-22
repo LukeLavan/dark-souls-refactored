@@ -424,9 +424,11 @@ def Event702():
 def Event717():
     """ 717: Event 717 """
     DisableFlag(717)
-    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and PlayerStandingOnCollision(1603300))
+    # there are only so many condition groups, so we re-use this one
+    IfStandingOnCollision(1, 1603300)
+    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and 1) # the 1 here is the above condition group
     EnableFlag(717)
-    Await(not PlayerStandingOnCollision(1603300))
+    AwaitConditionFalse(1) # the one here is the above condition group
     DisableFlag(717)
     Restart()
 
