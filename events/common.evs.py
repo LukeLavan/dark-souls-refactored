@@ -414,13 +414,9 @@ def Event701():
 def Event702():
     """ 702: Event 702 """
     DisableFlag(702)
-    IfFlagOff(1, 11800210)
-    IfInsideMap(1, game_map=KILN_OF_THE_FIRST_FLAME)
-    IfConditionTrue(0, input_condition=1)
+    await FlagDisabled(11800210) and InsideMap(KILN_OF_THE_FIRST_FLAME) # type: ignore
     EnableFlag(702)
-    IfOutsideMap(-1, game_map=KILN_OF_THE_FIRST_FLAME)
-    IfFlagOn(-1, 11800210)
-    IfConditionTrue(0, input_condition=-1)
+    await OutsideMap(KILN_OF_THE_FIRST_FLAME) or FlagEnabled(11800210) # type: ignore
     DisableFlag(702)
     Restart()
 
