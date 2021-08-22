@@ -395,17 +395,10 @@ def Event290():
     """ 290: Event 290 """
     EndIfThisEventOn()
     EnableFlagRange((280, 290))
-    IfPlayerClass(-1, ClassType.Knight)
-    IfPlayerClass(-1, ClassType.Cleric)
-    IfConditionTrue(1, input_condition=-1)
-    IfConditionFalse(2, input_condition=-1)
-    IfConditionTrue(-2, input_condition=1)
-    IfConditionTrue(-2, input_condition=2)
-    IfConditionTrue(0, input_condition=-2)
-    SkipLinesIfFinishedConditionTrue(2, 2)
-    DisableFlag(287)
-    End()
-    DisableFlag(288)
+    if PlayerIsClass(ClassType.Knight) or PlayerIsClass(ClassType.Cleric):
+        DisableFlag(287)
+    else:
+        DisableFlag(288)
 
 
 def Event701():
