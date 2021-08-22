@@ -442,15 +442,11 @@ def Event718():
 
 def Event706():
     """ 706: Event 706 """
-    IfFlagOn(0, 710)
+    Await(FlagEnabled(710))
     EnableFlag(706)
-    IfFlagOn(-1, 11705170)
-    IfInsideMap(-1, game_map=PAINTED_WORLD)
-    IfConditionTrue(0, input_condition=-1)
+    Await(FlagEnabled(11705170) or InsideMap(PAINTED_WORLD))
     DisableFlag(706)
-    IfFlagOff(1, 11705170)
-    IfOutsideMap(1, game_map=PAINTED_WORLD)
-    IfConditionTrue(0, input_condition=1)
+    Await(FlagDisabled(11705170) and OutsideMap(PAINTED_WORLD))
     Restart()
 
 
