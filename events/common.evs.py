@@ -669,14 +669,16 @@ def Event731():
     DisableFlag(735)
 
     AwaitFlagOn(8000)
-    
+
     Restart()
 
 
 def Event250(_, arg_0_3: int, arg_4_7: int):
     """ 250: Event 250 """
     EndIfThisEventSlotOn()
-    IfPlayerHasGood(0, arg_0_3, including_box=False)
+
+    Await(HasGood(arg_0_3))
+    
     EnableFlag(arg_4_7)
 
 
