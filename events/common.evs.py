@@ -394,7 +394,9 @@ def Preconstructor():
 def Event290():
     """ 290: Event 290 """
     EndIfThisEventOn()
+
     EnableFlagRange((280, 290))
+    
     if PlayerIsClass(ClassType.Knight) or PlayerIsClass(ClassType.Cleric):
         DisableFlag(287)
     else:
@@ -423,7 +425,7 @@ def Event702():
 
     Await(OutsideMap(KILN_OF_THE_FIRST_FLAME) or FlagEnabled(11800210))
     DisableFlag(702)
-    
+
     Restart()
 
 
