@@ -553,7 +553,7 @@ def Event819():
 def Event719():
     """ 719: Event 719 """
     EndIfThisEventOn()
-    
+
     IfPlayerHasGood(-1, 3000, including_box=False)
     IfPlayerHasGood(-1, 3010, including_box=False)
     IfPlayerHasGood(-1, 3020, including_box=False)
@@ -636,6 +636,7 @@ def Event719():
 def Event720():
     """ 720: Event 720 """
     EndIfThisEventOn()
+
     IfPlayerHasGood(-1, 4020, including_box=False)
     IfPlayerHasGood(-1, 4030, including_box=False)
     IfPlayerHasGood(-1, 4040, including_box=False)
@@ -644,7 +645,9 @@ def Event720():
     IfPlayerHasGood(-1, 4500, including_box=False)
     IfPlayerHasGood(-1, 4510, including_box=False)
     IfPlayerHasGood(-1, 4520, including_box=False)
-    IfConditionTrue(0, input_condition=-1)
+
+    AwaitConditionTrue(-1)
+    
     EnableFlag(11020102)
 
 
