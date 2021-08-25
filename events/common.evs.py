@@ -439,7 +439,7 @@ def Event717():
     IfStandingOnCollision(1, 1603300)
 
     # the 1 here is the above condition group
-    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and 1)
+    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and 1) #TODO: this feels wrong
 
     EnableFlag(717)
 
@@ -492,17 +492,22 @@ def Event711(_, arg_0_3: int, arg_4_7: int):
 def Event715():
     """ 715: Event 715 """
     DisableFlag(715)
-    IfFlagOn(1, 11010595)
+
+    # condition group 1 consists of the following
     IfPlayerHasGood(1, 702, including_box=False)
     IfPlayerDoesNotHaveGood(1, 5520, including_box=True)
     IfPlayerCovenant(1, Covenant.WarriorOfSunlight)
-    IfConditionTrue(0, input_condition=1)
+
+    IfFlagOn(2, 11010595)
+
+    IfConditionTrue(2, 1) # adds condition group 1 to 2
+
+    AwaitConditionTrue(2)
+
     EnableFlag(715)
-    IfPlayerDoesNotHaveGood(-1, 702, including_box=False)
-    IfPlayerHasGood(-1, 5520, including_box=True)
-    IfPlayerCovenant(2, Covenant.WarriorOfSunlight)
-    IfConditionFalse(-1, input_condition=2)
-    IfConditionTrue(0, input_condition=-1)
+
+    AwaitConditionFalse(1)
+
     Restart()
 
 
