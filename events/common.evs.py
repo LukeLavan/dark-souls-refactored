@@ -663,10 +663,13 @@ def Event730():
 
 def Event731():
     """ 731: Event 731 """
-    IfFlagOff(0, 8000)
+    AwaitFlagOff(8000)
+
     DisableFlag(732)
     DisableFlag(735)
-    IfFlagOn(0, 8000)
+
+    AwaitFlagOn(8000)
+    
     Restart()
 
 
