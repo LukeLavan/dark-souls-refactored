@@ -688,16 +688,20 @@ def Event350(_, arg_0_3: int, arg_4_7: int):
         End()
     
     AwaitFlagOn(arg_0_3)
-    
+
     RemoveGoodFromPlayer(arg_4_7, quantity=1)
 
 
 def Event780(_, arg_0_3: int, arg_4_7: int):
     """ 780: Event 780 """
     DisableFlag(arg_4_7)
-    IfPlayerHasGood(0, arg_0_3, including_box=False)
+
+    Await(HasGood(arg_0_3))
+
     EnableFlag(arg_4_7)
-    IfPlayerDoesNotHaveGood(0, arg_0_3, including_box=False)
+
+    Await(not HasGood(arg_0_3))
+    
     Restart()
 
 
