@@ -453,7 +453,7 @@ def Event717():
 def Event718():
     """ 718: Event 718 """
     EndIfFlagOff(8120)
-    
+
     DisplayStatus(10010650, pad_enabled=True)
     DisableFlag(8120)
 
@@ -461,10 +461,15 @@ def Event718():
 def Event706():
     """ 706: Event 706 """
     Await(FlagEnabled(710))
+
     EnableFlag(706)
+
     Await(FlagEnabled(11705170) or InsideMap(PAINTED_WORLD))
+
     DisableFlag(706)
+
     Await(FlagDisabled(11705170) and OutsideMap(PAINTED_WORLD))
+    
     Restart()
 
 
