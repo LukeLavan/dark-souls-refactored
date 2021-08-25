@@ -514,6 +514,7 @@ def Event715():
 def Event716():
     """ 716: Event 716 """
     EndIfThisEventOn()
+    
     Await(FlagEnabled(50000082))
     EnableFlag(716)
 
