@@ -396,7 +396,7 @@ def Event290():
     EndIfThisEventOn()
 
     EnableFlagRange((280, 290))
-    
+
     if PlayerIsClass(ClassType.Knight) or PlayerIsClass(ClassType.Cleric):
         DisableFlag(287)
     else:
@@ -432,11 +432,20 @@ def Event702():
 def Event717():
     """ 717: Event 717 """
     DisableFlag(717)
-    # there are only so many condition groups, so we re-use this one
+
+    # there are only so many condition groups, so we re-use this one.
+    # otherwise Soulstruct will assign the same logic to different condition groups
+    # and runs out of them
     IfStandingOnCollision(1, 1603300)
-    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and 1) # the 1 here is the above condition group
+
+    # the 1 here is the above condition group
+    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and 1)
+
     EnableFlag(717)
-    AwaitConditionFalse(1) # the one here is the above condition group
+
+    # the one here is the above condition group
+    AwaitConditionFalse(1)
+    
     DisableFlag(717)
     Restart()
 
