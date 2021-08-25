@@ -476,7 +476,7 @@ def Event706():
 def Event710():
     """ 710: Event 710 """
     EndIfThisEventOn()
-    
+
     IfPlayerHasGood(0, 2510, including_box=False)
     EnableFlag(710)
 
@@ -484,6 +484,7 @@ def Event710():
 def Event711(_, arg_0_3: int, arg_4_7: int):
     """ 711: Event 711 """
     EndIfThisEventSlotOn()
+    
     IfPlayerHasGood(0, arg_0_3, including_box=False)
     EnableFlag(arg_4_7)
 
