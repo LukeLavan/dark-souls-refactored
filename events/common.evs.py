@@ -543,9 +543,9 @@ def Event8131(_, arg_0_3: int, arg_4_7: int):
 def Event819():
     """ 819: Event 819 """
     EndIfThisEventOn()
-    IfFlagOn(-1, 11017040)
-    IfFlagOn(-1, 11017170)
-    IfConditionTrue(0, input_condition=-1)
+
+    Await(FlagEnabled(11017040) or FlagEnabled(11017170))
+    
     EnableFlag(11017040)
     EnableFlag(11017170)
 
