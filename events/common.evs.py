@@ -747,13 +747,17 @@ def Event970(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
         AwardItemLot(arg_12_15, host_only=True)
 
 
-def Event911(_, arg_0_3: int, arg_4_7: int, arg_8_8: uchar):
+def Event911(_, award_allowed: int, item_lot: int, repeatable: uchar):
     """ 911: Event 911 """
-    EndIfFlagOn(arg_0_3)
-    IfFlagOn(0, arg_0_3)
-    AwardItemLot(arg_4_7, host_only=True)
-    SetFlagState(arg_0_3, state=arg_8_8)
-    EndIfFlagOn(arg_0_3)
+    EndIfFlagOn(award_allowed)
+
+    AwaitFlagOn(award_allowed)
+
+    AwardItemLot(item_lot, host_only=True)
+
+    SetFlagState(award_allowed, state=repeatable)
+    EndIfFlagOn(award_allowed)
+    
     Restart()
 
 
