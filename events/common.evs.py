@@ -732,15 +732,19 @@ def Event260(_, arg_0_3: int, arg_4_7: int, arg_8_11: float):
 def Event970(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 970: Event 970 """
     EndIfFlagOn(arg_0_3)
-    IfFlagOn(0, arg_0_3)
-    SkipLinesIfEqual(1, left=arg_4_7, right=0)
-    AwardItemLot(arg_4_7, host_only=True)
+
+    AwaitFlagOn(arg_0_3)
+
+    if arg_4_7 != 0:
+        AwardItemLot(arg_4_7, host_only=True)
+    
     DisableNetworkSync()
     Wait(5.0)
-    SkipLinesIfEqual(1, left=arg_8_11, right=0)
-    AwardItemLot(arg_8_11, host_only=True)
-    SkipLinesIfEqual(1, left=arg_12_15, right=0)
-    AwardItemLot(arg_12_15, host_only=True)
+
+    if arg_8_11 != 0:
+        AwardItemLot(arg_8_11, host_only=True)
+    if arg_12_15 != 0:
+        AwardItemLot(arg_12_15, host_only=True)
 
 
 def Event911(_, arg_0_3: int, arg_4_7: int, arg_8_8: uchar):
