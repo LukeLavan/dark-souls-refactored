@@ -445,7 +445,7 @@ def Event717():
 
     # the one here is the above condition group
     AwaitConditionFalse(1)
-    
+
     DisableFlag(717)
     Restart()
 
@@ -453,6 +453,7 @@ def Event717():
 def Event718():
     """ 718: Event 718 """
     EndIfFlagOff(8120)
+    
     DisplayStatus(10010650, pad_enabled=True)
     DisableFlag(8120)
 
