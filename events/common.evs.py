@@ -514,7 +514,7 @@ def Event715():
 def Event716():
     """ 716: Event 716 """
     EndIfThisEventOn()
-    
+
     Await(FlagEnabled(50000082))
     EnableFlag(716)
 
@@ -522,24 +522,23 @@ def Event716():
 def Event8131(_, arg_0_3: int, arg_4_7: int):
     """ 8131: Event 8131 """
     EndIfThisEventSlotOn()
-    IfPlayerHasGood(-1, arg_0_3, including_box=False)
-    IfPlayerHasGood(-1, arg_4_7, including_box=False)
-    IfConditionTrue(0, input_condition=-1)
-    SkipLinesIfNotEqual(1, left=arg_0_3, right=202)
-    EnableFlag(8131)
-    SkipLinesIfNotEqual(1, left=arg_0_3, right=204)
-    EnableFlagRange((8131, 8132))
-    SkipLinesIfNotEqual(1, left=arg_0_3, right=206)
-    EnableFlagRange((8131, 8133))
-    SkipLinesIfNotEqual(1, left=arg_0_3, right=208)
-    EnableFlagRange((8131, 8134))
-    SkipLinesIfNotEqual(1, left=arg_0_3, right=210)
-    EnableFlagRange((8131, 8135))
-    SkipLinesIfNotEqual(1, left=arg_0_3, right=212)
-    EnableFlagRange((8131, 8136))
-    SkipLinesIfNotEqual(1, left=arg_0_3, right=214)
-    EnableFlagRange((8131, 8137))
 
+    Await(HasGood(arg_0_3) or HasGood(arg_4_7))
+
+    if arg_0_3 == 202:
+        EnableFlag(8131)
+    if arg_0_3 == 204:
+        EnableFlagRange((8131, 8132))
+    if arg_0_3 == 206:
+        EnableFlagRange((8131, 8133))
+    if arg_0_3 == 208:
+        EnableFlagRange((8131, 8134))
+    if arg_0_3 == 210:
+        EnableFlagRange((8131, 8135))
+    if arg_0_3 == 212:
+        EnableFlagRange((8131, 8136))
+    if arg_0_3 == 214:
+        EnableFlagRange((8131, 8137))
 
 def Event819():
     """ 819: Event 819 """
