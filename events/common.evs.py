@@ -647,17 +647,17 @@ def Event720():
     IfPlayerHasGood(-1, 4520, including_box=False)
 
     AwaitConditionTrue(-1)
-    
+
     EnableFlag(11020102)
 
 
 def Event730():
     """ 730: Event 730 """
-    IfFlagOff(1, 732)
-    IfFlagOn(1, 8000)
-    IfConditionTrue(0, input_condition=1)
+    Await(FlagDisabled(732) or FlagEnabled(8000))
+
     EnableFlag(732)
     EnableFlag(735)
+    
     Restart()
 
 
