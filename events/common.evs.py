@@ -404,10 +404,13 @@ def Event290():
 def Event701():
     """ 701: Event 701 """
     EndIfThisEventOn()
+
     EnableVagrantSpawning()
-    await InsideMap(UNDEAD_ASYLUM) # type: ignore
+
+    Await(InsideMap(UNDEAD_ASYLUM))
     DisableVagrantSpawning()
-    await FlagEnabled(11810000) # type: ignore
+    
+    Await(FlagEnabled(11810000))
     EnableVagrantSpawning()
 
 
