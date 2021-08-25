@@ -725,7 +725,7 @@ def Event260(_, arg_0_3: int, arg_4_7: int, arg_8_11: float):
 
     AwaitFlagOn(arg_0_3)
 
-    if not 9121:
+    if FlagDisabled(9121):
         Wait(arg_8_11)
         DisplayStatus(arg_4_7, pad_enabled=True)
 
