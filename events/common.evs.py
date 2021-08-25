@@ -778,9 +778,9 @@ def Event890(_, award_allowed: int, item_lot: int, repeatable: uchar):
 def Event960(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 960: Event 960 """
     EndIfThisEventSlotOn()
-    IfFlagOn(1, arg_0_3)
-    IfCharacterDead(1, arg_4_7)
-    IfConditionTrue(0, input_condition=1)
+
+    Await(FlagEnabled(arg_0_3) and IsDead(arg_4_7))
+    
     AwardItemLot(arg_8_11, host_only=True)
 
 
