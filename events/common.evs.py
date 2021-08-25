@@ -678,16 +678,17 @@ def Event250(_, arg_0_3: int, arg_4_7: int):
     EndIfThisEventSlotOn()
 
     Await(HasGood(arg_0_3))
-    
+
     EnableFlag(arg_4_7)
 
 
 def Event350(_, arg_0_3: int, arg_4_7: int):
     """ 350: Event 350 """
-    SkipLinesIfThisEventSlotOff(2)
-    IfPlayerHasGood(1, arg_4_7, including_box=False)
-    EndIfConditionFalse(1)
-    IfFlagOn(0, arg_0_3)
+    if THIS_SLOT_FLAG and not HasGood(arg_4_7):
+        End()
+    
+    AwaitFlagOn(arg_0_3)
+    
     RemoveGoodFromPlayer(arg_4_7, quantity=1)
 
 
