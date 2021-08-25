@@ -793,7 +793,7 @@ def Event8200(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int, arg_12_15: int):
         End()
     if not OwnsItem(arg_4_7, item_type=arg_0_0):
         End()
-    
+
     EnableFlag(arg_8_11)
     EnableFlag(arg_12_15)
 
@@ -801,10 +801,12 @@ def Event8200(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event8300(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
     """ 8300: Event 8300 """
     EndIfFlagOn(arg_8_11)
-    IfNewGameCycleGreaterThanOrEqual(1, completion_count=1)
-    EndIfConditionFalse(1)
-    IfPlayerHasItem(2, arg_4_7, item_type=arg_0_0, including_box=True)
-    EndIfConditionFalse(2)
+
+    if NEW_GAME_CYCLE < 1:
+        End()
+    if not OwnsItem(arg_4_7, item_type=arg_0_0):
+        End()
+    
     EnableFlag(arg_8_11)
 
 
