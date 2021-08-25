@@ -701,17 +701,20 @@ def Event780(_, arg_0_3: int, arg_4_7: int):
     EnableFlag(arg_4_7)
 
     Await(not HasGood(arg_0_3))
-    
+
     Restart()
 
 
 def Event870(_, arg_0_0: uchar, arg_4_7: int):
     """ 870: Event 870 """
-    IfPlayerCovenant(0, arg_0_0)
+    Await(PlayerInCovenant(arg_0_0))
+
     EnableFlag(arg_4_7)
-    IfPlayerCovenant(1, arg_0_0)
-    IfConditionFalse(0, input_condition=1)
+    
+    Await(not PlayerInCovenant(arg_0_0))
+
     DisableFlag(arg_4_7)
+    
     Restart()
 
 
