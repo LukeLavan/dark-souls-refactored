@@ -707,14 +707,15 @@ def Event780(_, arg_0_3: int, arg_4_7: int):
 
 def Event870(_, arg_0_0: uchar, arg_4_7: int):
     """ 870: Event 870 """
-    Await(PlayerInCovenant(arg_0_0))
+    IfPlayerCovenant(1, arg_0_0)
+
+    AwaitConditionTrue(1)
 
     EnableFlag(arg_4_7)
     
-    Await(not PlayerInCovenant(arg_0_0))
+    AwaitConditionFalse(1)
 
     DisableFlag(arg_4_7)
-
     Restart()
 
 
