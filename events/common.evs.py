@@ -469,13 +469,14 @@ def Event706():
     DisableFlag(706)
 
     Await(FlagDisabled(11705170) and OutsideMap(PAINTED_WORLD))
-    
+
     Restart()
 
 
 def Event710():
     """ 710: Event 710 """
     EndIfThisEventOn()
+    
     IfPlayerHasGood(0, 2510, including_box=False)
     EnableFlag(710)
 
