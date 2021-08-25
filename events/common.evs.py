@@ -714,17 +714,19 @@ def Event870(_, arg_0_0: uchar, arg_4_7: int):
     Await(not PlayerInCovenant(arg_0_0))
 
     DisableFlag(arg_4_7)
-    
+
     Restart()
 
 
 def Event260(_, arg_0_3: int, arg_4_7: int, arg_8_11: float):
     """ 260: Event 260 """
     EndIfFlagOn(arg_0_3)
-    IfFlagOn(0, arg_0_3)
-    SkipLinesIfFlagOn(2, 9121)
-    Wait(arg_8_11)
-    DisplayStatus(arg_4_7, pad_enabled=True)
+
+    AwaitFlagOn(arg_0_3)
+
+    if not 9121:
+        Wait(arg_8_11)
+        DisplayStatus(arg_4_7, pad_enabled=True)
 
 
 def Event970(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
