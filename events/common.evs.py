@@ -409,7 +409,7 @@ def Event701():
 
     Await(InsideMap(UNDEAD_ASYLUM))
     DisableVagrantSpawning()
-    
+
     Await(FlagEnabled(11810000))
     EnableVagrantSpawning()
 
@@ -417,10 +417,13 @@ def Event701():
 def Event702():
     """ 702: Event 702 """
     DisableFlag(702)
+
     Await(FlagDisabled(11800210) and InsideMap(KILN_OF_THE_FIRST_FLAME))
     EnableFlag(702)
+
     Await(OutsideMap(KILN_OF_THE_FIRST_FLAME) or FlagEnabled(11800210))
     DisableFlag(702)
+    
     Restart()
 
 
