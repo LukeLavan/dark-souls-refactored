@@ -955,7 +955,7 @@ def Event724():
 def Event725():
     """ 725: Event 725 """
     EndIfThisEventOn()
-    IfTrueFlagCountGreaterThanOrEqual(0, 2, (11707100, 11707190))
+    Await(TrueFlagCount((11707100, 11707190)) >= 2)
     EnableFlag(725)
 
 
