@@ -1157,7 +1157,7 @@ def Event761():
     DisableNetworkSync()
 
     AwaitFlagOn(760)
-    
+
     WaitFrames(200)
     DisableFlag(760)
     Restart()
@@ -1166,7 +1166,9 @@ def Event761():
 def Event763():
     """ 763: Event 763 """
     DisableNetworkSync()
-    IfFlagOn(0, 762)
+
+    AwaitFlagOn(762)
+    
     ForceAnimation(PLAYER, 7697)
     Wait(3.5)
     DisableFlag(762)
