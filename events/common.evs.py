@@ -1318,10 +1318,11 @@ def Event822():
 
 def Event823():
     """ 823: Event 823 """
-    IfFlagOn(0, 831)
-    IfTimeElapsed(1, 0.5)
-    IfOutsideMap(1, game_map=KILN_OF_THE_FIRST_FLAME)
-    IfConditionTrue(0, input_condition=1)
+    AwaitFlagOn(831)
+
+    Await(SecondsElapsed(0.5) and
+        OutsideMap(KILN_OF_THE_FIRST_FLAME))
+    
     DisableFlag(831)
     Restart()
 
