@@ -1292,14 +1292,16 @@ def Event810():
     EndIfThisEventOn()
 
     AwaitFlagOn(50001031)
-    
+
     EnableFlag(810)
 
 
 def Event812(_, arg_0_3: int):
     """ 812: Event 812 """
     EndIfThisEventSlotOn()
-    IfFlagOn(0, arg_0_3)
+
+    AwaitFlagOn(arg_0_3)
+    
     End()
 
 
