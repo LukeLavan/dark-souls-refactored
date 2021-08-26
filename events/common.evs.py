@@ -1362,6 +1362,6 @@ def Event840(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 def Event766():
     """ 766: Event 766 """
-    IfOnline(1)
-    EndIfConditionTrue(1)
+    if ONLINE:
+        End()
     EnableFlag(765)
