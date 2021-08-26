@@ -900,17 +900,18 @@ def Event721():
 def Event722():
     """ 722: Event 722 """
     EndIfThisEventOn()
-    IfFlagOn(1, 11407120)
-    IfFlagOn(1, 11407130)
-    IfFlagOn(1, 11407150)
-    IfFlagOn(1, 11407160)
-    IfFlagOn(1, 11407170)
-    IfFlagOn(1, 11407140)
-    IfFlagOn(1, 11407180)
-    IfFlagOn(1, 11407190)
-    IfFlagOn(1, 10)
-    IfPlayerHasWeapon(1, 1332500, including_box=False)
-    IfConditionTrue(0, input_condition=1)
+    
+    Await(FlagEnabled(11407120) and 
+        FlagEnabled(11407130) and 
+        FlagEnabled(11407150) and 
+        FlagEnabled(11407160) and
+        FlagEnabled(11407170) and
+        FlagEnabled(11407140) and # yes this was ordered like this in vanilla
+        FlagEnabled(11407180) and
+        FlagEnabled(11407190) and
+        FlagEnabled(10) and
+        HasWeapon(1332500))
+    
     EnableFlag(722)
 
 
