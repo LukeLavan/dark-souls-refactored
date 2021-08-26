@@ -1148,14 +1148,16 @@ def Event772():
    
     EnableFlag(744)
     AwaitFlagOff(744)
-    
+
     Restart()
 
 
 def Event761():
     """ 761: Event 761 """
     DisableNetworkSync()
-    IfFlagOn(0, 760)
+
+    AwaitFlagOn(760)
+    
     WaitFrames(200)
     DisableFlag(760)
     Restart()
