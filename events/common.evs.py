@@ -1290,7 +1290,9 @@ def Event818():
 def Event810():
     """ 810: Event 810 """
     EndIfThisEventOn()
-    IfFlagOn(0, 50001031)
+
+    AwaitFlagOn(50001031)
+    
     EnableFlag(810)
 
 
