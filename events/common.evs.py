@@ -900,7 +900,7 @@ def Event721():
 def Event722():
     """ 722: Event 722 """
     EndIfThisEventOn()
-    
+
     Await(FlagEnabled(11407120) and 
         FlagEnabled(11407130) and 
         FlagEnabled(11407150) and 
@@ -918,19 +918,20 @@ def Event722():
 def Event723():
     """ 723: Event 723 """
     EndIfThisEventOn()
-    IfFlagOn(1, 11027130)
-    IfFlagOn(1, 11027140)
-    IfFlagOn(1, 11027150)
-    IfFlagOn(1, 11027160)
-    IfFlagOn(1, 11027170)
-    IfFlagOn(1, 11027180)
-    IfFlagOn(1, 11027190)
-    IfFlagOn(1, 11027200)
-    IfFlagOn(1, 11027210)
-    IfFlagOn(1, 11027220)
-    IfFlagOn(1, 11027230)
-    IfFlagOn(1, 11027240)
-    IfConditionTrue(0, input_condition=1)
+
+    Await(FlagEnabled(11027130) and
+        FlagEnabled(11027140) and
+        FlagEnabled(11027150) and
+        FlagEnabled(11027160) and
+        FlagEnabled(11027170) and
+        FlagEnabled(11027180) and
+        FlagEnabled(11027190) and
+        FlagEnabled(11027200) and
+        FlagEnabled(11027210) and
+        FlagEnabled(11027220) and
+        FlagEnabled(11027230) and
+        FlagEnabled(11027240))
+    
     EnableFlag(723)
 
 
