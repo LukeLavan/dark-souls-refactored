@@ -1276,12 +1276,13 @@ def Event759():
 
 def Event818():
     """ 818: Event 818 """
-    SkipLinesIfFlagOn(2, 11510150)
-    IfFlagOn(0, 11510150)
-    DisplayStatus(10010690, pad_enabled=True)
-    IfFlagOn(1, 11510150)
-    IfOutsideMap(1, game_map=ANOR_LONDO)
-    IfConditionTrue(0, input_condition=1)
+    if FlagDisabled(11510150):
+        AwaitFlagOn(11510150)
+        DisplayStatus(10010690, pad_enabled=True)
+    
+    Await(FlagEnabled(11510150) and
+        OutsideMap(ANOR_LONDO))
+    
     DisableFlag(11510150)
     Restart()
 
