@@ -813,10 +813,12 @@ def Event8300(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
 def Event8090(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
     """ 8090: Event 8090 """
     EndIfFlagOn(arg_8_11)
-    IfNewGameCycleGreaterThanOrEqual(1, completion_count=1)
-    EndIfConditionFalse(1)
-    IfPlayerHasItem(2, arg_4_7, item_type=arg_0_0, including_box=True)
-    EndIfConditionFalse(2)
+
+    if NEW_GAME_CYCLE < 1:
+        End()
+    if not OwnsItem(arg_4_7, item_type=arg_0_0):
+        End()
+    
     EnableFlag(arg_8_11)
 
 
