@@ -1168,7 +1168,7 @@ def Event763():
     DisableNetworkSync()
 
     AwaitFlagOn(762)
-    
+
     ForceAnimation(PLAYER, 7697)
     Wait(3.5)
     DisableFlag(762)
@@ -1181,18 +1181,20 @@ def Event763():
 def Event750():
     """ 750: Event 750 """
     DisableNetworkSync()
-    IfCharacterHasSpecialEffect(-1, PLAYER, 71)
-    IfCharacterHasSpecialEffect(-1, PLAYER, 72)
-    IfCharacterHasSpecialEffect(-1, PLAYER, 73)
-    IfCharacterHasSpecialEffect(-1, PLAYER, 74)
-    IfFlagOn(-1, 751)
-    IfConditionTrue(0, input_condition=-1)
+
+    Await(HasSpecialEffect(PLAYER, 71) or
+        HasSpecialEffect(PLAYER, 72) or
+        HasSpecialEffect(PLAYER, 73) or
+        HasSpecialEffect(PLAYER, 74) or
+        FlagEnabled(751))
+    
     EnableFlag(751)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 71)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 72)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 73)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 74)
-    IfConditionTrue(0, input_condition=1)
+
+    Await(not HasSpecialEffect(PLAYER, 71) and
+        not HasSpecialEffect(PLAYER, 72) and
+        not HasSpecialEffect(PLAYER, 73) and
+        not HasSpecialEffect(PLAYER, 74))
+    
     DisableFlag(751)
     Restart()
 
