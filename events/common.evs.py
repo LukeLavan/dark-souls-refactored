@@ -992,16 +992,15 @@ def Event740():
 
 def Event745():
     """ 745: Event 745 """
-    IfFlagOn(7, 1604)
-    IfFlagOn(7, 1764)
-    SkipLinesIfConditionFalse(1, 7)
-    IfFlagOn(0, 703)
-    SkipLinesIfFlagOn(1, 1604)
-    IfFlagOn(-1, 1604)
-    SkipLinesIfFlagOn(1, 1764)
-    IfFlagOn(-1, 1764)
-    IfConditionTrue(1, input_condition=-1)
-    IfConditionTrue(0, input_condition=1)
+    if FlagEnabled(1604) and FlagEnabled(1764):
+        Await(FlagEnabled(703))
+    
+    # wait until one of these flags become enabled, but only if they were disabled to begin with
+    if FlagDisabled(1604):
+        IfFlagOn(-1, 1604)
+    if FlagDisabled(1764):
+        IfFlagOn(-1, 1764)
+    AwaitConditionTrue(-1)
     End()
 
 
