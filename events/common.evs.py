@@ -1330,26 +1330,33 @@ def Event823():
 def Event840(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 840: Event 840 """
     DisableFlag(arg_0_3)
-    IfFlagOn(0, arg_0_3)
-    SkipLinesIfFlagOn(3, 844)
-    SkipLinesIfFlagOn(2, 847)
-    RotateToFaceEntity(PLAYER, arg_8_11)
-    ForceAnimation(PLAYER, arg_4_7)
-    SkipLinesIfFlagOn(9, 840)
-    SkipLinesIfFlagOn(8, 841)
-    SkipLinesIfFlagOn(7, 842)
-    SkipLinesIfFlagOn(6, 843)
-    SkipLinesIfFlagOn(5, 845)
-    SkipLinesIfFlagOn(4, 846)
-    SkipLinesIfFlagOn(3, 848)
-    SkipLinesIfFlagOn(2, 849)
-    SkipLinesIfFlagOn(1, 860)
-    ForceAnimation(PLAYER, arg_4_7, skip_transition=True)
+
+    AwaitFlagOn(arg_0_3)
+
+    
+    if FlagDisabled(844) and FlagDisabled(847):
+        RotateToFaceEntity(PLAYER, arg_8_11)
+        ForceAnimation(PLAYER, arg_4_7)
+    
+    if (FlagDisabled(840) and
+        FlagDisabled(841) and
+        FlagDisabled(842) and
+        FlagDisabled(843) and
+        FlagDisabled(845) and # note 844 is skipped
+        FlagDisabled(846) and
+        FlagDisabled(848) and
+        FlagDisabled(849) and
+        FlagDisabled(860)): # not 850
+            
+            ForceAnimation(PLAYER, arg_4_7, skip_transition=True)
+    
     Wait(1.0)
     PlaySoundEffect(anchor_entity=PLAYER, sound_type=SoundType.s_SFX, sound_id=123456789)
     Wait(4.0)
-    SkipLinesIfEqual(1, left=arg_12_15, right=-1)
-    ForceAnimation(PLAYER, arg_12_15, loop=True)
+
+    if arg_12_15 != -1:
+        ForceAnimation(PLAYER, arg_12_15, loop=True)
+    
     Restart()
 
 
