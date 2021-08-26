@@ -836,7 +836,7 @@ def Event690(_, arg_0_3: int, arg_4_7: uint, arg_8_11: uint, arg_12_15: int):
     """ 690: Event 690 """
     SkipLinesIfThisEventSlotOn(1)
 
-    Await(arg_12_15)
+    AwaitFlagOn(arg_12_15)
 
     # here we conditionally add to the -1 condition group:
     # if the flag is disabled at this point, it's added to the group,
@@ -887,12 +887,13 @@ def Event721():
     IfFlagOn(1, 11707050)
     IfFlagOn(1, 11707060)
     IfFlagOn(1, 11707070)
-    IfConditionTrue(0, input_condition=1)
+    AwaitConditionTrue(1)
+
     EnableFlag(721)
     IfFlagOn(2, 11707090)
     IfFlagOn(2, 11707100)
     IfFlagOn(2, 11707110)
-    IfConditionTrue(0, input_condition=2)
+    AwaitConditionTrue(2)
     EnableFlag(728)
 
 
