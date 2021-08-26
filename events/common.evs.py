@@ -1007,7 +1007,9 @@ def Event745():
 def Event754():
     """ 754: Event 754 """
     DisableFlag(754)
-    IfFlagOn(0, 754)
+
+    AwaitFlagOn(754)
+    
     DisableFlag(754)
     AddSpecialEffect(PLAYER, 4600)
     AddSpecialEffect(PLAYER, 4601)
