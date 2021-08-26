@@ -1100,53 +1100,55 @@ def Event770():
 
 def Event772():
     """ 772: Event 772 """
-    IfFlagOff(0, 744)
-    IfFlagOn(-1, 1004)
-    IfFlagOn(-1, 1033)
-    IfFlagOn(-1, 1096)
-    IfFlagOn(-1, 1114)
-    IfFlagOn(-1, 1176)
-    IfFlagOn(-1, 1179)
-    IfFlagOn(-1, 1195)
-    IfFlagOn(-1, 1197)
-    IfFlagOn(-1, 1213)
-    IfFlagOn(-1, 1223)
-    IfFlagOn(-1, 1241)
-    IfFlagOn(-1, 1253)
-    IfFlagOn(-1, 1282)
-    IfFlagOn(-1, 1283)
-    IfFlagOn(-1, 1287)
-    IfFlagOn(-1, 1294)
-    IfFlagOn(-1, 1314)
-    IfFlagOn(-1, 1321)
-    IfFlagOn(-1, 1341)
-    IfFlagOn(-1, 1361)
-    IfFlagOn(-1, 1381)
-    IfFlagOn(-1, 1401)
-    IfFlagOn(-1, 1411)
-    IfFlagOn(-1, 1421)
-    IfFlagOn(-1, 1434)
-    IfFlagOn(-1, 1461)
-    IfFlagOn(-1, 1512)
-    IfFlagOn(-1, 1547)
-    IfFlagOn(-1, 1574)
-    IfFlagOn(-1, 1603)
-    IfFlagOn(-1, 1627)
-    IfFlagOn(-1, 1646)
-    IfFlagOn(-1, 1675)
-    IfFlagOn(-1, 1691)
-    IfFlagOn(-1, 1711)
-    IfFlagOn(-1, 1712)
-    IfFlagOn(-1, 71200035)
-    IfFlagOn(-1, 71200042)
-    IfFlagOn(-1, 1763)
-    IfFlagOn(-1, 1822)
-    IfFlagOn(-1, 1841)
-    IfFlagOn(-1, 1863)
-    IfFlagOn(-1, 1871)
-    IfConditionTrue(0, input_condition=-1)
+    AwaitFlagOff(744)
+
+    Await(FlagEnabled(1004) or
+        FlagEnabled(1033) or
+        FlagEnabled(1096) or
+        FlagEnabled(1114) or
+        FlagEnabled(1176) or
+        FlagEnabled(1179) or
+        FlagEnabled(1195) or
+        FlagEnabled(1197) or
+        FlagEnabled(1213) or
+        FlagEnabled(1223) or
+        FlagEnabled(1241) or
+        FlagEnabled(1253) or
+        FlagEnabled(1282) or
+        FlagEnabled(1283) or
+        FlagEnabled(1287) or
+        FlagEnabled(1294) or
+        FlagEnabled(1314) or
+        FlagEnabled(1321) or
+        FlagEnabled(1341) or
+        FlagEnabled(1361) or
+        FlagEnabled(1381) or
+        FlagEnabled(1401) or
+        FlagEnabled(1411) or
+        FlagEnabled(1421) or
+        FlagEnabled(1434) or
+        FlagEnabled(1461) or
+        FlagEnabled(1512) or
+        FlagEnabled(1547) or
+        FlagEnabled(1574) or
+        FlagEnabled(1603) or
+        FlagEnabled(1627) or
+        FlagEnabled(1646) or
+        FlagEnabled(1675) or
+        FlagEnabled(1691) or
+        FlagEnabled(1711) or
+        FlagEnabled(1712) or
+        FlagEnabled(71200035) or
+        FlagEnabled(71200042) or
+        FlagEnabled(1763) or
+        FlagEnabled(1822) or
+        FlagEnabled(1841) or
+        FlagEnabled(1863) or
+        FlagEnabled(1871))
+   
     EnableFlag(744)
-    IfFlagOff(0, 744)
+    AwaitFlagOff(744)
+    
     Restart()
 
 
