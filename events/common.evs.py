@@ -986,7 +986,7 @@ def Event727():
 
 def Event740():
     """ 740: Event 740 """
-    IfPlayerClass(0, ClassType.Pyromancer)
+    Await(PlayerIsClass(ClassType.Pyromancer))
     EnableFlag(740)
 
 
