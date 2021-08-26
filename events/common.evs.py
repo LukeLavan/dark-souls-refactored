@@ -824,10 +824,11 @@ def Event8090(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
 
 def Event910(_, arg_0_3: int, arg_4_7: int):
     """ 910: Event 910 """
-    SkipLinesIfFlagOn(2, arg_0_3)
-    IfFlagOn(0, arg_0_3)
-    AwardItemLot(arg_4_7, host_only=True)
-    IfFlagOff(0, arg_0_3)
+    if FlagDisabled(arg_0_3):
+        AwaitFlagOn(arg_0_3)
+        AwardItemLot(arg_4_7, host_only=True)
+
+    AwaitFlagOff(arg_0_3)
     Restart()
 
 
