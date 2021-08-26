@@ -835,36 +835,43 @@ def Event910(_, arg_0_3: int, arg_4_7: int):
 def Event690(_, arg_0_3: int, arg_4_7: uint, arg_8_11: uint, arg_12_15: int):
     """ 690: Event 690 """
     SkipLinesIfThisEventSlotOn(1)
-    IfFlagOn(0, arg_12_15)
-    SkipLinesIfFlagOn(1, 2)
-    IfFlagOn(-1, 2)
-    SkipLinesIfFlagOn(1, 3)
-    IfFlagOn(-1, 3)
-    SkipLinesIfFlagOn(1, 4)
-    IfFlagOn(-1, 4)
-    SkipLinesIfFlagOn(1, 5)
-    IfFlagOn(-1, 5)
-    SkipLinesIfFlagOn(1, 6)
-    IfFlagOn(-1, 6)
-    SkipLinesIfFlagOn(1, 7)
-    IfFlagOn(-1, 7)
-    SkipLinesIfFlagOn(1, 8)
-    IfFlagOn(-1, 8)
-    SkipLinesIfFlagOn(1, 9)
-    IfFlagOn(-1, 9)
-    SkipLinesIfFlagOn(1, 10)
-    IfFlagOn(-1, 10)
-    SkipLinesIfFlagOn(1, 11)
-    IfFlagOn(-1, 11)
-    SkipLinesIfFlagOn(1, 12)
-    IfFlagOn(-1, 12)
-    SkipLinesIfFlagOn(1, 13)
-    IfFlagOn(-1, 13)
-    SkipLinesIfFlagOn(1, 14)
-    IfFlagOn(-1, 14)
-    SkipLinesIfFlagOn(1, 15)
-    IfFlagOn(-1, 15)
-    IfConditionTrue(0, input_condition=-1)
+
+    Await(arg_12_15)
+
+    # here we conditionally add to the -1 condition group:
+    # if the flag is disabled at this point, it's added to the group,
+    # and afterwards we check to see when any of these become enabled
+    if FlagDisabled(2):
+        IfFlagOn(-1, 2)
+    if FlagDisabled(3):
+        IfFlagOn(-1, 3)
+    if FlagDisabled(4):
+        IfFlagOn(-1, 4)
+    if FlagDisabled(5):
+        IfFlagOn(-1, 5)
+    if FlagDisabled(6):
+        IfFlagOn(-1, 6)
+    if FlagDisabled(7):
+        IfFlagOn(-1, 7)
+    if FlagDisabled(8):
+        IfFlagOn(-1, 8)
+    if FlagDisabled(9):
+        IfFlagOn(-1, 9)
+    if FlagDisabled(10):
+        IfFlagOn(-1, 10)
+    if FlagDisabled(11):
+        IfFlagOn(-1, 11)
+    if FlagDisabled(12):
+        IfFlagOn(-1, 12)
+    if FlagDisabled(13):
+        IfFlagOn(-1, 13)
+    if FlagDisabled(14):
+        IfFlagOn(-1, 14)
+    if FlagDisabled(15):
+        IfFlagOn(-1, 15)
+    
+    AwaitConditionTrue(-1)
+
     IncrementEventValue(arg_0_3, bit_count=arg_4_7, max_value=arg_8_11)
     Restart()
 
