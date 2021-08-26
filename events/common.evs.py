@@ -969,17 +969,18 @@ def Event726():
 def Event727():
     """ 727: Event 727 """
     EndIfThisEventOn()
-    IfFlagOn(1, 11327000)
-    IfFlagOn(1, 11327010)
-    IfFlagOn(1, 11327020)
-    IfFlagOn(1, 11327030)
-    IfFlagOn(1, 11327040)
-    IfFlagOn(1, 11327050)
-    IfFlagOn(1, 11327060)
-    IfFlagOn(1, 11327070)
-    IfFlagOn(1, 11327080)
-    IfFlagOn(1, 11327090)
-    IfConditionTrue(0, input_condition=1)
+
+    Await(FlagEnabled(11327000) and
+        FlagEnabled(11327010) and
+        FlagEnabled(11327020) and
+        FlagEnabled(11327030) and
+        FlagEnabled(11327040) and
+        FlagEnabled(11327050) and
+        FlagEnabled(11327060) and
+        FlagEnabled(11327070) and
+        FlagEnabled(11327080) and
+        FlagEnabled(11327090))
+    
     EnableFlag(727)
 
 
