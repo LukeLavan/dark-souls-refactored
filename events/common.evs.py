@@ -1202,14 +1202,16 @@ def Event750():
 def Event752():
     """ 752: Event 752 """
     DisableNetworkSync()
-    IfCharacterHasSpecialEffect(-1, PLAYER, 5213)
-    IfCharacterHasSpecialEffect(-1, PLAYER, 5214)
-    IfFlagOn(-1, 753)
-    IfConditionTrue(0, input_condition=-1)
+
+    Await(HasSpecialEffect(PLAYER, 5213) or
+        HasSpecialEffect(PLAYER, 5214) or
+        FlagEnabled(753))
+    
     EnableFlag(753)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 5213)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 5214)
-    IfConditionTrue(0, input_condition=1)
+
+    Await(not HasSpecialEffect(PLAYER, 5213) and
+        not HasSpecialEffect(PLAYER, 5214))
+    
     DisableFlag(753)
     DisableFlag(11400591)
     Restart()
