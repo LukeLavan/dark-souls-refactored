@@ -1019,7 +1019,8 @@ def Event754():
 
 def Event770():
     """ 770: Event 770 """
-    IfFlagOn(0, 755)
+    AwaitFlagOn(755)
+
     DisableFlag(755)
     DisableFlag(742)
     DisableFlag(743)
@@ -1077,7 +1078,7 @@ def Event770():
     DisableFlag(1646)
     DisableFlag(1675)
     DisableFlag(1691)
-    EnableFlag(1710)
+    EnableFlag(1710) # one of these is not like the others
     DisableFlag(1711)
     DisableFlag(1712)
     DisableFlag(11200596)
