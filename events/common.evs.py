@@ -879,21 +879,21 @@ def Event690(_, arg_0_3: int, arg_4_7: uint, arg_8_11: uint, arg_12_15: int):
 def Event721():
     """ 721: Event 721 """
     EndIfFlagOn(728)
-    IfFlagOn(1, 11707000)
-    IfFlagOn(1, 11707010)
-    IfFlagOn(1, 11707020)
-    IfFlagOn(1, 11707030)
-    IfFlagOn(1, 11707040)
-    IfFlagOn(1, 11707050)
-    IfFlagOn(1, 11707060)
-    IfFlagOn(1, 11707070)
+
+    Await(FlagEnabled(11707000) and 
+        FlagEnabled(11707010) and 
+        FlagEnabled(11707020) and 
+        FlagEnabled(11707030) and 
+        FlagEnabled(11707040) and 
+        FlagEnabled(11707050) and 
+        FlagEnabled(11707060) and 
+        FlagEnabled(11707070))
     AwaitConditionTrue(1)
 
     EnableFlag(721)
-    IfFlagOn(2, 11707090)
-    IfFlagOn(2, 11707100)
-    IfFlagOn(2, 11707110)
-    AwaitConditionTrue(2)
+
+    Await(FlagEnabled(11707090) and FlagEnabled(11707100) and FlagEnabled(11707110))
+
     EnableFlag(728)
 
 
