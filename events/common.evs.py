@@ -1219,18 +1219,22 @@ def Event752():
 
 def Event757():
     """ 757: Event 757 """
-    SkipLinesIfFlagOff(1, 757)
-    DisplayStatus(10010660, pad_enabled=True)
+    if FlagEnabled(757):
+        DisplayStatus(10010660, pad_enabled=True)
+    
     DisableFlag(757)
-    IfHost(1)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 71)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 72)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 73)
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 74)
-    IfCharacterHasSpecialEffect(-1, PLAYER, 33)
-    IfCharacterHasSpecialEffect(-1, PLAYER, 34)
-    IfConditionTrue(1, input_condition=-1)
-    IfConditionTrue(0, input_condition=1)
+    
+    Await(HOST and
+        HasSpecialEffect(PLAYER, 71) and
+        HasSpecialEffect(PLAYER, 72) and
+        HasSpecialEffect(PLAYER, 73) and
+        HasSpecialEffect(PLAYER, 74) and
+        (
+            HasSpecialEffect(PLAYER, 33) or
+            HasSpecialEffect(PLAYER, 34)
+        )
+    )
+
     End()
 
 
