@@ -1258,17 +1258,19 @@ def Event758():
 
 def Event759():
     """ 759: Event 759 """
-    SkipLinesIfThisEventOff(1)
-    DisplayStatus(10010680, pad_enabled=True)
+    if THIS_FLAG:
+        DisplayStatus(10010680, pad_enabled=True)
+    
     DisableFlag(759)
-    IfHost(1)
-    IfHealthLessThanOrEqual(1, PLAYER, 0.0)
-    IfCharacterHasSpecialEffect(1, PLAYER, 2131)
-    IfConditionTrue(0, input_condition=1)
-    IfHost(2)
-    IfCharacterDead(2, PLAYER)
-    IfCharacterDoesNotHaveSpecialEffect(2, PLAYER, 2131)
-    IfConditionTrue(0, input_condition=2)
+
+    Await(HOST and
+        HealthValue(PLAYER) <= 0 and
+        HasSpecialEffect(PLAYER, 2131))
+    
+    Await(HOST and
+        IsDead(PLAYER) and
+        HasSpecialEffect(PLAYER, 2131))
+    
     End()
 
 
