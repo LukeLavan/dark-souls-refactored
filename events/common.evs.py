@@ -321,7 +321,7 @@ def Preconstructor():
             EnableFlag(1030)
         if TrueFlagCount((1060, 1089)) == 0:
             EnableFlag(1060)
-        if TrueFlagCount((1090, 1109)):
+        if TrueFlagCount((1090, 1109)) == 0:
             EnableFlag(1090)
         if TrueFlagCount((1110, 1119)) == 0:
             EnableFlag(1110)
