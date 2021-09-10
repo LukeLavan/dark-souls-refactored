@@ -314,96 +314,97 @@ def Constructor():
 
 def Preconstructor():
     """ 50: Event 50 """
-    if FlagDisabled(909):
-        if TrueFlagCount((1000, 1029)) == 0:
-            EnableFlag(1000)
-        if TrueFlagCount((1030, 1059)) == 0:
-            EnableFlag(1030)
-        if TrueFlagCount((1060, 1089)) == 0:
-            EnableFlag(1060)
-        if TrueFlagCount((1090, 1109)) == 0:
-            EnableFlag(1090)
-        if TrueFlagCount((1110, 1119)) == 0:
-            EnableFlag(1110)
-        if TrueFlagCount((1120, 1139)) == 0:
-            EnableFlag(1120)
-        if TrueFlagCount((1140, 1169)) == 0:
-            EnableFlag(1140)
-        if TrueFlagCount((1170, 1189)) == 0:
-            EnableFlag(1170)
-        if TrueFlagCount((1190, 1209)) == 0:
-            EnableFlag(1202)
-        if TrueFlagCount((1210, 1219)) == 0:
-            EnableFlag(1210)
-        if TrueFlagCount((1220, 1229)) == 0:
-            EnableFlag(1220)
-        if TrueFlagCount((1230, 1239)) == 0:
-            EnableFlag(1230)
-        if TrueFlagCount((1240, 1249)) == 0:
-            EnableFlag(1240)
-        if TrueFlagCount((1250, 1259)) == 0:
-            EnableFlag(1250)
-        if TrueFlagCount((1270, 1279)) == 0:
-            EnableFlag(1270)
-        if TrueFlagCount((1280, 1289)) == 0:
-            EnableFlag(1280)
-        if TrueFlagCount((1290, 1309)) == 0:
-            EnableFlag(1290)
-        if TrueFlagCount((1310, 1319)) == 0:
-            EnableFlag(1310)
-        if TrueFlagCount((1329, 1339)) == 0:
-            EnableFlag(1320)
-        if TrueFlagCount((1340, 1359)) == 0:
-            EnableFlag(1340)
-        if TrueFlagCount((1360, 1379)) == 0:
-            EnableFlag(1360)
-        if TrueFlagCount((1380, 1399)) == 0:
-            EnableFlag(1380)
-        if TrueFlagCount((1400, 1409)) == 0:
-            EnableFlag(1400)
-        if TrueFlagCount((1410, 1419)) == 0:
-            EnableFlag(1410)
-        if TrueFlagCount((1420, 1429)) == 0:
-            EnableFlag(1420)
-        if TrueFlagCount((1430, 1459)) == 0:
-            EnableFlag(1430)
-        if TrueFlagCount((1460, 1489)) == 0:
-            EnableFlag(1460)
-        if TrueFlagCount((1499, 1539)) == 0:
-            EnableFlag(1490)
-        if TrueFlagCount((1540, 1569)) == 0:
-            EnableFlag(1540)
-        if TrueFlagCount((1570, 1599)) == 0:
-            EnableFlag(1570)
-        if TrueFlagCount((1600, 1619)) == 0:
-            EnableFlag(1600)
-        if TrueFlagCount((1620, 1639)) == 0:
-            EnableFlag(1620)
-        if TrueFlagCount((1640, 1669)) == 0:
-            EnableFlag(1640)
-        if TrueFlagCount((1670, 1679)) == 0:
-            EnableFlag(1670)
-        if TrueFlagCount((1690, 1699)) == 0:
-            EnableFlag(1690)
-        if TrueFlagCount((1700, 1709)) == 0:
-            EnableFlag(1700)
-        if TrueFlagCount((1710, 1729)) == 0:
-            EnableFlag(1710)
-        if TrueFlagCount((1760, 1769)) == 0:
-            EnableFlag(1760)
-        if TrueFlagCount((1770, 1779)) == 0:
-            EnableFlag(1770)
-        if TrueFlagCount((1780, 1789)) == 0:
-            EnableFlag(1780)
     
-    if TrueFlagCount((1820, 1839)) == 0:
-        EnableFlag(1820)
-    if TrueFlagCount((1840, 1859)) == 0:
-        EnableFlag(1840)
-    if TrueFlagCount((1860, 1869)) == 0:
-        EnableFlag(1860)
-    if TrueFlagCount((1870, 1889)) == 0:
-        EnableFlag(1870)
+    if FlagDisabled(909):
+        SkipLinesIfFlagRangeAnyOn(1, (1000, 1029))
+        EnableFlag(1000)
+        SkipLinesIfFlagRangeAnyOn(1, (1030, 1059))
+        EnableFlag(1030)
+        SkipLinesIfFlagRangeAnyOn(1, (1060, 1089))
+        EnableFlag(1060)
+        SkipLinesIfFlagRangeAnyOn(1, (1090, 1109))
+        EnableFlag(1090)
+        SkipLinesIfFlagRangeAnyOn(1, (1110, 1119))
+        EnableFlag(1110)
+        SkipLinesIfFlagRangeAnyOn(1, (1120, 1139))
+        EnableFlag(1120)
+        SkipLinesIfFlagRangeAnyOn(1, (1140, 1169))
+        EnableFlag(1140)
+        SkipLinesIfFlagRangeAnyOn(1, (1170, 1189))
+        EnableFlag(1170)
+        SkipLinesIfFlagRangeAnyOn(1, (1190, 1209))
+        EnableFlag(1202)
+        SkipLinesIfFlagRangeAnyOn(1, (1210, 1219))
+        EnableFlag(1210)
+        SkipLinesIfFlagRangeAnyOn(1, (1220, 1229))
+        EnableFlag(1220)
+        SkipLinesIfFlagRangeAnyOn(1, (1230, 1239))
+        EnableFlag(1230)
+        SkipLinesIfFlagRangeAnyOn(1, (1240, 1249))
+        EnableFlag(1240)
+        SkipLinesIfFlagRangeAnyOn(1, (1250, 1259))
+        EnableFlag(1250)
+        SkipLinesIfFlagRangeAnyOn(1, (1270, 1279))
+        EnableFlag(1270)
+        SkipLinesIfFlagRangeAnyOn(1, (1280, 1289))
+        EnableFlag(1280)
+        SkipLinesIfFlagRangeAnyOn(1, (1290, 1309))
+        EnableFlag(1290)
+        SkipLinesIfFlagRangeAnyOn(1, (1310, 1319))
+        EnableFlag(1310)
+        SkipLinesIfFlagRangeAnyOn(1, (1320, 1339))
+        EnableFlag(1320)
+        SkipLinesIfFlagRangeAnyOn(1, (1340, 1359))
+        EnableFlag(1340)
+        SkipLinesIfFlagRangeAnyOn(1, (1360, 1379))
+        EnableFlag(1360)
+        SkipLinesIfFlagRangeAnyOn(1, (1380, 1399))
+        EnableFlag(1380)
+        SkipLinesIfFlagRangeAnyOn(1, (1400, 1409))
+        EnableFlag(1400)
+        SkipLinesIfFlagRangeAnyOn(1, (1410, 1419))
+        EnableFlag(1410)
+        SkipLinesIfFlagRangeAnyOn(1, (1420, 1429))
+        EnableFlag(1420)
+        SkipLinesIfFlagRangeAnyOn(1, (1430, 1459))
+        EnableFlag(1430)
+        SkipLinesIfFlagRangeAnyOn(1, (1460, 1489))
+        EnableFlag(1460)
+        SkipLinesIfFlagRangeAnyOn(1, (1490, 1539))
+        EnableFlag(1490)
+        SkipLinesIfFlagRangeAnyOn(1, (1540, 1569))
+        EnableFlag(1540)
+        SkipLinesIfFlagRangeAnyOn(1, (1570, 1599))
+        EnableFlag(1570)
+        SkipLinesIfFlagRangeAnyOn(1, (1600, 1619))
+        EnableFlag(1600)
+        SkipLinesIfFlagRangeAnyOn(1, (1620, 1639))
+        EnableFlag(1620)
+        SkipLinesIfFlagRangeAnyOn(1, (1640, 1669))
+        EnableFlag(1640)
+        SkipLinesIfFlagRangeAnyOn(1, (1670, 1679))
+        EnableFlag(1670)
+        SkipLinesIfFlagRangeAnyOn(1, (1690, 1699))
+        EnableFlag(1690)
+        SkipLinesIfFlagRangeAnyOn(1, (1700, 1709))
+        EnableFlag(1700)
+        SkipLinesIfFlagRangeAnyOn(1, (1710, 1729))
+        EnableFlag(1710)
+        SkipLinesIfFlagRangeAnyOn(1, (1760, 1769))
+        EnableFlag(1760)
+        SkipLinesIfFlagRangeAnyOn(1, (1770, 1779))
+        EnableFlag(1770)
+        SkipLinesIfFlagRangeAnyOn(1, (1780, 1789))
+        EnableFlag(1780)
+    
+    SkipLinesIfFlagRangeAnyOn(1, (1820, 1839))
+    EnableFlag(1820)
+    SkipLinesIfFlagRangeAnyOn(1, (1840, 1859))
+    EnableFlag(1840)
+    SkipLinesIfFlagRangeAnyOn(1, (1860, 1869))
+    EnableFlag(1860)
+    SkipLinesIfFlagRangeAnyOn(1, (1870, 1889))
+    EnableFlag(1870)
     
     if FlagDisabled(909):
         EnableFlag(11807020)
