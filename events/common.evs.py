@@ -481,18 +481,11 @@ def Event717():
     """ 717: Event 717 """
     DisableFlag(717)
 
-    # there are only so many condition groups, so we re-use this one.
-    # otherwise Soulstruct will assign the same logic to different condition groups
-    # and runs out of them
-    IfStandingOnCollision(1, 1603300)
-
-    # the 1 here is the above condition group
-    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and 1) #TODO: this feels wrong
+    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and PlayerStandingOnCollision(1603300))
 
     EnableFlag(717)
 
-    # the one here is the above condition group
-    AwaitConditionFalse(1)
+    Await(PlayerStandingOnCollision(1603300))
 
     DisableFlag(717)
     Restart()
