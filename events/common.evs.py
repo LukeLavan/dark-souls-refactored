@@ -595,81 +595,78 @@ def Event719():
     """ 719: Event 719 """
     EndIfThisEventOn()
 
-    IfPlayerHasGood(-1, 3000, including_box=False)
-    IfPlayerHasGood(-1, 3010, including_box=False)
-    IfPlayerHasGood(-1, 3020, including_box=False)
-    IfPlayerHasGood(-1, 3030, including_box=False)
-    IfPlayerHasGood(-1, 3040, including_box=False)
-    IfPlayerHasGood(-1, 3050, including_box=False)
-    IfPlayerHasGood(-1, 3060, including_box=False)
-    IfPlayerHasGood(-1, 3070, including_box=False)
-    IfPlayerHasGood(-1, 3100, including_box=False)
-    IfPlayerHasGood(-1, 3110, including_box=False)
-    IfPlayerHasGood(-1, 3120, including_box=False)
-    IfPlayerHasGood(-1, 3300, including_box=False)
-    IfPlayerHasGood(-1, 3310, including_box=False)
-    IfPlayerHasGood(-1, 3400, including_box=False)
-    IfPlayerHasGood(-1, 3410, including_box=False)
-    IfPlayerHasGood(-1, 3500, including_box=False)
-    IfPlayerHasGood(-1, 3510, including_box=False)
-    IfPlayerHasGood(-1, 3520, including_box=False)
-    IfPlayerHasGood(-1, 3530, including_box=False)
-    IfPlayerHasGood(-1, 3540, including_box=False)
-    IfPlayerHasGood(-1, 3550, including_box=False)
-    IfPlayerHasGood(-1, 3600, including_box=False)
-    IfPlayerHasGood(-1, 3610, including_box=False)
-    IfPlayerHasGood(-1, 3700, including_box=False)
-    IfPlayerHasGood(-1, 4000, including_box=False)
-    IfPlayerHasGood(-1, 4010, including_box=False)
-    IfPlayerHasGood(-1, 4020, including_box=False)
-    IfPlayerHasGood(-1, 4030, including_box=False)
-    IfPlayerHasGood(-1, 4040, including_box=False)
-    IfPlayerHasGood(-1, 4050, including_box=False)
-    IfPlayerHasGood(-1, 4060, including_box=False)
-    IfPlayerHasGood(-1, 4100, including_box=False)
-    IfPlayerHasGood(-1, 4110, including_box=False)
-    IfPlayerHasGood(-1, 4200, including_box=False)
-    IfPlayerHasGood(-1, 4210, including_box=False)
-    IfPlayerHasGood(-1, 4220, including_box=False)
-    IfPlayerHasGood(-1, 4300, including_box=False)
-    IfPlayerHasGood(-1, 4310, including_box=False)
-    IfPlayerHasGood(-1, 4360, including_box=False)
-    IfPlayerHasGood(-1, 4400, including_box=False)
-    IfPlayerHasGood(-1, 4500, including_box=False)
-    IfPlayerHasGood(-1, 4510, including_box=False)
-    IfPlayerHasGood(-1, 4520, including_box=False)
-    IfPlayerHasGood(-1, 5000, including_box=False)
-    IfPlayerHasGood(-1, 5010, including_box=False)
-    IfPlayerHasGood(-1, 5020, including_box=False)
-    IfPlayerHasGood(-1, 5030, including_box=False)
-    IfPlayerHasGood(-1, 5040, including_box=False)
-    IfPlayerHasGood(-1, 5050, including_box=False)
-    IfPlayerHasGood(-1, 5100, including_box=False)
-    IfPlayerHasGood(-1, 5110, including_box=False)
-    IfPlayerHasGood(-1, 5200, including_box=False)
-    IfPlayerHasGood(-1, 5210, including_box=False)
-    IfPlayerHasGood(-1, 5300, including_box=False)
-    IfPlayerHasGood(-1, 5310, including_box=False)
-    IfPlayerHasGood(-1, 5320, including_box=False)
-    IfPlayerHasGood(-1, 5400, including_box=False)
-    IfPlayerHasGood(-1, 5500, including_box=False)
-    IfPlayerHasGood(-1, 5510, including_box=False)
-    IfPlayerHasGood(-1, 5520, including_box=False)
-    IfPlayerHasGood(-1, 5600, including_box=False)
-    IfPlayerHasGood(-1, 5610, including_box=False)
-    IfPlayerHasGood(-1, 5700, including_box=False)
-    IfPlayerHasGood(-1, 5710, including_box=False)
-    IfPlayerHasGood(-1, 5800, including_box=False)
-    IfPlayerHasGood(-1, 5810, including_box=False)
-    IfPlayerHasGood(-1, 5900, including_box=False)
-    IfPlayerHasGood(-1, 5910, including_box=False)
-    IfPlayerHasGood(-1, 3710, including_box=False)
-    IfPlayerHasGood(-1, 3720, including_box=False)
-    IfPlayerHasGood(-1, 3730, including_box=False)
-    IfPlayerHasGood(-1, 3740, including_box=False)
-    IfPlayerHasGood(-1, 4530, including_box=False)
-
-    AwaitConditionTrue(-1)
+    Await(HasGood(3000) or
+        HasGood(3010) or
+        HasGood(3020) or
+        HasGood(3030) or
+        HasGood(3040) or
+        HasGood(3050) or
+        HasGood(3060) or
+        HasGood(3070) or
+        HasGood(3100) or
+        HasGood(3110) or
+        HasGood(3120) or
+        HasGood(3300) or
+        HasGood(3400) or
+        HasGood(3410) or
+        HasGood(3500) or
+        HasGood(3510) or
+        HasGood(3520) or
+        HasGood(3530) or
+        HasGood(3540) or
+        HasGood(3550) or
+        HasGood(3600) or
+        HasGood(3610) or
+        HasGood(3700) or
+        HasGood(4000) or
+        HasGood(4010) or
+        HasGood(4020) or
+        HasGood(4030) or
+        HasGood(4040) or
+        HasGood(4050) or
+        HasGood(4060) or
+        HasGood(4100) or
+        HasGood(4110) or
+        HasGood(4200) or
+        HasGood(4210) or
+        HasGood(4220) or
+        HasGood(4300) or
+        HasGood(4310) or
+        HasGood(4360) or
+        HasGood(4400) or
+        HasGood(4500) or
+        HasGood(4510) or
+        HasGood(4520) or
+        HasGood(5000) or
+        HasGood(5010) or
+        HasGood(5020) or
+        HasGood(5030) or
+        HasGood(5040) or
+        HasGood(5050) or
+        HasGood(5100) or
+        HasGood(5110) or
+        HasGood(5200) or
+        HasGood(5210) or
+        HasGood(5300) or
+        HasGood(5310) or
+        HasGood(5320) or
+        HasGood(5400) or
+        HasGood(5500) or
+        HasGood(5510) or
+        HasGood(5520) or
+        HasGood(5600) or
+        HasGood(5610) or
+        HasGood(5700) or
+        HasGood(5710) or
+        HasGood(5800) or
+        HasGood(5810) or
+        HasGood(5900) or
+        HasGood(5910) or
+        HasGood(3710) or
+        HasGood(3720) or
+        HasGood(3730) or
+        HasGood(3740) or
+        HasGood(4530))
 
     EnableFlag(719)
 
