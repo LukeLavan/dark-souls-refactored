@@ -534,14 +534,14 @@ def Event715():
     """ 715: Event 715 """
     DisableFlag(715)
 
-    # condition group 1 consists of the following
+    # condition group 1 consists of the following joined by AND:
     IfPlayerHasGood(1, 702, including_box=False)
     IfPlayerDoesNotHaveGood(1, 5520, including_box=True)
     IfPlayerCovenant(1, Covenant.WarriorOfSunlight)
 
+    # condition group 2 consists of condition group 1, plus a flag check joined by AND:
     IfFlagOn(2, 11010595)
-
-    IfConditionTrue(2, 1) # adds condition group 1 to 2
+    IfConditionTrue(2, 1)
 
     AwaitConditionTrue(2)
 
