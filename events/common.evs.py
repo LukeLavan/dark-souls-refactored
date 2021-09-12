@@ -689,7 +689,7 @@ def Event720():
 
 def Event730():
     """ 730: Event 730 """
-    Await(FlagDisabled(732) or FlagEnabled(8000))
+    Await(FlagDisabled(732) and FlagEnabled(8000))
 
     EnableFlag(732)
     EnableFlag(735)
