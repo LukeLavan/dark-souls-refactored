@@ -674,17 +674,15 @@ def Event719():
 def Event720():
     """ 720: Event 720 """
     EndIfThisEventOn()
-
-    IfPlayerHasGood(-1, 4020, including_box=False)
-    IfPlayerHasGood(-1, 4030, including_box=False)
-    IfPlayerHasGood(-1, 4040, including_box=False)
-    IfPlayerHasGood(-1, 4060, including_box=False)
-    IfPlayerHasGood(-1, 4110, including_box=False)
-    IfPlayerHasGood(-1, 4500, including_box=False)
-    IfPlayerHasGood(-1, 4510, including_box=False)
-    IfPlayerHasGood(-1, 4520, including_box=False)
-
-    AwaitConditionTrue(-1)
+    
+    Await(HasGood(4020) or
+        HasGood(4030) or
+        HasGood(4040) or
+        HasGood(4060) or
+        HasGood(4110) or
+        HasGood(4500) or
+        HasGood(4510) or
+        HasGood(4520))
 
     EnableFlag(11020102)
 
