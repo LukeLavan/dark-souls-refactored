@@ -6,7 +6,7 @@ strings:
 
 """
 from soulstruct.darksouls1r.events import *
-
+from constants.FLAGS import FLAGS
 
 def Constructor():
     """ 0: Event 0 """
@@ -24,7 +24,7 @@ def Constructor():
 
     Event763()
 
-    Event290()
+    EnableGestureLearning()
 
     Event701()
     Event702()
@@ -439,16 +439,19 @@ def Preconstructor():
         EnableFlag(50006080)
 
 
-def Event290():
-    """ 290: Event 290 """
+def EnableGestureLearning():
+    """ 290: Enables flags that allow learning gestures from NPCs """
+    # these flags are disabled once the respective gestures are learned
+
     EndIfThisEventOn()
 
     EnableFlagRange((280, 290))
+    # see entries in FLAGS
 
     if PlayerIsClass(ClassType.Knight) or PlayerIsClass(ClassType.Cleric):
-        DisableFlag(287)
+        DisableFlag(FLAGS.CanLearnPrayer)
     else:
-        DisableFlag(288)
+        DisableFlag(FLAGS.CanLearnJoy)
 
 
 def Event701():
