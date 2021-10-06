@@ -8,6 +8,7 @@ strings:
 from soulstruct.darksouls1r.events import *
 from constants.FLAGS import FLAGS
 
+
 def Constructor():
     """ 0: Event 0 """
     EndIfClient()
@@ -19,31 +20,31 @@ def Constructor():
     Event260(0, 11810000, 10010600, 0.0)
     Event260(1, 257, 10010610, 0.0)
     Event260(2, 710, 10010620, 0.0)
-    
+
     Event761()
 
     Event763()
 
     EnableGestureLearning()
 
-    Event701()
+    EnableVagrants()
     Event702()
 
     Event717()
     Event718()
-    
+
     Event706()
-    
+
     Event740()
 
     Event750()
 
     Event752()
-    
+
     Event757()
     Event758()
     Event759()
-    
+
     Event754()
 
     Event770()
@@ -61,10 +62,10 @@ def Constructor():
     Event711(1, 2501, 712)
     Event711(2, 2502, 713)
     Event711(3, 2504, 714)
-    
+
     Event715()
     Event716()
-    
+
     Event8131(0, 202, 203)
     Event8131(1, 204, 205)
     Event8131(2, 206, 207)
@@ -72,7 +73,7 @@ def Constructor():
     Event8131(4, 210, 211)
     Event8131(5, 212, 213)
     Event8131(6, 214, 215)
-    
+
     Event819()
 
     Event970(0, 2, 2500, 9020, 9030)
@@ -102,7 +103,7 @@ def Constructor():
     Event970(24, 11210001, 2690, 0, 0)
     Event970(25, 17, 2700, 9040, 0)
     Event970(26, 11210004, 2710, 0, 0)
-    
+
     Event250(0, 2600, 250)
     Event250(1, 2601, 251)
     Event250(2, 2602, 252)
@@ -164,9 +165,9 @@ def Constructor():
     Event840(8, 848, 7905, 6380, -1)
     Event840(9, 849, 7905, 1400700, -1)
     Event840(10, 860, 7905, 16969, -1)
-    
+
     Event690(0, 600, 4, 16, 1175)
-    
+
     Event719()
     Event720()
     Event721()
@@ -180,17 +181,17 @@ def Constructor():
     Event745()
 
     Event818()
-    
+
     Event810()
 
     Event812(0, 51400350)
     Event812(1, 51010050)
-    
+
     Event822()
     Event823()
 
     Event910(0, 11400591, 1280)
-    
+
     Event911(0, 11010591, 1000, 1)
     Event911(1, 11510590, 1010, 1)
     Event911(2, 11700591, 1020, 1)
@@ -249,12 +250,12 @@ def Constructor():
     Event911(55, 11200905, 1860, 1)
     Event911(56, 11510906, 1870, 1)
     Event911(57, 11400905, 1880, 1)
-    
+
     Event890(0, 11310580, 1221, 1)
     Event890(1, 11510580, 1361, 1)
     Event890(2, 11510581, 1371, 1)
     Event890(3, 11320592, 1261, 1)
-    
+
     Event960(0, 1322, 6190, 6190)
     Event960(1, 1315, 6180, 1100)
     Event960(2, 1402, 6230, 6230)
@@ -304,7 +305,7 @@ def Constructor():
     Event8300(5, 3, 112, 11407080)
     Event8300(6, 3, 2508, 11007010)
     Event8300(7, 3, 385, 11017210)
-    
+
     Event8090(0, 3, 510, 11217010)
     Event8090(1, 3, 511, 11217020)
     Event8090(2, 3, 512, 11217030)
@@ -314,7 +315,7 @@ def Constructor():
 
 def Preconstructor():
     """ 50: Event 50 """
-    
+
     if FlagDisabled(909):
         SkipLinesIfFlagRangeAnyOn(1, (1000, 1029))
         EnableFlag(1000)
@@ -396,7 +397,7 @@ def Preconstructor():
         EnableFlag(1770)
         SkipLinesIfFlagRangeAnyOn(1, (1780, 1789))
         EnableFlag(1780)
-    
+
     SkipLinesIfFlagRangeAnyOn(1, (1820, 1839))
     EnableFlag(1820)
     SkipLinesIfFlagRangeAnyOn(1, (1840, 1859))
@@ -405,7 +406,7 @@ def Preconstructor():
     EnableFlag(1860)
     SkipLinesIfFlagRangeAnyOn(1, (1870, 1889))
     EnableFlag(1870)
-    
+
     if FlagDisabled(909):
         EnableFlag(11807020)
         EnableFlag(11807030)
@@ -431,7 +432,7 @@ def Preconstructor():
         EnableFlag(11217070)
         EnableFlag(11217080)
         EnableFlag(11217090)
-    
+
     if FlagDisabled(909):
         EnableFlag(909)
         EnableFlag(814)
@@ -454,8 +455,8 @@ def EnableGestureLearning():
         DisableFlag(FLAGS.CanLearnJoy)
 
 
-def Event701():
-    """ 701: Event 701 """
+def EnableVagrants():
+    """ 701: Enables vagrant spawning after leaving the asylum """
     EndIfThisEventOn()
 
     EnableVagrantSpawning()
@@ -463,7 +464,7 @@ def Event701():
     Await(InsideMap(UNDEAD_ASYLUM))
     DisableVagrantSpawning()
 
-    Await(FlagEnabled(11810000))
+    Await(FlagEnabled(FLAGS.HasWarpedToFirelinkShrine))
     EnableVagrantSpawning()
 
 
@@ -484,7 +485,8 @@ def Event717():
     """ 717: Event 717 """
     DisableFlag(717)
 
-    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS) and PlayerStandingOnCollision(1603300))
+    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS)
+          and PlayerStandingOnCollision(1603300))
 
     EnableFlag(717)
 
@@ -528,7 +530,7 @@ def Event710():
 def Event711(_, arg_0_3: int, arg_4_7: int):
     """ 711: Event 711 """
     EndIfThisEventSlotOn()
-    
+
     IfPlayerHasGood(0, arg_0_3, including_box=False)
     EnableFlag(arg_4_7)
 
@@ -584,6 +586,7 @@ def Event8131(_, arg_0_3: int, arg_4_7: int):
     if arg_0_3 == 214:
         EnableFlagRange((8131, 8137))
 
+
 def Event819():
     """ 819: Event 819 """
     EndIfThisEventOn()
@@ -599,77 +602,77 @@ def Event719():
     EndIfThisEventOn()
 
     Await(HasGood(3000) or
-        HasGood(3010) or
-        HasGood(3020) or
-        HasGood(3030) or
-        HasGood(3040) or
-        HasGood(3050) or
-        HasGood(3060) or
-        HasGood(3070) or
-        HasGood(3100) or
-        HasGood(3110) or
-        HasGood(3120) or
-        HasGood(3300) or
-        HasGood(3400) or
-        HasGood(3410) or
-        HasGood(3500) or
-        HasGood(3510) or
-        HasGood(3520) or
-        HasGood(3530) or
-        HasGood(3540) or
-        HasGood(3550) or
-        HasGood(3600) or
-        HasGood(3610) or
-        HasGood(3700) or
-        HasGood(4000) or
-        HasGood(4010) or
-        HasGood(4020) or
-        HasGood(4030) or
-        HasGood(4040) or
-        HasGood(4050) or
-        HasGood(4060) or
-        HasGood(4100) or
-        HasGood(4110) or
-        HasGood(4200) or
-        HasGood(4210) or
-        HasGood(4220) or
-        HasGood(4300) or
-        HasGood(4310) or
-        HasGood(4360) or
-        HasGood(4400) or
-        HasGood(4500) or
-        HasGood(4510) or
-        HasGood(4520) or
-        HasGood(5000) or
-        HasGood(5010) or
-        HasGood(5020) or
-        HasGood(5030) or
-        HasGood(5040) or
-        HasGood(5050) or
-        HasGood(5100) or
-        HasGood(5110) or
-        HasGood(5200) or
-        HasGood(5210) or
-        HasGood(5300) or
-        HasGood(5310) or
-        HasGood(5320) or
-        HasGood(5400) or
-        HasGood(5500) or
-        HasGood(5510) or
-        HasGood(5520) or
-        HasGood(5600) or
-        HasGood(5610) or
-        HasGood(5700) or
-        HasGood(5710) or
-        HasGood(5800) or
-        HasGood(5810) or
-        HasGood(5900) or
-        HasGood(5910) or
-        HasGood(3710) or
-        HasGood(3720) or
-        HasGood(3730) or
-        HasGood(3740) or
-        HasGood(4530))
+          HasGood(3010) or
+          HasGood(3020) or
+          HasGood(3030) or
+          HasGood(3040) or
+          HasGood(3050) or
+          HasGood(3060) or
+          HasGood(3070) or
+          HasGood(3100) or
+          HasGood(3110) or
+          HasGood(3120) or
+          HasGood(3300) or
+          HasGood(3400) or
+          HasGood(3410) or
+          HasGood(3500) or
+          HasGood(3510) or
+          HasGood(3520) or
+          HasGood(3530) or
+          HasGood(3540) or
+          HasGood(3550) or
+          HasGood(3600) or
+          HasGood(3610) or
+          HasGood(3700) or
+          HasGood(4000) or
+          HasGood(4010) or
+          HasGood(4020) or
+          HasGood(4030) or
+          HasGood(4040) or
+          HasGood(4050) or
+          HasGood(4060) or
+          HasGood(4100) or
+          HasGood(4110) or
+          HasGood(4200) or
+          HasGood(4210) or
+          HasGood(4220) or
+          HasGood(4300) or
+          HasGood(4310) or
+          HasGood(4360) or
+          HasGood(4400) or
+          HasGood(4500) or
+          HasGood(4510) or
+          HasGood(4520) or
+          HasGood(5000) or
+          HasGood(5010) or
+          HasGood(5020) or
+          HasGood(5030) or
+          HasGood(5040) or
+          HasGood(5050) or
+          HasGood(5100) or
+          HasGood(5110) or
+          HasGood(5200) or
+          HasGood(5210) or
+          HasGood(5300) or
+          HasGood(5310) or
+          HasGood(5320) or
+          HasGood(5400) or
+          HasGood(5500) or
+          HasGood(5510) or
+          HasGood(5520) or
+          HasGood(5600) or
+          HasGood(5610) or
+          HasGood(5700) or
+          HasGood(5710) or
+          HasGood(5800) or
+          HasGood(5810) or
+          HasGood(5900) or
+          HasGood(5910) or
+          HasGood(3710) or
+          HasGood(3720) or
+          HasGood(3730) or
+          HasGood(3740) or
+          HasGood(4530))
 
     EnableFlag(719)
 
@@ -677,15 +680,15 @@ def Event719():
 def Event720():
     """ 720: Event 720 """
     EndIfThisEventOn()
-    
+
     Await(HasGood(4020) or
-        HasGood(4030) or
-        HasGood(4040) or
-        HasGood(4060) or
-        HasGood(4110) or
-        HasGood(4500) or
-        HasGood(4510) or
-        HasGood(4520))
+          HasGood(4030) or
+          HasGood(4040) or
+          HasGood(4060) or
+          HasGood(4110) or
+          HasGood(4500) or
+          HasGood(4510) or
+          HasGood(4520))
 
     EnableFlag(11020102)
 
@@ -696,7 +699,7 @@ def Event730():
 
     EnableFlag(732)
     EnableFlag(735)
-    
+
     Restart()
 
 
@@ -725,7 +728,7 @@ def Event350(_, arg_0_3: int, arg_4_7: int):
     """ 350: Event 350 """
     if THIS_SLOT_FLAG and not HasGood(arg_4_7):
         End()
-    
+
     AwaitFlagOn(arg_0_3)
 
     RemoveGoodFromPlayer(arg_4_7, quantity=1)
@@ -751,7 +754,7 @@ def Event870(_, arg_0_0: uchar, arg_4_7: int):
     AwaitConditionTrue(1)
 
     EnableFlag(arg_4_7)
-    
+
     AwaitConditionFalse(1)
 
     DisableFlag(arg_4_7)
@@ -777,7 +780,7 @@ def Event970(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
     if arg_4_7 != 0:
         AwardItemLot(arg_4_7, host_only=True)
-    
+
     DisableNetworkSync()
     Wait(5.0)
 
@@ -820,7 +823,7 @@ def Event960(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     EndIfThisEventSlotOn()
 
     Await(FlagEnabled(arg_0_3) and IsDead(arg_4_7))
-    
+
     AwardItemLot(arg_8_11, host_only=True)
 
 
@@ -845,7 +848,7 @@ def Event8300(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
         End()
     if not OwnsItem(arg_4_7, item_type=arg_0_0):
         End()
-    
+
     EnableFlag(arg_8_11)
 
 
@@ -857,7 +860,7 @@ def Event8090(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
         End()
     if not OwnsItem(arg_4_7, item_type=arg_0_0):
         End()
-    
+
     EnableFlag(arg_8_11)
 
 
@@ -908,7 +911,7 @@ def Event690(_, arg_0_3: int, arg_4_7: uint, arg_8_11: uint, arg_12_15: int):
         IfFlagOn(-1, 14)
     if FlagDisabled(15):
         IfFlagOn(-1, 15)
-    
+
     AwaitConditionTrue(-1)
 
     IncrementEventValue(arg_0_3, bit_count=arg_4_7, max_value=arg_8_11)
@@ -919,19 +922,20 @@ def Event721():
     """ 721: Event 721 """
     EndIfFlagOn(728)
 
-    Await(FlagEnabled(11707000) and 
-        FlagEnabled(11707010) and 
-        FlagEnabled(11707020) and 
-        FlagEnabled(11707030) and 
-        FlagEnabled(11707040) and 
-        FlagEnabled(11707050) and 
-        FlagEnabled(11707060) and 
-        FlagEnabled(11707070))
+    Await(FlagEnabled(11707000) and
+          FlagEnabled(11707010) and
+          FlagEnabled(11707020) and
+          FlagEnabled(11707030) and
+          FlagEnabled(11707040) and
+          FlagEnabled(11707050) and
+          FlagEnabled(11707060) and
+          FlagEnabled(11707070))
     AwaitConditionTrue(1)
 
     EnableFlag(721)
 
-    Await(FlagEnabled(11707090) and FlagEnabled(11707100) and FlagEnabled(11707110))
+    Await(FlagEnabled(11707090) and FlagEnabled(
+        11707100) and FlagEnabled(11707110))
 
     EnableFlag(728)
 
@@ -940,17 +944,18 @@ def Event722():
     """ 722: Event 722 """
     EndIfThisEventOn()
 
-    Await(FlagEnabled(11407120) and 
-        FlagEnabled(11407130) and 
-        FlagEnabled(11407150) and 
-        FlagEnabled(11407160) and
-        FlagEnabled(11407170) and
-        FlagEnabled(11407140) and # yes this was ordered like this in vanilla
-        FlagEnabled(11407180) and
-        FlagEnabled(11407190) and
-        FlagEnabled(10) and
-        HasWeapon(1332500))
-    
+    Await(FlagEnabled(11407120) and
+          FlagEnabled(11407130) and
+          FlagEnabled(11407150) and
+          FlagEnabled(11407160) and
+          FlagEnabled(11407170) and
+          # yes this was ordered like this in vanilla
+          FlagEnabled(11407140) and
+          FlagEnabled(11407180) and
+          FlagEnabled(11407190) and
+          FlagEnabled(10) and
+          HasWeapon(1332500))
+
     EnableFlag(722)
 
 
@@ -959,18 +964,18 @@ def Event723():
     EndIfThisEventOn()
 
     Await(FlagEnabled(11027130) and
-        FlagEnabled(11027140) and
-        FlagEnabled(11027150) and
-        FlagEnabled(11027160) and
-        FlagEnabled(11027170) and
-        FlagEnabled(11027180) and
-        FlagEnabled(11027190) and
-        FlagEnabled(11027200) and
-        FlagEnabled(11027210) and
-        FlagEnabled(11027220) and
-        FlagEnabled(11027230) and
-        FlagEnabled(11027240))
-    
+          FlagEnabled(11027140) and
+          FlagEnabled(11027150) and
+          FlagEnabled(11027160) and
+          FlagEnabled(11027170) and
+          FlagEnabled(11027180) and
+          FlagEnabled(11027190) and
+          FlagEnabled(11027200) and
+          FlagEnabled(11027210) and
+          FlagEnabled(11027220) and
+          FlagEnabled(11027230) and
+          FlagEnabled(11027240))
+
     EnableFlag(723)
 
 
@@ -979,15 +984,15 @@ def Event724():
     EndIfThisEventOn()
 
     Await(FlagEnabled(11017050) and
-        FlagEnabled(11017060) and
-        FlagEnabled(11017070) and
-        FlagEnabled(11017080) and
-        FlagEnabled(11017090) and
-        FlagEnabled(11017100) and
-        FlagEnabled(11017110) and
-        FlagEnabled(11017120) and
-        FlagEnabled(11017130))
-    
+          FlagEnabled(11017060) and
+          FlagEnabled(11017070) and
+          FlagEnabled(11017080) and
+          FlagEnabled(11017090) and
+          FlagEnabled(11017100) and
+          FlagEnabled(11017110) and
+          FlagEnabled(11017120) and
+          FlagEnabled(11017130))
+
     EnableFlag(724)
 
 
@@ -1010,16 +1015,16 @@ def Event727():
     EndIfThisEventOn()
 
     Await(FlagEnabled(11327000) and
-        FlagEnabled(11327010) and
-        FlagEnabled(11327020) and
-        FlagEnabled(11327030) and
-        FlagEnabled(11327040) and
-        FlagEnabled(11327050) and
-        FlagEnabled(11327060) and
-        FlagEnabled(11327070) and
-        FlagEnabled(11327080) and
-        FlagEnabled(11327090))
-    
+          FlagEnabled(11327010) and
+          FlagEnabled(11327020) and
+          FlagEnabled(11327030) and
+          FlagEnabled(11327040) and
+          FlagEnabled(11327050) and
+          FlagEnabled(11327060) and
+          FlagEnabled(11327070) and
+          FlagEnabled(11327080) and
+          FlagEnabled(11327090))
+
     EnableFlag(727)
 
 
@@ -1033,7 +1038,7 @@ def Event745():
     """ 745: Event 745 """
     if FlagEnabled(1604) and FlagEnabled(1764):
         Await(FlagEnabled(703))
-    
+
     # wait until one of these flags become enabled, but only if they were disabled to begin with
     if FlagDisabled(1604):
         IfFlagOn(-1, 1604)
@@ -1048,11 +1053,12 @@ def Event754():
     DisableFlag(754)
 
     AwaitFlagOn(754)
-    
+
     DisableFlag(754)
     AddSpecialEffect(PLAYER, 4600)
     AddSpecialEffect(PLAYER, 4601)
-    CreateTemporaryVFX(22715, anchor_entity=PLAYER, anchor_type=CoordEntityType.Character, model_point=7)
+    CreateTemporaryVFX(22715, anchor_entity=PLAYER,
+                       anchor_type=CoordEntityType.Character, model_point=7)
     Restart()
 
 
@@ -1117,7 +1123,7 @@ def Event770():
     DisableFlag(1646)
     DisableFlag(1675)
     DisableFlag(1691)
-    EnableFlag(1710) # one of these is not like the others
+    EnableFlag(1710)  # one of these is not like the others
     DisableFlag(1711)
     DisableFlag(1712)
     DisableFlag(11200596)
@@ -1142,49 +1148,49 @@ def Event772():
     AwaitFlagOff(744)
 
     Await(FlagEnabled(1004) or
-        FlagEnabled(1033) or
-        FlagEnabled(1096) or
-        FlagEnabled(1114) or
-        FlagEnabled(1176) or
-        FlagEnabled(1179) or
-        FlagEnabled(1195) or
-        FlagEnabled(1197) or
-        FlagEnabled(1213) or
-        FlagEnabled(1223) or
-        FlagEnabled(1241) or
-        FlagEnabled(1253) or
-        FlagEnabled(1282) or
-        FlagEnabled(1283) or
-        FlagEnabled(1287) or
-        FlagEnabled(1294) or
-        FlagEnabled(1314) or
-        FlagEnabled(1321) or
-        FlagEnabled(1341) or
-        FlagEnabled(1361) or
-        FlagEnabled(1381) or
-        FlagEnabled(1401) or
-        FlagEnabled(1411) or
-        FlagEnabled(1421) or
-        FlagEnabled(1434) or
-        FlagEnabled(1461) or
-        FlagEnabled(1512) or
-        FlagEnabled(1547) or
-        FlagEnabled(1574) or
-        FlagEnabled(1603) or
-        FlagEnabled(1627) or
-        FlagEnabled(1646) or
-        FlagEnabled(1675) or
-        FlagEnabled(1691) or
-        FlagEnabled(1711) or
-        FlagEnabled(1712) or
-        FlagEnabled(71200035) or
-        FlagEnabled(71200042) or
-        FlagEnabled(1763) or
-        FlagEnabled(1822) or
-        FlagEnabled(1841) or
-        FlagEnabled(1863) or
-        FlagEnabled(1871))
-   
+          FlagEnabled(1033) or
+          FlagEnabled(1096) or
+          FlagEnabled(1114) or
+          FlagEnabled(1176) or
+          FlagEnabled(1179) or
+          FlagEnabled(1195) or
+          FlagEnabled(1197) or
+          FlagEnabled(1213) or
+          FlagEnabled(1223) or
+          FlagEnabled(1241) or
+          FlagEnabled(1253) or
+          FlagEnabled(1282) or
+          FlagEnabled(1283) or
+          FlagEnabled(1287) or
+          FlagEnabled(1294) or
+          FlagEnabled(1314) or
+          FlagEnabled(1321) or
+          FlagEnabled(1341) or
+          FlagEnabled(1361) or
+          FlagEnabled(1381) or
+          FlagEnabled(1401) or
+          FlagEnabled(1411) or
+          FlagEnabled(1421) or
+          FlagEnabled(1434) or
+          FlagEnabled(1461) or
+          FlagEnabled(1512) or
+          FlagEnabled(1547) or
+          FlagEnabled(1574) or
+          FlagEnabled(1603) or
+          FlagEnabled(1627) or
+          FlagEnabled(1646) or
+          FlagEnabled(1675) or
+          FlagEnabled(1691) or
+          FlagEnabled(1711) or
+          FlagEnabled(1712) or
+          FlagEnabled(71200035) or
+          FlagEnabled(71200042) or
+          FlagEnabled(1763) or
+          FlagEnabled(1822) or
+          FlagEnabled(1841) or
+          FlagEnabled(1863) or
+          FlagEnabled(1871))
+
     EnableFlag(744)
     AwaitFlagOff(744)
 
@@ -1222,18 +1228,18 @@ def Event750():
     DisableNetworkSync()
 
     Await(HasSpecialEffect(PLAYER, 71) or
-        HasSpecialEffect(PLAYER, 72) or
-        HasSpecialEffect(PLAYER, 73) or
-        HasSpecialEffect(PLAYER, 74) or
-        FlagEnabled(751))
-    
+          HasSpecialEffect(PLAYER, 72) or
+          HasSpecialEffect(PLAYER, 73) or
+          HasSpecialEffect(PLAYER, 74) or
+          FlagEnabled(751))
+
     EnableFlag(751)
 
     Await(not HasSpecialEffect(PLAYER, 71) and
-        not HasSpecialEffect(PLAYER, 72) and
-        not HasSpecialEffect(PLAYER, 73) and
-        not HasSpecialEffect(PLAYER, 74))
-    
+          not HasSpecialEffect(PLAYER, 72) and
+          not HasSpecialEffect(PLAYER, 73) and
+          not HasSpecialEffect(PLAYER, 74))
+
     DisableFlag(751)
     Restart()
 
@@ -1243,14 +1249,14 @@ def Event752():
     DisableNetworkSync()
 
     Await(HasSpecialEffect(PLAYER, 5213) or
-        HasSpecialEffect(PLAYER, 5214) or
-        FlagEnabled(753))
-    
+          HasSpecialEffect(PLAYER, 5214) or
+          FlagEnabled(753))
+
     EnableFlag(753)
 
     Await(not HasSpecialEffect(PLAYER, 5213) and
-        not HasSpecialEffect(PLAYER, 5214))
-    
+          not HasSpecialEffect(PLAYER, 5214))
+
     DisableFlag(753)
     DisableFlag(11400591)
     Restart()
@@ -1260,19 +1266,19 @@ def Event757():
     """ 757: Event 757 """
     if FlagEnabled(757):
         DisplayStatus(10010660, pad_enabled=True)
-    
+
     DisableFlag(757)
-    
+
     Await(HOST and
-        HasSpecialEffect(PLAYER, 71) and
-        HasSpecialEffect(PLAYER, 72) and
-        HasSpecialEffect(PLAYER, 73) and
-        HasSpecialEffect(PLAYER, 74) and
-        (
-            HasSpecialEffect(PLAYER, 33) or
-            HasSpecialEffect(PLAYER, 34)
-        )
-    )
+          HasSpecialEffect(PLAYER, 71) and
+          HasSpecialEffect(PLAYER, 72) and
+          HasSpecialEffect(PLAYER, 73) and
+          HasSpecialEffect(PLAYER, 74) and
+          (
+              HasSpecialEffect(PLAYER, 33) or
+              HasSpecialEffect(PLAYER, 34)
+          )
+          )
 
     End()
 
@@ -1281,17 +1287,17 @@ def Event758():
     """ 758: Event 758 """
     if THIS_FLAG:
         DisplayStatus(10010670, pad_enabled=True)
-    
+
     DisableFlag(758)
 
     Await(HOST and
-        HealthValue(PLAYER) <= 0 and
-        HasSpecialEffect(PLAYER, 2130))
-    
+          HealthValue(PLAYER) <= 0 and
+          HasSpecialEffect(PLAYER, 2130))
+
     Await(HOST and
-        IsDead(PLAYER) and
-        HasSpecialEffect(PLAYER, 2130))
-    
+          IsDead(PLAYER) and
+          HasSpecialEffect(PLAYER, 2130))
+
     End()
 
 
@@ -1299,17 +1305,17 @@ def Event759():
     """ 759: Event 759 """
     if THIS_FLAG:
         DisplayStatus(10010680, pad_enabled=True)
-    
+
     DisableFlag(759)
 
     Await(HOST and
-        HealthValue(PLAYER) <= 0 and
-        HasSpecialEffect(PLAYER, 2131))
-    
+          HealthValue(PLAYER) <= 0 and
+          HasSpecialEffect(PLAYER, 2131))
+
     Await(HOST and
-        IsDead(PLAYER) and
-        HasSpecialEffect(PLAYER, 2131))
-    
+          IsDead(PLAYER) and
+          HasSpecialEffect(PLAYER, 2131))
+
     End()
 
 
@@ -1318,10 +1324,10 @@ def Event818():
     if FlagDisabled(11510150):
         AwaitFlagOn(11510150)
         DisplayStatus(10010690, pad_enabled=True)
-    
+
     Await(FlagEnabled(11510150) and
-        OutsideMap(ANOR_LONDO))
-    
+          OutsideMap(ANOR_LONDO))
+
     DisableFlag(11510150)
     Restart()
 
@@ -1340,7 +1346,7 @@ def Event812(_, arg_0_3: int):
     EndIfThisEventSlotOn()
 
     AwaitFlagOn(arg_0_3)
-    
+
     End()
 
 
@@ -1349,8 +1355,8 @@ def Event822():
     AwaitFlagOn(830)
 
     Await(SecondsElapsed(0.5) and
-        OutsideMap(KILN_OF_THE_FIRST_FLAME))
-    
+          OutsideMap(KILN_OF_THE_FIRST_FLAME))
+
     DisableFlag(830)
     Restart()
 
@@ -1360,8 +1366,8 @@ def Event823():
     AwaitFlagOn(831)
 
     Await(SecondsElapsed(0.5) and
-        OutsideMap(KILN_OF_THE_FIRST_FLAME))
-    
+          OutsideMap(KILN_OF_THE_FIRST_FLAME))
+
     DisableFlag(831)
     Restart()
 
@@ -1372,30 +1378,30 @@ def Event840(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
     AwaitFlagOn(arg_0_3)
 
-    
     if FlagDisabled(844) and FlagDisabled(847):
         RotateToFaceEntity(PLAYER, arg_8_11)
         ForceAnimation(PLAYER, arg_4_7)
-    
+
     if (FlagDisabled(840) and
         FlagDisabled(841) and
         FlagDisabled(842) and
         FlagDisabled(843) and
-        FlagDisabled(845) and # note 844 is skipped
+        FlagDisabled(845) and  # note 844 is skipped
         FlagDisabled(846) and
         FlagDisabled(848) and
         FlagDisabled(849) and
-        FlagDisabled(860)): # not 850
-            
-            ForceAnimation(PLAYER, arg_4_7, skip_transition=True)
-    
+            FlagDisabled(860)):  # not 850
+
+        ForceAnimation(PLAYER, arg_4_7, skip_transition=True)
+
     Wait(1.0)
-    PlaySoundEffect(anchor_entity=PLAYER, sound_type=SoundType.s_SFX, sound_id=123456789)
+    PlaySoundEffect(anchor_entity=PLAYER,
+                    sound_type=SoundType.s_SFX, sound_id=123456789)
     Wait(4.0)
 
     if arg_12_15 != -1:
         ForceAnimation(PLAYER, arg_12_15, loop=True)
-    
+
     Restart()
 
 

@@ -37,3 +37,7 @@ class FLAGS(Flag):
 
     # flags 289 and 290 are always on and both unused
     # they're enabled in the same event that handles the gesture flags above
+
+    # enabled after the two cutscenes play that warp the player
+    # from the asylum to Firelink (alongside awarding the achievement)
+    HasWarpedToFirelinkShrine = 11810000
