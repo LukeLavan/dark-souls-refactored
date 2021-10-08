@@ -7,6 +7,7 @@ strings:
 """
 from soulstruct.darksouls1r.events import *
 from constants.FLAGS import FLAGS
+from constants.COLLISIONS import COLLISIONS
 
 
 def Constructor():
@@ -30,7 +31,7 @@ def Constructor():
     EnableVagrants()
     ControlOfferLordSoulsPrompt()
 
-    Event717()
+    AllowEscapeFromAbyss()
     Event718()
 
     Event706()
@@ -483,18 +484,18 @@ def ControlOfferLordSoulsPrompt():
     Restart()
 
 
-def Event717():
-    """ 717: Event 717 """
-    DisableFlag(717)
+def AllowEscapeFromAbyss():
+    """ 717: Responsible for the flag that enables warping from the Abyss bonfire without the Lordvessel """
+    DisableFlag(FLAGS.StandingInAbyssWithoutLordvessel)
 
-    Await(FlagDisabled(710) and InsideMap(NEW_LONDO_RUINS)
-          and PlayerStandingOnCollision(1603300))
+    Await(FlagDisabled(FLAGS.GotLordvessel) and InsideMap(NEW_LONDO_RUINS)
+          and PlayerStandingOnCollision(COLLISIONS.abyss))
 
-    EnableFlag(717)
+    EnableFlag(FLAGS.StandingInAbyssWithoutLordvessel)
 
-    Await(PlayerStandingOnCollision(1603300))
+    Await(PlayerStandingOnCollision(COLLISIONS.abyss))
 
-    DisableFlag(717)
+    DisableFlag(FLAGS.StandingInAbyssWithoutLordvessel)
     Restart()
 
 

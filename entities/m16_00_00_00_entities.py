@@ -181,6 +181,7 @@ class Collisions(Collision):
     def _generate_next_value_(name, _, count, __):
         return Collision.auto_generate(count, DARK_SOULS_DSR, 1600000)
 
+    abyss = 1603300  # the Four Kings arena; includes the floor and the invisible walls surrounding the arena
     h0000B0_0000 = 1603200
     h0000B0_0002 = 1603250
     h0001B0_0000 = 1603201
@@ -216,7 +217,6 @@ class Collisions(Collision):
     h0026B0_0001 = 1603266
     h0027B0_0000 = 1603217
     h0027B0_0001 = 1603267
-    h0040B0_0000 = 1603300
     h0106B0_0000 = 1603256
     h0130B0_0000 = 1603121
     h0154B0_0000 = 1603122

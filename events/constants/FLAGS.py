@@ -42,6 +42,17 @@ class FLAGS(Flag):
     For some reason, this flag is kept disabled when the player leaves the Kiln map.\n
     Disabled when the player offers all four lord souls to the Lordvessel. """
 
+    GotLordvessel = 710
+    """ enabled when the player obtains the Lordvessel """
+
+    StandingInAbyssWithoutLordvessel = 717
+    """ enabled when the player is standing in the abyss and hasn't obtained the Lordvessel\n
+    more specifically, the player needs to be in the New Londo map and standing on the collision 
+    that is the floor of the Abyss before obtaining the Lordvessel\n
+    if enabled, bonfires will have a 'Warp' option; if this flag is forced on when the player does
+    have Lordvessel warping, bonfires will have two 'Warp' options\n
+    TODO: check if every bonfire has this Abyss warping option (seems so) """
+
     HasWarpedToFirelinkShrine = 11810000
     """ enabled after the two cutscenes play that warp the player
     from the asylum to Firelink """
