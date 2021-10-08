@@ -28,7 +28,7 @@ def Constructor():
     EnableGestureLearning()
 
     EnableVagrants()
-    Event702()
+    ControlOfferLordSoulsPrompt()
 
     Event717()
     Event718()
@@ -468,15 +468,17 @@ def EnableVagrants():
     EnableVagrantSpawning()
 
 
-def Event702():
-    """ 702: Event 702 """
-    DisableFlag(702)
+def ControlOfferLordSoulsPrompt():
+    """ 702: handles the event flag responsible for displaying the 'Offer Lord Souls' prompt at the Lordvessel """
+    DisableFlag(FLAGS.CanOfferLordSouls)
 
-    Await(FlagDisabled(11800210) and InsideMap(KILN_OF_THE_FIRST_FLAME))
-    EnableFlag(702)
+    Await(FlagDisabled(FLAGS.HasOfferedAllLordSouls)
+          and InsideMap(KILN_OF_THE_FIRST_FLAME))
+    EnableFlag(FLAGS.CanOfferLordSouls)
 
-    Await(OutsideMap(KILN_OF_THE_FIRST_FLAME) or FlagEnabled(11800210))
-    DisableFlag(702)
+    Await(OutsideMap(KILN_OF_THE_FIRST_FLAME)
+          or FlagEnabled(FLAGS.HasOfferedAllLordSouls))
+    DisableFlag(FLAGS.CanOfferLordSouls)
 
     Restart()
 

@@ -37,6 +37,15 @@ class FLAGS(Flag):
     # flags 289 and 290 are always on and both unused
     # they're enabled in the same event that handles the gesture flags above
 
+    CanOfferLordSouls = 702
+    """ Enabled when the player is in the Kiln map and hasn't yet offered all four lord souls.\n
+    For some reason, this flag is kept disabled when the player leaves the Kiln map.\n
+    Disabled when the player offers all four lord souls to the Lordvessel. """
+
     HasWarpedToFirelinkShrine = 11810000
     """ enabled after the two cutscenes play that warp the player
     from the asylum to Firelink """
+
+    HasOfferedAllLordSouls = 11800210
+    """ enabled after all four lord souls have been offered to the lordvessel
+    and the door to the kin has been opened """
