@@ -38,9 +38,9 @@ class FLAGS(Flag):
     # they're enabled in the same event that handles the gesture flags above
 
     CanOfferLordSouls = 702
-    """ Enabled when the player is in the Kiln map and hasn't yet offered all four lord souls.\n
-    For some reason, this flag is kept disabled when the player leaves the Kiln map.\n
-    Disabled when the player offers all four lord souls to the Lordvessel. """
+    """ enabled when the player is in the Kiln map and hasn't yet offered all four lord souls\n
+    for some reason, this flag is kept disabled when the player leaves the Kiln map\n
+    disabled when the player offers all four lord souls to the Lordvessel. """
 
     GotLordvessel = 710
     """ enabled when the player obtains the Lordvessel """
