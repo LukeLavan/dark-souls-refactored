@@ -62,10 +62,10 @@ def Constructor():
 
     EnableLordVesselFlag()
 
-    Event711(0, 2500, 711)
-    Event711(1, 2501, 712)
-    Event711(2, 2502, 713)
-    Event711(3, 2504, 714)
+    EnableFlagWhenHasGood(0, 2500, 711)
+    EnableFlagWhenHasGood(1, 2501, 712)
+    EnableFlagWhenHasGood(2, 2502, 713)
+    EnableFlagWhenHasGood(3, 2504, 714)
 
     Event715()
     Event716()
@@ -536,12 +536,12 @@ def EnableLordVesselFlag():
     EnableFlag(FLAGS.GotLordvessel)
 
 
-def Event711(_, arg_0_3: int, arg_4_7: int):
-    """ 711: Event 711 """
+def EnableFlagWhenHasGood(_, good: int, flag: int):
+    """ 711: enables a flag when the player obtains a good (used for lord soulss) """
     EndIfThisEventSlotOn()
 
-    IfPlayerHasGood(0, arg_0_3, including_box=False)
-    EnableFlag(arg_4_7)
+    Await(HasGood(good))
+    EnableFlag(flag)
 
 
 def Event715():
