@@ -67,7 +67,7 @@ def Constructor():
     EnableFlagWhenHasGood(2, 2502, 713)
     EnableFlagWhenHasGood(3, 2504, 714)
 
-    Event715()
+    ControlGwynSoulForSunlightSpearTrade()
     Event716()
 
     Event8131(0, 202, 203)
@@ -544,17 +544,17 @@ def EnableFlagWhenHasGood(_, good: int, flag: int):
     EnableFlag(flag)
 
 
-def Event715():
+def ControlGwynSoulForSunlightSpearTrade():
     """ 715: Event 715 """
-    DisableFlag(715)
+    DisableFlag(FLAGS.CanOfferGwynSoul)
 
     # condition group 1 consists of the following joined by AND:
-    IfPlayerHasGood(1, 702, including_box=False)
-    IfPlayerDoesNotHaveGood(1, 5520, including_box=True)
+    IfPlayerHasGood(1, GOODS.GwynSoul, including_box=False)
+    IfPlayerDoesNotHaveGood(1, GOODS.MiracleSunlightSpear, including_box=True)
     IfPlayerCovenant(1, Covenant.WarriorOfSunlight)
 
     # condition group 2 consists of condition group 1, plus a flag check joined by AND:
-    IfFlagOn(2, 11010595)
+    IfFlagOn(2, FLAGS.GotMiracleGreatLightningSpear)
     IfConditionTrue(2, 1)
 
     AwaitConditionTrue(2)

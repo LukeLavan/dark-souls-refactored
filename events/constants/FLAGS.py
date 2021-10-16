@@ -53,6 +53,16 @@ class FLAGS(Flag):
     GotLordvessel = 710
     """ enabled when the player obtains the Lordvessel """
 
+    CanOfferGwynSoul = 715
+    """ enabled when the player is able to offer Gwyn's soul to obtain Sunlight Spear\n
+    more specifically, the flag is enabled when: the player has Gwyn's soul, does not already
+    have Sunlight Spear, is in the Warriors of Sunlight covenant, and has the Great Lightning Spear
+    miracle\n
+    note that the Great Lightning Spear is only obtainable by reaching rank 1 of the covenant\n
+    disabled by default and when the trade can no longer be made\n
+    specifically, it's disabled when the player no longer has Gwyn's soul, if the player\n
+    has the sunlight spear miracle already, or if the player is no longer in the covenant """
+
     StandingInAbyssWithoutLordvessel = 717
     """ enabled when the player is standing in the abyss and hasn't obtained the Lordvessel\n
     more specifically, the player needs to be in the New Londo map and standing on the collision 
@@ -64,6 +74,9 @@ class FLAGS(Flag):
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n
     disabled on next load when the message is displayed to the player """
+
+    GotMiracleGreatLightningSpear = 11010595
+    """ enabled when the player gets the Great Lightning Spear miracle """
 
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
