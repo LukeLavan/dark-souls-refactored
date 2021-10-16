@@ -6,8 +6,10 @@ strings:
 
 """
 from soulstruct.darksouls1r.events import *
+
+from events.constants.COLLISIONS import COLLISIONS
 from constants.FLAGS import FLAGS
-from constants.COLLISIONS import COLLISIONS
+from events.constants.TEXT import TEXT
 
 
 def Constructor():
@@ -32,7 +34,7 @@ def Constructor():
     ControlOfferLordSoulsPrompt()
 
     AllowEscapeFromAbyss()
-    Event718()
+    DisplayTakenByAbyssMessage()
 
     Event706()
 
@@ -499,12 +501,12 @@ def AllowEscapeFromAbyss():
     Restart()
 
 
-def Event718():
-    """ 718: Event 718 """
-    EndIfFlagOff(8120)
+def DisplayTakenByAbyssMessage():
+    """ 718: Displays the 'You were taken by the abyss' message, if applicable """
+    EndIfFlagOff(FLAGS.TakenByAbyss)
 
-    DisplayStatus(10010650, pad_enabled=True)
-    DisableFlag(8120)
+    DisplayStatus(TEXT.TakenByAbyss, pad_enabled=True)
+    DisableFlag(FLAGS.TakenByAbyss)
 
 
 def Event706():
