@@ -7,9 +7,9 @@ strings:
 """
 from soulstruct.darksouls1r.events import *
 
-from events.constants.COLLISIONS import COLLISIONS
+from constants.COLLISIONS import COLLISIONS
 from constants.FLAGS import FLAGS
-from events.constants.TEXT import TEXT
+from constants.TEXT import TEXT
 
 
 def Constructor():
@@ -36,7 +36,7 @@ def Constructor():
     AllowEscapeFromAbyss()
     DisplayTakenByAbyssMessage()
 
-    Event706()
+    ControlWarping()
 
     Event740()
 
@@ -509,17 +509,19 @@ def DisplayTakenByAbyssMessage():
     DisableFlag(FLAGS.TakenByAbyss)
 
 
-def Event706():
-    """ 706: Event 706 """
-    Await(FlagEnabled(710))
+def ControlWarping():
+    """ 706: Controls whether warping from bonfires is allowed """
+    Await(FlagEnabled(FLAGS.GotLordvessel))
 
-    EnableFlag(706)
+    EnableFlag(FLAGS.WarpAllowed)
 
-    Await(FlagEnabled(11705170) or InsideMap(PAINTED_WORLD))
+    Await(FlagEnabled(FLAGS.IsInDukesArchivesPrisonCell)
+          or InsideMap(PAINTED_WORLD))
 
-    DisableFlag(706)
+    DisableFlag(FLAGS.WarpAllowed)
 
-    Await(FlagDisabled(11705170) and OutsideMap(PAINTED_WORLD))
+    Await(FlagDisabled(FLAGS.IsInDukesArchivesPrisonCell)
+          and OutsideMap(PAINTED_WORLD))
 
     Restart()
 

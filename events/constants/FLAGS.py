@@ -42,6 +42,14 @@ class FLAGS(Flag):
     for some reason, this flag is kept disabled when the player leaves the Kiln map\n
     disabled when the player offers all four lord souls to the Lordvessel. """
 
+    WarpAllowed = 706
+    """ enabled by default; disabled when the player should not be able to warp \n
+    specifically, this is enabled when the player is in the Duke's Archives prison cell
+    or when they're in the Painted World map\n
+    disabled when the above conditions are no longer met\n
+    if the player selects the 'Warp' option from a bonfire dialog menu and this flag is disabled,
+    the 'Cannot warp' message is displayed """
+
     GotLordvessel = 710
     """ enabled when the player obtains the Lordvessel """
 
@@ -56,6 +64,13 @@ class FLAGS(Flag):
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n
     disabled on next load when the message is displayed to the player """
+
+    IsInDukesArchivesPrisonCell = 11705170
+    """ enabled when the player is inside the prison cell at the Duke's Archives that they
+    may not warp from\n
+    disabled when the player exits the prison cell\n
+    the event that controls this flag restarts itself, so the flag will continue to toggle as you 
+    leave and re-enter the region """
 
     HasWarpedToFirelinkShrine = 11810000
     """ enabled after the two cutscenes play that warp the player
