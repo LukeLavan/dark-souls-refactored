@@ -9,6 +9,7 @@ from soulstruct.darksouls1r.events import *
 
 from constants.COLLISIONS import COLLISIONS
 from constants.FLAGS import FLAGS
+from constants.GOODS import GOODS
 from constants.TEXT import TEXT
 
 
@@ -59,7 +60,7 @@ def Constructor():
 
     Event766()
 
-    Event710()
+    EnableLordVesselFlag()
 
     Event711(0, 2500, 711)
     Event711(1, 2501, 712)
@@ -526,12 +527,13 @@ def ControlWarping():
     Restart()
 
 
-def Event710():
-    """ 710: Event 710 """
+def EnableLordVesselFlag():
+    """ 710: enables a flag when the player obtains the Lordvessel """
     EndIfThisEventOn()
 
-    IfPlayerHasGood(0, 2510, including_box=False)
-    EnableFlag(710)
+    Await(HasGood(GOODS.Lordvessel))
+
+    EnableFlag(FLAGS.GotLordvessel)
 
 
 def Event711(_, arg_0_3: int, arg_4_7: int):
