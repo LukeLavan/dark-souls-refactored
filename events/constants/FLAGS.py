@@ -74,6 +74,10 @@ class FLAGS(Flag):
     have Lordvessel warping, bonfires will have two 'Warp' options\n
     TODO: check if every bonfire has this Abyss warping option (seems so) """
 
+    CanAttuneSpells = 719
+    """ enabled when the player obtains any spell (sorcery, pyromancy, or miracle)\n
+    when enabled, bonfires will show the 'Attune Magic' option"""
+
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n
     disabled on next load when the message is displayed to the player """

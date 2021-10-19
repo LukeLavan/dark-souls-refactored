@@ -179,7 +179,7 @@ def Constructor():
 
     Event690(0, 600, 4, 16, 1175)
 
-    Event719()
+    AllowSpellAttunement()
     Event720()
     Event721()
     Event722()
@@ -627,84 +627,88 @@ def PreventMultipleRepairBoxPurchases():
     EnableFlag(FLAGS.ObtainedRepairBoxAndre)
 
 
-def Event719():
-    """ 719: Event 719 """
+def AllowSpellAttunement():
+    """ 719: enables a flag when the player obtains any spell (sorcery, pyromancy, or miracle)
+    which allows for spell attunement at bonfires """
     EndIfThisEventOn()
 
-    Await(HasGood(3000) or
-          HasGood(3010) or
-          HasGood(3020) or
-          HasGood(3030) or
-          HasGood(3040) or
-          HasGood(3050) or
-          HasGood(3060) or
-          HasGood(3070) or
-          HasGood(3100) or
-          HasGood(3110) or
-          HasGood(3120) or
-          HasGood(3300) or
-          HasGood(3400) or
-          HasGood(3410) or
-          HasGood(3500) or
-          HasGood(3510) or
-          HasGood(3520) or
-          HasGood(3530) or
-          HasGood(3540) or
-          HasGood(3550) or
-          HasGood(3600) or
-          HasGood(3610) or
-          HasGood(3700) or
-          HasGood(4000) or
-          HasGood(4010) or
-          HasGood(4020) or
-          HasGood(4030) or
-          HasGood(4040) or
-          HasGood(4050) or
-          HasGood(4060) or
-          HasGood(4100) or
-          HasGood(4110) or
-          HasGood(4200) or
-          HasGood(4210) or
-          HasGood(4220) or
-          HasGood(4300) or
-          HasGood(4310) or
-          HasGood(4360) or
-          HasGood(4400) or
-          HasGood(4500) or
-          HasGood(4510) or
-          HasGood(4520) or
-          HasGood(5000) or
-          HasGood(5010) or
-          HasGood(5020) or
-          HasGood(5030) or
-          HasGood(5040) or
-          HasGood(5050) or
-          HasGood(5100) or
-          HasGood(5110) or
-          HasGood(5200) or
-          HasGood(5210) or
-          HasGood(5300) or
-          HasGood(5310) or
-          HasGood(5320) or
-          HasGood(5400) or
-          HasGood(5500) or
-          HasGood(5510) or
-          HasGood(5520) or
-          HasGood(5600) or
-          HasGood(5610) or
-          HasGood(5700) or
-          HasGood(5710) or
-          HasGood(5800) or
-          HasGood(5810) or
-          HasGood(5900) or
-          HasGood(5910) or
-          HasGood(3710) or
-          HasGood(3720) or
-          HasGood(3730) or
-          HasGood(3740) or
-          HasGood(4530))
+    Await(HasGood(GOODS.SorcerySoulArrow) or
+          HasGood(GOODS.SorceryGreatSoulArrow) or
+          HasGood(GOODS.SorceryHeavySoulArrow) or
+          HasGood(GOODS.SorceryGreatHeavySoulArrow) or
+          HasGood(GOODS.SorceryHomingSoulmass) or
+          HasGood(GOODS.SorceryHomingCrystalSoulmass) or
+          HasGood(GOODS.SorcerySoulSpear) or
+          HasGood(GOODS.SorceryCrystalSoulSpear) or
+          HasGood(GOODS.SorceryMagicWeapon) or
+          HasGood(GOODS.SorceryGreatMagicWeapon) or
+          HasGood(GOODS.SorceryCrystalMagicWeapon) or
+          HasGood(GOODS.SorceryMagicShield) or
+          HasGood(GOODS.SorceryStrongMagicShield) or
+          HasGood(GOODS.SorceryHiddenWeapon) or
+          HasGood(GOODS.SorceryHiddenBody) or
+          HasGood(GOODS.SorceryCastLight) or
+          HasGood(GOODS.SorceryHush) or
+          HasGood(GOODS.SorceryAuralDecoy) or
+          HasGood(GOODS.SorceryRepair) or
+          HasGood(GOODS.SorceryFallControl) or
+          HasGood(GOODS.SorceryChameleon) or
+          HasGood(GOODS.SorceryResistCurse) or
+          HasGood(GOODS.SorceryRemedy) or
+          HasGood(GOODS.SorceryWhiteDragonBreath) or
+          # note that the DLC sorceries are below
+          HasGood(GOODS.PyromancyFireball) or
+          HasGood(GOODS.PyromancyFireOrb) or
+          HasGood(GOODS.PyromancyGreatFireball) or
+          HasGood(GOODS.PyromancyFirestorm) or
+          HasGood(GOODS.PyromancyFireTempest) or
+          HasGood(GOODS.PyromancyFireSurge) or
+          HasGood(GOODS.PyromancyFireWhip) or
+          HasGood(GOODS.PyromancyCombustion) or
+          HasGood(GOODS.PyromancyGreatCombustion) or
+          HasGood(GOODS.PyromancyPoisonMist) or
+          HasGood(GOODS.PyromancyToxicMist) or
+          HasGood(GOODS.PyromancyAcidSurge) or
+          HasGood(GOODS.PyromancyIronFlesh) or
+          HasGood(GOODS.PyromancyFlashSweat) or
+          HasGood(GOODS.PyromancyUndeadRapport) or
+          HasGood(GOODS.PyromancyPowerWithin) or
+          HasGood(GOODS.PyromancyGreatChaosFireball) or
+          HasGood(GOODS.PyromancyChaosStorm) or
+          HasGood(GOODS.PyromancyChaosFireWhip) or
+          # note that the DLC pyromancy is below
+          HasGood(GOODS.MiracleHeal) or
+          HasGood(GOODS.MiracleGreatHeal) or
+          HasGood(GOODS.MiracleGreatHealExcerpt) or
+          HasGood(GOODS.MiracleSoothingSunlight) or
+          HasGood(GOODS.MiracleReplenishment) or
+          HasGood(GOODS.MiracleBountifulSunlight) or
+          HasGood(GOODS.MiracleGravelordSwordDance) or
+          HasGood(GOODS.MiracleGravelordGreatswordDance) or
+          HasGood(GOODS.MiracleEscapeDeath) or
+          HasGood(GOODS.MiracleHomeward) or
+          HasGood(GOODS.MiracleForce) or
+          HasGood(GOODS.MiracleWrathOfTheGods) or
+          HasGood(GOODS.MiracleEmitForce) or
+          HasGood(GOODS.MiracleSeekGuidance) or
+          HasGood(GOODS.MiracleLightningSpear) or
+          HasGood(GOODS.MiracleGreatLightningSpear) or
+          HasGood(GOODS.MiracleSunlightSpear) or
+          HasGood(GOODS.MiracleMagicBarrier) or
+          HasGood(GOODS.MiracleGreatMagicBarrier) or
+          HasGood(GOODS.MiracleKarmicJustice) or
+          HasGood(5710) or  # note that this isn't a real good
+          HasGood(GOODS.MiracleTranquilWalkOfPeace) or
+          HasGood(GOODS.MiracleVowOfSilence) or
+          HasGood(GOODS.MiracleSunlightBlade) or
+          HasGood(GOODS.MiracleDarmoonBlade) or
+          HasGood(GOODS.SorceryDarkOrb) or
+          HasGood(GOODS.SorceryDarkBead) or
+          HasGood(GOODS.SorceryDarkFog) or
+          HasGood(GOODS.SorceryPursuers) or
+          HasGood(GOODS.PyromancyBlackFlame))
 
-    EnableFlag(719)
+    EnableFlag(FLAGS.CanAttuneSpells)
 
 
 def Event720():
