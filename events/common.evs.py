@@ -85,7 +85,7 @@ def Constructor():
     MonitorEstusFlaskUpgrades(
         6, GOODS.EstusFlaskPlus7Empty, GOODS.EstusFlaskPlus7Full)
 
-    Event819()
+    PreventMultipleRepairBoxPurchases()
 
     Event970(0, 2, 2500, 9020, 9030)
     Event970(1, 11010901, 0, 9000, 9030)
@@ -614,14 +614,17 @@ def MonitorEstusFlaskUpgrades(_, EstusFlaskEmptyGood: int, EstusFlaskFullGood: i
                         FLAGS.ObtainedEstusFlaskPlus7))
 
 
-def Event819():
-    """ 819: Event 819 """
+def PreventMultipleRepairBoxPurchases():
+    """ 819: disallows buying repair boxes from multiple vendors """
     EndIfThisEventOn()
 
-    Await(FlagEnabled(11017040) or FlagEnabled(11017170))
+    # these flags are enabled when the item is bought from the merchant
+    Await(FlagEnabled(FLAGS.ObtainedRepairBoxUndeadMerchant)
+          or FlagEnabled(FLAGS.ObtainedRepairBoxAndre))
 
-    EnableFlag(11017040)
-    EnableFlag(11017170)
+    # if the flag assigned to an item is already enabled, the item won't appear to buy at all
+    EnableFlag(FLAGS.ObtainedRepairBoxUndeadMerchant)
+    EnableFlag(FLAGS.ObtainedRepairBoxAndre)
 
 
 def Event719():

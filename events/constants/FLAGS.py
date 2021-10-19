@@ -96,6 +96,14 @@ class FLAGS(Flag):
     GotMiracleGreatLightningSpear = 11010595
     """ enabled when the player gets the Great Lightning Spear miracle """
 
+    ObtainedRepairBoxUndeadMerchant = 11017040
+    """ enabled when the player buys the repair box from the male undead merchant\n
+    also enabled when the repair box is bought from Andre via an event (819 from common) """
+
+    ObtainedRepairBoxAndre = 11017170
+    """ enabled when the player buys the repair box from Andre\n
+    also enabled when the repair box is bought from the male undead merchant via an event (819 from common) """
+
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
     may not warp from\n
