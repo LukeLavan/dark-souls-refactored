@@ -70,13 +70,20 @@ def Constructor():
     ControlGwynSoulForSunlightSpearTrade()
     MonitorEstusFlaskObtained()
 
-    Event8131(0, 202, 203)
-    Event8131(1, 204, 205)
-    Event8131(2, 206, 207)
-    Event8131(3, 208, 209)
-    Event8131(4, 210, 211)
-    Event8131(5, 212, 213)
-    Event8131(6, 214, 215)
+    MonitorEstusFlaskUpgrades(
+        0, GOODS.EstusFlaskPlus1Empty, GOODS.EstusFlaskPlus1Full)
+    MonitorEstusFlaskUpgrades(
+        1, GOODS.EstusFlaskPlus2Empty, GOODS.EstusFlaskPlus2Full)
+    MonitorEstusFlaskUpgrades(
+        2, GOODS.EstusFlaskPlus3Empty, GOODS.EstusFlaskPlus3Full)
+    MonitorEstusFlaskUpgrades(
+        3, GOODS.EstusFlaskPlus4Empty, GOODS.EstusFlaskPlus4Full)
+    MonitorEstusFlaskUpgrades(
+        4, GOODS.EstusFlaskPlus5Empty, GOODS.EstusFlaskPlus5Full)
+    MonitorEstusFlaskUpgrades(
+        5, GOODS.EstusFlaskPlus6Empty, GOODS.EstusFlaskPlus6Full)
+    MonitorEstusFlaskUpgrades(
+        6, GOODS.EstusFlaskPlus7Empty, GOODS.EstusFlaskPlus7Full)
 
     Event819()
 
@@ -574,26 +581,37 @@ def MonitorEstusFlaskObtained():
     EnableFlag(FLAGS.ObtainedEstusFlask2)
 
 
-def Event8131(_, arg_0_3: int, arg_4_7: int):
-    """ 8131: Event 8131 """
+def MonitorEstusFlaskUpgrades(_, EstusFlaskEmptyGood: int, EstusFlaskFullGood: int):
+    """ 8131: enables relevant flags when player obtains upgraded estus flask """
     EndIfThisEventSlotOn()
 
-    Await(HasGood(arg_0_3) or HasGood(arg_4_7))
+    Await(HasGood(EstusFlaskEmptyGood) or HasGood(EstusFlaskFullGood))
 
-    if arg_0_3 == 202:
-        EnableFlag(8131)
-    if arg_0_3 == 204:
-        EnableFlagRange((8131, 8132))
-    if arg_0_3 == 206:
-        EnableFlagRange((8131, 8133))
-    if arg_0_3 == 208:
-        EnableFlagRange((8131, 8134))
-    if arg_0_3 == 210:
-        EnableFlagRange((8131, 8135))
-    if arg_0_3 == 212:
-        EnableFlagRange((8131, 8136))
-    if arg_0_3 == 214:
-        EnableFlagRange((8131, 8137))
+    # when the player obtains some upgraded estus flask, enable all of the flags
+    # corresponding to obtaining all of the upgraded flasks that should have came before it
+
+    # this prevents one of the flags from being skipped if the player somehow obtained
+    # estus flask upgrades out of order
+    if EstusFlaskEmptyGood == GOODS.EstusFlaskPlus1Empty:
+        EnableFlag(FLAGS.ObtainedEstusFlaskPlus1)
+    if EstusFlaskEmptyGood == GOODS.EstusFlaskPlus2Empty:
+        EnableFlagRange((FLAGS.ObtainedEstusFlaskPlus1,
+                        FLAGS.ObtainedEstusFlaskPlus2))
+    if EstusFlaskEmptyGood == GOODS.EstusFlaskPlus3Empty:
+        EnableFlagRange((FLAGS.ObtainedEstusFlaskPlus1,
+                        FLAGS.ObtainedEstusFlaskPlus3))
+    if EstusFlaskEmptyGood == GOODS.EstusFlaskPlus4Empty:
+        EnableFlagRange((FLAGS.ObtainedEstusFlaskPlus1,
+                        FLAGS.ObtainedEstusFlaskPlus4))
+    if EstusFlaskEmptyGood == GOODS.EstusFlaskPlus5Empty:
+        EnableFlagRange((FLAGS.ObtainedEstusFlaskPlus1,
+                        FLAGS.ObtainedEstusFlaskPlus5))
+    if EstusFlaskEmptyGood == GOODS.EstusFlaskPlus6Empty:
+        EnableFlagRange((FLAGS.ObtainedEstusFlaskPlus1,
+                        FLAGS.ObtainedEstusFlaskPlus6))
+    if EstusFlaskEmptyGood == GOODS.EstusFlaskPlus7Empty:
+        EnableFlagRange((FLAGS.ObtainedEstusFlaskPlus1,
+                        FLAGS.ObtainedEstusFlaskPlus7))
 
 
 def Event819():

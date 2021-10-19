@@ -78,6 +78,21 @@ class FLAGS(Flag):
     """ enabled when the player gets taken by the abyss, \n
     disabled on next load when the message is displayed to the player """
 
+    ObtainedEstusFlaskPlus1 = 8131
+    """ enabled when the player obtains the Estus Flask +1 (full or empty) """
+    ObtainedEstusFlaskPlus2 = 8132
+    """ enabled when the player obtains the Estus Flask +2 (full or empty) """
+    ObtainedEstusFlaskPlus3 = 8133
+    """ enabled when the player obtains the Estus Flask +3 (full or empty) """
+    ObtainedEstusFlaskPlus4 = 8134
+    """ enabled when the player obtains the Estus Flask +4 (full or empty) """
+    ObtainedEstuSFlaskPlus5 = 8135
+    """ enabled when the player obtains the Estus Flask +5 (full or empty) """
+    ObtainedEstusFlaskPlus6 = 8136
+    """ enabled when the player obtains the Estus Flask +6 (full or empty) """
+    ObtainedEstusFlaskPlus7 = 8137
+    """ enabled when the player obtains the Estus Flask +7 (full or empty) """
+
     GotMiracleGreatLightningSpear = 11010595
     """ enabled when the player gets the Great Lightning Spear miracle """
 
