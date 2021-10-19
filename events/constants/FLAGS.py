@@ -116,9 +116,10 @@ class FLAGS(Flag):
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
     may not warp from\n
-    disabled when the player exits the prison cell\n
+    disabled when the player exits the prison cell (or gets far enough away from the bonfire) \n
     the event that controls this flag restarts itself, so the flag will continue to toggle as you 
-    leave and re-enter the region """
+    leave and re-enter the region\n
+    this flag is a temporary 5XXX flag, so it resets on every map load """
 
     HasWarpedToFirelinkShrine = 11810000
     """ enabled after the two cutscenes play that warp the player
