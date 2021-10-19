@@ -180,7 +180,8 @@ def Constructor():
     Event690(0, 600, 4, 16, 1175)
 
     AllowSpellAttunement()
-    Event720()
+
+    MonitorLaurentiusIsInterestedInSpectacularPyromancy()
     Event721()
     Event722()
     Event723()
@@ -711,20 +712,21 @@ def AllowSpellAttunement():
     EnableFlag(FLAGS.CanAttuneSpells)
 
 
-def Event720():
-    """ 720: Event 720 """
+def MonitorLaurentiusIsInterestedInSpectacularPyromancy():
+    """ 720: enables a flag that will make Laurentius ask about a 'spectacular' pyromancy
+    when the player obtains one """
     EndIfThisEventOn()
 
-    Await(HasGood(4020) or
-          HasGood(4030) or
-          HasGood(4040) or
-          HasGood(4060) or
-          HasGood(4110) or
-          HasGood(4500) or
-          HasGood(4510) or
-          HasGood(4520))
+    Await(HasGood(GOODS.PyromancyGreatFireball) or
+          HasGood(GOODS.PyromancyFirestorm) or
+          HasGood(GOODS.PyromancyFireTempest) or
+          HasGood(GOODS.PyromancyFireWhip) or
+          HasGood(GOODS.PyromancyGreatCombustion) or
+          HasGood(GOODS.PyromancyGreatChaosFireball) or
+          HasGood(GOODS.PyromancyChaosStorm) or
+          HasGood(GOODS.PyromancyChaosFireWhip))
 
-    EnableFlag(11020102)
+    EnableFlag(FLAGS.LaurentiusInterestedInSpectacularPyromancy)
 
 
 def Event730():

@@ -108,6 +108,11 @@ class FLAGS(Flag):
     """ enabled when the player buys the repair box from Andre\n
     also enabled when the repair box is bought from the male undead merchant via an event (819 from common) """
 
+    LaurentiusInterestedInSpectacularPyromancy = 11020102
+    """ enabled when the player has a pyromancy that Laurentius will find spectacular and will ask about\n
+    more specifically, those pyromancies are: Great Fireball, Firestorm, Fire Tempest, Fire Whip,
+    Great Combustion, Great Chaos Fireball, Chaos Storm, and Chaos Fire Whip """
+
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
     may not warp from\n
