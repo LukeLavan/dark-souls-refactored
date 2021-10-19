@@ -63,6 +63,9 @@ class FLAGS(Flag):
     specifically, it's disabled when the player no longer has Gwyn's soul, if the player\n
     has the sunlight spear miracle already, or if the player is no longer in the covenant """
 
+    ObtainedEstusFlask2 = 716
+    """ enabled whenever ObtainedEstusFlask (50000082) is enabled """
+
     StandingInAbyssWithoutLordvessel = 717
     """ enabled when the player is standing in the abyss and hasn't obtained the Lordvessel\n
     more specifically, the player needs to be in the New Londo map and standing on the collision 
@@ -92,3 +95,7 @@ class FLAGS(Flag):
     HasOfferedAllLordSouls = 11800210
     """ enabled after all four lord souls have been offered to the lordvessel
     and the door to the kin has been opened """
+
+    EstusFlaskObtained = 50000082
+    """ enabled when the item lot that awards the Estus Flask is rolled\n
+    also enabled on loading the Asylum for the first time in NG+ and above """

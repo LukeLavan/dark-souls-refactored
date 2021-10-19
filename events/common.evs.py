@@ -68,7 +68,7 @@ def Constructor():
     EnableFlagWhenHasGood(3, 2504, 714)
 
     ControlGwynSoulForSunlightSpearTrade()
-    Event716()
+    MonitorEstusFlaskObtained()
 
     Event8131(0, 202, 203)
     Event8131(1, 204, 205)
@@ -566,12 +566,12 @@ def ControlGwynSoulForSunlightSpearTrade():
     Restart()
 
 
-def Event716():
-    """ 716: Event 716 """
+def MonitorEstusFlaskObtained():
+    """ 716: Whenever EstusFlaskObtained is enabled, enable another (redundant) EstusFlaskObtained flag """
     EndIfThisEventOn()
 
-    Await(FlagEnabled(50000082))
-    EnableFlag(716)
+    Await(FlagEnabled(FLAGS.EstusFlaskObtained))
+    EnableFlag(FLAGS.ObtainedEstusFlask2)
 
 
 def Event8131(_, arg_0_3: int, arg_4_7: int):
