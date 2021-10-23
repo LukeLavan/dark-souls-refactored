@@ -3,6 +3,26 @@ from soulstruct.game_types import Flag
 
 class FLAGS(Flag):
 
+    ObtainedWeaponsmithBox = 250
+    """ enabled when the player obtains a Weaponsmith Box\n
+    used to determine if bonfires should show the 'Reinforce Weapon' option """
+
+    ObtainedArmorsmithBox = 251
+    """ enabled when the player obtains an Armorsmith Box\n
+    used to determine if bonfires should show the 'Reinforce Armor' option """
+
+    ObtainedRepairbox = 252
+    """ enabled when the player obtains a Repairbox\n
+    used to determine if bonfires should show the 'Repair Equipment' option """
+
+    ObtainedRiteOfKindling = 257
+    """ enabled when the player obtains the Rite of Kindling\n
+    used to determine if bonfires should allow kindling beyond the normal limit """
+
+    ObtainedBottomlessBox = 258
+    """ enabled when the player obtains the Bottomless Box\n
+    used to determine if bonfires should show the 'Access Bottomless Box' option """
+
     CanLearnShrug = 280
     """ enabled by default, disabled when Petrus teaches Shrug """
 

@@ -23,6 +23,12 @@ class GOODS(GoodParam):
     GwynSoul = 702
     Lordvessel = 2510
 
+    WeaponSmithbox = 2600
+    ArmorSmithbox = 2601
+    Repairbox = 2602
+    RiteOfKindling = 2607
+    BottomlessBox = 2608
+
     SorcerySoulArrow = 3000
     SorceryGreatSoulArrow = 3010
     SorceryHeavySoulArrow = 3020

@@ -62,10 +62,10 @@ def Constructor():
 
     EnableLordVesselFlag()
 
-    EnableFlagWhenHasGood(0, 2500, 711)
-    EnableFlagWhenHasGood(1, 2501, 712)
-    EnableFlagWhenHasGood(2, 2502, 713)
-    EnableFlagWhenHasGood(3, 2504, 714)
+    EnableFlagWhenHasGoodLordSouls(0, 2500, 711)
+    EnableFlagWhenHasGoodLordSouls(1, 2501, 712)
+    EnableFlagWhenHasGoodLordSouls(2, 2502, 713)
+    EnableFlagWhenHasGoodLordSouls(3, 2504, 714)
 
     ControlGwynSoulForSunlightSpearTrade()
     MonitorEstusFlaskObtained()
@@ -115,16 +115,25 @@ def Constructor():
     Event970(25, 17, 2700, 9040, 0)
     Event970(26, 11210004, 2710, 0, 0)
 
-    Event250(0, 2600, 250)
-    Event250(1, 2601, 251)
-    Event250(2, 2602, 252)
-    Event250(3, 2603, 253)
-    Event250(4, 2604, 254)
-    Event250(5, 2605, 255)
-    Event250(6, 2606, 256)
-    Event250(7, 2607, 257)
-    Event250(8, 2608, 258)
-    Event250(9, 2609, 259)
+    EnableFlagWhenHasGoodBonfire(0, GOODS.WeaponSmithbox,
+                                 FLAGS.ObtainedWeaponsmithBox)
+    EnableFlagWhenHasGoodBonfire(
+        1, GOODS.ArmorSmithbox, FLAGS.ObtainedArmorsmithBox)
+    EnableFlagWhenHasGoodBonfire(2, GOODS.Repairbox, FLAGS.ObtainedRepairbox)
+    # unused - from the Japanese name, 2603 would be an item that allows spell attunement
+    EnableFlagWhenHasGoodBonfire(3, 2603, 253)
+    # unused - from the Japanese name, 2604 would be an item that allows selling items
+    EnableFlagWhenHasGoodBonfire(4, 2604, 254)
+    # unused - from the Japanese name, 2605 would be an item that allows warping
+    EnableFlagWhenHasGoodBonfire(5, 2605, 255)
+    # unused - from the Japanese name, 2606 would be an item that allows leveling up
+    EnableFlagWhenHasGoodBonfire(6, 2606, 256)
+    EnableFlagWhenHasGoodBonfire(7, GOODS.RiteOfKindling,
+                                 FLAGS.ObtainedRiteOfKindling)
+    EnableFlagWhenHasGoodBonfire(
+        8, GOODS.BottomlessBox, FLAGS.ObtainedBottomlessBox)
+    # unused - from the Japanese name, 2609 would be an item that shows a "spare" or "preliminary" menu ?
+    EnableFlagWhenHasGoodBonfire(9, 2609, 259)
 
     Event350(0, 350, 800)
     Event350(1, 351, 801)
@@ -544,8 +553,9 @@ def EnableLordVesselFlag():
     EnableFlag(FLAGS.GotLordvessel)
 
 
-def EnableFlagWhenHasGood(_, good: int, flag: int):
-    """ 711: enables a flag when the player obtains a good (used for lord soulss) """
+def EnableFlagWhenHasGoodLordSouls(_, good: int, flag: int):
+    """ 711: enables a flag when the player obtains a good\n
+    functionally identical to 250, but this one is used specifically for lord souls """
     EndIfThisEventSlotOn()
 
     Await(HasGood(good))
@@ -751,13 +761,14 @@ def Event731():
     Restart()
 
 
-def Event250(_, arg_0_3: int, arg_4_7: int):
-    """ 250: Event 250 """
+def EnableFlagWhenHasGoodBonfire(_, good: int, flag: int):
+    """ 250: enables the flag when the player obtains a good\n
+    functionally identical to 711, but this one is used specifically for items that enable bonfire menus (like Repairbox) """
     EndIfThisEventSlotOn()
 
-    Await(HasGood(arg_0_3))
+    Await(HasGood(good))
 
-    EnableFlag(arg_4_7)
+    EnableFlag(flag)
 
 
 def Event350(_, arg_0_3: int, arg_4_7: int):
