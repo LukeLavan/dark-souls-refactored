@@ -110,7 +110,7 @@ class FLAGS(Flag):
     """ enabled when the player obtains the Estus Flask +3 (full or empty) """
     ObtainedEstusFlaskPlus4 = 8134
     """ enabled when the player obtains the Estus Flask +4 (full or empty) """
-    ObtainedEstuSFlaskPlus5 = 8135
+    ObtainedEstusFlaskPlus5 = 8135
     """ enabled when the player obtains the Estus Flask +5 (full or empty) """
     ObtainedEstusFlaskPlus6 = 8136
     """ enabled when the player obtains the Estus Flask +6 (full or empty) """
