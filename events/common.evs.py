@@ -148,20 +148,20 @@ def Constructor():
     RemoveGoodIfFlagEnabled(12, FLAGS.HasGivenLargeFlameEmber, GOODS.LargeFlameEmber)
     RemoveGoodIfFlagEnabled(13, FLAGS.HasGivenChaosFlameEmber, GOODS.ChaosFlameEmber)
 
-    Event780(0, 1000, 780)
-    Event780(1, 1010, 781)
-    Event780(2, 1020, 782)
-    Event780(3, 1030, 783)
-    Event780(4, 1040, 784)
-    Event780(5, 1050, 785)
-    Event780(6, 1060, 786)
-    Event780(7, 1070, 787)
-    Event780(8, 1080, 788)
-    Event780(9, 1090, 789)
-    Event780(10, 1100, 790)
-    Event780(11, 1110, 791)
-    Event780(12, 1120, 792)
-    Event780(13, 1130, 793)
+    MonitorHasGood(0, GOODS.TitaniteShard, FLAGS.HasTitaniteShard)
+    MonitorHasGood(1, GOODS.LargeTitaniteShard, FLAGS.HasLargeTitaniteShard)
+    MonitorHasGood(2, GOODS.GreenTitaniteShard, FLAGS.HasGreenTitaniteShard)
+    MonitorHasGood(3, GOODS.TitaniteChunk, FLAGS.HasTitaniteChunk)
+    MonitorHasGood(4, GOODS.BlueTitaniteChunk, FLAGS.HasBlueTitaniteChunk)
+    MonitorHasGood(5, GOODS.WhiteTitaniteChunk, FLAGS.HasWhiteTitaniteChunk)
+    MonitorHasGood(6, GOODS.RedTitaniteChunk, FLAGS.HasRedTitaniteChunk)
+    MonitorHasGood(7, GOODS.TitaniteSlab, FLAGS.HasTitaniteSlab)
+    MonitorHasGood(8, GOODS.BlueTitaniteSlab, FLAGS.HasBlueTitaniteSlab)
+    MonitorHasGood(9, GOODS.WhiteTitaniteSlab, FLAGS.HasWhiteTitaniteSlab)
+    MonitorHasGood(10, GOODS.RedTitaniteSlab, FLAGS.HasRedTitaniteSlab)
+    MonitorHasGood(11, GOODS.DragonScale, FLAGS.HasDragonScale)
+    MonitorHasGood(12, GOODS.DemonTitanite, FLAGS.HasDemonTitanite)
+    MonitorHasGood(13, GOODS.TwinklingTitanite, FLAGS.HasTwinklingTitanite)
 
     Event870(0, 0, 850)
     Event870(1, 1, 851)
@@ -785,15 +785,16 @@ def RemoveGoodIfFlagEnabled(_, flag: int, good: int):
     RemoveGoodFromPlayer(good, quantity=1)
 
 
-def Event780(_, arg_0_3: int, arg_4_7: int):
-    """ 780: Event 780 """
-    DisableFlag(arg_4_7)
+def MonitorHasGood(_, good: int, flag: int):
+    """ 780: keeps a flag enabled if the player has at least one of a good and keeps the flag disabled if they don't have any\n
+    used exclusively for monitoring all of the upgrade materials for the option to feed them to Frampt (to break down) """
+    DisableFlag(flag)
 
-    Await(HasGood(arg_0_3))
+    Await(HasGood(good))
 
-    EnableFlag(arg_4_7)
+    EnableFlag(flag)
 
-    Await(not HasGood(arg_0_3))
+    Await(not HasGood(good))
 
     Restart()
 

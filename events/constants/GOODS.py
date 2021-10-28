@@ -33,6 +33,21 @@ class GOODS(GoodParam):
     LargeFlameEmber = 812
     ChaosFlameEmber = 813
 
+    TitaniteShard = 1000
+    LargeTitaniteShard = 1010
+    GreenTitaniteShard = 1020
+    TitaniteChunk = 1030
+    BlueTitaniteChunk = 1040
+    WhiteTitaniteChunk = 1050
+    RedTitaniteChunk = 1060
+    TitaniteSlab = 1070
+    BlueTitaniteSlab = 1080
+    WhiteTitaniteSlab = 1090
+    RedTitaniteSlab = 1100
+    DragonScale = 1110
+    DemonTitanite = 1120
+    TwinklingTitanite = 1130
+
     Lordvessel = 2510
 
     WeaponSmithbox = 2600

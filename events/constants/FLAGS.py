@@ -120,6 +120,49 @@ class FLAGS(Flag):
     """ enabled when the player obtains any spell (sorcery, pyromancy, or miracle)\n
     when enabled, bonfires will show the 'Attune Magic' option"""
 
+    HasTitaniteShard = 780
+    """ enabled when the player has at least one titanite shard; disabled otherwise\n
+    not used for anything """
+    HasLargeTitaniteShard = 781
+    """ enabled when the player has at least one large titanite shard; disabled otherwise\n
+    used to determine if Frampt can break down a large titanite shard """
+    HasGreenTitaniteShard = 782
+    """ enabled when the player has at least one green titanite shard; disabled otherwise\n
+    used to determine if Frampt can break down a green titanite shard """
+    HasTitaniteChunk = 783
+    """ enabled when the player has at least one titanite chunk; disabled otherwise\n
+    used to determine if Frampt can break down a titanite chunk """
+    HasBlueTitaniteChunk = 784
+    """ enabled when the player has at least one blue titanite chunk; disabled otherwise\n
+    used to determine if Frampt can break down a blue titanite chunk """
+    HasWhiteTitaniteChunk = 785
+    """ enabled when the player has at least one white titanite chunk; disabled otherwise\n
+    used to determine if Frampt can break down a white titanite chunk """
+    HasRedTitaniteChunk = 786
+    """ enabled when the player has at least one red titanite chunk; disabled otherwise\n
+    used to determine if Frampt can break down a red titanite chunk """
+    HasTitaniteSlab = 787
+    """ enabled when the player has at least one titanite slab; disabled otherwise\n
+    used to determine if Frampt can break down a titanite slab """
+    HasBlueTitaniteSlab = 788
+    """ enabled when the player has at least one blue titanite slab; disabled otherwise\n
+    used to determine if Frampt can break down a blue titanite slab """
+    HasWhiteTitaniteSlab = 789
+    """ enabled when the player has at least one white titanite slab; disabled otherwise\n
+    used to determine if Frampt can break down a white titanite slab """
+    HasRedTitaniteSlab = 790
+    """ enabled when the player has at least one red titanite slab; disabled otherwise\n
+    used to determine if Frampt can break down a red titanite slab """
+    HasDragonScale = 791
+    """ enabled when the player has at least one dragon scale; disabled otherwise\n
+    not used for anything """
+    HasDemonTitanite = 792
+    """ enabled when the player has at least one demon titanite; disabled otherwise\n
+    not used for anything """
+    HasTwinklingTitanite = 793
+    """ enabled when the player has at least one twinkling titanite; disabled otherwise\n
+    not used for anything """
+
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n
     disabled on next load when the message is displayed to the player """
