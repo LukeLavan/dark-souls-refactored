@@ -21,6 +21,18 @@ class GOODS(GoodParam):
     EstusFlaskPlus7Full = 215
 
     GwynSoul = 702
+
+    LargeEmber = 800
+    VeryLargeEmber = 801
+    CrystalEmber = 802
+    LargeMagicEmber = 806
+    EnchantedEmber = 807
+    DivineEmber = 808
+    LargeDivineEmber = 809
+    DarkEmber = 810
+    LargeFlameEmber = 812
+    ChaosFlameEmber = 813
+
     Lordvessel = 2510
 
     WeaponSmithbox = 2600

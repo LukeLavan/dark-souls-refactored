@@ -135,18 +135,18 @@ def Constructor():
     # unused - from the Japanese name, 2609 would be an item that shows a "spare" or "preliminary" menu ?
     EnableFlagWhenHasGoodBonfire(9, 2609, 259)
 
-    Event350(0, 350, 800)
-    Event350(1, 351, 801)
-    Event350(2, 352, 802)
+    RemoveGoodIfFlagEnabled(0, FLAGS.HasGivenLargeEmber, GOODS.LargeEmber)
+    RemoveGoodIfFlagEnabled(1, FLAGS.HasGivenVeryLargeEmber, GOODS.VeryLargeEmber)
+    RemoveGoodIfFlagEnabled(2, FLAGS.HasGivenCrystalEmber, GOODS.CrystalEmber)
     # slots 3, 4, and 5 not used
-    Event350(6, 356, 806)
-    Event350(7, 357, 807)
-    Event350(8, 358, 808)
-    Event350(9, 359, 809)
-    Event350(10, 360, 810)
+    RemoveGoodIfFlagEnabled(6, FLAGS.HasGivenLargeMagicEmber, GOODS.LargeMagicEmber)
+    RemoveGoodIfFlagEnabled(7, FLAGS.HasGivenEnchantedEmber, GOODS.EnchantedEmber)
+    RemoveGoodIfFlagEnabled(8, FLAGS.HasGivenDivineEmber, GOODS.DivineEmber)
+    RemoveGoodIfFlagEnabled(9, FLAGS.HasGivenLargeDivineEmber, GOODS.LargeDivineEmber)
+    RemoveGoodIfFlagEnabled(10, FLAGS.HasGivenDarkEmber, GOODS.DarkEmber)
     # slot 11 unused
-    Event350(12, 362, 812)
-    Event350(13, 363, 813)
+    RemoveGoodIfFlagEnabled(12, FLAGS.HasGivenLargeFlameEmber, GOODS.LargeFlameEmber)
+    RemoveGoodIfFlagEnabled(13, FLAGS.HasGivenChaosFlameEmber, GOODS.ChaosFlameEmber)
 
     Event780(0, 1000, 780)
     Event780(1, 1010, 781)
@@ -771,14 +771,18 @@ def EnableFlagWhenHasGoodBonfire(_, good: int, flag: int):
     EnableFlag(flag)
 
 
-def Event350(_, arg_0_3: int, arg_4_7: int):
-    """ 350: Event 350 """
-    if THIS_SLOT_FLAG and not HasGood(arg_4_7):
+def RemoveGoodIfFlagEnabled(_, flag: int, good: int):
+    """ 350: Removes one of a good when a flag is enabled.\n
+    Used exclusively for removing embers when the player gives them to blacksmiths.\n
+    For some reason, the passed in flag is always also the event slot flag.\n
+    if the flag stays on, then this event will try to keep removing one of the passed in good
+    every load """
+    if THIS_SLOT_FLAG and not HasGood(good):
         End()
 
-    AwaitFlagOn(arg_0_3)
+    AwaitFlagOn(flag)
 
-    RemoveGoodFromPlayer(arg_4_7, quantity=1)
+    RemoveGoodFromPlayer(good, quantity=1)
 
 
 def Event780(_, arg_0_3: int, arg_4_7: int):

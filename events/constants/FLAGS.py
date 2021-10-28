@@ -57,6 +57,28 @@ class FLAGS(Flag):
     # flags 289 and 290 are always on and both unused
     # they're enabled in the same event that handles the gesture flags above
 
+    HasGivenLargeEmber = 350
+    """ enabled when the user selects 'YES' when Andre asks for the Large Ember """
+    HasGivenVeryLargeEmber = 351
+    """ enabled when the user selects 'YES' when Andre asks for the Very Large Ember """
+    HasGivenCrystalEmber = 352
+    """ enabled when the user selects 'YES' when the Giant Blacksmith asks for the Crystal Ember """
+    HasGivenLargeMagicEmber = 356
+    """ enabled when the user selects 'YES' when Rickert asks for the Large Magic Ember """
+    HasGivenEnchantedEmber = 357
+    """ enabled when the user selects 'YES' when Rickert asks for the Enchanted Ember """
+    HasGivenDivineEmber = 358
+    """ enabled when the user selects 'YES' when Andre asks for the Divine Ember """
+    HasGivenLargeDivineEmber = 359
+    """ enabled when the user selects 'YES' when Andre asks for the Large Divine Ember """
+    HasGivenDarkEmber = 360
+    """ enabled when the user selects 'YES' when Andre asks for the Dark Ember """
+    HasGivenLargeFlameEmber = 362
+    """ enabled when the user selects 'YES' when Vamos asks for the Large Flame Ember """
+    HasGivenChaosFlameEmber = 363
+    """ enabled when the user selects 'YES' when Vamos asks for the Chaos Flame Ember """
+
+
     CanOfferLordSouls = 702
     """ enabled when the player is in the Kiln map and hasn't yet offered all four lord souls\n
     for some reason, this flag is kept disabled when the player leaves the Kiln map\n
