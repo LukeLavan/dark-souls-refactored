@@ -163,16 +163,16 @@ def Constructor():
     MonitorHasGood(12, GOODS.DemonTitanite, FLAGS.HasDemonTitanite)
     MonitorHasGood(13, GOODS.TwinklingTitanite, FLAGS.HasTwinklingTitanite)
 
-    Event870(0, 0, 850)
-    Event870(1, 1, 851)
-    Event870(2, 2, 852)
-    Event870(3, 3, 853)
-    Event870(4, 4, 854)
-    Event870(5, 5, 855)
-    Event870(6, 6, 856)
-    Event870(7, 7, 857)
-    Event870(8, 8, 858)
-    Event870(9, 9, 859)
+    MonitorInCovenant(0, Covenant.NoCovenant, FLAGS.InNoCovenant)
+    MonitorInCovenant(1, Covenant.WayOfWhite, FLAGS.InWayOfWhiteCovenant)
+    MonitorInCovenant(2, Covenant.PrincessGuard, FLAGS.InPrincessGuardCovenant)
+    MonitorInCovenant(3, Covenant.WarriorOfSunlight, FLAGS.InWarriorOfSunlightCovenant)
+    MonitorInCovenant(4, Covenant.Darkwraith, FLAGS.InDarkwraithCovenant)
+    MonitorInCovenant(5, Covenant.PathOfTheDragon, FLAGS.InPathOfTheDragonCovenant)
+    MonitorInCovenant(6, Covenant.GravelordServant, FLAGS.InGravelordServantCovenant)
+    MonitorInCovenant(7, Covenant.ForestHunter, FLAGS.InForestHunterCovenant)
+    MonitorInCovenant(8, Covenant.DarkmoonBlade, FLAGS.InDarkmoonBladeCovenant)
+    MonitorInCovenant(9, Covenant.ChaosServant, FLAGS.InChaosServantCovenant)
 
     Event840(0, 840, 7905, 6370, -1)
     Event840(1, 841, 7905, 6072, -1)
@@ -799,17 +799,16 @@ def MonitorHasGood(_, good: int, flag: int):
     Restart()
 
 
-def Event870(_, arg_0_0: uchar, arg_4_7: int):
-    """ 870: Event 870 """
-    IfPlayerCovenant(1, arg_0_0)
+def MonitorInCovenant(_, covenant: uchar, flag: int):
+    """ 870: keeps a flag enabled if the player is in a covenant and keeps the flag disabled if they are not """
 
-    AwaitConditionTrue(1)
+    Await(PlayerInCovenant(covenant))
 
-    EnableFlag(arg_4_7)
+    EnableFlag(flag)
 
-    AwaitConditionFalse(1)
+    Await(not PlayerInCovenant(covenant))
 
-    DisableFlag(arg_4_7)
+    DisableFlag(flag)
     Restart()
 
 

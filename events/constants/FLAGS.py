@@ -163,6 +163,37 @@ class FLAGS(Flag):
     """ enabled when the player has at least one twinkling titanite; disabled otherwise\n
     not used for anything """
 
+    InNoCovenant = 850
+    """ enabled when the player is in no covenant; disabled otherwise\n
+    not used for anything """
+    InWayOfWhiteCovenant = 851
+    """ enabled when the player is in Way of White covenant; disabled otherwise\n
+    not used for anything """
+    InPrincessGuardCovenant = 852
+    """ enabled when the player is in Princess Guard covenant; disabled otherwise\n
+    not used for anything """
+    InWarriorOfSunlightCovenant = 853
+    """ enabled when the player is in Warrior of Sunlight covenant; disabled otherwise\n
+    used to determine if the player can interact with Altar of Sunlight, bypassing normal requirements """
+    InDarkwraithCovenant = 854
+    """ enabled when the player is in Darkwraith covenant; disabled otherwise\n
+    used to determine if the player may ask for covenant item from and offer humanity to Kaathe """
+    InPathOfTheDragonCovenant = 855
+    """ enabled when the player is in Path of the Dragon covenant; disabled otherwise\n
+    used to determine if the player may offer dragon scales to the stone dragon """
+    InGravelordServantCovenant = 856
+    """ enabled when the player is in Gravelord covenant; disabled otherwise\n
+    used to determine if the player may offer eyes of death to Nito """
+    InForestHunterCovenant = 857
+    """ enabled when the player is in Forest Hunter covenant; disabled otherwise\n
+    not used for anything """
+    InDarkmoonBladeCovenant = 858
+    """ enabled when the player is in Darkmoon Blade covenant; disabled otherwise\n
+    used to determine if the player may offer souvenirs of reprisal to Gwyndolin """
+    InChaosServantCovenant = 859
+    """ enabled when the player is in Chaos Servant covenant; disabled otherwise\n
+    used to determine if the player may offer humanity to the Fair Lady """
+
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n
     disabled on next load when the message is displayed to the player """
