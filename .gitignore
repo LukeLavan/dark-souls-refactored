@@ -1,2 +1,5 @@
 # symlink to soulstruct directory for intellisense
 soulstruct
+
+# compiled python bytecode
+*.pyc
