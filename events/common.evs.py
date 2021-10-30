@@ -21,9 +21,9 @@ def Constructor():
     DisableFlag(762)
     DisableFlag(765)
 
-    Event260(0, 11810000, 10010600, 0.0)
-    Event260(1, 257, 10010610, 0.0)
-    Event260(2, 710, 10010620, 0.0)
+    DisplayStatusOnFlagEnable(0, FLAGS.HasWarpedToFirelinkShrine, TEXT.InLordranLevelUpAndKindle, 0.0)
+    DisplayStatusOnFlagEnable(1, FLAGS.ObtainedRiteOfKindling, TEXT.RiteOfKindling, 0.0)
+    DisplayStatusOnFlagEnable(2, FLAGS.GotLordvessel, TEXT.Lordvessel, 0.0)
 
     Event761()
 
@@ -812,15 +812,20 @@ def MonitorInCovenant(_, covenant: uchar, flag: int):
     Restart()
 
 
-def Event260(_, arg_0_3: int, arg_4_7: int, arg_8_11: float):
-    """ 260: Event 260 """
-    EndIfFlagOn(arg_0_3)
+def DisplayStatusOnFlagEnable(_, flag: int, status: int, timeout: float):
+    """ 260: awaits for a flag to become enabled, and displays a status message when it does\n
+    if the flag is already enabled on load, doesn't display the status\n
+    accepts a timeout that adds a delay between when the flag is enabled and when the status is displayed,
+    but From always passes in 0.0 anyway\n
+    only displays the statuses if flag 9121 is off - effectively, only displays the statuses if
+    the player has never approached where the DLC portal appears. see FLAGS.PreventLordvesselRiteOfKindlingPopup """
+    EndIfFlagOn(flag)
 
-    AwaitFlagOn(arg_0_3)
+    AwaitFlagOn(flag)
 
-    if FlagDisabled(9121):
-        Wait(arg_8_11)
-        DisplayStatus(arg_4_7, pad_enabled=True)
+    if FlagDisabled(FLAGS.PreventLordvesselRiteOfKindlingPopup):
+        Wait(timeout)
+        DisplayStatus(status, pad_enabled=True)
 
 
 def Event970(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):

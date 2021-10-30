@@ -213,6 +213,18 @@ class FLAGS(Flag):
     ObtainedEstusFlaskPlus7 = 8137
     """ enabled when the player obtains the Estus Flask +7 (full or empty) """
 
+    PreventLordvesselRiteOfKindlingPopup = 9121
+    """ enabled when m12_01 (DLC) is loaded by approaching the spot in the basin where the portal appears\n
+    if enabled, three status messages will not appear:\n
+        - 'In Lordran, level up and kindle at bonfires' upon entering Firelink for the first time\n
+        - 'By the Rite of Kindling, you may now kindle beyond the normal limit' upon obtaining the Rite of Kindling\n
+        - 'By the power of the Lordvessel, you may now warp between bonfires' upon obtaining the Lordvessel\n
+    disabled if, on a subsequent load of the DLC map, any of the flags that control displaying
+    these statuses is enabled. however, this flag is immediately re-enabled anyway, so it effectively stays on permanently\n
+    interestingly, this means that approaching the spot where the portal is/will be prior to obtaining the
+    Lordvessel or Rite of Kindling will prevent those statuses from displaying as normal\n
+    TODO: why is this like this??? what's the point??? """
+
     GotMiracleGreatLightningSpear = 11010595
     """ enabled when the player gets the Great Lightning Spear miracle """
 
