@@ -3,6 +3,48 @@ from soulstruct.game_types import Flag
 
 class FLAGS(Flag):
 
+    KilledGapingDragon = 2
+    """ enabled when the gaping dragon boss dies """
+
+    KilledBellGargoyles = 3
+    """ enabled when both bell gargoyle bosses die """
+
+    KilledPriscilla = 4
+    """ enabled when priscilla dies """
+
+    KilledSif = 5
+    """ enabled when sif dies """
+
+    KilledPinwheel = 6
+    """ enabled when the pinwheel boss dies """
+
+    KilledNito = 7
+    """ enabled when Nito dies """
+
+    KilledQuelaag = 9
+    """ enabled when Quelaag dies """
+
+    KilledBedOfChaos = 10
+    """ enabled when bed of chaos dies """
+
+    KilledIronGolem = 11
+    """ enabled when iron golem dies """
+
+    KilledFourKings = 13
+    """ enabled when the four kings fight is over """
+
+    KilledSeath = 14
+    """ enabled when seath dies """
+
+    KilledGwyn = 15
+    """ enabled when gwyn dies """
+
+    KilledAsylumDemon = 16
+    """ enabled when asylum demon dies """
+
+    KilledManus = 17
+    """ enabled when manus dies """
+
     ObtainedWeaponsmithBox = 250
     """ enabled when the player obtains a Weaponsmith Box\n
     used to determine if bonfires should show the 'Reinforce Weapon' option """
@@ -228,6 +270,12 @@ class FLAGS(Flag):
     GotMiracleGreatLightningSpear = 11010595
     """ enabled when the player gets the Great Lightning Spear miracle """
 
+    KilledTaurusDemon = 11010901
+    """ enabled when the Taurus Demon boss dies """
+
+    KilledCapraDemon = 11010902
+    """ enabled when the Capra Demon boss dies """
+
     ObtainedRepairBoxUndeadMerchant = 11017040
     """ enabled when the player buys the repair box from the male undead merchant\n
     also enabled when the repair box is bought from Andre via an event (819 from common) """
@@ -241,6 +289,35 @@ class FLAGS(Flag):
     more specifically, those pyromancies are: Great Fireball, Firestorm, Fire Tempest, Fire Whip,
     Great Combustion, Great Chaos Fireball, Chaos Storm, and Chaos Fire Whip """
 
+    KilledMoonlightButterfly = 11200900
+    """ enabled when the moonlight butterfly boss dies """
+
+    KilledSanctuaryGuardian = 11210000
+    """ enabled when the sanctuary guardian boss dies """
+
+    KilledArtorias = 11210001
+    """ enabled when artorias dies """
+
+    KilledKalameet = 11210004
+    """ enabled when kalameet dies """
+
+    KilledDemonFiresage = 11410410
+    """ enabled when demon firesage dies """
+
+    KilledCeaselessDischarge = 11410900
+    """ enabled when ceaseless discharge dies """
+
+    KilledCentipedeDemon = 11410901
+    """ enabled when centipede demon dies """
+
+    KilledGwyndolin = 11510900
+    """ enabled when gwyndolin dies """
+
+    KilledGiantOrnstein = 11510902
+    """ enabled when Giant Ornstein dies """
+
+    KilledGiantSmough = 11510903
+
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
     may not warp from\n
@@ -249,14 +326,64 @@ class FLAGS(Flag):
     leave and re-enter the region\n
     this flag is a temporary 5XXX flag, so it resets on every map load """
 
-    HasWarpedToFirelinkShrine = 11810000
-    """ enabled after the two cutscenes play that warp the player
-    from the asylum to Firelink """
-
     HasOfferedAllLordSouls = 11800210
     """ enabled after all four lord souls have been offered to the lordvessel
     and the door to the kin has been opened """
 
-    EstusFlaskObtained = 50000082
+    HasWarpedToFirelinkShrine = 11810000
+    """ enabled after the two cutscenes play that warp the player
+    from the asylum to Firelink """
+
+    KilledStrayDemon = 11810900
+    """ enabled when stray demon dies """
+
+    ObtainedEstusFlask = 50000082
     """ enabled when the item lot that awards the Estus Flask is rolled\n
     also enabled on loading the Asylum for the first time in NG+ and above """
+
+    ObtainedBlighttownKey = 50001500
+    """ enabled when the blighttown key is awarded (after gaping dragon dies) """
+
+    ObtainedKeyToDepths = 50001510
+    """ enabled when the key to depths is awarded (after the capra demon boss dies) """
+
+    ObtainedPriscillaSoul = 50001520
+
+    ObtainedMoonlightButterflySoul = 50001530
+
+    ObtainedSifDrops = 50001540
+    """ enabled when the covenant of artorias is awarded;\n
+    enabled again when the soul of sif is awarded """
+
+    ObtainedRiteOfKindling2 = 50001550
+    """ enabled when the item lot that contains the rite of kindling is awarded """
+
+    ObtainedLordSoulNito = 50001560
+
+    ObtainedQuelaagSoul = 50001570
+
+    ObtainedLordSoulBedOfChaos = 50001580
+
+    ObtainedIronGolemSoul = 50001590
+
+    ObtainedGwyndolinSoul = 50001600
+
+    ObtainedOrnsteinSoul = 50001610
+
+    ObtainedSmoughSoul = 50001620
+
+    ObtainedLordSoulFourKings = 50001630
+
+    ObtainedLordSoulSeath = 50001640
+
+    ObtainedGwynSoul = 50001650
+
+    ObtainedBigPilgrimsKey = 50001660
+
+    ObtainedGuardianSoul = 50001680
+
+    ObtainedArtoriasSoul = 50001690
+
+    ObtainedManusSoul = 50001700
+
+    ObtainedCalamityRing = 50001710

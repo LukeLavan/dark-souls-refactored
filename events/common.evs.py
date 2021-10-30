@@ -10,6 +10,7 @@ from soulstruct.darksouls1r.events import *
 from constants.COLLISIONS import COLLISIONS
 from constants.FLAGS import FLAGS
 from constants.GOODS import GOODS
+from constants.ITEMLOTS import ITEMLOTS
 from constants.TEXT import TEXT
 
 
@@ -87,33 +88,36 @@ def Constructor():
 
     PreventMultipleRepairBoxPurchases()
 
-    Event970(0, 2, 2500, 9020, 9030)
-    Event970(1, 11010901, 0, 9000, 9030)
-    Event970(2, 11010902, 2510, 9000, 9030)
-    Event970(3, 3, 0, 9020, 0)
-    Event970(4, 4, 2520, 9020, 0)
-    Event970(5, 11200900, 2530, 9000, 0)
-    Event970(6, 5, 2540, 9000, 9030)
-    Event970(7, 6, 2550, 9000, 9030)
-    Event970(8, 7, 2560, 9000, 0)
-    Event970(9, 9, 2570, 9020, 0)
-    Event970(10, 11410900, 0, 9000, 9030)
-    Event970(11, 11410410, 0, 9000, 0)
-    Event970(12, 11410901, 0, 9000, 9030)
-    Event970(13, 10, 2580, 9000, 0)
-    Event970(14, 11, 2590, 9000, 0)
-    Event970(15, 11510900, 2600, 0, 0)
-    Event970(16, 11510902, 2610, 9000, 0)
-    Event970(17, 11510903, 2620, 9000, 0)
-    Event970(18, 13, 2630, 9010, 0)
-    Event970(19, 14, 2640, 9000, 0)
-    Event970(20, 15, 2650, 0, 0)
-    Event970(21, 16, 2660, 9000, 0)
-    Event970(22, 11810900, 0, 9000, 9030)
-    Event970(23, 11210000, 2680, 9000, 0)
-    Event970(24, 11210001, 2690, 0, 0)
-    Event970(25, 17, 2700, 9040, 0)
-    Event970(26, 11210004, 2710, 0, 0)
+    # the item lots passed in here don't need to be in any specific order, but From uses a specific pattern
+    #                             flag to wait for                  soul/ring drop                      humanity drop           homeward bone drop
+    AwardItemLotsOnFlagEnable(0,  FLAGS.KilledGapingDragon,         ITEMLOTS.GapingDragonBlighttownKey, ITEMLOTS.TwinHumanity,  ITEMLOTS.HomewardBone)
+    AwardItemLotsOnFlagEnable(1,  FLAGS.KilledTaurusDemon,          0,                                  ITEMLOTS.Humanity,      ITEMLOTS.HomewardBone)
+    AwardItemLotsOnFlagEnable(2,  FLAGS.KilledCapraDemon,           ITEMLOTS.CapraDemonKeyToDepths,     ITEMLOTS.Humanity,      ITEMLOTS.HomewardBone)
+    AwardItemLotsOnFlagEnable(3,  FLAGS.KilledBellGargoyles,        0,                                  ITEMLOTS.TwinHumanity,  0)
+    AwardItemLotsOnFlagEnable(4,  FLAGS.KilledPriscilla,            ITEMLOTS.PriscillaSoul,             ITEMLOTS.TwinHumanity,  0)
+    AwardItemLotsOnFlagEnable(5,  FLAGS.KilledMoonlightButterfly,   ITEMLOTS.MoonlightButterflySoul,    ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(6,  FLAGS.KilledSif,                  ITEMLOTS.SifCovenantOfArtorias,     ITEMLOTS.Humanity,      ITEMLOTS.HomewardBone)
+    # note the absence of the soul of sif item lot - because it is sequentially after the covenant of artorias item lot, both are awarded
+    AwardItemLotsOnFlagEnable(7,  FLAGS.KilledPinwheel,             ITEMLOTS.PinwheelRiteOfKindling,    ITEMLOTS.Humanity,      ITEMLOTS.HomewardBone)
+    AwardItemLotsOnFlagEnable(8,  FLAGS.KilledNito,                 ITEMLOTS.NitoSoul,                  ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(9,  FLAGS.KilledQuelaag,              ITEMLOTS.QuelaagSoul,               ITEMLOTS.TwinHumanity,  0)
+    AwardItemLotsOnFlagEnable(10, FLAGS.KilledCeaselessDischarge,   0,                                  ITEMLOTS.Humanity,      ITEMLOTS.HomewardBone)
+    AwardItemLotsOnFlagEnable(11, FLAGS.KilledDemonFiresage,        0,                                  ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(12, FLAGS.KilledCentipedeDemon,       0,                                  ITEMLOTS.Humanity,      ITEMLOTS.HomewardBone)
+    AwardItemLotsOnFlagEnable(13, FLAGS.KilledBedOfChaos,           ITEMLOTS.BedOfChaosSoul,            ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(14, FLAGS.KilledIronGolem,            ITEMLOTS.IronGolemSoul,             ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(15, FLAGS.KilledGwyndolin,            ITEMLOTS.GwyndolinSoul,             0,                      0)
+    AwardItemLotsOnFlagEnable(16, FLAGS.KilledGiantOrnstein,        ITEMLOTS.OrnsteinSoul,              ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(17, FLAGS.KilledGiantSmough,          ITEMLOTS.SmoughSoul,                ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(18, FLAGS.KilledFourKings,            ITEMLOTS.FourKingsSoul,             ITEMLOTS.Humanity4,     0)
+    AwardItemLotsOnFlagEnable(19, FLAGS.KilledSeath,                ITEMLOTS.SeathSoul,                 ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(20, FLAGS.KilledGwyn,                 ITEMLOTS.GwynSoul,                  0,                      0)
+    AwardItemLotsOnFlagEnable(21, FLAGS.KilledAsylumDemon,          ITEMLOTS.AsylumDemonBigPilgrimsKey, ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(22, FLAGS.KilledStrayDemon,           0,                                  ITEMLOTS.Humanity,      ITEMLOTS.HomewardBone)
+    AwardItemLotsOnFlagEnable(23, FLAGS.KilledSanctuaryGuardian,    ITEMLOTS.SanctuaryGuardianSoul,     ITEMLOTS.Humanity,      0)
+    AwardItemLotsOnFlagEnable(24, FLAGS.KilledArtorias,             ITEMLOTS.ArtoriasSoul,              0,                      0)
+    AwardItemLotsOnFlagEnable(25, FLAGS.KilledManus,                ITEMLOTS.ManusSoul,                 ITEMLOTS.Humanity10,    0)
+    AwardItemLotsOnFlagEnable(26, FLAGS.KilledKalameet,             ITEMLOTS.KalameetRing,              0,                      0)
 
     EnableFlagWhenHasGoodBonfire(0, GOODS.WeaponSmithbox,
                                  FLAGS.ObtainedWeaponsmithBox)
@@ -588,7 +592,7 @@ def MonitorEstusFlaskObtained():
     """ 716: Whenever EstusFlaskObtained is enabled, enable another (redundant) EstusFlaskObtained flag """
     EndIfThisEventOn()
 
-    Await(FlagEnabled(FLAGS.EstusFlaskObtained))
+    Await(FlagEnabled(FLAGS.ObtainedEstusFlask))
     EnableFlag(FLAGS.ObtainedEstusFlask2)
 
 
@@ -828,22 +832,24 @@ def DisplayStatusOnFlagEnable(_, flag: int, status: int, timeout: float):
         DisplayStatus(status, pad_enabled=True)
 
 
-def Event970(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
-    """ 970: Event 970 """
-    EndIfFlagOn(arg_0_3)
+def AwardItemLotsOnFlagEnable(_, flag: int, item_lot_1: int, item_lot_2: int, item_lot_3: int):
+    """ 970: when a flag becomes active, award the host up to three item lots\n
+    if the flag is already enabled on load, ends early and does not award anything\n
+    used for awarding boss drops """
+    EndIfFlagOn(flag)
 
-    AwaitFlagOn(arg_0_3)
+    AwaitFlagOn(flag)
 
-    if arg_4_7 != 0:
-        AwardItemLot(arg_4_7, host_only=True)
+    if item_lot_1 != 0:
+        AwardItemLot(item_lot_1, host_only=True)
 
     DisableNetworkSync()
     Wait(5.0)
 
-    if arg_8_11 != 0:
-        AwardItemLot(arg_8_11, host_only=True)
-    if arg_12_15 != 0:
-        AwardItemLot(arg_12_15, host_only=True)
+    if item_lot_2 != 0:
+        AwardItemLot(item_lot_2, host_only=True)
+    if item_lot_3 != 0:
+        AwardItemLot(item_lot_3, host_only=True)
 
 
 def Event911(_, award_allowed: int, item_lot: int, repeatable: uchar):

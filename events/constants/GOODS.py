@@ -48,6 +48,9 @@ class GOODS(GoodParam):
     DemonTitanite = 1120
     TwinklingTitanite = 1130
 
+    LordSoulNito = 2500
+    LordSoulBedOfChaos = 2501
+    LordSoulFourKings = 2502
     Lordvessel = 2510
 
     WeaponSmithbox = 2600
