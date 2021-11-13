@@ -134,7 +134,7 @@ class FLAGS(Flag):
     if the player selects the 'Warp' option from a bonfire dialog menu and this flag is disabled,
     the 'Cannot warp' message is displayed """
 
-    GotLordvessel = 710
+    ObtainedLordvessel = 710
     """ enabled when the player obtains the Lordvessel """
 
     CanOfferGwynSoul = 715
@@ -267,14 +267,39 @@ class FLAGS(Flag):
     Lordvessel or Rite of Kindling will prevent those statuses from displaying as normal\n
     TODO: why is this like this??? what's the point??? """
 
-    GotMiracleGreatLightningSpear = 11010595
-    """ enabled when the player gets the Great Lightning Spear miracle """
+    GiveCatCovenantRing = 10000160
+
+    GivePurgingStoneSiegmeyer = 11000591
+    """ when enabled, give the player a purging stone\n
+    ununused, seemingly intended for siegmeyer in the depths """
+
+    GiveWhiteSignSoapstone = 11010591
+    """ when enabled, give the player the white sign soapstone\n
+    enabled when talking to solaire and answering yes to both questions """
+    
+    GiveLightningSpear = 11010594
+    """ when enabled, give the player the lightning spear miracle\n
+    used by the sunlight altar when entering covenant\n
+    TODO: also used a lot in bonfires - investigate esp and return here """
+
+    GiveGreatLightningSpear = 11010595
+    """ when enabled, give the player the great lightning spear miracle\n
+    enabled when reaching rank 1 of sunbro covenant """
+
+    GiveSunlightSpear = 11010598
+    """ when enabled, give the player the sunligh spear miracle\n
+    enabled when gwyn's soul is traded in at the sunlight altar """
 
     KilledTaurusDemon = 11010901
     """ enabled when the Taurus Demon boss dies """
 
     KilledCapraDemon = 11010902
     """ enabled when the Capra Demon boss dies """
+
+    GiveWarriorOfSunlightTrinket = 11010905
+    """ when enabled, give the player the warrior of sunlight trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
 
     ObtainedRepairBoxUndeadMerchant = 11017040
     """ enabled when the player buys the repair box from the male undead merchant\n
@@ -289,8 +314,47 @@ class FLAGS(Flag):
     more specifically, those pyromancies are: Great Fireball, Firestorm, Fire Tempest, Fire Whip,
     Great Combustion, Great Chaos Fireball, Chaos Storm, and Chaos Fire Whip """
 
+    GiveWayOfWhiteTrinket = 11020905
+    """ when enabled, give the player the way of white trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
+
+    GiveDivineBlessing = 11200593
+    """ when enabled, give the player a divine blessing\n
+    used by alvina, when you talk to her after killing a host as a forest hunter """
+
+    GiveEmitForce = 11020594
+    """ when enabled, the emit force miracle is awarded\n
+    enabled when talking to siegmeyer at firelink and answering yes to his question """
+
+    GiveSpeckledStoneplateRingUnused = 11020595
+    """ when enabled, the speckled stoneplate ring is awarded\n
+    unused, but seemingly intended for talking to siegmeyer at firelink """
+
+    GiveCopperCoin = 11020599
+    """ when enabled, give the player a copper coin\n
+    used by Petrus, when you talk to him again """
+
+    GivePyromancyFlameLaurentius = 11020602
+    """ when enabled, give the player the pyromancy glove\n
+    enabled when talking to Laurentius after answering his questions\n
+    TODO: what if starting class is pyro? """
+
+    GiveSunlightMedal = 11020607
+    """ when enabled, give the player a sunlight medal\n
+    used by Lautrec, when you talk to him at Firelink after freeing him """
+
+    GiveRingOfFog = 11200594
+    """ when enabled, give the player a ring of fog\n
+    used by alvina, when you talk to her after killing three hosts as a forest hunter """
+
     KilledMoonlightButterfly = 11200900
     """ enabled when the moonlight butterfly boss dies """
+
+    GiveForestHunterTrinket = 11200905
+    """ when enabled, give the player the forest hunter trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
 
     KilledSanctuaryGuardian = 11210000
     """ enabled when the sanctuary guardian boss dies """
@@ -301,8 +365,103 @@ class FLAGS(Flag):
     KilledKalameet = 11210004
     """ enabled when kalameet dies """
 
+    GiveTracersGift = 11210590
+    """ when enabled, awards dark silver tracer and gold tracer\n
+    enabled when giving artorias' soul to ciaran """
+
+    GiveGoughsGreatbowGift = 11210593
+    """ when enabled, awards gough's greatbow\n
+    enabled when talking to gough when kalameet is dead """
+
+    GiveElizabethsMushroom3 = 50000520
+    """ when enabled, awards three elizabeth's mushrooms\n
+    enabled when talking to elizabeth when manus is dead """
+
+    GiveSoulOfLostUndead = 11300590
+    """ when enabled, soul of lost undead is awarded """
+
+    GiveHumanity = 11300591
+    """ when enabled, a humanity is awarded\n
+    enabled when talking to patches after answering no to the cleric question and yes to the trickery question """
+
+    GiveGravelordServantTrinket = 11300906
+    """ when enabled, give the player the gravelord servant trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
+
+    GiveReplenishment = 11310590
+    """ when enabled, replenishment miracle is awarded\n
+    enabled when talking to rhea after killing her friends """
+
+    GiveGravelordSwordAndDance = 11310592
+    """ when enabled, gravelord sword and gravelord sword dance is awarded\n
+    enabled when joining the gravelord covenant for the first time """
+
+    GiveGravelordGreatswordDance = 11310592
+    """ when enabled, gravelord greatsword miracle is awarded\n
+    enabled when reaching rank 1 of gravelord covenant """
+
+    GiveTwinHumanities = 11310594
+    """ when enabled, a twin humanities is awarded\n
+    enabled when talking to patches after answering no to the cleric question and no to the forgiveness question in totg """
+
+    GiveDragonEye = 11320581
+    """ when enabled, the dragon eye is awarded\n
+    enabled when joining the path of the dragon covenant """
+
+    GiveTitaniteSlab = 11320590
+    """ when enabled, a titanite slab is awarded\n
+    enabled when lalking to sieglinde at ash lake """
+
+    GiveDragonTorsoStone = 11320593
+    """ when enabled, the dragon torso stone is awarded\n
+    enabled when reaching rank 2 of path of the dragon covenant """
+
+    GiveDragonPathTrinket = 11320905
+    """ when enabled, give the player the dragon path trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
+
+    GivePierceShield = 11400590
+    """ when enabled, the pierce shield is awarded\n
+    enabled when talking to siegmeyer in blighttown and giving up three purple mossclumps """
+
+    GivePyromancyFlameEingyi = 11400592
+    """ when enabled, a pyromancy glove is awarded
+    enabled when talking to eingyi when egg'd and with 11 int """
+
+    GiveFireTempest = 11400594
+    """ when enabled, the fire tempest pyromancy is awarded\n
+    enabled when talking to quelana when the bed of chaos is dead """
+
+    GiveGreatChaosFireball = 11400596
+    """ when enabled, the great chaos fireball pyromancy is awarded\n
+    enabled when joining the chaos servant covenant """
+
+    GiveChaosFireWhip = 11400597
+    """ when enabled, the chaos fire whip pyromancy is awarded\n
+    TODO: unused? investigate fair lady evs """
+
+    GiveChaosStorm = 11400598
+    """ when enabled, the chaos storm pyromancy is awarded\n
+    enabled when reaching rank 2 of chaos servant covenant """
+
+    GiveSoulHero = 11400599
+    """ when enabled, a soul of a hero is awarded\n
+    not used anywhere, but the id suggests that some NPC in the blighttown map 
+    (fair lady or eingyi?) would have given this """
+
+    GiveChaosServantTrinket = 11400905
+    """ when enabled, give the player the chaos servant trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
+
     KilledDemonFiresage = 11410410
     """ enabled when demon firesage dies """
+
+    GiveSpeckledStoneplateRingIzalith = 11410594
+    """ when enabled, the speckled stoneplate ring is awarded\n
+    enabled when talking to siegmeyer after the chaos eaters are dead before siegmeyer joins the fight """
 
     KilledCeaselessDischarge = 11410900
     """ enabled when ceaseless discharge dies """
@@ -310,13 +469,76 @@ class FLAGS(Flag):
     KilledCentipedeDemon = 11410901
     """ enabled when centipede demon dies """
 
+    GiveTinyBeingsRing = 11510590
+    """ when enabled, the tiny beings ring is awarded\n
+    enabled when talking to siegmeyer after defeating the three silver knights he's stuck in front of in anor londo """
+
+    GiveLordvessel = 11510592
+    """ when enabled, the lordvessel is awarded\n
+    enabled when talking to gwynevere """
+
+    GiveRingSunPrincess = 11510595
+    """ when enabled, the ring of the sun princess is awarded\n
+    enabled when joining the princess guard covenant """
+
+    GiveBlueEyeOrb = 11510596
+    """ when enabled, the blue eye orb and darkmoon blade covenant ring are awarded\n
+    enabled when joining darkmoon blade covenant """
+
+    GiveDarkmoonBladeRingAndTalisman = 11510597
+    """ when enabled, the darkmoon blade and darkmoon talisman are awarded\n
+    enabled when reaching rank 1 of the darkmoon blade covenant"""
+
     KilledGwyndolin = 11510900
     """ enabled when gwyndolin dies """
+
+    GivePrincessGuardTrinket = 11510905
+    """ when enabled, give the player the princess guard trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
+
+    GiveBladeOfTheDarkmoonTrinket = 11510906
+    """ when enabled, give the player the darkmoon blade trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
 
     KilledGiantOrnstein = 11510902
     """ enabled when Giant Ornstein dies """
 
     KilledGiantSmough = 11510903
+
+    GiveDarkSet = 11600580
+    """ when enabled, all four pieces of the dark set are awarded """
+
+    GiveDarkSetExceptMask = 11600581
+    """ when enabled, the dark set minus the mask is awarded (armor and gauntlets and leggings) """
+
+    GiveDarkGauntletsAndLeggings = 11600582
+    """ when enabled, the bottom half of the dark set is awarded """
+
+    GiveDarkLeggings = 11600583
+    """ when enabled, only the dark leggings are awarded """
+
+    GiveKeyToSeal = 11600592
+    """ when enabled, the key to the seal is awarded\n
+    enabled when talking to Ingward while possessing the lordvessel """
+
+    GiveDarkHand = 11600594
+    """ when enabled, a dark hand is awarded\n
+    enabled when joining the darkwraith covenant """
+
+    GiveRedEyeOrb = 11600595
+    """ when enabled, the red eye orb is awarded\n
+    enabled when reaching rank 1 of the darkwraith covenant """
+
+    GiveDarkSwordAndSet = 11600596
+    """ when enabled, the dark sword and all four pieces of the dark set are awarded\n
+    enabled when reading rank 2 of the darkwraith covenant """
+
+    GiveDarkwraithTrinket = 11600905
+    """ when enabled, give the player the darkwraith trinket\n
+    unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
+    suggesting you could have only gotten one per character """
 
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
@@ -326,6 +548,10 @@ class FLAGS(Flag):
     leave and re-enter the region\n
     this flag is a temporary 5XXX flag, so it resets on every map load """
 
+    GivePierceShieldUnused = 11700591
+    """ when enabled, the pierce shield is awarded\n
+    unused, but seemingly for siegmeyer in duke's archives """
+
     HasOfferedAllLordSouls = 11800210
     """ enabled after all four lord souls have been offered to the lordvessel
     and the door to the kin has been opened """
@@ -334,12 +560,130 @@ class FLAGS(Flag):
     """ enabled after the two cutscenes play that warp the player
     from the asylum to Firelink """
 
+    GiveEstusFlask = 11810590
+    """ when enabled, the estus flask+0 is awarded with 5 charges\n
+    enabled when oscar gives you the estus flask"""
+
+    GiveBigPilgrimsKeyOscar = 11810591
+    """ when enabled, the big pilgrim's key is awarded\n
+    enabled when oscar gives you the big pilgrim's key """
+
     KilledStrayDemon = 11810900
     """ enabled when stray demon dies """
+
+    # ITEM LOT FLAGS
+
+    ObtainedWhiteSignSoapstoneFromSolaire = 50000000
+
+    ObtainedTinyBeingsRingFromSiegmeyer = 50000010
+
+    ObtainedPierceShieldUnused = 50000020
+
+    ObtainedPurgingStoneFromSiegmeyer = 50000030
+
+    ObtainedPierceShield = 50000040
+    
+    ObtainedEmitForceFromSiegmeyer = 50000060
+
+    ObtainedSpeckledStoneplateRingFromSiegmeyer = 50000070
+
+    ObtainedUndeadAsylumF2EastKey = 50000080
+
+    ObtainedBigPilgrimsKeyFromOscar = 50000081
 
     ObtainedEstusFlask = 50000082
     """ enabled when the item lot that awards the Estus Flask is rolled\n
     also enabled on loading the Asylum for the first time in NG+ and above """
+
+    ObtainedLordvessel2 = 50000090
+
+    ObtainedKeyToTheSeal = 50000100
+
+    ObtainedPyromancyFlameFromLaurentius = 50000110
+
+    ObtainedLightningSpear = 50000120
+
+    ObtainedGreatLightningSpear = 50000130
+
+    ObtainedPetrusCopperCoin = 50000140
+
+    ObtainedLautrecSunlightMedal = 50000150
+
+    ObtainedCatCovenantRing = 50000160
+
+    ObtainedAlvinaDivineBlessing = 50000170
+
+    ObtainedAlvinaRingOfFog = 50000180
+
+    ObtainedPatchesSoulOfLostUndead = 50000190
+    """ TODO: unused? """
+
+    ObtainedPatchesHumanity = 50000200
+
+    ObtainedRheaReplenishment = 50000210
+
+    ObtainedGravelordSword = 50000220
+    ObtainedGravelordSwordDance = 50000225
+    ObtainedGravelordGreatswordDance = 50000230
+
+    ObtainedPatchesTwinHumanities = 50000240
+
+    ObtainedSieglindeTitaniteSlab = 50000250
+
+    ObtainedDragonHeadStone = 50000260
+    ObtainedDragonEye = 50000265
+    ObtainedDragonTorsoStone = 50000270
+
+    ObtainedEingyiPyromancyFlame = 50000290
+
+    ObtainedFireTempest = 50000300
+
+    ObtainedGreatChaosFireball = 50000310
+
+    ObtainedChaosFireWhipFairLady = 50000320
+
+    ObtainedChaosStorm = 50000330
+
+    ObtainedSoulHero = 50000340
+    """ associated item lot unused, flag always off """
+
+    ObtainedRingSunPrincess = 50000350
+
+    ObtainedBlueEyeOrb = 50000360
+
+    ObtainedDarkmoonBladeCovenantRing = 50000365
+
+    ObtainedDarkmoonBladeMiracle = 50000370
+    ObtainedDarkmoonTalisman = 50000375
+
+    ObtainedKaatheDarkHand = 50000380
+
+    ObtainedRedEyeOrb = 50000390
+
+    ObtainedKaatheDarkSword = 50000400
+    ObtainedKaatheDarkMask = 50000410
+    ObtainedKaatheDarkArmor = 50000420
+    ObtainedKaatheDarkGauntlets = 50000430
+    ObtainedKaatheDarkLeggings = 50000440
+
+    ObtainedDarkSilverTracerGift = 50000501
+    ObtainedGoldSilverGift = 50000501
+    """ TODO: flag shared by item lots 1500 and 1501 """
+
+    ObtainedGoughsGreatbowGift = 50000511
+
+    ObtainedElizabethsMushroom3 = 50000520
+
+    ObtainedWayOfWhiteTrinket = 50000800
+    ObtainedPrincessGuardTrinket = 50000810
+    ObtainedWarriorOfSunlightTrinket = 50000820
+    ObtainedDarkwraithTrinket = 50000830
+    ObtainedDragonPathTrinket = 50000840
+    ObtainedGravelordServantTrinket = 50000650
+    ObtainedForestHunterTrinket = 50000660
+    ObtainedBladeOfTheDarkmoonTrinket = 50000670
+    ObtainedChaosServantCovenant = 50000680
+
 
     ObtainedBlighttownKey = 50001500
     """ enabled when the blighttown key is awarded (after gaping dragon dies) """
@@ -378,7 +722,7 @@ class FLAGS(Flag):
 
     ObtainedGwynSoul = 50001650
 
-    ObtainedBigPilgrimsKey = 50001660
+    ObtainedBigPilgrimsKeyFromAsylumDemon = 50001660
 
     ObtainedGuardianSoul = 50001680
 

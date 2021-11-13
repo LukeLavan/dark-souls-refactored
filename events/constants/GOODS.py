@@ -3,6 +3,17 @@ from soulstruct.game_types.param_types import GoodParam
 
 class GOODS(GoodParam):
 
+    # unused goods - using them from inventory joins respective covenant
+    WayOfWhiteTrinket = 131
+    PrincessGuardTrinket = 132
+    WarriorOfSunlightTrinket = 133
+    DarkwraithTrinket = 134
+    DragonPathTrinket = 135
+    GravelordServantTrinket = 136
+    ForestHunterTrinket = 137
+    BladeOfTheDarkmoonTrinket = 138
+    ChaosServantTrinket = 139
+
     EstusFlaskPlus0Empty = 200
     EstusFlaskPlus0Full = 201
     EstusFlaskPlus1Empty = 202

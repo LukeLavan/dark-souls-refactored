@@ -24,7 +24,7 @@ def Constructor():
 
     DisplayStatusOnFlagEnable(0, FLAGS.HasWarpedToFirelinkShrine, TEXT.InLordranLevelUpAndKindle, 0.0)
     DisplayStatusOnFlagEnable(1, FLAGS.ObtainedRiteOfKindling, TEXT.RiteOfKindling, 0.0)
-    DisplayStatusOnFlagEnable(2, FLAGS.GotLordvessel, TEXT.Lordvessel, 0.0)
+    DisplayStatusOnFlagEnable(2, FLAGS.ObtainedLordvessel, TEXT.Lordvessel, 0.0)
 
     Event761()
 
@@ -217,64 +217,68 @@ def Constructor():
 
     Event910(0, 11400591, 1280)
 
-    Event911(0, 11010591, 1000, 1)
-    Event911(1, 11510590, 1010, 1)
-    Event911(2, 11700591, 1020, 1)
-    Event911(3, 11000591, 1030, 1)
-    Event911(4, 11400590, 1040, 1)
-    Event911(5, 11410594, 1050, 1)
-    Event911(6, 11020594, 1060, 1)
-    Event911(7, 11020595, 1070, 1)
-    Event911(8, 11810590, 1082, 1)
-    Event911(9, 11810591, 1080, 1)
-    Event911(10, 11510592, 1090, 1)
-    Event911(11, 11600592, 1100, 1)
-    Event911(12, 11020602, 1110, 1)
-    Event911(13, 11010594, 1120, 1)
-    Event911(14, 11010595, 1130, 1)
-    Event911(15, 11020599, 1140, 1)
-    Event911(16, 11020607, 1150, 1)
-    Event911(17, 11200592, 1160, 1)
-    Event911(18, 11200593, 1170, 1)
-    Event911(19, 11200594, 1180, 1)
-    Event911(20, 11300590, 1190, 1)
-    Event911(21, 11300591, 1200, 1)
-    Event911(22, 11310590, 1210, 1)
-    Event911(23, 11310592, 1220, 1)
-    Event911(24, 11310593, 1230, 1)
-    Event911(25, 11310594, 1240, 1)
-    Event911(26, 11320590, 1250, 1)
-    Event911(27, 11320581, 1260, 1)
-    Event911(28, 11320593, 1270, 1)
-    Event911(29, 11400592, 1290, 1)
-    Event911(30, 11400594, 1300, 1)
-    Event911(31, 11400596, 1310, 1)
-    Event911(32, 11400597, 1320, 1)
-    Event911(33, 11400598, 1330, 1)
-    Event911(34, 11400599, 1340, 1)
-    Event911(35, 11510595, 1350, 1)
-    Event911(36, 11510596, 1360, 1)
-    Event911(37, 11510597, 1370, 1)
-    Event911(38, 11600594, 1380, 1)
-    Event911(39, 11600595, 1390, 1)
-    Event911(40, 11600596, 1400, 1)
-    Event911(41, 11010598, 1410, 0)
-    Event911(42, 11210590, 1500, 1)
-    Event911(43, 11210593, 1510, 1)
-    Event911(44, 11210594, 1520, 1)
-    Event911(45, 11600580, 1401, 1)
-    Event911(46, 11600581, 1402, 1)
-    Event911(47, 11600582, 1403, 1)
-    Event911(48, 11600583, 1404, 1)
-    Event911(49, 11020905, 1800, 1)
-    Event911(50, 11510905, 1810, 1)
-    Event911(51, 11010905, 1820, 1)
-    Event911(52, 11600905, 1830, 1)
-    Event911(53, 11320905, 1840, 1)
-    Event911(54, 11300906, 1850, 1)
-    Event911(55, 11200905, 1860, 1)
-    Event911(56, 11510906, 1870, 1)
-    Event911(57, 11400905, 1880, 1)
+    AwardItemLotWhenFlagEnabled(0, FLAGS.GiveWhiteSignSoapstone,            ITEMLOTS.SolaireWhiteSighSoapstone,             1)
+    AwardItemLotWhenFlagEnabled(1, FLAGS.GiveTinyBeingsRing,                ITEMLOTS.SiegmeyerTinyBeingsRing,               1)
+    AwardItemLotWhenFlagEnabled(2, FLAGS.GivePierceShieldUnused,            ITEMLOTS.SiegmeyerPierceShield,                 1)
+    AwardItemLotWhenFlagEnabled(3, FLAGS.GivePurgingStoneSiegmeyer,         ITEMLOTS.SiegmeyerPurgingStone,                 1)
+    AwardItemLotWhenFlagEnabled(4, FLAGS.GivePierceShield,                  ITEMLOTS.SiegmeyerPierceShield2,                1)
+    AwardItemLotWhenFlagEnabled(5, FLAGS.GiveSpeckledStoneplateRingIzalith, ITEMLOTS.SiegmeyerSpeckledStoneplateRing,       1)
+    AwardItemLotWhenFlagEnabled(6, FLAGS.GiveEmitForce,                     ITEMLOTS.SiegmeyerEmitForce,                    1)
+    AwardItemLotWhenFlagEnabled(7, FLAGS.GiveSpeckledStoneplateRingUnused,  ITEMLOTS.SiegmeyerSpeckledStoneplateRingUnused, 1)
+    AwardItemLotWhenFlagEnabled(8, FLAGS.GiveEstusFlask,                    ITEMLOTS.OscarEstusFlask,                       1)
+    AwardItemLotWhenFlagEnabled(9, FLAGS.GiveBigPilgrimsKeyOscar,           ITEMLOTS.OscarUndeadAsylumF2EastKey,            1)
+    AwardItemLotWhenFlagEnabled(10, FLAGS.GiveLordvessel,                   ITEMLOTS.GwynevereLordvessel,                   1)
+    AwardItemLotWhenFlagEnabled(11, FLAGS.GiveKeyToSeal,                    ITEMLOTS.IngwardKeyToTheSeal,                   1)
+    AwardItemLotWhenFlagEnabled(12, FLAGS.GivePyromancyFlameLaurentius,     ITEMLOTS.LaurentiusPyromancyFlame,              1)
+    AwardItemLotWhenFlagEnabled(13, FLAGS.GiveLightningSpear,               ITEMLOTS.SunlightAltarLightningSpear,           1)
+    AwardItemLotWhenFlagEnabled(14, FLAGS.GiveGreatLightningSpear,          ITEMLOTS.SunlightAltarGreatLightningSpear,      1)
+    AwardItemLotWhenFlagEnabled(15, FLAGS.GiveCopperCoin,                   ITEMLOTS.PetrusCopperCoin,                      1)
+    AwardItemLotWhenFlagEnabled(16, FLAGS.GiveSunlightMedal,                ITEMLOTS.LautrecSunlightMedal,                  1)
+    AwardItemLotWhenFlagEnabled(17, FLAGS.GiveCatCovenantRing,              ITEMLOTS.AlvinaCatCovenantRing,                 1)
+    AwardItemLotWhenFlagEnabled(18, FLAGS.GiveDivineBlessing,               ITEMLOTS.AlvinaDivineBlessing,                  1)
+    AwardItemLotWhenFlagEnabled(19, FLAGS.GiveRingOfFog,                    ITEMLOTS.AlvinaRingOfFog,                       1)
+    AwardItemLotWhenFlagEnabled(20, FLAGS.GiveSoulOfLostUndead,             ITEMLOTS.PatchesSoulOfLostUndead,               1) # TODO: Patches give soul of a lost undead?
+    AwardItemLotWhenFlagEnabled(21, FLAGS.GiveHumanity,                     ITEMLOTS.PatchesHumanity,                       1)
+    AwardItemLotWhenFlagEnabled(22, FLAGS.GiveReplenishment,                ITEMLOTS.RheaReplenishment,                     1)
+    AwardItemLotWhenFlagEnabled(23, FLAGS.GiveGravelordSwordAndDance,       ITEMLOTS.NitoGravelordSword,                    1)
+    AwardItemLotWhenFlagEnabled(24, FLAGS.GiveGravelordGreatswordDance,     ITEMLOTS.NitoGravelordGreatswordDance,          1)
+    AwardItemLotWhenFlagEnabled(25, FLAGS.GiveTwinHumanities,               ITEMLOTS.PatchesTwinHumanities,                 1)
+    AwardItemLotWhenFlagEnabled(26, FLAGS.GiveTitaniteSlab,                 ITEMLOTS.SieglindeTitaniteSlab,                 1)
+    AwardItemLotWhenFlagEnabled(27, FLAGS.GiveDragonEye,                    ITEMLOTS.DragonEye,                             1)
+    AwardItemLotWhenFlagEnabled(28, FLAGS.GiveDragonTorsoStone,             ITEMLOTS.DragonTorsoStone,                      1)
+    # ITEMLOTS.EingyiEggVermifuge is skipped
+    AwardItemLotWhenFlagEnabled(29, FLAGS.GivePyromancyFlameEingyi,         ITEMLOTS.EingyiPyromancyFlame,                  1)
+    AwardItemLotWhenFlagEnabled(30, FLAGS.GiveFireTempest,                  ITEMLOTS.QuelanaFireTempest,                    1)
+    AwardItemLotWhenFlagEnabled(31, FLAGS.GiveGreatChaosFireball,           ITEMLOTS.GreatChaosFireball,                    1)
+    AwardItemLotWhenFlagEnabled(32, FLAGS.GiveChaosFireWhip,                ITEMLOTS.FairLadyChaosFireWhip,                 1)
+    AwardItemLotWhenFlagEnabled(33, FLAGS.GiveChaosStorm,                   ITEMLOTS.ChaosStorm,                            1)
+    AwardItemLotWhenFlagEnabled(34, FLAGS.GiveSoulHero,                     ITEMLOTS.SoulHero,                              1)
+    AwardItemLotWhenFlagEnabled(35, FLAGS.GiveRingSunPrincess,              ITEMLOTS.RingSunPrincess,                       1)
+    AwardItemLotWhenFlagEnabled(36, FLAGS.GiveBlueEyeOrb,                   ITEMLOTS.BlueEyeOrb,                            1)
+    AwardItemLotWhenFlagEnabled(37, FLAGS.GiveDarkmoonBladeRingAndTalisman, ITEMLOTS.DarkmoonBladeCovenantRing,             1)
+    AwardItemLotWhenFlagEnabled(38, FLAGS.GiveDarkHand,                     ITEMLOTS.KaatheDarkHand,                        1)
+    AwardItemLotWhenFlagEnabled(39, FLAGS.GiveRedEyeOrb,                    ITEMLOTS.RedEyeOrb,                             1)
+    AwardItemLotWhenFlagEnabled(40, FLAGS.GiveDarkSwordAndSet,              ITEMLOTS.KaatheDarkSword,                       1)
+    # note that this slot is the only one with only_once=0, but sadly we can still only ever have one - see ControlGwynSoulForSunlightSpearTrade()
+    AwardItemLotWhenFlagEnabled(41, FLAGS.GiveSunlightSpear,                ITEMLOTS.SunlightSpear,                         0)
+    AwardItemLotWhenFlagEnabled(42, FLAGS.GiveTracersGift,                  ITEMLOTS.DarkSilverTracerGift,                  1)
+    AwardItemLotWhenFlagEnabled(43, FLAGS.GiveGoughsGreatbowGift,           ITEMLOTS.GoughsGreatbowGift,                    1)
+    AwardItemLotWhenFlagEnabled(44, FLAGS.GiveElizabethsMushroom3,          ITEMLOTS.ElizabethsMushroom3,                   1)
+    # Because these item lots are sequentially after ITEMLOTS.KaatheDarkSword, all of these item lots are awarded
+    # with slot 40 - these next four slots are redundant and don't actually do anything
+    AwardItemLotWhenFlagEnabled(45, FLAGS.GiveDarkSet,                      ITEMLOTS.KaatheDarkMask,                        1)
+    AwardItemLotWhenFlagEnabled(46, FLAGS.GiveDarkSetExceptMask,            ITEMLOTS.KaatheDarkArmor,                       1)
+    AwardItemLotWhenFlagEnabled(47, FLAGS.GiveDarkGauntletsAndLeggings,     ITEMLOTS.KaatheDarkGauntlets,                   1)
+    AwardItemLotWhenFlagEnabled(48, FLAGS.GiveDarkLeggings,                 ITEMLOTS.KaatheDarkLeggings,                    1)
+    AwardItemLotWhenFlagEnabled(49, FLAGS.GiveWayOfWhiteTrinket,            ITEMLOTS.WayOfWhiteTrinket,                     1)
+    AwardItemLotWhenFlagEnabled(50, FLAGS.GivePrincessGuardTrinket,         ITEMLOTS.PrincessGuardTrinket,                  1)
+    AwardItemLotWhenFlagEnabled(51, FLAGS.GiveWarriorOfSunlightTrinket,     ITEMLOTS.WarriorOfSunlightTrinket,              1)
+    AwardItemLotWhenFlagEnabled(52, FLAGS.GiveDarkwraithTrinket,            ITEMLOTS.DarkwraithTrinket,                     1)
+    AwardItemLotWhenFlagEnabled(53, FLAGS.GiveDragonPathTrinket,            ITEMLOTS.DragonPathTrinket,                     1)
+    AwardItemLotWhenFlagEnabled(54, FLAGS.GiveGravelordServantTrinket,      ITEMLOTS.GravelordServantTrinket,               1)
+    AwardItemLotWhenFlagEnabled(55, FLAGS.GiveForestHunterTrinket,          ITEMLOTS.ForestHunterTrinket,                   1)
+    AwardItemLotWhenFlagEnabled(56, FLAGS.GiveBladeOfTheDarkmoonTrinket,    ITEMLOTS.BladeOfTheDarkmoonTrinket,             1)
+    AwardItemLotWhenFlagEnabled(57, FLAGS.GiveChaosServantTrinket,          ITEMLOTS.ChaosServantTrinket,                   1)
 
     Event890(0, 11310580, 1221, 1)
     Event890(1, 11510580, 1361, 1)
@@ -512,7 +516,7 @@ def AllowEscapeFromAbyss():
     """ 717: Responsible for the flag that enables warping from the Abyss bonfire without the Lordvessel """
     DisableFlag(FLAGS.StandingInAbyssWithoutLordvessel)
 
-    Await(FlagDisabled(FLAGS.GotLordvessel) and InsideMap(NEW_LONDO_RUINS)
+    Await(FlagDisabled(FLAGS.ObtainedLordvessel) and InsideMap(NEW_LONDO_RUINS)
           and PlayerStandingOnCollision(COLLISIONS.abyss))
 
     EnableFlag(FLAGS.StandingInAbyssWithoutLordvessel)
@@ -533,7 +537,7 @@ def DisplayTakenByAbyssMessage():
 
 def ControlWarping():
     """ 706: Controls whether warping from bonfires is allowed """
-    Await(FlagEnabled(FLAGS.GotLordvessel))
+    Await(FlagEnabled(FLAGS.ObtainedLordvessel))
 
     EnableFlag(FLAGS.WarpAllowed)
 
@@ -554,7 +558,7 @@ def EnableLordVesselFlag():
 
     Await(HasGood(GOODS.Lordvessel))
 
-    EnableFlag(FLAGS.GotLordvessel)
+    EnableFlag(FLAGS.ObtainedLordvessel)
 
 
 def EnableFlagWhenHasGoodLordSouls(_, good: int, flag: int):
@@ -567,7 +571,7 @@ def EnableFlagWhenHasGoodLordSouls(_, good: int, flag: int):
 
 
 def ControlGwynSoulForSunlightSpearTrade():
-    """ 715: Event 715 """
+    """ 715: determines whether the option to obtain the sunlight spear miracle is enabled """
     DisableFlag(FLAGS.CanOfferGwynSoul)
 
     # condition group 1 consists of the following joined by AND:
@@ -576,12 +580,12 @@ def ControlGwynSoulForSunlightSpearTrade():
     IfPlayerCovenant(1, Covenant.WarriorOfSunlight)
 
     # condition group 2 consists of condition group 1, plus a flag check joined by AND:
-    IfFlagOn(2, FLAGS.GotMiracleGreatLightningSpear)
+    IfFlagOn(2, FLAGS.ObtainedGreatLightningSpear)
     IfConditionTrue(2, 1)
 
     AwaitConditionTrue(2)
 
-    EnableFlag(715)
+    EnableFlag(FLAGS.CanOfferGwynSoul)
 
     AwaitConditionFalse(1)
 
@@ -852,16 +856,19 @@ def AwardItemLotsOnFlagEnable(_, flag: int, item_lot_1: int, item_lot_2: int, it
         AwardItemLot(item_lot_3, host_only=True)
 
 
-def Event911(_, award_allowed: int, item_lot: int, repeatable: uchar):
-    """ 911: Event 911 """
-    EndIfFlagOn(award_allowed)
+def AwardItemLotWhenFlagEnabled(_, flag: int, item_lot: int, only_once: uchar):
+    """ 911: awaits for flag to become enabled, and awards item lot when it does\n
+    if the flag is already enabled, end and do nothing\n
+    after awarding the item lot, set the flag to be the value of only_once\n
+    used for awarding items during coversations (including covenant rewards) """
+    EndIfFlagOn(flag)
 
-    AwaitFlagOn(award_allowed)
+    AwaitFlagOn(flag)
 
-    AwardItemLot(item_lot, host_only=True)
+    AwardItemLot(item_lot)
 
-    SetFlagState(award_allowed, state=repeatable)
-    EndIfFlagOn(award_allowed)
+    SetFlagState(flag, state=only_once)
+    EndIfFlagOn(flag)
 
     Restart()
 
