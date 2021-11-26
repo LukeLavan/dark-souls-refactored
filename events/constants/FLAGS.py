@@ -389,13 +389,18 @@ class FLAGS(Flag):
     unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
     suggesting you could have only gotten one per character """
 
+    GiveGravelordSwordDance = 11310580
+    """ when enabled, the gravelord sword dance miracle is awarded\n
+    enabled when joining the gravelord covenant """
+
     GiveReplenishment = 11310590
     """ when enabled, replenishment miracle is awarded\n
     enabled when talking to rhea after killing her friends """
 
-    GiveGravelordSwordAndDance = 11310592
-    """ when enabled, gravelord sword and gravelord sword dance is awarded\n
-    enabled when joining the gravelord covenant for the first time """
+    GiveGravelordSword = 11310592
+    """ when enabled, the gravelord sword is awarded\n
+    enabled when joining the gravelord covenant for the first time\n
+    due to sequential itemlots, also awards the gravelord sword dance miracle """
 
     GiveGravelordGreatswordDance = 11310592
     """ when enabled, gravelord greatsword miracle is awarded\n
@@ -407,11 +412,16 @@ class FLAGS(Flag):
 
     GiveDragonEye = 11320581
     """ when enabled, the dragon eye is awarded\n
-    enabled when joining the path of the dragon covenant """
+    enabled when joining the path of the dragon covenant\n
+    due to sequential itemlots, also awards dragon head stone """
 
     GiveTitaniteSlab = 11320590
     """ when enabled, a titanite slab is awarded\n
     enabled when lalking to sieglinde at ash lake """
+
+    GiveDragonHeadStone = 11320592
+    """ when enabled, the dragon head stone is awarded\n
+    enabled when joining the path of the dragon covenant"""
 
     GiveDragonTorsoStone = 11320593
     """ when enabled, the dragon torso stone is awarded\n
@@ -469,6 +479,14 @@ class FLAGS(Flag):
     KilledCentipedeDemon = 11410901
     """ enabled when centipede demon dies """
 
+    GiveDarkmoonBladeCovenantRing = 11510580
+    """ when enabled, the darkmoon blade covenant ring is awarded\n
+    enabled when joining the darkmoon blade covenant """
+
+    GiveDarkmoonTalisman = 11510581
+    """ when enabled, the darkmoon talisman is awarded\n
+    enabled when reaching rank 1 of darkmoon blade covenant """
+
     GiveTinyBeingsRing = 11510590
     """ when enabled, the tiny beings ring is awarded\n
     enabled when talking to siegmeyer after defeating the three silver knights he's stuck in front of in anor londo """
@@ -483,11 +501,13 @@ class FLAGS(Flag):
 
     GiveBlueEyeOrb = 11510596
     """ when enabled, the blue eye orb and darkmoon blade covenant ring are awarded\n
-    enabled when joining darkmoon blade covenant """
+    enabled when joining darkmoon blade covenant\n
+    due to sequential itemlots, also awards darkmoon blade covenant ring """
 
-    GiveDarkmoonBladeRingAndTalisman = 11510597
-    """ when enabled, the darkmoon blade and darkmoon talisman are awarded\n
-    enabled when reaching rank 1 of the darkmoon blade covenant"""
+    GiveDarkmoonBlade = 11510597
+    """ when enabled, the darkmoon blade miracle is awarded\n
+    enabled when reaching rank 1 of the darkmoon blade covenant\n
+    due to sequential itemlots, also awards darkmoon talisman """
 
     KilledGwyndolin = 11510900
     """ enabled when gwyndolin dies """
@@ -508,16 +528,24 @@ class FLAGS(Flag):
     KilledGiantSmough = 11510903
 
     GiveDarkSet = 11600580
-    """ when enabled, all four pieces of the dark set are awarded """
+    """ when enabled, all four pieces of the dark set are awarded
+    if these pieces have not yet been acquired via covenant reward\n
+    enabled when joining the darkwraith covenant """
 
     GiveDarkSetExceptMask = 11600581
-    """ when enabled, the dark set minus the mask is awarded (armor and gauntlets and leggings) """
+    """ when enabled, the dark set minus the mask is awarded (armor and gauntlets and leggings)
+    if these pieces have not yet been acquired via covenant reward\n
+    enabled when joining the darkwraith covenant """
 
     GiveDarkGauntletsAndLeggings = 11600582
-    """ when enabled, the bottom half of the dark set is awarded """
+    """ when enabled, the bottom half of the dark set is awarded
+    if these pieces have not yet been acquired via covenant reward\n
+    enabled when joining the darkwraith covenant """
 
     GiveDarkLeggings = 11600583
-    """ when enabled, only the dark leggings are awarded """
+    """ when enabled, only the dark leggings are awarded
+    if this has not yet been acquired via covenant reward\n
+    enabled when joining the darkwraith covenant """
 
     GiveKeyToSeal = 11600592
     """ when enabled, the key to the seal is awarded\n
@@ -533,7 +561,7 @@ class FLAGS(Flag):
 
     GiveDarkSwordAndSet = 11600596
     """ when enabled, the dark sword and all four pieces of the dark set are awarded\n
-    enabled when reading rank 2 of the darkwraith covenant """
+    enabled when reaching rank 2 of the darkwraith covenant """
 
     GiveDarkwraithTrinket = 11600905
     """ when enabled, give the player the darkwraith trinket\n

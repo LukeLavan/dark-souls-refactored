@@ -240,7 +240,7 @@ def Constructor():
     AwardItemLotWhenFlagEnabled(20, FLAGS.GiveSoulOfLostUndead,             ITEMLOTS.PatchesSoulOfLostUndead,               1) # TODO: Patches give soul of a lost undead?
     AwardItemLotWhenFlagEnabled(21, FLAGS.GiveHumanity,                     ITEMLOTS.PatchesHumanity,                       1)
     AwardItemLotWhenFlagEnabled(22, FLAGS.GiveReplenishment,                ITEMLOTS.RheaReplenishment,                     1)
-    AwardItemLotWhenFlagEnabled(23, FLAGS.GiveGravelordSwordAndDance,       ITEMLOTS.NitoGravelordSword,                    1)
+    AwardItemLotWhenFlagEnabled(23, FLAGS.GiveGravelordSword,               ITEMLOTS.NitoGravelordSword,                    1)
     AwardItemLotWhenFlagEnabled(24, FLAGS.GiveGravelordGreatswordDance,     ITEMLOTS.NitoGravelordGreatswordDance,          1)
     AwardItemLotWhenFlagEnabled(25, FLAGS.GiveTwinHumanities,               ITEMLOTS.PatchesTwinHumanities,                 1)
     AwardItemLotWhenFlagEnabled(26, FLAGS.GiveTitaniteSlab,                 ITEMLOTS.SieglindeTitaniteSlab,                 1)
@@ -255,7 +255,7 @@ def Constructor():
     AwardItemLotWhenFlagEnabled(34, FLAGS.GiveSoulHero,                     ITEMLOTS.SoulHero,                              1)
     AwardItemLotWhenFlagEnabled(35, FLAGS.GiveRingSunPrincess,              ITEMLOTS.RingSunPrincess,                       1)
     AwardItemLotWhenFlagEnabled(36, FLAGS.GiveBlueEyeOrb,                   ITEMLOTS.BlueEyeOrb,                            1)
-    AwardItemLotWhenFlagEnabled(37, FLAGS.GiveDarkmoonBladeRingAndTalisman, ITEMLOTS.DarkmoonBladeCovenantRing,             1)
+    AwardItemLotWhenFlagEnabled(37, FLAGS.GiveDarkmoonBlade,                ITEMLOTS.DarkmoonBlade,                         1)
     AwardItemLotWhenFlagEnabled(38, FLAGS.GiveDarkHand,                     ITEMLOTS.KaatheDarkHand,                        1)
     AwardItemLotWhenFlagEnabled(39, FLAGS.GiveRedEyeOrb,                    ITEMLOTS.RedEyeOrb,                             1)
     AwardItemLotWhenFlagEnabled(40, FLAGS.GiveDarkSwordAndSet,              ITEMLOTS.KaatheDarkSword,                       1)
@@ -280,10 +280,10 @@ def Constructor():
     AwardItemLotWhenFlagEnabled(56, FLAGS.GiveBladeOfTheDarkmoonTrinket,    ITEMLOTS.BladeOfTheDarkmoonTrinket,             1)
     AwardItemLotWhenFlagEnabled(57, FLAGS.GiveChaosServantTrinket,          ITEMLOTS.ChaosServantTrinket,                   1)
 
-    Event890(0, 11310580, 1221, 1)
-    Event890(1, 11510580, 1361, 1)
-    Event890(2, 11510581, 1371, 1)
-    Event890(3, 11320592, 1261, 1)
+    AwardItemLotWhenFlagEnabled2(0, FLAGS.GiveGravelordSwordDance, ITEMLOTS.NitoGravelordSwordDance, 1)
+    AwardItemLotWhenFlagEnabled2(1, FLAGS.GiveDarkmoonBladeCovenantRing, ITEMLOTS.DarkmoonBladeCovenantRing, 1)
+    AwardItemLotWhenFlagEnabled2(2, 11510581, ITEMLOTS.DarkmoonTalisman, 1)
+    AwardItemLotWhenFlagEnabled2(3, 11320592, ITEMLOTS.DragonHeadStone, 1)
 
     Event960(0, 1322, 6190, 6190)
     Event960(1, 1315, 6180, 1100)
@@ -873,16 +873,16 @@ def AwardItemLotWhenFlagEnabled(_, flag: int, item_lot: int, only_once: uchar):
     Restart()
 
 
-def Event890(_, award_allowed: int, item_lot: int, repeatable: uchar):
+def AwardItemLotWhenFlagEnabled2(_, flag: int, item_lot: int, only_once: uchar):
     """ 890: Event 890 """
-    EndIfFlagOn(award_allowed)
+    EndIfFlagOn(flag)
 
-    AwaitFlagOn(award_allowed)
+    AwaitFlagOn(flag)
 
     AwardItemLot(item_lot, host_only=True)
 
-    SetFlagState(award_allowed, state=repeatable)
-    EndIfFlagOn(award_allowed)
+    SetFlagState(flag, state=only_once)
+    EndIfFlagOn(flag)
 
     Restart()
 
