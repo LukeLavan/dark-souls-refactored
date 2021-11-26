@@ -1,10 +1,11 @@
 {
-    "LastSaveVersion": "1.2.0",
+    "LastSaveVersion": "1.2.3",
     "GameName": "Dark Souls Remastered",
     "GameDirectory": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\DARK SOULS REMASTERED",
     "LastImportTime": "",
     "LastExportTime": "",
     "VanillaGameDirectory": "",
     "TextEditorFontSize": 10,
-    "EntitiesInEventsDirectory": false
+    "EntitiesInEventsDirectory": false,
+    "PreferJSON": true
 }
