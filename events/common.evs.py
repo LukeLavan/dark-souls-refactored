@@ -295,8 +295,6 @@ def Constructor():
     # this itemlot is sequentially after the above itemlot, so this event slot is redundant
     AwardItemLotWhenFlagEnabledAndCharDead(3, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantResidenceKey)
 
-    ItemType.Armor
-
     EnableFlagsIfOwnsItemBeyondNG(0,  ItemType.Good,     GOODS.MiracleLightningSpear,            FLAGS.ObtainedLightningSpear,               FLAGS.GiveLightningSpear)
     EnableFlagsIfOwnsItemBeyondNG(1,  ItemType.Good,     GOODS.MiracleGreatLightningSpear,       FLAGS.ObtainedGreatLightningSpear,          FLAGS.GiveGreatLightningSpear)
     EnableFlagsIfOwnsItemBeyondNG(2,  ItemType.Ring,     RINGS.CatCovenantRing,                  FLAGS.ObtainedCatCovenantRing,              FLAGS.GiveCatCovenantRing)

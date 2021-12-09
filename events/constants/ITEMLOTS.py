@@ -5,7 +5,7 @@ class ITEMLOTS(ItemLotParam):
     SolaireWhiteSighSoapstone = 1000
     """ 100% chance for white sign soapstone\n
     awarded when the player answers yes to Solaire\n
-    FLAGS.ObtainedWhiteSignSoapstoneFromSolaire """
+    FLAGS.ObtainedWhiteSignSoapstone """
 
     SiegmeyerTinyBeingsRing = 1010
     """ 100% chance for tiny being's ring\n
