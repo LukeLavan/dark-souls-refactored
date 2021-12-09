@@ -3,7 +3,23 @@ from soulstruct.game_types.param_types import GoodParam
 
 class GOODS(GoodParam):
 
+    WhiteSignSoapstone = 100
+    RedSignSoapstone = 101
+    RedEyeOrb = 102
+    BlackSeparationCrystal = 103
+
+    OrangeGuidanceSoapstone = 106
+
+    BookOfTheGuilty = 108
+    EyeOfDeath = 109
+
+    CrackedRedEyeOrb = 111
+    ServantRoster = 112
+    BlueEyeOrb = 113
+    DragonEye = 114
+
     # unused goods - using them from inventory joins respective covenant
+    NoneTrinket = 130
     WayOfWhiteTrinket = 131
     PrincessGuardTrinket = 132
     WarriorOfSunlightTrinket = 133
@@ -30,6 +46,13 @@ class GOODS(GoodParam):
     EstusFlaskPlus6Full = 213
     EstusFlaskPlus7Empty = 214
     EstusFlaskPlus7Full = 215
+
+    DivineBlessing = 240
+
+    DragonHeadStone = 377
+    DragonTorsoStone = 378
+
+    DriedFinger = 385
 
     GwynSoul = 702
 
@@ -143,4 +166,4 @@ class GOODS(GoodParam):
     MiracleTranquilWalkOfPeace = 5800
     MiracleVowOfSilence = 5810
     MiracleSunlightBlade = 5900
-    MiracleDarmoonBlade = 5910
+    MiracleDarkmoonBlade = 5910

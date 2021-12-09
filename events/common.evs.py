@@ -7,12 +7,15 @@ strings:
 """
 from soulstruct.darksouls1r.events import *
 
+from constants.ARMOR import ARMOR
 from constants.CHARACTERS import CHARACTERS
 from constants.COLLISIONS import COLLISIONS
 from constants.FLAGS import FLAGS
 from constants.GOODS import GOODS
 from constants.ITEMLOTS import ITEMLOTS
+from constants.RINGS import RINGS
 from constants.TEXT import TEXT
+from constants.WEAPONS import WEAPONS
 
 
 def Constructor():
@@ -292,50 +295,56 @@ def Constructor():
     # this itemlot is sequentially after the above itemlot, so this event slot is redundant
     AwardItemLotWhenFlagEnabledAndCharDead(3, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantResidenceKey)
 
-    Event8200(0, 3, 5500, 50000120, 11010594)
-    Event8200(1, 3, 5510, 50000130, 11010595)
-    Event8200(2, 2, 103, 50000160, 11200592)
-    Event8200(3, 3, 240, 50000170, 11200593)
-    Event8200(4, 2, 124, 50000180, 11200594)
-    Event8200(5, 0, 453000, 50000220, 11310592)
-    Event8200(6, 3, 5100, 50000225, 11310580)
-    Event8200(7, 3, 5110, 50000230, 11310593)
-    Event8200(8, 3, 114, 50000265, 11320581)
-    Event8200(9, 3, 377, 50000260, 11320592)
-    Event8200(10, 3, 378, 50000270, 11320593)
-    Event8200(11, 3, 4500, 50000310, 11400596)
-    Event8200(12, 3, 4520, 50000320, 11400597)
-    Event8200(13, 3, 4510, 50000330, 11400598)
-    Event8200(14, 2, 130, 50000350, 11510595)
-    Event8200(15, 3, 113, 50000360, 11510596)
-    Event8200(16, 2, 102, 50000365, 11510580)
-    Event8200(17, 3, 5910, 50000370, 11510597)
-    Event8200(18, 0, 1366000, 50000375, 11510581)
-    Event8200(19, 0, 904000, 50000380, 11600594)
-    Event8200(20, 3, 102, 50000390, 11600595)
-    Event8200(21, 0, 210000, 50000400, 11600596)
-    Event8200(22, 1, 40000, 50000410, 11600580)
-    Event8200(23, 1, 41000, 50000420, 11600581)
-    Event8200(24, 1, 42000, 50000430, 11600582)
-    Event8200(25, 1, 43000, 50000440, 11600583)
-    Event8200(26, 3, 131, 50000800, 11020905)
-    Event8200(27, 3, 132, 50000810, 11510905)
-    Event8200(28, 3, 133, 50000820, 11010905)
-    Event8200(29, 3, 134, 50000830, 11600905)
-    Event8200(30, 3, 135, 50000840, 11320905)
-    Event8200(31, 3, 136, 50000850, 11300906)
-    Event8200(32, 3, 137, 50000860, 11200905)
-    Event8200(33, 3, 138, 50000870, 11510906)
-    Event8200(34, 3, 139, 50000880, 11400905)
+    ItemType.Armor
 
-    Event8300(0, 3, 100, 50000000)
-    Event8300(1, 3, 101, 51100330)
-    Event8300(2, 3, 102, 50000390)
-    Event8300(3, 3, 106, 11017020)
-    Event8300(4, 3, 108, 11607020)
-    Event8300(5, 3, 112, 11407080)
-    Event8300(6, 3, 2508, 11007010)
-    Event8300(7, 3, 385, 11017210)
+    EnableFlagsIfOwnsItemBeyondNG(0,  ItemType.Good,     GOODS.MiracleLightningSpear,            FLAGS.ObtainedLightningSpear,               FLAGS.GiveLightningSpear)
+    EnableFlagsIfOwnsItemBeyondNG(1,  ItemType.Good,     GOODS.MiracleGreatLightningSpear,       FLAGS.ObtainedGreatLightningSpear,          FLAGS.GiveGreatLightningSpear)
+    EnableFlagsIfOwnsItemBeyondNG(2,  ItemType.Ring,     RINGS.CatCovenantRing,                  FLAGS.ObtainedCatCovenantRing,              FLAGS.GiveCatCovenantRing)
+    # TODO: if the player has a divine blessing in their inventory, Alvina won't give a divine blessing again?
+    EnableFlagsIfOwnsItemBeyondNG(3,  ItemType.Good,     GOODS.DivineBlessing,                   FLAGS.ObtainedAlvinaDivineBlessing,         FLAGS.GiveDivineBlessing)
+    EnableFlagsIfOwnsItemBeyondNG(4,  ItemType.Ring,     RINGS.RingOfFog,                        FLAGS.ObtainedAlvinaRingOfFog,              FLAGS.GiveRingOfFog)
+    EnableFlagsIfOwnsItemBeyondNG(5,  ItemType.Weapon,   WEAPONS.GravelordSword,                 FLAGS.ObtainedGravelordSword,               FLAGS.GiveGravelordSword)
+    EnableFlagsIfOwnsItemBeyondNG(6,  ItemType.Good,     GOODS.MiracleGravelordSwordDance,       FLAGS.ObtainedGravelordSwordDance,          FLAGS.GiveGravelordSwordDance)
+    EnableFlagsIfOwnsItemBeyondNG(7,  ItemType.Good,     GOODS.MiracleGravelordGreatswordDance,  FLAGS.ObtainedGravelordGreatswordDance,     FLAGS.GiveGravelordGreatswordDance)
+    EnableFlagsIfOwnsItemBeyondNG(8,  ItemType.Good,     GOODS.DragonEye,                        FLAGS.ObtainedDragonEye,                    FLAGS.GiveDragonEye)
+    EnableFlagsIfOwnsItemBeyondNG(9,  ItemType.Good,     GOODS.DragonHeadStone,                  FLAGS.ObtainedDragonHeadStone,              FLAGS.GiveDragonHeadStone)
+    EnableFlagsIfOwnsItemBeyondNG(10, ItemType.Good,     GOODS.DragonTorsoStone,                 FLAGS.ObtainedDragonTorsoStone,             FLAGS.GiveDragonTorsoStone)
+    EnableFlagsIfOwnsItemBeyondNG(11, ItemType.Good,     GOODS.PyromancyGreatChaosFireball,      FLAGS.ObtainedGreatChaosFireball,           FLAGS.GiveGreatChaosFireball)
+    EnableFlagsIfOwnsItemBeyondNG(12, ItemType.Good,     GOODS.PyromancyChaosFireWhip,           FLAGS.ObtainedChaosFireWhipFairLady,        FLAGS.GiveChaosFireWhip)
+    EnableFlagsIfOwnsItemBeyondNG(13, ItemType.Good,     GOODS.PyromancyChaosStorm,              FLAGS.ObtainedChaosStorm,                   FLAGS.GiveChaosStorm)
+    EnableFlagsIfOwnsItemBeyondNG(14, ItemType.Ring,     RINGS.RingOfTheSunPrincess,             FLAGS.ObtainedRingSunPrincess,              FLAGS.GiveRingSunPrincess)
+    EnableFlagsIfOwnsItemBeyondNG(15, ItemType.Good,     GOODS.BlueEyeOrb,                       FLAGS.ObtainedBlueEyeOrb,                   FLAGS.GiveBlueEyeOrb)
+    EnableFlagsIfOwnsItemBeyondNG(16, ItemType.Ring,     RINGS.DarkmoonBladeCovenantRing,        FLAGS.ObtainedDarkmoonBladeCovenantRing,    FLAGS.GiveDarkmoonBladeCovenantRing)
+    EnableFlagsIfOwnsItemBeyondNG(17, ItemType.Good,     GOODS.MiracleDarkmoonBlade,             FLAGS.ObtainedDarkmoonBladeMiracle,         FLAGS.GiveDarkmoonBlade)
+    EnableFlagsIfOwnsItemBeyondNG(18, ItemType.Weapon,   WEAPONS.DarkmoonTalisman,               FLAGS.ObtainedDarkmoonTalisman,             FLAGS.GiveDarkmoonTalisman)
+    EnableFlagsIfOwnsItemBeyondNG(19, ItemType.Weapon,   WEAPONS.DarkHand,                       FLAGS.ObtainedKaatheDarkHand,               FLAGS.GiveDarkHand)
+    EnableFlagsIfOwnsItemBeyondNG(20, ItemType.Good,     GOODS.RedEyeOrb,                        FLAGS.ObtainedRedEyeOrb,                    FLAGS.GiveRedEyeOrb)
+    EnableFlagsIfOwnsItemBeyondNG(21, ItemType.Weapon,   WEAPONS.DarkSword,                      FLAGS.ObtainedKaatheDarkSword,              FLAGS.GiveDarkSwordAndSet)
+    EnableFlagsIfOwnsItemBeyondNG(22, ItemType.Armor,    ARMOR.DarkMask,                         FLAGS.ObtainedKaatheDarkMask,               FLAGS.GiveDarkSet)
+    EnableFlagsIfOwnsItemBeyondNG(23, ItemType.Armor,    ARMOR.DarkArmor,                        FLAGS.ObtainedKaatheDarkArmor,              FLAGS.GiveDarkSetExceptMask)
+    EnableFlagsIfOwnsItemBeyondNG(24, ItemType.Armor,    ARMOR.DarkGauntlets,                    FLAGS.ObtainedKaatheDarkGauntlets,          FLAGS.GiveDarkGauntletsAndLeggings)
+    EnableFlagsIfOwnsItemBeyondNG(25, ItemType.Armor,    ARMOR.DarkLeggings,                     FLAGS.ObtainedKaatheDarkLeggings,           FLAGS.GiveDarkLeggings)
+    # unused covenant "trinkets"
+    EnableFlagsIfOwnsItemBeyondNG(26, ItemType.Good,     GOODS.WayOfWhiteTrinket,                FLAGS.ObtainedWayOfWhiteTrinket,            FLAGS.GiveWayOfWhiteTrinket)
+    EnableFlagsIfOwnsItemBeyondNG(27, ItemType.Good,     GOODS.PrincessGuardTrinket,             FLAGS.ObtainedPrincessGuardTrinket,         FLAGS.GivePrincessGuardTrinket)
+    EnableFlagsIfOwnsItemBeyondNG(28, ItemType.Good,     GOODS.WarriorOfSunlightTrinket,         FLAGS.ObtainedWarriorOfSunlightTrinket,     FLAGS.GiveWarriorOfSunlightTrinket)
+    EnableFlagsIfOwnsItemBeyondNG(29, ItemType.Good,     GOODS.DarkwraithTrinket,                FLAGS.ObtainedDarkwraithTrinket,            FLAGS.GiveDarkwraithTrinket)
+    EnableFlagsIfOwnsItemBeyondNG(30, ItemType.Good,     GOODS.DragonPathTrinket,                FLAGS.ObtainedDragonPathTrinket,            FLAGS.GiveDragonPathTrinket)
+    EnableFlagsIfOwnsItemBeyondNG(31, ItemType.Good,     GOODS.GravelordServantTrinket,          FLAGS.ObtainedGravelordServantTrinket,      FLAGS.GiveGravelordServantTrinket)
+    EnableFlagsIfOwnsItemBeyondNG(32, ItemType.Good,     GOODS.ForestHunterTrinket,              FLAGS.ObtainedForestHunterTrinket,          FLAGS.GiveForestHunterTrinket)
+    EnableFlagsIfOwnsItemBeyondNG(33, ItemType.Good,     GOODS.BladeOfTheDarkmoonTrinket,        FLAGS.ObtainedBladeOfTheDarkmoonTrinket,    FLAGS.GiveBladeOfTheDarkmoonTrinket)
+    EnableFlagsIfOwnsItemBeyondNG(34, ItemType.Good,     GOODS.ChaosServantTrinket,              FLAGS.ObtainedChaosServantCovenant,         FLAGS.GiveChaosServantTrinket)
+
+    EnableFlagIfOwnsItemBeyondNG(0,   ItemType.Good,     GOODS.WhiteSignSoapstone,               FLAGS.ObtainedWhiteSignSoapstone)
+    EnableFlagIfOwnsItemBeyondNG(1,   ItemType.Good,     GOODS.RedSignSoapstone,                 FLAGS.ObtainedRedSignSoapstone)
+    EnableFlagIfOwnsItemBeyondNG(2,   ItemType.Good,     GOODS.RedEyeOrb,                        FLAGS.ObtainedRedEyeOrb)
+    EnableFlagIfOwnsItemBeyondNG(3,   ItemType.Good,     GOODS.OrangeGuidanceSoapstone,          FLAGS.ObtainedOrangeSignSoapstone)
+    EnableFlagIfOwnsItemBeyondNG(4,   ItemType.Good,     GOODS.BookOfTheGuilty,                  FLAGS.ObtainedBookOfTheGuilty)
+    EnableFlagIfOwnsItemBeyondNG(5,   ItemType.Good,     GOODS.ServantRoster,                    FLAGS.ObtainedServantRoster)
+    # 2508 does not refer to a real good - possibly a typo meant to refer to 2608, the bottomless box?
+    # TODO: see event 11020800 slot 51 in m10_02 - Firelink relief chest, slot for bottomless box, uses this flag
+    EnableFlagIfOwnsItemBeyondNG(6, ItemType.Good,       2508,                                   11007010)
+    EnableFlagIfOwnsItemBeyondNG(7, ItemType.Good,       GOODS.DriedFinger,                      FLAGS.ObtainedDriedFinger)
 
     Event8090(0, 3, 510, 11217010)
     Event8090(1, 3, 511, 11217020)
@@ -900,29 +909,32 @@ def AwardItemLotWhenFlagEnabledAndCharDead(_, flag: int, char: int, itemlot: int
     AwardItemLot(itemlot)
 
 
-def Event8200(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int, arg_12_15: int):
-    """ 8200: Event 8200 """
-    EndIfFlagOn(arg_8_11)
+def EnableFlagsIfOwnsItemBeyondNG(_, item_type: uchar, item: int, flag1: int, flag2: int):
+    """ 8200: On a new NG cycle, all flags are reset. This event re-enables flags based on whether
+    or not the player has the specified item. If flag1 is already enabled, this event does nothing.\n
+    this version is used exclusively for covenant related items """
+    EndIfFlagOn(flag1)
 
     if NEW_GAME_CYCLE < 1:
         End()
-    if not OwnsItem(arg_4_7, item_type=arg_0_0):
+    if not OwnsItem(item, item_type=item_type):
         End()
 
-    EnableFlag(arg_8_11)
-    EnableFlag(arg_12_15)
+    EnableFlag(flag1)
+    EnableFlag(flag2)
 
 
-def Event8300(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
-    """ 8300: Event 8300 """
-    EndIfFlagOn(arg_8_11)
+def EnableFlagIfOwnsItemBeyondNG(_, item_type: uchar, item: int, flag: int):
+    """ 8300: functionally identical to EnableFlagsIfOwnsItemBeyondNG except for one less flag input.\n
+    if flag is already enabled this event does nothing. """
+    EndIfFlagOn(flag)
 
     if NEW_GAME_CYCLE < 1:
         End()
-    if not OwnsItem(arg_4_7, item_type=arg_0_0):
+    if not OwnsItem(item, item_type=item_type):
         End()
 
-    EnableFlag(arg_8_11)
+    EnableFlag(flag)
 
 
 def Event8090(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):

@@ -1,6 +1,5 @@
 from soulstruct.game_types import Flag
 
-
 class FLAGS(Flag):
 
     KilledGapingDragon = 2
@@ -276,7 +275,7 @@ class FLAGS(Flag):
     Lordvessel or Rite of Kindling will prevent those statuses from displaying as normal\n
     TODO: why is this like this??? what's the point??? """
 
-    GiveCatCovenantRing = 10000160
+    GiveCatCovenantRing = 11200592
 
     GivePurgingStoneSiegmeyer = 11000591
     """ when enabled, give the player a purging stone\n
@@ -427,7 +426,7 @@ class FLAGS(Flag):
     enabled when joining the gravelord covenant for the first time\n
     due to sequential itemlots, also awards the gravelord sword dance miracle """
 
-    GiveGravelordGreatswordDance = 11310592
+    GiveGravelordGreatswordDance = 11310593
     """ when enabled, gravelord greatsword miracle is awarded\n
     enabled when reaching rank 1 of gravelord covenant """
 
@@ -490,6 +489,10 @@ class FLAGS(Flag):
     """ when enabled, give the player the chaos servant trinket\n
     unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
     suggesting you could have only gotten one per character """
+
+    ObtainedServantRoster = 11407080
+    """ enabled when the player obtains the servant roster by buying it from Eingyi\n
+    also enabled by itemlot 6160 (Eingyi's event ID) which awards servant roster, but this itemlot is not used """
 
     KilledDemonFiresage = 11410410
     """ enabled when demon firesage dies """
@@ -593,6 +596,10 @@ class FLAGS(Flag):
     unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
     suggesting you could have only gotten one per character """
 
+    ObtainedBookOfTheGuilty = 11607020
+    """ enabled when the book of the guilty is obtained, either by buying it from Oswald
+    or from the item lot awarded when Oswald dies """
+
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
     may not warp from\n
@@ -626,7 +633,7 @@ class FLAGS(Flag):
 
     # ITEM LOT FLAGS
 
-    ObtainedWhiteSignSoapstoneFromSolaire = 50000000
+    ObtainedWhiteSignSoapstone = 50000000
 
     ObtainedTinyBeingsRingFromSiegmeyer = 50000010
 
@@ -732,10 +739,10 @@ class FLAGS(Flag):
     ObtainedWarriorOfSunlightTrinket = 50000820
     ObtainedDarkwraithTrinket = 50000830
     ObtainedDragonPathTrinket = 50000840
-    ObtainedGravelordServantTrinket = 50000650
-    ObtainedForestHunterTrinket = 50000660
-    ObtainedBladeOfTheDarkmoonTrinket = 50000670
-    ObtainedChaosServantCovenant = 50000680
+    ObtainedGravelordServantTrinket = 50000850
+    ObtainedForestHunterTrinket = 50000860
+    ObtainedBladeOfTheDarkmoonTrinket = 50000870
+    ObtainedChaosServantCovenant = 50000880
 
 
     ObtainedBlighttownKey = 50001500
@@ -786,3 +793,6 @@ class FLAGS(Flag):
     ObtainedCalamityRing = 50001710
 
     ObtainedMaleUndeadMerchantHumanity = 50006230
+
+    ObtainedRedSignSoapstone = 51100330
+    """ enabled when the item lot is awarded corresponding to the red sign soapstone pickup in the painted world """
