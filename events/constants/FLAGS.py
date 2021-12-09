@@ -236,6 +236,15 @@ class FLAGS(Flag):
     """ enabled when the player is in Chaos Servant covenant; disabled otherwise\n
     used to determine if the player may offer humanity to the Fair Lady """
 
+    DeadIngward = 1315
+    """ enabled when Ingward's health is <= 0 """
+
+    DeadAndre = 1322
+    """ enabled when Andre's health is <= 0 """
+
+    DeadMaleUndeadMerchant = 1402
+    """ enabled when the male undead merchant's health is <= 0 """
+
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n
     disabled on next load when the message is displayed to the player """
@@ -301,13 +310,29 @@ class FLAGS(Flag):
     unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
     suggesting you could have only gotten one per character """
 
+    ObtainedOrangeSignSoapstone = 11017020
+    """ enabled when the player buys the orange sign soapstone from the male undead merchant\n
+    also enabled when the orange sign soapstone is awarded after the male undead merchant dies """
+
+    ObtainedResidenceKey = 11017030
+    """ enabled when the player buys the residence key from the male undead merchant\n
+    also enabled when the residence key is awarded after the male undead merchant dies """
+
     ObtainedRepairBoxUndeadMerchant = 11017040
     """ enabled when the player buys the repair box from the male undead merchant\n
     also enabled when the repair box is bought from Andre via an event (819 from common) """
 
+    ObtainedCrestOfArtorias = 11017140
+    """ enabled when the player buys the crest of artorias from andre\n
+    (or after it's awarded if you murder andre, you monster) """
+
     ObtainedRepairBoxAndre = 11017170
     """ enabled when the player buys the repair box from Andre\n
     also enabled when the repair box is bought from the male undead merchant via an event (819 from common) """
+
+    ObtainedDriedFinger = 11017210
+    """ enabled when the player buys the dried finger from the male undead merchant\n
+    also enabled when the dried finger is awarded after the male undead merchant dies """
 
     LaurentiusInterestedInSpectacularPyromancy = 11020102
     """ enabled when the player has a pyromancy that Laurentius will find spectacular and will ask about\n
@@ -759,3 +784,5 @@ class FLAGS(Flag):
     ObtainedManusSoul = 50001700
 
     ObtainedCalamityRing = 50001710
+
+    ObtainedMaleUndeadMerchantHumanity = 50006230

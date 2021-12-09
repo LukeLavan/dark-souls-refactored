@@ -7,6 +7,7 @@ strings:
 """
 from soulstruct.darksouls1r.events import *
 
+from constants.CHARACTERS import CHARACTERS
 from constants.COLLISIONS import COLLISIONS
 from constants.FLAGS import FLAGS
 from constants.GOODS import GOODS
@@ -280,15 +281,16 @@ def Constructor():
     AwardItemLotWhenFlagEnabled(56, FLAGS.GiveBladeOfTheDarkmoonTrinket,    ITEMLOTS.BladeOfTheDarkmoonTrinket,             1)
     AwardItemLotWhenFlagEnabled(57, FLAGS.GiveChaosServantTrinket,          ITEMLOTS.ChaosServantTrinket,                   1)
 
-    AwardItemLotWhenFlagEnabled2(0, FLAGS.GiveGravelordSwordDance, ITEMLOTS.NitoGravelordSwordDance, 1)
-    AwardItemLotWhenFlagEnabled2(1, FLAGS.GiveDarkmoonBladeCovenantRing, ITEMLOTS.DarkmoonBladeCovenantRing, 1)
-    AwardItemLotWhenFlagEnabled2(2, 11510581, ITEMLOTS.DarkmoonTalisman, 1)
-    AwardItemLotWhenFlagEnabled2(3, 11320592, ITEMLOTS.DragonHeadStone, 1)
+    AwardItemLotWhenFlagEnabled2(0, FLAGS.GiveGravelordSwordDance,          ITEMLOTS.NitoGravelordSwordDance,               1)
+    AwardItemLotWhenFlagEnabled2(1, FLAGS.GiveDarkmoonBladeCovenantRing,    ITEMLOTS.DarkmoonBladeCovenantRing,             1)
+    AwardItemLotWhenFlagEnabled2(2, FLAGS.GiveDarkmoonTalisman,             ITEMLOTS.DarkmoonTalisman,                      1)
+    AwardItemLotWhenFlagEnabled2(3, FLAGS.GiveDragonHeadStone,              ITEMLOTS.DragonHeadStone,                       1)
 
-    Event960(0, 1322, 6190, 6190)
-    Event960(1, 1315, 6180, 1100)
-    Event960(2, 1402, 6230, 6230)
-    Event960(3, 1402, 6230, 6231)
+    AwardItemLotWhenFlagEnabledAndCharDead(0, FLAGS.DeadAndre,              CHARACTERS.Andre,               ITEMLOTS.AndreCrestOfArtorias)
+    AwardItemLotWhenFlagEnabledAndCharDead(1, FLAGS.DeadIngward,            CHARACTERS.Ingward,             ITEMLOTS.IngwardKeyToTheSeal)
+    AwardItemLotWhenFlagEnabledAndCharDead(2, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantOrangeSoapstone)
+    # this itemlot is sequentially after the above itemlot, so this event slot is redundant
+    AwardItemLotWhenFlagEnabledAndCharDead(3, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantResidenceKey)
 
     Event8200(0, 3, 5500, 50000120, 11010594)
     Event8200(1, 3, 5510, 50000130, 11010595)
@@ -874,7 +876,8 @@ def AwardItemLotWhenFlagEnabled(_, flag: int, item_lot: int, only_once: uchar):
 
 
 def AwardItemLotWhenFlagEnabled2(_, flag: int, item_lot: int, only_once: uchar):
-    """ 890: Event 890 """
+    """ 890: functionally identical to AwardItemLotWhenFlagEnabled, used exclusively for
+    itemlots that are awarded via sequential ids anyway """
     EndIfFlagOn(flag)
 
     AwaitFlagOn(flag)
@@ -887,13 +890,14 @@ def AwardItemLotWhenFlagEnabled2(_, flag: int, item_lot: int, only_once: uchar):
     Restart()
 
 
-def Event960(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
-    """ 960: Event 960 """
+def AwardItemLotWhenFlagEnabledAndCharDead(_, flag: int, char: int, itemlot: int):
+    """ 960: awaits for an enabled flag and a dead character and awards an item lot\n
+    does nothing if event slot is on """
     EndIfThisEventSlotOn()
 
-    Await(FlagEnabled(arg_0_3) and IsDead(arg_4_7))
+    Await(FlagEnabled(flag) and IsDead(char))
 
-    AwardItemLot(arg_8_11, host_only=True)
+    AwardItemLot(itemlot)
 
 
 def Event8200(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int, arg_12_15: int):

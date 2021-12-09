@@ -449,6 +449,33 @@ class ITEMLOTS(ItemLotParam):
     awarded when kalameet dies\n
     FLAGS.ObtainedCalamityRing """
 
+    AndreCrestOfArtorias = 6190
+    """ 100% chance for crest of artorias\n
+    awarded when andre dies\n
+    FLAGS.ObtainedCrestOfArtorias
+    """
+
+    MaleUndeadMerchantOrangeSoapstone = 6230
+    """ 100% chance for orange guidance soapstone\n
+    awarded when the male undead merchant dies\n
+    FLAGS.ObtainedOrangeSoapstone\n
+    also awards MaleUndeadMerchantResidenceKey and MaleUndeadMerchantHumanity and MaleUndeadMerchantDriedFinger """
+
+    MaleUndeadMerchantResidenceKey = 6231
+    """ 100% chance for residence key\n
+    awarded when MaleUndeadMerchantOrangeSoapstone is awarded\n
+    FLAGS.ObtainedResidenceKey"""
+
+    MaleUndeadMerchantHumanity = 6232
+    """ 100% chance for 1 humanity\n
+    awarded when MaleUndeadMerchantResidenceKey is awarded\n
+    FLAGS.ObtainedMaleUndeadMerchantHumanity """
+
+    MaleUndeadMerchantDriedFinger = 6233
+    """ 100% chance for dried finger\n
+    awarded when MaleUndeadMerchantHumanity is awarded\n
+    FLAGS.ObtainedMaleUndeadMerchantDriedFinger """
+
     Humanity = 9000
     """ 100% chance for 1 humanity\n
     awarded when various bosses die\n
