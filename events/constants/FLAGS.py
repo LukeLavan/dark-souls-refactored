@@ -478,6 +478,10 @@ class FLAGS(Flag):
     """ when enabled, the pierce shield is awarded\n
     enabled when talking to siegmeyer in blighttown and giving up three purple mossclumps """
 
+    GiveEggVermifuge = 11400591
+    """ when enabled, an egg vermifuge is awarded\n
+    enabled when talking to Eingyi with an egghead infection active, once per infection """
+
     GivePyromancyFlameEingyi = 11400592
     """ when enabled, a pyromancy glove is awarded
     enabled when talking to eingyi when egg'd and with 11 int """

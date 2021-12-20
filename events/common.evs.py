@@ -219,7 +219,7 @@ def Constructor():
     Event822()
     Event823()
 
-    Event910(0, 11400591, 1280)
+    AwardItemLotWhenFlagEnabledAlwaysRepeat(0, FLAGS.GiveEggVermifuge, ITEMLOTS.EingyiEggVermifuge)
 
     AwardItemLotWhenFlagEnabled(0, FLAGS.GiveWhiteSignSoapstone,            ITEMLOTS.SolaireWhiteSighSoapstone,             1)
     AwardItemLotWhenFlagEnabled(1, FLAGS.GiveTinyBeingsRing,                ITEMLOTS.SiegmeyerTinyBeingsRing,               1)
@@ -250,7 +250,7 @@ def Constructor():
     AwardItemLotWhenFlagEnabled(26, FLAGS.GiveTitaniteSlab,                 ITEMLOTS.SieglindeTitaniteSlab,                 1)
     AwardItemLotWhenFlagEnabled(27, FLAGS.GiveDragonEye,                    ITEMLOTS.DragonEye,                             1)
     AwardItemLotWhenFlagEnabled(28, FLAGS.GiveDragonTorsoStone,             ITEMLOTS.DragonTorsoStone,                      1)
-    # ITEMLOTS.EingyiEggVermifuge is skipped
+    # ITEMLOTS.EingyiEggVermifuge is skipped - see AwardItemLotWhenFlagEnabledAlwaysRepeat usage above
     AwardItemLotWhenFlagEnabled(29, FLAGS.GivePyromancyFlameEingyi,         ITEMLOTS.EingyiPyromancyFlame,                  1)
     AwardItemLotWhenFlagEnabled(30, FLAGS.GiveFireTempest,                  ITEMLOTS.QuelanaFireTempest,                    1)
     AwardItemLotWhenFlagEnabled(31, FLAGS.GiveGreatChaosFireball,           ITEMLOTS.GreatChaosFireball,                    1)
@@ -948,11 +948,13 @@ def EnableFlagIfOwnsItemBeyondNG2(_, item_type: uchar, item: int, flag: int):
     EnableFlag(flag)
 
 
-def Event910(_, arg_0_3: int, arg_4_7: int):
-    """ 910: Event 910 """
-    if FlagDisabled(arg_0_3):
-        AwaitFlagOn(arg_0_3)
-        AwardItemLot(arg_4_7, host_only=True)
+def AwardItemLotWhenFlagEnabledAlwaysRepeat(_, flag: int, itemlot: int):
+    """ 910: functionally identical to AwardItemLotWhenFlagEnabled, except that this event will
+    restart when the flag is disabled\n
+    only used for Eingyi's egg vermifuge gift """
+    if FlagDisabled(flag):
+        AwaitFlagOn(flag)
+        AwardItemLot(itemlot, host_only=True)
 
     AwaitFlagOff(flag)
     Restart()
