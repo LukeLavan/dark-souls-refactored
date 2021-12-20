@@ -397,6 +397,24 @@ class FLAGS(Flag):
     """ when enabled, awards gough's greatbow\n
     enabled when talking to gough when kalameet is dead """
 
+    ObtainedCarvingHello = 11217010
+    """ enabled when the "Hello" carving is purchased from Gough """
+
+    ObtainedCarvingThankYou = 11217020
+    """ enabled when the ""Thank you" carving is purchased from Gough """
+
+    ObtainedCarvingVeryGood = 11217030
+    """ enabled when the player owns the "Very Good!" carving and a map is loaded in NG+ or beyond\n
+    not actually used anywhere, since this carving is a drop """
+
+    ObtainedCarvingImSorry = 11217040
+    """ enabled when the player owns the "I'm sorry" carving and a map is laoded in NG+ or beyond\n
+    not actually used anywhere, since this carving is a drop """
+
+    ObtainedCarvingHelpMe = 11217050
+    """ enabled when the player owns the "Help me" carving and a map is loaded in NG+ or beyond\b
+    not actually used anywhere, since this carving is a treasure """
+
     GiveElizabethsMushroom3 = 50000520
     """ when enabled, awards three elizabeth's mushrooms\n
     enabled when talking to elizabeth when manus is dead """

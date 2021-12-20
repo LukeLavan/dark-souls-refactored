@@ -54,6 +54,12 @@ class GOODS(GoodParam):
 
     DriedFinger = 385
 
+    CarvingHello = 510
+    CarvingThankYou = 511
+    CarvingVeryGood = 512
+    CarvingImSorry = 513
+    CarvingHelpMe = 514
+
     GwynSoul = 702
 
     LargeEmber = 800

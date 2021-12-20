@@ -341,14 +341,14 @@ def Constructor():
     EnableFlagIfOwnsItemBeyondNG(5,   ItemType.Good,     GOODS.ServantRoster,                    FLAGS.ObtainedServantRoster)
     # 2508 does not refer to a real good - possibly a typo meant to refer to 2608, the bottomless box?
     # TODO: see event 11020800 slot 51 in m10_02 - Firelink relief chest, slot for bottomless box, uses this flag
-    EnableFlagIfOwnsItemBeyondNG(6, ItemType.Good,       2508,                                   11007010)
-    EnableFlagIfOwnsItemBeyondNG(7, ItemType.Good,       GOODS.DriedFinger,                      FLAGS.ObtainedDriedFinger)
+    EnableFlagIfOwnsItemBeyondNG(6,   ItemType.Good,     2508,                                   11007010)
+    EnableFlagIfOwnsItemBeyondNG(7,   ItemType.Good,     GOODS.DriedFinger,                      FLAGS.ObtainedDriedFinger)
 
-    Event8090(0, 3, 510, 11217010)
-    Event8090(1, 3, 511, 11217020)
-    Event8090(2, 3, 512, 11217030)
-    Event8090(3, 3, 513, 11217040)
-    Event8090(4, 3, 514, 11217050)
+    EnableFlagIfOwnsItemBeyondNG2(0,  ItemType.Good,     GOODS.CarvingHello,                     FLAGS.ObtainedCarvingHello)
+    EnableFlagIfOwnsItemBeyondNG2(1,  ItemType.Good,     GOODS.CarvingThankYou,                  FLAGS.ObtainedCarvingThankYou)
+    EnableFlagIfOwnsItemBeyondNG2(2,  ItemType.Good,     GOODS.CarvingVeryGood,                  FLAGS.ObtainedCarvingVeryGood)
+    EnableFlagIfOwnsItemBeyondNG2(3,  ItemType.Good,     GOODS.CarvingImSorry,                   FLAGS.ObtainedCarvingImSorry)
+    EnableFlagIfOwnsItemBeyondNG2(4,  ItemType.Good,     GOODS.CarvingHelpMe,                    FLAGS.ObtainedCarvingHelpMe)
 
 
 def Preconstructor():
@@ -729,7 +729,7 @@ def AllowSpellAttunement():
           HasGood(GOODS.MiracleTranquilWalkOfPeace) or
           HasGood(GOODS.MiracleVowOfSilence) or
           HasGood(GOODS.MiracleSunlightBlade) or
-          HasGood(GOODS.MiracleDarmoonBlade) or
+          HasGood(GOODS.MiracleDarkmoonBlade) or
           HasGood(GOODS.SorceryDarkOrb) or
           HasGood(GOODS.SorceryDarkBead) or
           HasGood(GOODS.SorceryDarkFog) or
@@ -935,16 +935,17 @@ def EnableFlagIfOwnsItemBeyondNG(_, item_type: uchar, item: int, flag: int):
     EnableFlag(flag)
 
 
-def Event8090(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
-    """ 8090: Event 8090 """
-    EndIfFlagOn(arg_8_11)
+def EnableFlagIfOwnsItemBeyondNG2(_, item_type: uchar, item: int, flag: int):
+    """ 8090: functionally identical to EnableFlagIfOwnsItemBeyondNG, but only used for DLC items\n
+    if flag is already enabled this event does nothing """
+    EndIfFlagOn(flag)
 
     if NEW_GAME_CYCLE < 1:
         End()
-    if not OwnsItem(arg_4_7, item_type=arg_0_0):
+    if not OwnsItem(item, item_type=item_type):
         End()
 
-    EnableFlag(arg_8_11)
+    EnableFlag(flag)
 
 
 def Event910(_, arg_0_3: int, arg_4_7: int):
@@ -953,7 +954,7 @@ def Event910(_, arg_0_3: int, arg_4_7: int):
         AwaitFlagOn(arg_0_3)
         AwardItemLot(arg_4_7, host_only=True)
 
-    AwaitFlagOff(arg_0_3)
+    AwaitFlagOff(flag)
     Restart()
 
 
