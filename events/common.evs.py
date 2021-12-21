@@ -199,7 +199,7 @@ def Constructor():
     AllowSpellAttunement()
 
     MonitorLaurentiusIsInterestedInSpectacularPyromancy()
-    Event721()
+    MonitorLoganInventory()
     Event722()
     Event723()
     Event724()
@@ -1014,26 +1014,29 @@ def IncrementNumWhenMajorBossKilled(_, num: int, bit_count: uint, max_value: uin
     Restart()
 
 
-def Event721():
-    """ 721: Event 721 """
-    EndIfFlagOn(728)
+def MonitorLoganInventory():
+    """ 721: controls flags LoganPurchasedAllSpellsFirelink and LoganPurchasedAllSpellsArchives flags,
+    which are enabled when all of the respective spells are bought from Logan\n
+    note that spells not bought at Firelink remain available at the Archives, so it's possible for
+    LoganPurchasedAllSpellsFirelink to become enabled when buying spells at the Archives """
+    EndIfFlagOn(FLAGS.LoganPurchasedAllSpells)
 
-    Await(FlagEnabled(11707000) and
-          FlagEnabled(11707010) and
-          FlagEnabled(11707020) and
-          FlagEnabled(11707030) and
-          FlagEnabled(11707040) and
-          FlagEnabled(11707050) and
-          FlagEnabled(11707060) and
-          FlagEnabled(11707070))
-    AwaitConditionTrue(1)
+    Await(FlagEnabled(FLAGS.HasPurchasedLoganSoulArrow) and
+          FlagEnabled(FLAGS.HasPurchasedLoganGreatSoulArrow) and
+          FlagEnabled(FLAGS.HasPurchasedLoganHeavySoulArrow) and
+          FlagEnabled(FLAGS.HasPurchasedLoganGreatHeavySoulArrow) and
+          FlagEnabled(FLAGS.HasPurchasedLoganMagicWeapon) and
+          FlagEnabled(FLAGS.HasPurchasedLoganMagicShield) and
+          FlagEnabled(FLAGS.HasPurchasedLoganHomingSoulmass) and
+          FlagEnabled(FLAGS.HasPurchasedLoganSoulSpear))
 
-    EnableFlag(721)
+    EnableFlag(FLAGS.LoganPurchasedAllSpellsFirelink)
 
-    Await(FlagEnabled(11707090) and FlagEnabled(
-        11707100) and FlagEnabled(11707110))
+    Await(FlagEnabled(FLAGS.HasPurchasedLoganCrystalHomingSoulmass) and 
+        FlagEnabled(FLAGS.HasPurchasedLoganCrystalSoulSpear) and 
+        FlagEnabled(FLAGS.HasPurchasedLoganCrystalMagicWeapon))
 
-    EnableFlag(728)
+    EnableFlag(FLAGS.LoganPurchasedAllSpellsArchives)
 
 
 def Event722():

@@ -172,6 +172,12 @@ class FLAGS(Flag):
     """ enabled when the player obtains any spell (sorcery, pyromancy, or miracle)\n
     when enabled, bonfires will show the 'Attune Magic' option"""
 
+    LoganPurchasedAllSpellsFirelink = 721
+    """ enabled when the player purchased all of Logans spells that are available at Firelink """
+
+    LoganPurchasedAllSpellsArchives = 728
+    """ enabled when the player purchases all of Logan's spells, including the three exclusive to the Archives"""
+
     HasTitaniteShard = 780
     """ enabled when the player has at least one titanite shard; disabled otherwise\n
     not used for anything """
@@ -636,6 +642,10 @@ class FLAGS(Flag):
     """ enabled when the book of the guilty is obtained, either by buying it from Oswald
     or from the item lot awarded when Oswald dies """
 
+    GivePierceShieldUnused = 11700591
+    """ when enabled, the pierce shield is awarded\n
+    unused, but seemingly for siegmeyer in duke's archives """
+
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
     may not warp from\n
@@ -644,9 +654,28 @@ class FLAGS(Flag):
     leave and re-enter the region\n
     this flag is a temporary 5XXX flag, so it resets on every map load """
 
-    GivePierceShieldUnused = 11700591
-    """ when enabled, the pierce shield is awarded\n
-    unused, but seemingly for siegmeyer in duke's archives """
+    HasPurchasedLoganSoulArrow = 11707000
+    """ enabled when Logan's Soul Arrow is purchased """
+    HasPurchasedLoganGreatSoulArrow = 11707010
+    """ enabled when Logan's Great Soul Arrow is purchased """
+    HasPurchasedLoganHeavySoulArrow = 11707020
+    """ enabled when Logan's Heavy Soul Arrow is purchased """
+    HasPurchasedLoganGreatHeavySoulArrow = 11707030
+    """ enabled when Logan's Great Heavy Soul Arrow is purchased """
+    HasPurchasedLoganMagicWeapon = 11707040
+    """ enabled when Logan's Magic Weapon is purchased """
+    HasPurchasedLoganMagicShield = 11707050
+    """ enabled when Logan's Magic Shield is purchased """
+    HasPurchasedLoganHomingSoulmass = 11707060
+    """ enabled when Logan's Homing Soulmass is purchased """
+    HasPurchasedLoganSoulSpear = 11707070
+    # 11707080 skipped
+    HasPurchasedLoganCrystalHomingSoulmass = 11707090
+    """ enabled when Logan's Crystal Homing Soulmass is purchased """
+    HasPurchasedLoganCrystalSoulSpear = 11707100
+    """ enabled when Logan's Crystal Soul Spear is purchased """
+    HasPurchasedLoganCrystalMagicWeapon = 11707110
+    """ enabled when Logan's Crystal Magic Weapon is purchased """
 
     HasOfferedAllLordSouls = 11800210
     """ enabled after all four lord souls have been offered to the lordvessel
