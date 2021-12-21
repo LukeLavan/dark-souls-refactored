@@ -1098,23 +1098,26 @@ def MonitorRheaInventory():
 
 
 def Event725():
-    """ 725: Event 725 """
+    """ 725: TODO: this doesnt make sense and doesnt do anything? """
     EndIfThisEventOn()
     Await(TrueFlagCount((11707100, 11707190)) >= 2)
     EnableFlag(725)
 
 
 def Event726():
-    """ 726: Event 726 """
+    """ 726: TODO: this doesn't make sense and doesn't do anything """
     EndIfThisEventOn()
+    # these all occur in Oswald's shop EventFlags
+    # eg, buying three rings of sacrifice from him trips this flag
     Await(TrueFlagCount((11607000, 11607090)) >= 2)
     EnableFlag(726)
 
 
 def Event727():
-    """ 727: Event 727 """
+    """ 727: TODO: none of these flags are used """
     EndIfThisEventOn()
 
+    # these IDs imply they have to do with Ash Lake
     Await(FlagEnabled(11327000) and
           FlagEnabled(11327010) and
           FlagEnabled(11327020) and
