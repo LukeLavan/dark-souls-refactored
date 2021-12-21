@@ -190,6 +190,9 @@ class FLAGS(Flag):
     LoganPurchasedAllSpellsArchives = 728
     """ enabled when the player purchases all of Logan's spells, including the three exclusive to the Archives"""
 
+    PlayerIsPyromancerClass = 740
+    """ used for Laurentius dialog """
+
     HasTitaniteShard = 780
     """ enabled when the player has at least one titanite shard; disabled otherwise\n
     not used for anything """

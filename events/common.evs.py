@@ -44,7 +44,7 @@ def Constructor():
 
     ControlWarping()
 
-    Event740()
+    CheckIfPlayerIsPyromancerClass()
 
     Event750()
 
@@ -1132,10 +1132,10 @@ def Event727():
     EnableFlag(727)
 
 
-def Event740():
-    """ 740: Event 740 """
-    Await(PlayerIsClass(ClassType.Pyromancer))
-    EnableFlag(740)
+def CheckIfPlayerIsPyromancerClass():
+    """ 740: enables a flag if the player class is pyromancer """
+    Await(PlayerIsClass(ClassType.Pyromancer)) # weird place for Await
+    EnableFlag(FLAGS.PlayerIsPyromancerClass)
 
 
 def Event745():
