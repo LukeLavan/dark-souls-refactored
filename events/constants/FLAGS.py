@@ -184,6 +184,9 @@ class FLAGS(Flag):
     """ enabled when all of Grigg's spells and rings are purchased, triggering him
     to go hollow and move to sen's fortress """
 
+    RheaPurchasedAll = 724
+    """ enabled when all of Rhea's miracles and her divine blessing are purchased """
+
     LoganPurchasedAllSpellsArchives = 728
     """ enabled when the player purchases all of Logan's spells, including the three exclusive to the Archives"""
 
@@ -349,6 +352,25 @@ class FLAGS(Flag):
     ObtainedRepairBoxUndeadMerchant = 11017040
     """ enabled when the player buys the repair box from the male undead merchant\n
     also enabled when the repair box is bought from Andre via an event (819 from common) """
+
+    PurchasedRheaDivineBlessing = 11017050
+    """ enabled when Rhea's Divine Blessing is purchased """
+    PurchasedRheaHeal = 11017060
+    """ enabled when Rhea's Heal is purchased """
+    PurchasedRheaGreatHealExcerpt = 11017070
+    """ enabled when Rhea's Great Heal Excerpt is purchased """
+    PurchasedRheaHomeward = 11017080
+    """ enabled when Rhea's Homeward is purchased """
+    PurchasedRheaForce = 11017090
+    """ enabled when Rhea's Force is purchased """
+    PurchasedRheaGreatHeal = 11017100
+    """ enabled when Rhea's Great Heal is purchased """
+    PurchasedRheaWrathoftheGods = 11017110
+    """ enabled when Rhea's Wrath of the Gods is purchased """
+    PurchasedRheaSeekGuidance = 11017120
+    """ enabled when Rhea's Seek Guidance is purchased """
+    PurchasedRheaMagicBarrier = 11017130
+    """ enabled when Rhea's Magic Barrier is purchased """
 
     ObtainedCrestOfArtorias = 11017140
     """ enabled when the player buys the crest of artorias from andre\n

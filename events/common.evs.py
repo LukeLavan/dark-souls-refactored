@@ -202,7 +202,7 @@ def Constructor():
     MonitorLoganInventory()
     MonitorQuelanaCompletion()
     MonitorGriggsCompletion()
-    Event724()
+    MonitorRheaInventory()
     Event725()
     Event726()
     Event727()
@@ -1079,21 +1079,22 @@ def MonitorGriggsCompletion():
     EnableFlag(FLAGS.GriggsDone)
 
 
-def Event724():
-    """ 724: Event 724 """
+def MonitorRheaInventory():
+    """ 724: waits for all of Rhea's miracles and her divine blessing to be purchased
+    before enabling a flag (TODO: what does 724 do) """
     EndIfThisEventOn()
 
-    Await(FlagEnabled(11017050) and
-          FlagEnabled(11017060) and
-          FlagEnabled(11017070) and
-          FlagEnabled(11017080) and
-          FlagEnabled(11017090) and
-          FlagEnabled(11017100) and
-          FlagEnabled(11017110) and
-          FlagEnabled(11017120) and
-          FlagEnabled(11017130))
+    Await(FlagEnabled(FLAGS.PurchasedRheaDivineBlessing) and
+          FlagEnabled(FLAGS.PurchasedRheaHeal) and
+          FlagEnabled(FLAGS.PurchasedRheaGreatHealExcerpt) and
+          FlagEnabled(FLAGS.PurchasedRheaHomeward) and
+          FlagEnabled(FLAGS.PurchasedRheaForce) and
+          FlagEnabled(FLAGS.PurchasedRheaGreatHeal) and
+          FlagEnabled(FLAGS.PurchasedRheaWrathoftheGods) and
+          FlagEnabled(FLAGS.PurchasedRheaSeekGuidance) and
+          FlagEnabled(FLAGS.PurchasedRheaMagicBarrier))
 
-    EnableFlag(724)
+    EnableFlag(FLAGS.RheaPurchasedAll)
 
 
 def Event725():
