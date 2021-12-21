@@ -175,6 +175,11 @@ class FLAGS(Flag):
     LoganPurchasedAllSpellsFirelink = 721
     """ enabled when the player purchased all of Logans spells that are available at Firelink """
 
+    QuelanaDone = 722
+    """ enabled when all of Quelana's pyromancies have been purchased, 
+    the Bed of Chaos is dead, and teh ascended Pyro glove+5 has been obtained 
+    (ie, there's nothing left that Quelana can do for you, and she leaves permanently) """
+
     LoganPurchasedAllSpellsArchives = 728
     """ enabled when the player purchases all of Logan's spells, including the three exclusive to the Archives"""
 
@@ -532,9 +537,37 @@ class FLAGS(Flag):
     unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
     suggesting you could have only gotten one per character """
 
+    PurchasedLaurentiusFireball = 11407030
+    """ enabled when Laurentius's Fireball is purchased """
+    PurchasedLaurentiusFireOrb = 11407040
+    """ enabled when Laurentius's Fire Orb is purchased"""
+    PurchasedLaurnentiusCombustion = 11407050
+    """ enabled when Laurentius's Combustion is purchased """
+    PurchasedLaurnentiusIronFlesh = 11407060
+    """ enabled when Laurentius's Iron Flesh is purchased """
+    PurchasedLaurnentiusFlashSweat = 11407070
+    """ enabled when Laurentius's Flash Sweat is purhcased """
+
     ObtainedServantRoster = 11407080
     """ enabled when the player obtains the servant roster by buying it from Eingyi\n
     also enabled by itemlot 6160 (Eingyi's event ID) which awards servant roster, but this itemlot is not used """
+
+    PurchasedQuelenaFireball = 11407120
+    """ enabled when Quelana's Fireball is purchased """
+    PurchasedQuelanaFireOrb = 11407130
+    """ enabled when Quelana's Fire Orb is purchased """
+    PurchasedQuelanaCombustion = 11407140
+    """ enabled when Quelana's Combustion is purchased """
+    PurchasedQuelanaGreatFireball = 11407150
+    """ enabled when Quelana's Great Fireball is purchased """
+    PurchasedQuelanaFirestorm = 11407160
+    """ enabled when Quelana's Firestorm is purchased """
+    PurchasedQuelanaFireWhip = 11407170
+    """ enabled when Quelana's Fire Whip is purchased """
+    PurchasedQuelanaGreatCombustion = 11407180
+    """ enabled when Quelana's Great Combustion is purchased """
+    PurchasedQuelanaUndeadRapport = 11407190
+    """ enabled when Quelana's Undead Rapport is purchased """
 
     KilledDemonFiresage = 11410410
     """ enabled when demon firesage dies """

@@ -200,7 +200,7 @@ def Constructor():
 
     MonitorLaurentiusIsInterestedInSpectacularPyromancy()
     MonitorLoganInventory()
-    Event722()
+    MonitorQuelanaCompletion()
     Event723()
     Event724()
     Event725()
@@ -1039,23 +1039,23 @@ def MonitorLoganInventory():
     EnableFlag(FLAGS.LoganPurchasedAllSpellsArchives)
 
 
-def Event722():
-    """ 722: Event 722 """
+def MonitorQuelanaCompletion():
+    """ 722: waits for all of Quelana's pyromancies to be purchased, the bed of chaos to be killed,
+    and the ascended pyro glove+5 to be obtained, and activates a flag that causes Quelana to leave """
     EndIfThisEventOn()
 
-    Await(FlagEnabled(11407120) and
-          FlagEnabled(11407130) and
-          FlagEnabled(11407150) and
-          FlagEnabled(11407160) and
-          FlagEnabled(11407170) and
-          # yes this was ordered like this in vanilla
-          FlagEnabled(11407140) and
-          FlagEnabled(11407180) and
-          FlagEnabled(11407190) and
-          FlagEnabled(10) and
-          HasWeapon(1332500))
+    Await(FlagEnabled(FLAGS.PurchasedQuelenaFireball) and
+          FlagEnabled(FLAGS.PurchasedQuelanaFireOrb) and
+          FlagEnabled(FLAGS.PurchasedQuelanaGreatFireball) and
+          FlagEnabled(FLAGS.PurchasedQuelanaFirestorm) and
+          FlagEnabled(FLAGS.PurchasedQuelanaFireWhip) and
+          FlagEnabled(FLAGS.PurchasedQuelanaCombustion) and
+          FlagEnabled(FLAGS.PurchasedQuelanaGreatCombustion) and
+          FlagEnabled(FLAGS.PurchasedQuelanaUndeadRapport) and
+          FlagEnabled(FLAGS.KilledBedOfChaos) and
+          HasWeapon(WEAPONS.PyromancyGloveAscendedPlusFive))
 
-    EnableFlag(722)
+    EnableFlag(FLAGS.QuelanaDone)
 
 
 def Event723():
