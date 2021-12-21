@@ -29,6 +29,9 @@ class FLAGS(Flag):
     KilledIronGolem = 11
     """ enabled when iron golem dies """
 
+    KilledOandS = 12
+    """ enabled when O & S die (either order) """
+
     KilledFourKings = 13
     """ enabled when the four kings fight is over """
 
@@ -119,6 +122,14 @@ class FLAGS(Flag):
     HasGivenChaosFlameEmber = 363
     """ enabled when the user selects 'YES' when Vamos asks for the Chaos Flame Ember """
 
+    RheaBossCount = 600
+    """ a 4-bit number used to keep track of how many bosses have been killed since 
+    Rhea moved to the Parish\n
+    see flags 1-16 for which bosses count, since not all do """
+
+    RheaBossCountBit1 = 601
+    RheaBossCountBit2 = 602
+    RheaBossCountBit3 = 603
 
     CanOfferLordSouls = 702
     """ enabled when the player is in the Kiln map and hasn't yet offered all four lord souls\n
@@ -234,6 +245,9 @@ class FLAGS(Flag):
     InChaosServantCovenant = 859
     """ enabled when the player is in Chaos Servant covenant; disabled otherwise\n
     used to determine if the player may offer humanity to the Fair Lady """
+
+    RheaParish = 1175
+    """ when enabled, Rhea will appear at the Parish """
 
     DeadIngward = 1315
     """ enabled when Ingward's health is <= 0 """

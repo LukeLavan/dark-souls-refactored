@@ -194,7 +194,7 @@ def Constructor():
     Event840(9, 849, 7905, 1400700, -1)
     Event840(10, 860, 7905, 16969, -1)
 
-    Event690(0, 600, 4, 16, 1175)
+    IncrementNumWhenMajorBossKilled(0, FLAGS.RheaBossCount, 4, 16, FLAGS.RheaParish)
 
     AllowSpellAttunement()
 
@@ -960,47 +960,57 @@ def AwardItemLotWhenFlagEnabledAlwaysRepeat(_, flag: int, itemlot: int):
     Restart()
 
 
-def Event690(_, arg_0_3: int, arg_4_7: uint, arg_8_11: uint, arg_12_15: int):
-    """ 690: Event 690 """
-    SkipLinesIfThisEventSlotOn(1)
+def IncrementNumWhenMajorBossKilled(_, num: int, bit_count: uint, max_value: uint, flag: int):
+    """ 690: when flag becomes active for the first time, num begins to increment
+    for each major boss slain. \n
+    see flags 1-16 for which bosses count\n
+    in order for num to begin to increment, flag must be active and one of the applicable bosses
+    must be killed within one game load - if flag is disabled and the game is reloaded,
+    the event is restarted and the event waits for flag to become enabled again\n
+    once num has been incremented, the event restarts and the status of flag no longer has any effect\n
+    used for counting how many bosses have been killed after Rhea moves to the Parish """
 
-    AwaitFlagOn(arg_12_15)
+    if not THIS_SLOT_FLAG:
+        AwaitFlagOn(flag)
 
     # here we conditionally add to the -1 condition group:
     # if the flag is disabled at this point, it's added to the group,
-    # and afterwards we check to see when any of these become enabled
-    if FlagDisabled(2):
-        IfFlagOn(-1, 2)
-    if FlagDisabled(3):
-        IfFlagOn(-1, 3)
-    if FlagDisabled(4):
-        IfFlagOn(-1, 4)
-    if FlagDisabled(5):
-        IfFlagOn(-1, 5)
-    if FlagDisabled(6):
-        IfFlagOn(-1, 6)
-    if FlagDisabled(7):
-        IfFlagOn(-1, 7)
-    if FlagDisabled(8):
+    # and afterwards we check to see when any of these become enabled.
+    # the effect is that the IncrementEventValue insrutcion below only
+    # happens when one of these flags becomes enabled, rather than letting
+    # the increment happen if these flags were already enabled before
+    if FlagDisabled(FLAGS.KilledGapingDragon):
+        IfFlagOn(-1, FLAGS.KilledGapingDragon)
+    if FlagDisabled(FLAGS.KilledBellGargoyles):
+        IfFlagOn(-1, FLAGS.KilledBellGargoyles)
+    if FlagDisabled(FLAGS.KilledPriscilla):
+        IfFlagOn(-1, FLAGS.KilledPriscilla)
+    if FlagDisabled(FLAGS.KilledSif):
+        IfFlagOn(-1, FLAGS.KilledSif)
+    if FlagDisabled(FLAGS.KilledPinwheel):
+        IfFlagOn(-1, FLAGS.KilledPinwheel)
+    if FlagDisabled(FLAGS.KilledNito):
+        IfFlagOn(-1, FLAGS.KilledNito)
+    if FlagDisabled(8): # unused - cut boss? order implies ash lake
         IfFlagOn(-1, 8)
-    if FlagDisabled(9):
-        IfFlagOn(-1, 9)
-    if FlagDisabled(10):
-        IfFlagOn(-1, 10)
-    if FlagDisabled(11):
-        IfFlagOn(-1, 11)
-    if FlagDisabled(12):
-        IfFlagOn(-1, 12)
-    if FlagDisabled(13):
-        IfFlagOn(-1, 13)
-    if FlagDisabled(14):
-        IfFlagOn(-1, 14)
-    if FlagDisabled(15):
-        IfFlagOn(-1, 15)
+    if FlagDisabled(FLAGS.KilledQuelaag):
+        IfFlagOn(-1, FLAGS.KilledQuelaag)
+    if FlagDisabled(FLAGS.KilledBedOfChaos):
+        IfFlagOn(-1, FLAGS.KilledBedOfChaos)
+    if FlagDisabled(FLAGS.KilledIronGolem):
+        IfFlagOn(-1, FLAGS.KilledIronGolem)
+    if FlagDisabled(FLAGS.KilledOandS):
+        IfFlagOn(-1, FLAGS.KilledOandS)
+    if FlagDisabled(FLAGS.KilledFourKings):
+        IfFlagOn(-1, FLAGS.KilledFourKings)
+    if FlagDisabled(FLAGS.KilledSeath):
+        IfFlagOn(-1, FLAGS.KilledSeath)
+    if FlagDisabled(FLAGS.KilledGwyn):
+        IfFlagOn(-1, FLAGS.KilledGwyn)
 
     AwaitConditionTrue(-1)
 
-    IncrementEventValue(arg_0_3, bit_count=arg_4_7, max_value=arg_8_11)
+    IncrementEventValue(num, bit_count=bit_count, max_value=max_value)
     Restart()
 
 
