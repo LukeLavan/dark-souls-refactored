@@ -8,4 +8,6 @@ class WEAPONS(WeaponParam):
 
     DarkHand = 904000
 
+    PyromancyGloveAscendedPlusFive = 1332500
+
     DarkmoonTalisman = 1366000

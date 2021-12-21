@@ -180,6 +180,10 @@ class FLAGS(Flag):
     the Bed of Chaos is dead, and teh ascended Pyro glove+5 has been obtained 
     (ie, there's nothing left that Quelana can do for you, and she leaves permanently) """
 
+    GriggsDone = 723
+    """ enabled when all of Grigg's spells and rings are purchased, triggering him
+    to go hollow and move to sen's fortress """
+
     LoganPurchasedAllSpellsArchives = 728
     """ enabled when the player purchases all of Logan's spells, including the three exclusive to the Archives"""
 
@@ -392,6 +396,31 @@ class FLAGS(Flag):
     GiveSunlightMedal = 11020607
     """ when enabled, give the player a sunlight medal\n
     used by Lautrec, when you talk to him at Firelink after freeing him """
+
+    PurchasedGriggsSoulArrow = 11027130
+    """ enabled when Grigg's Soul Arrow is purchased """
+    PurchasedGriggsGreatSoulArrow = 11027140
+    """ enabled when Grigg's Great Soul Arrow is purchased """
+    PurchasedGriggsHeavySoulArrow = 11027150
+    """ enabled when Grigg's Heavy Soul Arrow is purchased """
+    PurchasedGriggsGreatHeavySoulArrow = 11027160
+    """ enabled when Grigg's Great Heavy Soul Arrow is purchased """
+    PurchasedGriggsMagicWeapon = 11027170
+    """ enabled when Grigg's Magic Weapon is purchased """
+    PurchasedGriggsMagicShield = 11027180
+    """ enabled when Grigg's Magic Shield is purchased """
+    PurchasedGriggsAuralDecoy = 11027190
+    """ enabled when Grigg's Aural Decoy is purchased """
+    PurchasedGriggsFallControl = 11027200
+    """ enabled when Grigg's Fall Control is purchased """
+    PurchasedGriggsBellowingDragoncrestRing = 11027210
+    """ enabled when Grigg's Bellowing Dragoncrest Ring is purchased """
+    PurchasedGriggsLingeringDragoncrestRing = 11027220
+    """ enabled when Grigg's Lingering Dragoncrest Ring is purchased """
+    PurchasedGriggsHomingSoulmass = 11027230
+    """ enabled when Grigg's Homing Soulmass is purchased """
+    PurchasedGriggsSoulSpear = 11027240
+    """ enabled when Grigg's Soul Spear is purchased """
 
     GiveRingOfFog = 11200594
     """ when enabled, give the player a ring of fog\n

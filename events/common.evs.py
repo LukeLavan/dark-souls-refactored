@@ -201,7 +201,7 @@ def Constructor():
     MonitorLaurentiusIsInterestedInSpectacularPyromancy()
     MonitorLoganInventory()
     MonitorQuelanaCompletion()
-    Event723()
+    MonitorGriggsCompletion()
     Event724()
     Event725()
     Event726()
@@ -1019,7 +1019,7 @@ def MonitorLoganInventory():
     which are enabled when all of the respective spells are bought from Logan\n
     note that spells not bought at Firelink remain available at the Archives, so it's possible for
     LoganPurchasedAllSpellsFirelink to become enabled when buying spells at the Archives """
-    EndIfFlagOn(FLAGS.LoganPurchasedAllSpells)
+    EndIfFlagOn(FLAGS.LoganPurchasedAllSpellsArchives)
 
     Await(FlagEnabled(FLAGS.HasPurchasedLoganSoulArrow) and
           FlagEnabled(FLAGS.HasPurchasedLoganGreatSoulArrow) and
@@ -1058,24 +1058,25 @@ def MonitorQuelanaCompletion():
     EnableFlag(FLAGS.QuelanaDone)
 
 
-def Event723():
-    """ 723: Event 723 """
+def MonitorGriggsCompletion():
+    """ 723: waits for all of Grigg's spells and rings to be purchased, then
+    enables a flags that triggers his move to sen's """
     EndIfThisEventOn()
 
-    Await(FlagEnabled(11027130) and
-          FlagEnabled(11027140) and
-          FlagEnabled(11027150) and
-          FlagEnabled(11027160) and
-          FlagEnabled(11027170) and
-          FlagEnabled(11027180) and
-          FlagEnabled(11027190) and
-          FlagEnabled(11027200) and
-          FlagEnabled(11027210) and
-          FlagEnabled(11027220) and
-          FlagEnabled(11027230) and
-          FlagEnabled(11027240))
+    Await(FlagEnabled(FLAGS.PurchasedGriggsSoulArrow) and
+          FlagEnabled(FLAGS.PurchasedGriggsGreatSoulArrow) and
+          FlagEnabled(FLAGS.PurchasedGriggsHeavySoulArrow) and
+          FlagEnabled(FLAGS.PurchasedGriggsGreatHeavySoulArrow) and
+          FlagEnabled(FLAGS.PurchasedGriggsMagicWeapon) and
+          FlagEnabled(FLAGS.PurchasedGriggsMagicShield) and
+          FlagEnabled(FLAGS.PurchasedGriggsAuralDecoy) and
+          FlagEnabled(FLAGS.PurchasedGriggsFallControl) and
+          FlagEnabled(FLAGS.PurchasedGriggsBellowingDragoncrestRing) and
+          FlagEnabled(FLAGS.PurchasedGriggsLingeringDragoncrestRing) and
+          FlagEnabled(FLAGS.PurchasedGriggsHomingSoulmass) and
+          FlagEnabled(FLAGS.PurchasedGriggsSoulSpear))
 
-    EnableFlag(723)
+    EnableFlag(FLAGS.GriggsDone)
 
 
 def Event724():
