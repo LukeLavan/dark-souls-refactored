@@ -5,6 +5,8 @@ linked:
 strings:
 
 """
+from constants.CHARACTERS import CHARACTERS
+from constants.FLAGS import FLAGS
 from soulstruct.darksouls1r.events import *
 from ..entities.m10_02_00_00_entities import *
 from ..entities.m18_00_00_00_entities import Boxes as m18_00_Boxes, Characters as m18_00_Characters
@@ -233,15 +235,15 @@ def Preconstructor():
     SkipLinesIfFlagOn(2, 1092)
     SkipLinesIfFlagOn(1, 1096)
     DisableCharacter(Characters.c0000_0011)
-    RunEvent(11020510, slot=0, args=(Characters.c0000_0011, 1096))
-    RunEvent(11020530, slot=0, args=(Characters.c0000_0011, 1090, 1109, 1097))
+    ControlNPCHostility(0, Characters.c0000_0011, 1096)
+    ControlNPCDeath(0, Characters.c0000_0011, 1090, 1109, 1097)
     RunEvent(11020550, slot=0, args=(Characters.c0000_0011, 1090, 1109, 1092))
     RunEvent(11020551, slot=0, args=(Characters.c0000_0011, 1090, 1109, 1093))
     HumanityRegistration(Characters.c0000_0012, 8342)
     SkipLinesIfFlagRangeAnyOn(1, (1112, 1114))
     DisableCharacter(Characters.c0000_0012)
-    RunEvent(11020510, slot=1, args=(Characters.c0000_0012, 1114))
-    RunEvent(11020530, slot=1, args=(Characters.c0000_0012, 1110, 1119, 1115))
+    ControlNPCHostility(1, Characters.c0000_0012, 1114)
+    ControlNPCDeath(1, Characters.c0000_0012, 1110, 1119, 1115)
     RunEvent(11020552, slot=0, args=(Characters.c0000_0012, 1110, 1119, 1112))
     RunEvent(11020553, slot=0, args=(Characters.c0000_0012, 1110, 1119, 1113))
     RunEvent(11020554, slot=0, args=(Characters.c0000_0012, 1110, 1119, 1117))
@@ -256,7 +258,7 @@ def Preconstructor():
     RunEvent(11020501)
     RunEvent(11020559)
     RunEvent(11020560)
-    RunEvent(11020530, slot=2, args=(Characters.c0000_0013, 1170, 1180, 1177))
+    ControlNPCDeath(2, Characters.c0000_0013, 1170, 1180, 1177)
     HumanityRegistration(Characters.c0000_0014, 8366)
     SkipLinesIfFlagOn(1, 1192)
     SkipLines(1)
@@ -270,33 +272,33 @@ def Preconstructor():
     HumanityRegistration(Characters.c0000_0015, 8374)
     SkipLinesIfFlagOn(1, 1211)
     DisableCharacter(Characters.c0000_0015)
-    RunEvent(11020530, slot=4, args=(Characters.c0000_0015, 1210, 1219, 1214))
+    ControlNPCDeath(4, Characters.c0000_0015, 1210, 1219, 1214)
     HumanityRegistration(Characters.c0000_0016, 8382)
     SkipLinesIfFlagOn(1, 1221)
     DisableCharacter(Characters.c0000_0016)
-    RunEvent(11020530, slot=5, args=(Characters.c0000_0016, 1220, 1229, 1224))
+    ControlNPCDeath(5, Characters.c0000_0016, 1220, 1229, 1224)
     HumanityRegistration(Characters.c0000_0017, 8390)
     SkipLinesIfFlagOn(2, 1252)
     SkipLinesIfFlagOn(1, 1253)
     DisableCharacter(Characters.c0000_0017)
-    RunEvent(11020510, slot=6, args=(Characters.c0000_0017, 1253))
-    RunEvent(11020530, slot=6, args=(Characters.c0000_0017, 1250, 1259, 1254))
+    ControlNPCHostility(6, Characters.c0000_0017, 1253)
+    ControlNPCDeath(6, Characters.c0000_0017, 1250, 1259, 1254)
     RunEvent(11020574, slot=0, args=(Characters.c0000_0017, 1250, 1259, 1252))
     RunEvent(11020575, slot=0, args=(Characters.c0000_0017, 1250, 1259, 1256))
     HumanityRegistration(Characters.c0000_0024, 8406)
     SkipLinesIfFlagOn(2, 1314)
     SkipLinesIfFlagOn(1, 1313)
     DisableCharacter(Characters.c0000_0024)
-    RunEvent(11020510, slot=7, args=(Characters.c0000_0024, 1314))
-    RunEvent(11020530, slot=7, args=(Characters.c0000_0024, 1310, 1319, 1315))
+    ControlNPCHostility(7, Characters.c0000_0024, 1314)
+    ControlNPCDeath(7, Characters.c0000_0024, 1310, 1319, 1315)
     RunEvent(11020576, slot=0, args=(Characters.c0000_0024, 1310, 1319, 1313))
     RunEvent(11020504, slot=8, args=(Characters.c2510_0000, 1411))
-    RunEvent(11020530, slot=8, args=(Characters.c2510_0000, 1410, 1413, 1412))
+    ControlNPCDeath(8, Characters.c2510_0000, 1410, 1413, 1412)
     HumanityRegistration(Characters.c0000_0003, 8430)
     SkipLinesIfFlagOn(2, 1434)
     SkipLinesIfFlagOn(1, 1431)
     DisableCharacter(Characters.c0000_0003)
-    RunEvent(11020510, slot=9, args=(Characters.c0000_0003, 1434))
+    ControlNPCHostility(9, Characters.c0000_0003, 1434)
     RunEvent(11020413, slot=0, args=(Characters.c0000_0003, 1435))
     RunEvent(11020412, slot=0, args=(Characters.c0000_0003, 1430, 1459, 1431))
     HumanityRegistration(Characters.c0000_0018, 8438)
@@ -304,34 +306,37 @@ def Preconstructor():
     SkipLinesIfFlagOn(1, 1462)
     SkipLines(1)
     DisableCharacter(Characters.c0000_0018)
-    RunEvent(11020510, slot=10, args=(Characters.c0000_0018, 1461))
-    RunEvent(11020530, slot=10, args=(Characters.c0000_0018, 1460, 1464, 1462))
+    ControlNPCHostility(10, Characters.c0000_0018, 1461)
+    ControlNPCDeath(10, Characters.c0000_0018, 1460, 1464, 1462)
     RunEvent(11020577, slot=0, args=(Characters.c0000_0018, 1460, 1464, 1464))
-    HumanityRegistration(Characters.c0000_0020, 8446)
+
+    HumanityRegistration(CHARACTERS.FIRELINK.Siegmeyer, 8446)
     SkipLinesIfFlagOn(2, 1512)
-    SkipLinesIfFlagOn(1, 1497)
-    DisableCharacter(Characters.c0000_0020)
-    RunEvent(11020510, slot=11, args=(Characters.c0000_0020, 1512))
-    RunEvent(11020530, slot=11, args=(Characters.c0000_0020, 1490, 1514, 1513))
-    RunEvent(11020579, slot=0, args=(Characters.c0000_0020, 1490, 1514, 1497))
-    HumanityRegistration(Characters.c0000_0021, 8454)
+    SkipLinesIfFlagOn(1, FLAGS.SiegmeyerFirelink)
+    DisableCharacter(CHARACTERS.FIRELINK.Siegmeyer)
+    ControlNPCHostility(11, CHARACTERS.FIRELINK.Siegmeyer, 1512)
+    ControlNPCDeath(11, CHARACTERS.FIRELINK.Siegmeyer, 1490, 1514, 1513)
+    EnableSiegmeyer(0, CHARACTERS.FIRELINK.Siegmeyer, 1490, 1514, FLAGS.SiegmeyerFirelink)
+
+    HumanityRegistration(CHARACTERS.FIRELINK.Sieglinde, 8454)
     SkipLinesIfFlagOn(3, 1547)
     SkipLinesIfFlagOn(2, 1545)
     SkipLinesIfFlagOn(1, 1543)
-    DisableCharacter(Characters.c0000_0021)
-    RunEvent(11020510, slot=12, args=(Characters.c0000_0021, 1547))
-    RunEvent(11020530, slot=12, args=(Characters.c0000_0021, 1540, 1569, 1548))
-    RunEvent(11020583, slot=0, args=(Characters.c0000_0021, 1540, 1569, 1543))
-    RunEvent(11020584, slot=0, args=(Characters.c0000_0021, 1540, 1569, 1544))
-    RunEvent(11020585, slot=0, args=(Characters.c0000_0021, 1540, 1569, 1545))
-    RunEvent(11020586, slot=0, args=(Characters.c0000_0021,))
+    DisableCharacter(CHARACTERS.FIRELINK.Sieglinde)
+    ControlNPCHostility(12, CHARACTERS.FIRELINK.Sieglinde, 1547)
+    ControlNPCDeath(12, CHARACTERS.FIRELINK.Sieglinde, 1540, 1569, 1548)
+    RunEvent(11020583, slot=0, args=(CHARACTERS.FIRELINK.Sieglinde, 1540, 1569, 1543))
+    RunEvent(11020584, slot=0, args=(CHARACTERS.FIRELINK.Sieglinde, 1540, 1569, 1544))
+    RunEvent(11020585, slot=0, args=(CHARACTERS.FIRELINK.Sieglinde, 1540, 1569, 1545))
+    RunEvent(11020586, slot=0, args=(CHARACTERS.FIRELINK.Sieglinde,))
+
     HumanityRegistration(Characters.c0000_0019, 8462)
     SkipLinesIfFlagOn(3, 1572)
     SkipLinesIfFlagOn(2, 1574)
     SkipLinesIfFlagOn(1, 1577)
     DisableCharacter(Characters.c0000_0019)
-    RunEvent(11020510, slot=13, args=(Characters.c0000_0019, 1574))
-    RunEvent(11020530, slot=13, args=(Characters.c0000_0019, 1570, 1599, 1575))
+    ControlNPCHostility(13, Characters.c0000_0019, 1574)
+    ControlNPCDeath(13, Characters.c0000_0019, 1570, 1599, 1575)
     RunEvent(11020587, slot=0, args=(Characters.c0000_0019, 1570, 1599, 1572))
     SkipLinesIfFlagOff(1, 11020690)
     RunEvent(11020588, slot=0, args=(Characters.c0000_0019, 1570, 1599, 1573, 1572, 1577))
@@ -341,8 +346,8 @@ def Preconstructor():
     SkipLinesIfFlagOn(2, 1627)
     SkipLinesIfFlagOn(1, 1626)
     DisableCharacter(Characters.c0000_0022)
-    RunEvent(11020510, slot=14, args=(Characters.c0000_0022, 1627))
-    RunEvent(11020530, slot=14, args=(Characters.c0000_0022, 1620, 1629, 1628))
+    ControlNPCHostility(14, Characters.c0000_0022, 1627)
+    ControlNPCDeath(14, Characters.c0000_0022, 1620, 1629, 1628)
     RunEvent(11020411, slot=0, args=(Characters.c0000_0022, 1620, 1629, 1626))
     SkipLinesIfFlagOff(2, 15)
     DisableCharacter(Characters.c5330_0000)
@@ -445,8 +450,8 @@ def Event11020001():
     DisableBackread(Characters.c0000_0024)
     DisableBackread(Characters.c2510_0000)
     DisableBackread(Characters.c0000_0003)
-    DisableBackread(Characters.c0000_0020)
-    DisableBackread(Characters.c0000_0021)
+    DisableBackread(CHARACTERS.FIRELINK.Siegmeyer)
+    DisableBackread(CHARACTERS.FIRELINK.Sieglinde)
     DisableBackread(Characters.c0000_0019)
     DisableBackread(Characters.c0000_0022)
     DisableBackread(Characters.c5330_0000)
@@ -465,8 +470,8 @@ def Event11020001():
     EnableBackread(Characters.c0000_0024)
     EnableBackread(Characters.c2510_0000)
     EnableBackread(Characters.c0000_0003)
-    EnableBackread(Characters.c0000_0020)
-    EnableBackread(Characters.c0000_0021)
+    EnableBackread(CHARACTERS.FIRELINK.Siegmeyer)
+    EnableBackread(CHARACTERS.FIRELINK.Sieglinde)
     EnableBackread(Characters.c0000_0019)
     EnableBackread(Characters.c0000_0022)
     EnableBackread(Characters.c5330_0000)
@@ -708,42 +713,48 @@ def Event11025150():
     Restart()
 
 
-def Event11020510(_, arg_0_3: int, arg_4_7: int):
-    """ 11020510: Event 11020510 """
-    IfHealthLessThanOrEqual(1, arg_0_3, 0.8999999761581421)
-    IfHealthGreaterThan(1, arg_0_3, 0.0)
-    IfAttacked(1, arg_0_3, attacker=PLAYER)
-    IfFlagOn(2, arg_4_7)
-    IfThisEventSlotOn(2)
-    IfFlagOn(3, arg_4_7)
-    IfThisEventSlotOff(3)
-    IfConditionTrue(-1, input_condition=1)
-    IfConditionTrue(-1, input_condition=2)
-    IfConditionTrue(-1, input_condition=3)
-    IfConditionTrue(0, input_condition=-1)
-    SkipLinesIfFinishedConditionFalse(2, 3)
-    DisableCharacter(arg_0_3)
-    IfFlagOn(0, 703)
-    EnableFlag(arg_4_7)
-    SetTeamType(arg_0_3, TeamType.HostileAlly)
+def ControlNPCHostility(_, npc: int, hostile: int):
+    """ 11020510: Enables an NPC's hostile flag when the player attacks the NPC and the NPC has less than 90% health\n
+    if the hostile flag is already enabled before this event runs for the first time, the NPC is disabled """
+    Await(
+        (
+            HealthRatio(npc) <= 0.90 and
+            HealthRatio(npc) > 0.0 and
+            IsAttacked(npc, PLAYER)
+        ) or (
+            FlagEnabled(hostile)
+        )
+    )
+
+    # this prevents hostile NPCs from appearing at their subsequent locations
+    # if they've been made hostile elsewhere
+    if FlagEnabled(hostile) and not THIS_SLOT_FLAG:
+        DisableCharacter(npc)
+        Await(FlagEnabled(703)) #TODO: what is this
+
+    EnableFlag(hostile)
+    SetTeamType(npc, TeamType.HostileAlly)
     SaveRequest()
 
 
-def Event11020530(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
-    """ 11020530: Event 11020530 """
-    SkipLinesIfThisEventSlotOff(2)
-    DropMandatoryTreasure(arg_0_3)
-    End()
-    IfHealthLessThanOrEqual(1, arg_0_3, 0.0)
-    IfCharacterInsideRegion(2, arg_0_3, region=Boxes.ElevatorForcedDeath)
-    IfConditionTrue(-1, input_condition=1)
-    IfConditionTrue(-1, input_condition=2)
-    IfConditionTrue(0, input_condition=-1)
-    SkipLinesIfFinishedConditionTrue(2, 1)
-    Kill(arg_0_3, award_souls=True)
-    DisableGravity(arg_0_3)
-    DisableFlagRange((arg_4_7, arg_8_11))
-    EnableFlag(arg_12_15)
+def ControlNPCDeath(_, npc: int, range_begin: int, range_end: int, dead: int):
+    """ 11020530: Enables an NPC's dead flag when their HP reaches 0\n
+    disables all of the flags in the specified range, then enables the dead flag; used to
+    disable all of an NPC's quest flags besides the dead one\n
+    if the NPC is already dead (ie, this event has already finished and this slot's flag is on),
+    that NPC's "MandatoryTreasure" is dropped """
+    if THIS_SLOT_FLAG:
+        DropMandatoryTreasure(npc)
+        End()
+    
+    Await(HealthRatio(npc) <= 0.0 or CharacterInsideRegion(npc, Boxes.ElevatorForcedDeath))
+
+    if HealthRatio(npc) > 0.0:
+        Kill(npc, award_souls=True)
+        DisableGravity(npc)
+
+    DisableFlagRange((range_begin, range_end))
+    EnableFlag(dead)
 
 
 def Event11020501():
@@ -1136,22 +1147,22 @@ def Event11020577(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     DisableCharacter(arg_0_3)
 
 
-def Event11020579(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
-    """ 11020579: Event 11020579 """
-    IfFlagOff(1, 1512)
-    IfFlagOn(1, 1494)
-    IfFlagOn(1, 11510590)
-    IfConditionTrue(0, input_condition=1)
-    DisableFlagRange((arg_4_7, arg_8_11))
-    EnableFlag(arg_12_15)
-    EnableCharacter(arg_0_3)
+def EnableSiegmeyer(_, npc: int, range_begin: int, range_end: int, flag: int):
+    """ 11020579: checks the conditions necessary for Siegmeyer to appear at Firelink:
+    Siegmeyer was not made hostile, was rescued at Anor Londo, and gave the player the Tiny Being's Ring\n
+    when all three checks pass, disables the specified flag range, enables the specified flag, and enables npc """
+    Await(FlagDisabled(1512) and FlagEnabled(1494) and FlagEnabled(FLAGS.GiveTinyBeingsRing))
+
+    DisableFlagRange((range_begin, range_end))
+    EnableFlag(flag)
+    EnableCharacter(npc)
 
 
 def Event11020583(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11020583: Event 11020583 """
     IfFlagOff(1, 1547)
     IfFlagOn(1, 1542)
-    IfFlagOn(1, 11700593)
+    IfFlagOn(1, FLAGS.SieglindeDukesConversationOver)
     IfFlagOff(1, 1512)
     IfFlagOff(1, 1513)
     IfConditionTrue(0, input_condition=1)
@@ -1162,9 +1173,9 @@ def Event11020583(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 def Event11020584(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11020584: Event 11020584 """
-    IfFlagOff(1, 1547)
-    IfFlagOn(1, 1543)
-    IfFlagOn(1, 11020605)
+    IfFlagOff(1, FLAGS.SieglindeHostile)
+    IfFlagOn(1, FLAGS.SieglindeFirelink)
+    IfFlagOn(1, FLAGS.SieglindeFirelinkDialogExhausted)
     IfThisEventOff(1)
     IfFlagOff(2, 1547)
     IfFlagOn(2, 1543)
@@ -1182,7 +1193,7 @@ def Event11020585(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11020585: Event 11020585 """
     IfFlagOff(1, 1547)
     IfFlagOn(1, 1544)
-    IfFlagOn(1, 11410593)
+    IfFlagOn(1, FLAGS.SiegmeyerLiveAfterIzalithBattle)
     IfConditionTrue(0, input_condition=1)
     DisableFlagRange((arg_4_7, arg_8_11))
     EnableFlag(arg_12_15)

@@ -279,6 +279,113 @@ class FLAGS(Flag):
     DeadMaleUndeadMerchant = 1402
     """ enabled when the male undead merchant's health is <= 0 """
 
+    SiegmeyerStart = 1490
+    """ enabled by default, becomes disabled when Siegmeyer's quest progresses in some way """
+
+    SiegmeyerInSensAlreadyMet = 1491
+    """ enabled when the Sen's Fortress gate opens and Siegmeyer's first conversation has been exhausted\n
+    players do not need to interact with him here for him to move to Anor Londo """
+
+    SiegmeyerInSensNotMet = 1492
+    """ enabled when the Sen's Fortress gate opens and Siegmeyer's first conversation has not been exhausted\n
+    players need to interact with him here for him to move to Anor Londo """
+
+    SiegmeyerAnorLondo = 1493
+    """ enabled when Siegmeyer should appear at Anor Londo """
+
+    SiegmeyerAnorLondoRescued = 1494
+    """ enabled when the three silver knights past Siegward are slain, but only
+    if Siegward is there to witness it (ie, 1493 is enabled and 1512 is disabled) """
+
+    SiegmeyerFirelink = 1497
+    """ enabled when Siegmeyer appears at Firelink (1494 is enabled and the tiny being's 
+    ring has been awarded) """
+
+    SiegmeyerBlighttown = 1501
+    """" enabled when the player enters the Blighttown map after exhausting Siegmeyer's Firelink dialog\n
+    when enabled, Siegmeyer appears in his Blighttown spot asking for purple moss clumps """
+
+    SiegmeyerTravelToLostIzalith = 1502
+    """ enabled when the pierce shield is awarded for giving Siegmeyer purple moss clumps\n
+    when enabled, Siegmeyer will appear in his Lost Izalith spot """
+
+    SiegmeyerAtLostIzalth = 1503
+    """ enabled when the player enters the Lost Izalth map while 1502 is enabled\n
+    when enabled, Siegmeyer appears in his Lost Izalth spot """
+
+    SiegmeyerBattle = 1504
+    """" enabled when the player finishes Siegmeyer's dialog and he charges into battle """
+
+    SiegmeyerNoBattle = 1505
+    """ enabled when the four chaos eaters die before Siegmeyer charges into battle """
+
+    SiegmeyerLostBattle = 1506
+    """ enabled when the four chaos eaters die and Siegmeyer has < 50% HP """
+
+    SiegmeyerWonBattle = 1507
+    """ enabled when the four chaos eaters die and Siegmeyer has >= 50% HP """
+
+    SiegmeyerAshLake = 1511
+    """ enabled after exhausting Siegmeyer's dialog after the battle is won (<= 50% HP) and\n
+    Sieglinde's Firelink return dialog has been exhausted (see SieglindeFirelinkReturnDialogExhausted)\n
+    used to determine if Siegmeyer and Sieglinde should spawn at Ash Lake for their final scene """
+
+    SiegmeyerHostile = 1512
+    """ enabled when Siegmeyer becomes hostile to the player """
+
+    SiegmeyerDead = 1513
+    """ enabled when Siegmeyer dies prematurely """
+
+    SiegmeyerDone = 1514
+    """ enabled after exhausting Siegmeyer's dialog after avoiding the Lost Izalth battle or\n
+    after Ash Lake scene with Sieglinde TODO: better details """
+
+    SieglindeStart = 1540
+    SieglindeGolemSpawned = 1541
+    """ enabled when the gold crystal golem carrying Sieglinde is enabled\n
+    the conditions for this happening are as follows:\n
+        Sieglinde has not been made hostile (impossible anyway)\n
+        SieglindeStart is enabled (true by default)\n
+        SiegmeyerHostile and SiegmeyerDead are disabled\n
+        at least one flag in the range 1501-1511 is enabled, meaning
+        siegmeyer's quest has been progressed to at least the point where
+        Siegmeyer spawns at Blighttown (has left Firelink) and the player has not finished his 
+        dialog after killing the chaos eaters before Siegmeyer charges against them
+        nor has Siegmeyer died at Lost Izalth (or otherwise);
+        if Siegmeyer's battle ends and he has less than 50% HP, Sieglinde can still spawn
+        by not allowing Siegmeyer's dialog to complete\n
+        the Duke's Archives map has been loaded so that the relevant event is running
+        while all of the above conditions are true
+    once enabled, the golem will continue to spawn until Sieglinde's quest is progressed
+    (ie, the golem is killed) regardless of the initial spawn requirements """
+
+    SieglindeGolemKilled = 1542
+    """ enabled when the gold crystal golem carrying Sieglinde dies """
+
+    SieglindeFirelink = 1543
+    """ enabled when Firelink loads after exhausting Sieglinde's dialog at the Archives
+    (Sieglinde is enabled at Firelink) """
+
+    SieglindeFirelinkDone = 1544
+    """ enabled when Firelink is loaded after exhausting Sieglinde's Firelink dialog regardless
+    of the player's answer to her question """
+
+    SieglindeFirelinkReturn = 1545
+    """ enabled when 1544 is enabled and SiegmeyerLiveAfterIzalithBattle is enabled """
+
+    SieglindeAshLake = 1546
+    """ enabled when Ash Lake loads, SieglindeFirelinkReturn is enabled, SiegmeyerAshLake is
+    enabled, and SieglindeFirelinkReturnDialogExhausted is enabled """
+
+    SieglindeHostile = 1547
+    SieglindeDead = 1548
+    SieglindeDone = 1549
+    """ enabled when Sieglinde has awarded the player with the Titanite Slab and the player gets
+    far enough away to unload Sieglinde """
+
+    DeadShiva = 1604
+    DeadShivaBodyguard = 1764
+
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n
     disabled on next load when the message is displayed to the player """
@@ -401,6 +508,9 @@ class FLAGS(Flag):
     """ when enabled, give the player a divine blessing\n
     used by alvina, when you talk to her after killing a host as a forest hunter """
 
+    SiegmeyerFirelinkConversation = 11020592
+    """ enabled when the player exhausts Siegmeyer's dialog at Firelink, regardless of the player's answer """
+
     GiveEmitForce = 11020594
     """ when enabled, the emit force miracle is awarded\n
     enabled when talking to siegmeyer at firelink and answering yes to his question """
@@ -417,6 +527,13 @@ class FLAGS(Flag):
     """ when enabled, give the player the pyromancy glove\n
     enabled when talking to Laurentius after answering his questions\n
     TODO: what if starting class is pyro? """
+
+    SieglindeFirelinkDialogExhausted = 11020605
+    """ enabled after exhausting Sieglinde's dialog at Firelink, regardless of player's answer """
+
+    SieglindeFirelinkReturnDialogExhausted = 11020606
+    """ enabled after exhausting Sieglinde's dialog at Firelink when she returns and
+    tells you she found Siegmeyer """
 
     GiveSunlightMedal = 11020607
     """ when enabled, give the player a sunlight medal\n
@@ -626,6 +743,14 @@ class FLAGS(Flag):
     KilledDemonFiresage = 11410410
     """ enabled when demon firesage dies """
 
+    SiegmeyerDieAfterIzalthBattle = 11410591
+    """ enabled after Siegmeyer says goodbye to his dear little Lin and dies after
+    his battle against the chaos eaters is over and he's left with less than 50% hp """
+
+    SiegmeyerLiveAfterIzalithBattle = 11410593
+    """ enabled after Siegmeyer finishes thanking the player for saving him after 
+    his battle against the chaos eaters is over and he's left with more than or exactly 50% hp"""
+
     GiveSpeckledStoneplateRingIzalith = 11410594
     """ when enabled, the speckled stoneplate ring is awarded\n
     enabled when talking to siegmeyer after the chaos eaters are dead before siegmeyer joins the fight """
@@ -635,6 +760,22 @@ class FLAGS(Flag):
 
     KilledCentipedeDemon = 11410901
     """ enabled when centipede demon dies """
+
+    SensFortressGateOpen = 11500200
+    """ enabled when both Bells of Awakening have been rung\n
+    used to determine whether the gate in front of Sen's Fortress should be opened, as well as
+    many characters' dialog """
+
+    SiegmeyerConversationDoneSensBoulder = 11500592
+    """ enabled after the player finishes Siegmeyer's dialog about the boulder in Sen's Fortress\n
+    once this flag is on, Siegmeyer will instead say his "Perhaps I could try some rolling..." dialog """
+
+    SensBoulderLeverManuallyPushed = 11500850
+    """ enabled when the lever controlling the boulder direction is pushed by the player for the first time """
+
+    SiegmeyerConversationDoneSensGate = 11500591
+    """ enabled after the player finishes Siegmeyer's first conversation, in front of Sen's Fortress\n
+    once this flag is on, Siegmeyer will instead say his "Still closed..." dialog in front of Sen's """
 
     GiveDarkmoonBladeCovenantRing = 11510580
     """ when enabled, the darkmoon blade covenant ring is awarded\n
@@ -731,7 +872,10 @@ class FLAGS(Flag):
 
     GivePierceShieldUnused = 11700591
     """ when enabled, the pierce shield is awarded\n
-    unused, but seemingly for siegmeyer in duke's archives """
+    unused, but seemingly for sieglinde in duke's archives """
+
+    SieglindeDukesConversationOver = 11700593
+    """ enabled when Sieglinde's dialog is exhausted, regardless of the player's answer to her question """
 
     IsInDukesArchivesPrisonCell = 11705170
     """ enabled when the player is inside the prison cell at the Duke's Archives that they
@@ -948,3 +1092,15 @@ class FLAGS(Flag):
 
     ObtainedRedSignSoapstone = 51100330
     """ enabled when the item lot is awarded corresponding to the red sign soapstone pickup in the painted world """
+
+    # ESP FLAGS
+
+    SiegmeyerConversationDoneSensGate2 = 71500066
+    """ enabled alongside 11500591\n
+    enabled after the player finishes Siegmeyer's first conversation, in front of Sen's Fortress\n
+    once this flag is on, Siegmeyer will instead say his "Still closed..." dialog in front of Sen's """
+
+    SiegmeyerConversationDoneSensBoulder2 = 71500069
+    """ enabled alongside 11500592\n
+    enabled after the player finishes Siegmeyer's dialog about the boulder in Sen's Fortress\n
+    once this flag is on, Siegmeyer will instead say his "Perhaps I could try some rolling..." dialog """
