@@ -1139,15 +1139,15 @@ def CheckIfPlayerIsPyromancerClass():
 
 
 def Event745():
-    """ 745: Event 745 """
-    if FlagEnabled(1604) and FlagEnabled(1764):
-        Await(FlagEnabled(703))
+    """ 745: TODO: how is 745 used in m12_00 and m14_00? """
+    if FlagEnabled(FLAGS.DeadShiva) and FlagEnabled(FLAGS.DeadShivaBodyguard):
+        Await(FlagEnabled(703)) # TODO: what is this strange flag?
 
     # wait until one of these flags become enabled, but only if they were disabled to begin with
-    if FlagDisabled(1604):
-        IfFlagOn(-1, 1604)
-    if FlagDisabled(1764):
-        IfFlagOn(-1, 1764)
+    if FlagDisabled(FLAGS.DeadShiva):
+        IfFlagOn(-1, FLAGS.DeadShiva)
+    if FlagDisabled(FLAGS.DeadShivaBodyguard):
+        IfFlagOn(-1, FLAGS.DeadShivaBodyguard)
     AwaitConditionTrue(-1)
     End()
 
