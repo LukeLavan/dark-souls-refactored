@@ -5,12 +5,12 @@ linked:
 strings:
 
 """
-from constants.CHARACTERS import CHARACTERS
-from constants.FLAGS import FLAGS
 from soulstruct.darksouls1r.events import *
 from ..entities.m10_02_00_00_entities import *
 from ..entities.m18_00_00_00_entities import Boxes as m18_00_Boxes, Characters as m18_00_Characters
 from ..entities.m18_01_00_00_entities import Boxes as m18_01_Boxes
+
+from constants.constants import *
 
 
 def Constructor():

@@ -7,17 +7,7 @@ strings:
 """
 from soulstruct.darksouls1r.events import *
 
-from constants.ARMOR import ARMOR
-from constants.CHARACTERS import CHARACTERS
-from constants.COLLISIONS import COLLISIONS
-from constants.FLAGS import FLAGS
-from constants.GOODS import GOODS
-from constants.ITEMLOTS import ITEMLOTS
-from constants.RINGS import RINGS
-from constants.SPECIALEFFECTS import SPECIALEFFECTS
-from constants.TEXT import TEXT
-from constants.VISUALEFFECTS import VISUALEFFECTS
-from constants.WEAPONS import WEAPONS
+from constants.constants import *
 
 
 def Constructor():
