@@ -14,7 +14,9 @@ from constants.FLAGS import FLAGS
 from constants.GOODS import GOODS
 from constants.ITEMLOTS import ITEMLOTS
 from constants.RINGS import RINGS
+from constants.SPECIALEFFECTS import SPECIALEFFECTS
 from constants.TEXT import TEXT
+from constants.VISUALEFFECTS import VISUALEFFECTS
 from constants.WEAPONS import WEAPONS
 
 
@@ -54,7 +56,7 @@ def Constructor():
     Event758()
     Event759()
 
-    Event754()
+    IngwardCurseRemoval()
 
     Event770()
 
@@ -289,11 +291,11 @@ def Constructor():
     AwardItemLotWhenFlagEnabled2(2, FLAGS.GiveDarkmoonTalisman,             ITEMLOTS.DarkmoonTalisman,                      1)
     AwardItemLotWhenFlagEnabled2(3, FLAGS.GiveDragonHeadStone,              ITEMLOTS.DragonHeadStone,                       1)
 
-    AwardItemLotWhenFlagEnabledAndCharDead(0, FLAGS.DeadAndre,              CHARACTERS.Andre,               ITEMLOTS.AndreCrestOfArtorias)
-    AwardItemLotWhenFlagEnabledAndCharDead(1, FLAGS.DeadIngward,            CHARACTERS.Ingward,             ITEMLOTS.IngwardKeyToTheSeal)
-    AwardItemLotWhenFlagEnabledAndCharDead(2, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantOrangeSoapstone)
+    AwardItemLotWhenFlagEnabledAndCharDead(0, FLAGS.DeadAndre,              CHARACTERS.UNDEADBURG_UNDEADPARISH.Andre,               ITEMLOTS.AndreCrestOfArtorias)
+    AwardItemLotWhenFlagEnabledAndCharDead(1, FLAGS.DeadIngward,            CHARACTERS.NEWLONDORUINS_VALLEYOFDRAKES.Ingward,        ITEMLOTS.IngwardKeyToTheSeal)
+    AwardItemLotWhenFlagEnabledAndCharDead(2, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.UNDEADBURG_UNDEADPARISH.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantOrangeSoapstone)
     # this itemlot is sequentially after the above itemlot, so this event slot is redundant
-    AwardItemLotWhenFlagEnabledAndCharDead(3, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantResidenceKey)
+    AwardItemLotWhenFlagEnabledAndCharDead(3, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.UNDEADBURG_UNDEADPARISH.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantResidenceKey)
 
     EnableFlagsIfOwnsItemBeyondNG(0,  ItemType.Good,     GOODS.MiracleLightningSpear,            FLAGS.ObtainedLightningSpear,               FLAGS.GiveLightningSpear)
     EnableFlagsIfOwnsItemBeyondNG(1,  ItemType.Good,     GOODS.MiracleGreatLightningSpear,       FLAGS.ObtainedGreatLightningSpear,          FLAGS.GiveGreatLightningSpear)
@@ -1152,16 +1154,18 @@ def Event745():
     End()
 
 
-def Event754():
-    """ 754: Event 754 """
-    DisableFlag(754)
+def IngwardCurseRemoval():
+    """ 754: When the player gives a soft humanity to Ingward to have curse broken, this event's flag is set\n
+    when 754 is enabled, this event re-disables it, applies special effects that break the curse,
+    and plays the appropriate visual effect """
+    DisableFlag(FLAGS.BreakCurse)
 
-    AwaitFlagOn(754)
+    AwaitFlagOn(FLAGS.BreakCurse)
 
-    DisableFlag(754)
-    AddSpecialEffect(PLAYER, 4600)
-    AddSpecialEffect(PLAYER, 4601)
-    CreateTemporaryVFX(22715, anchor_entity=PLAYER,
+    DisableFlag(FLAGS.BreakCurse)
+    AddSpecialEffect(PLAYER, SPECIALEFFECTS.IngwardBreakCurse)
+    AddSpecialEffect(PLAYER, SPECIALEFFECTS.IngwardRemoveCurseBuildup)
+    CreateTemporaryVFX(VISUALEFFECTS.CurseBroken, anchor_entity=PLAYER,
                        anchor_type=CoordEntityType.Character, model_point=7)
     Restart()
 

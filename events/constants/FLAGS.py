@@ -193,6 +193,10 @@ class FLAGS(Flag):
     PlayerIsPyromancerClass = 740
     """ used for Laurentius dialog """
 
+    BreakCurse = 754
+    """ when enabled, the player has their curse broken and the flag is automatically disabled\n
+    enabled when Ingward breaks your curse - purging stones do not use this """
+
     HasTitaniteShard = 780
     """ enabled when the player has at least one titanite shard; disabled otherwise\n
     not used for anything """
