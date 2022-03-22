@@ -30,7 +30,7 @@ def Constructor():
     SkipLinesIfClient(2)
     DisableObject(Objects.o5151_0000)
     DeleteVFX(VFX.MultiplayerFog1, erase_root_only=False)
-    DisableCollision(Collisions.h0110B0_0000)
+    DisableMapCollision(Collisions.h0110B0_0000)
     DisableObject(Objects.o5010_0000)
     DisableObject(Objects.o5010_0001)
     DisableObject(Objects.o5010_0002)
@@ -47,21 +47,21 @@ def Constructor():
     EndOfAnimation(Objects.o5200_0000, 1)
     SkipLinesIfFlagOff(1, 11500812)
     EndOfAnimation(Objects.o5200_0000, 2)
-    DisableCollision(Collisions.h0081B0_0000)
-    DisableCollision(Collisions.h0081B0_0001)
-    DisableCollision(Collisions.h0081B0_0002)
+    DisableMapCollision(Collisions.h0081B0_0000)
+    DisableMapCollision(Collisions.h0081B0_0001)
+    DisableMapCollision(Collisions.h0081B0_0002)
     SkipLinesIfFlagOff(3, 11500821)
     EnableObject(Objects.o5010_0001)
     EndOfAnimation(Objects.o5010_0001, 5)
-    EnableCollision(Collisions.h0081B0_0000)
+    EnableMapCollision(Collisions.h0081B0_0000)
     SkipLinesIfFlagOff(3, 11500822)
     EnableObject(Objects.o5010_0002)
     EndOfAnimation(Objects.o5010_0002, 6)
-    EnableCollision(Collisions.h0081B0_0001)
+    EnableMapCollision(Collisions.h0081B0_0001)
     SkipLinesIfFlagOff(3, 11500823)
     EnableObject(Objects.o5010_0003)
     EndOfAnimation(Objects.o5010_0003, 7)
-    EnableCollision(Collisions.h0081B0_0002)
+    EnableMapCollision(Collisions.h0081B0_0002)
     SkipLinesIfFlagOff(21, 11500100)
     SkipLinesIfFlagOn(10, 11500101)
     EnableNavmeshType(Navigation.Navmesh_CageElevator_0_0, NavmeshType.Wall)
@@ -794,9 +794,9 @@ def Event11505353():
     IfConditionTrue(-1, input_condition=3)
     IfConditionTrue(0, input_condition=-1)
     SkipLinesIfFinishedConditionFalse(2, 1)
-    DisableCollision(Collisions.h1100B0_0000)
+    DisableMapCollision(Collisions.h1100B0_0000)
     SkipLines(1)
-    EnableCollision(Collisions.h1100B0_0000)
+    EnableMapCollision(Collisions.h1100B0_0000)
     EndIfFinishedConditionTrue(3)
     IfDoesNotHaveTAEEvent(4, Characters.c2320_0000, tae_event_id=400)
     IfDoesNotHaveTAEEvent(4, Characters.c2320_0000, tae_event_id=300)
@@ -824,7 +824,7 @@ def Event11500790():
     EnableObject(Objects.o5010_0000)
     ForceAnimation(Objects.o5010_0000, 0)
     Wait(1.5)
-    EnableCollision(Collisions.h0110B0_0000)
+    EnableMapCollision(Collisions.h0110B0_0000)
     Wait(3.5)
     WaitForNetworkApproval(max_seconds=10.0)
     SkipLinesIfFlagOn(2, 11505210)
@@ -1286,7 +1286,7 @@ def Event11500798():
 
 def Event11500700(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: float, arg_16_19: int, arg_20_23: int):
     """ 11500700: Event 11500700 """
-    DisableCollision(Collisions.h0110B0_0000)
+    DisableMapCollision(Collisions.h0110B0_0000)
     ForceAnimation(arg_16_19, 1)
     CreateHazard(
         arg_0_3,
@@ -1317,7 +1317,7 @@ def Event11500750(
     arg_28_31: int,
 ):
     """ 11500750: Event 11500750 """
-    DisableCollision(Collisions.h0110B0_0000)
+    DisableMapCollision(Collisions.h0110B0_0000)
     EnableFlag(arg_24_27)
     EnableObject(arg_4_7)
     DisableObject(arg_28_31)
@@ -1333,7 +1333,7 @@ def Event11500750(
         repetition_time=0.20000000298023224,
     )
     ForceAnimation(arg_4_7, arg_8_11, wait_for_completion=True)
-    EnableCollision(arg_12_15)
+    EnableMapCollision(arg_12_15)
     RemoveObjectFlag(arg_0_3)
     DisableFlag(arg_20_23)
 

@@ -10,7 +10,8 @@ from ..entities.m10_02_00_00_entities import *
 from ..entities.m18_00_00_00_entities import Boxes as m18_00_Boxes, Characters as m18_00_Characters
 from ..entities.m18_01_00_00_entities import Boxes as m18_01_Boxes
 
-from constants.constants import *
+from constants.CHARACTERS import CHARACTERS
+from constants.FLAGS import FLAGS
 
 
 def Constructor():
@@ -628,23 +629,23 @@ def Event11020350():
     """ 11020350: Event 11020350 """
     SkipLinesIfThisEventOn(7)
     DisableObject(Objects.o1481_0000)
-    DisableCollision(Collisions.h0105B2_0000)
+    DisableMapCollision(Collisions.h0105B2_0000)
     IfFlagOn(1, 11010700)
     IfFlagOn(1, 11400200)
     IfConditionTrue(0, input_condition=1)
     EnableObject(Objects.o1481_0000)
-    EnableCollision(Collisions.h0105B2_0000)
+    EnableMapCollision(Collisions.h0105B2_0000)
     DisableObject(Objects.o1480_0000)
-    DisableCollision(Collisions.h0005B2_0000)
+    DisableMapCollision(Collisions.h0005B2_0000)
     DisableMapPiece(1023501)
-    DisableCollision(Collisions.h7000B2_0000)
+    DisableMapCollision(Collisions.h7000B2_0000)
 
 
 def Event11020351():
     """ 11020351: Event 11020351 """
     SkipLinesIfFlagOff(2, 0)
-    DisableCollision(0)
-    DisableCollision(0)
+    DisableMapCollision(0)
+    DisableMapCollision(0)
     IfCharacterInsideRegion(0, PLAYER, region=Boxes.HoleToKiln)
     SkipLinesIfFlagOn(2, 710)
     Kill(PLAYER, award_souls=False)
@@ -664,8 +665,8 @@ def Event11020351():
 def Event11020352():
     """ 11020352: Event 11020352 """
     IfFlagOn(0, 710)
-    DisableCollision(Collisions.h8100B2_0000)
-    DisableCollision(Collisions.h8100B2_0001)
+    DisableMapCollision(Collisions.h8100B2_0000)
+    DisableMapCollision(Collisions.h8100B2_0001)
 
 
 def Event11020700(_, arg_0_3: int, arg_4_7: int):

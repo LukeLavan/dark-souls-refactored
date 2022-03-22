@@ -1752,7 +1752,7 @@ def Event11010790():
     IfCharacterInsideRegion(0, PLAYER, region=Boxes.HellkiteReactionA)
     EnableFlag(11010790)
     SetNetworkUpdateRate(Characters.c3430_0001, is_fixed=True, update_rate=CharacterUpdateRate.Always)
-    DisableCollision(Collisions.h7004B1)
+    DisableMapCollision(Collisions.h7004B1)
     EnableCharacter(Characters.c3430_0001)
     Move(
         Characters.c3430_0001,
@@ -1762,7 +1762,7 @@ def Event11010790():
     )
     ForceAnimation(Characters.c3430_0001, 7012, wait_for_completion=True)
     DisableCharacter(Characters.c3430_0001)
-    EnableCollision(Collisions.h7004B1)
+    EnableMapCollision(Collisions.h7004B1)
 
 
 def Event11010791():

@@ -23,10 +23,10 @@ def Constructor():
     DeleteVFX(VFX.MultiplayerFog3, erase_root_only=False)
     DisableObject(Objects.o2920_0000)
     DeleteVFX(VFX.MultiplayerFog5, erase_root_only=False)
-    DisableCollision(Collisions.h0095B1_0000)
+    DisableMapCollision(Collisions.h0095B1_0000)
     SkipLinesIfFlagOff(2, 11210539)
-    EnableCollision(Collisions.h0095B1_0000)
-    DisableCollision(Collisions.h0095B1)
+    EnableMapCollision(Collisions.h0095B1_0000)
+    DisableMapCollision(Collisions.h0095B1)
     RunEvent(11215090)
     RunEvent(11215091)
     RunEvent(11215092)
@@ -58,7 +58,7 @@ def Constructor():
     DeleteVFX(VFX.ArtoriasEntranceFog, erase_root_only=False)
     DisableObject(Objects.o2916_0000)
     DeleteVFX(VFX.ArtoriasExitFog, erase_root_only=False)
-    DisableCollision(Collisions.h7400B1)
+    DisableMapCollision(Collisions.h7400B1)
     SkipLines(7)
     RunEvent(11215010)
     RunEvent(11215011)
@@ -88,7 +88,7 @@ def Constructor():
     SkipLinesIfConditionTrue(3, 1)
     DisableObject(Objects.o2919_0000)
     DeleteVFX(VFX.KalameetEntranceFog, erase_root_only=False)
-    DisableCollision(Collisions.h7400B1)
+    DisableMapCollision(Collisions.h7400B1)
     SkipLinesIfFlagOn(8, 11210004)
     RunEvent(11215060)
     RunEvent(11215061)
@@ -927,7 +927,7 @@ def Event11215013():
     EnableFlag(11210030)
     EnableAI(Characters.c4100_0000)
     EnableBossHealthBar(Characters.c4100_0000, name=4100, slot=0)
-    EnableCollision(Collisions.h7400B1)
+    EnableMapCollision(Collisions.h7400B1)
 
 
 def Event11215014():
@@ -979,7 +979,7 @@ def Event11210001():
     DeleteVFX(VFX.ArtoriasEntranceFog, erase_root_only=True)
     DisableObject(Objects.o2916_0000)
     DeleteVFX(VFX.ArtoriasExitFog, erase_root_only=True)
-    DisableCollision(Collisions.h7400B1)
+    DisableMapCollision(Collisions.h7400B1)
     Wait(17.0)
     DisableBackread(Characters.c4100_0000)
     EnableBackread(Characters.c4110_0000)
@@ -1241,7 +1241,7 @@ def Event11215063():
     EnableAI(Characters.c4510_0001)
     DisableInvincibility(Characters.c4510_0001)
     EnableBossHealthBar(Characters.c4510_0001, name=4510, slot=0)
-    EnableCollision(Collisions.h7400B1)
+    EnableMapCollision(Collisions.h7400B1)
 
 
 def Event11215064():
@@ -1299,7 +1299,7 @@ def Event11210005():
     KillBoss(1210401)
     DisableObject(Objects.o2919_0000)
     DeleteVFX(VFX.KalameetEntranceFog, erase_root_only=True)
-    DisableCollision(Collisions.h7400B1)
+    DisableMapCollision(Collisions.h7400B1)
 
 
 def Event11210340():
@@ -2184,13 +2184,13 @@ def Event11210140():
 
 def Event11210170(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11210170: Event 11210170 """
-    DisableCollision(arg_4_7)
+    DisableMapCollision(arg_4_7)
     SkipLinesIfNotEqual(1, left=arg_0_3, right=11215220)
     IfAllPlayersOutsideRegion(1, region=Boxes.Elevator0_StartFromTopTrigger)
     IfCharacterInsideRegion(1, PLAYER, region=arg_8_11)
     IfFlagOn(1, arg_0_3)
     IfConditionTrue(0, input_condition=1)
-    EnableCollision(arg_4_7)
+    EnableMapCollision(arg_4_7)
     SkipLinesIfNotEqual(3, left=arg_0_3, right=11215220)
     IfCharacterInsideRegion(7, PLAYER, region=Boxes.Elevator0_StartFromTopTrigger)
     IfTimeElapsed(7, 2.0)
@@ -2960,8 +2960,8 @@ def Event11210535():
     DisableCharacter(Characters.c4510_0002)
     EnableObject(Objects.o2919_0000)
     CreateVFX(VFX.KalameetEntranceFog)
-    EnableCollision(Collisions.h0095B1_0000)
-    DisableCollision(Collisions.h0095B1)
+    EnableMapCollision(Collisions.h0095B1_0000)
+    DisableMapCollision(Collisions.h0095B1)
 
 
 def Event11210544():

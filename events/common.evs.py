@@ -7,7 +7,18 @@ strings:
 """
 from soulstruct.darksouls1r.events import *
 
-from constants.constants import *
+from constants.ARMOR import ARMOR
+from constants.CHARACTERS import CHARACTERS
+from constants.COLLISIONS import COLLISIONS
+from constants.FLAGS import FLAGS
+from constants.GOODS import GOODS
+from constants.ITEMLOTS import ITEMLOTS
+from constants.RINGS import RINGS
+from constants.SPECIALEFFECTS import SPECIALEFFECTS
+from constants.TEXT import TEXT
+from constants.VISUALEFFECTS import VISUALEFFECTS
+from constants.WEAPONS import WEAPONS
+
 
 
 def Constructor():
@@ -281,11 +292,11 @@ def Constructor():
     AwardItemLotWhenFlagEnabled2(2, FLAGS.GiveDarkmoonTalisman,             ITEMLOTS.DarkmoonTalisman,                      1)
     AwardItemLotWhenFlagEnabled2(3, FLAGS.GiveDragonHeadStone,              ITEMLOTS.DragonHeadStone,                       1)
 
-    AwardItemLotWhenFlagEnabledAndCharDead(0, FLAGS.DeadAndre,              CHARACTERS.UNDEADBURG_UNDEADPARISH.Andre,               ITEMLOTS.AndreCrestOfArtorias)
-    AwardItemLotWhenFlagEnabledAndCharDead(1, FLAGS.DeadIngward,            CHARACTERS.NEWLONDORUINS_VALLEYOFDRAKES.Ingward,        ITEMLOTS.IngwardKeyToTheSeal)
-    AwardItemLotWhenFlagEnabledAndCharDead(2, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.UNDEADBURG_UNDEADPARISH.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantOrangeSoapstone)
+    AwardItemLotWhenFlagEnabledAndCharDead(0, FLAGS.AndreDead,              CHARACTERS.UNDEADBURG_UNDEADPARISH.Andre,               ITEMLOTS.AndreCrestOfArtorias)
+    AwardItemLotWhenFlagEnabledAndCharDead(1, FLAGS.IngwardDead,            CHARACTERS.NEWLONDORUINS_VALLEYOFDRAKES.Ingward,        ITEMLOTS.IngwardKeyToTheSeal)
+    AwardItemLotWhenFlagEnabledAndCharDead(2, FLAGS.MaleUndeadMerchantDead, CHARACTERS.UNDEADBURG_UNDEADPARISH.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantOrangeSoapstone)
     # this itemlot is sequentially after the above itemlot, so this event slot is redundant
-    AwardItemLotWhenFlagEnabledAndCharDead(3, FLAGS.DeadMaleUndeadMerchant, CHARACTERS.UNDEADBURG_UNDEADPARISH.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantResidenceKey)
+    AwardItemLotWhenFlagEnabledAndCharDead(3, FLAGS.MaleUndeadMerchantDead, CHARACTERS.UNDEADBURG_UNDEADPARISH.MaleUndeadMerchant,  ITEMLOTS.MaleUndeadMerchantResidenceKey)
 
     EnableFlagsIfOwnsItemBeyondNG(0,  ItemType.Good,     GOODS.MiracleLightningSpear,            FLAGS.ObtainedLightningSpear,               FLAGS.GiveLightningSpear)
     EnableFlagsIfOwnsItemBeyondNG(1,  ItemType.Good,     GOODS.MiracleGreatLightningSpear,       FLAGS.ObtainedGreatLightningSpear,          FLAGS.GiveGreatLightningSpear)
@@ -1132,14 +1143,14 @@ def CheckIfPlayerIsPyromancerClass():
 
 def Event745():
     """ 745: TODO: how is 745 used in m12_00 and m14_00? """
-    if FlagEnabled(FLAGS.DeadShiva) and FlagEnabled(FLAGS.DeadShivaBodyguard):
+    if FlagEnabled(FLAGS.ShivaDead) and FlagEnabled(FLAGS.ShivaBodyguardDead):
         Await(FlagEnabled(703)) # TODO: what is this strange flag?
 
     # wait until one of these flags become enabled, but only if they were disabled to begin with
-    if FlagDisabled(FLAGS.DeadShiva):
-        IfFlagOn(-1, FLAGS.DeadShiva)
-    if FlagDisabled(FLAGS.DeadShivaBodyguard):
-        IfFlagOn(-1, FLAGS.DeadShivaBodyguard)
+    if FlagDisabled(FLAGS.ShivaDead):
+        IfFlagOn(-1, FLAGS.ShivaDead)
+    if FlagDisabled(FLAGS.ShivaBodyguardDead):
+        IfFlagOn(-1, FLAGS.ShivaBodyguardDead)
     AwaitConditionTrue(-1)
     End()
 
@@ -1162,9 +1173,9 @@ def IngwardCurseRemoval():
 
 def Event770():
     """ 770: Event 770 """
-    AwaitFlagOn(755)
+    AwaitFlagOn(FLAGS.ReceiveAbsolution)
 
-    DisableFlag(755)
+    DisableFlag(FLAGS.ReceiveAbsolution)
     DisableFlag(742)
     DisableFlag(743)
     DisableFlag(744)
@@ -1242,47 +1253,47 @@ def Event770():
 
 
 def Event772():
-    """ 772: Event 772 """
-    AwaitFlagOff(744)
+    """ 772: Waits for NPCs to become aggro and enables a flag indicating the player has PvE sin """
+    AwaitFlagOff(FLAGS.HasPvESin)
 
-    Await(FlagEnabled(1004) or
-          FlagEnabled(1033) or
-          FlagEnabled(1096) or
-          FlagEnabled(1114) or
-          FlagEnabled(1176) or
-          FlagEnabled(1179) or
-          FlagEnabled(1195) or
-          FlagEnabled(1197) or
-          FlagEnabled(1213) or
-          FlagEnabled(1223) or
-          FlagEnabled(1241) or
-          FlagEnabled(1253) or
-          FlagEnabled(1282) or
-          FlagEnabled(1283) or
-          FlagEnabled(1287) or
-          FlagEnabled(1294) or
-          FlagEnabled(1314) or
-          FlagEnabled(1321) or
-          FlagEnabled(1341) or
-          FlagEnabled(1361) or
-          FlagEnabled(1381) or
-          FlagEnabled(1401) or
-          FlagEnabled(1411) or
-          FlagEnabled(1421) or
-          FlagEnabled(1434) or
-          FlagEnabled(1461) or
-          FlagEnabled(1512) or
-          FlagEnabled(1547) or
-          FlagEnabled(1574) or
-          FlagEnabled(1603) or
-          FlagEnabled(1627) or
-          FlagEnabled(1646) or
-          FlagEnabled(1675) or
-          FlagEnabled(1691) or
-          FlagEnabled(1711) or
-          FlagEnabled(1712) or
+    Await(FlagEnabled(FLAGS.SolaireHostile) or
+          FlagEnabled(FLAGS.DarkmoonKnightessHostile) or
+          FlagEnabled(FLAGS.LoganHostile) or
+          FlagEnabled(FLAGS.GriggsHostile) or
+          FlagEnabled(FLAGS.RheaHostileFisticuffs) or
+          FlagEnabled(FLAGS.RheaHostileNothing) or
+          FlagEnabled(FLAGS.PetrusHostileGuilty) or
+          FlagEnabled(FLAGS.PetrusHostileInnocent) or
+          FlagEnabled(FLAGS.VinceHostile) or
+          FlagEnabled(FLAGS.NicoHostile) or
+          FlagEnabled(FLAGS.GwyndolinHostile) or
+          FlagEnabled(FLAGS.LaurentiusHostile) or
+          FlagEnabled(FLAGS.EingyiHostileFairLady) or # count as sin, but re-enabled upon loading Blighttown
+          FlagEnabled(FLAGS.EingyiHostileAttackedUnproven) or
+          FlagEnabled(FLAGS.EingyiHostileAttackedProven) or
+          FlagEnabled(FLAGS.QuelanaHostile) or
+          FlagEnabled(FLAGS.IngwardHostile) or
+          FlagEnabled(FLAGS.AndreHostile) or
+          FlagEnabled(FLAGS.VamosHostile) or
+          FlagEnabled(FLAGS.GiantBlacksmithHostile) or
+          FlagEnabled(FLAGS.RickertHostile) or
+          FlagEnabled(FLAGS.MaleUndeadMerchantHostile) or
+          FlagEnabled(FLAGS.FemaleUndeadMerchantHostile) or
+          FlagEnabled(FLAGS.CrestfallenMerchantHostile) or
+          FlagEnabled(FLAGS.DomhnallHostile) or
+          FlagEnabled(FLAGS.CrestfallenWarriorHostile) or
+          FlagEnabled(FLAGS.SiegmeyerHostile) or
+          FlagEnabled(FLAGS.SieglindeHostile) or
+          FlagEnabled(FLAGS.LautrecHostile) or
+          FlagEnabled(FLAGS.ShivaHostile) or
+          FlagEnabled(FLAGS.PatchesHostile) or
+          FlagEnabled(1646) or # TODO: seemingly unused, has to do with Frampt
+          FlagEnabled(1675) or # TODO: seemingly unused, has to do with Kaathe
+          FlagEnabled(FLAGS.PriscillaHostile) or
+          FlagEnabled(FLAGS.AlvinaGone) or
+          FlagEnabled(FLAGS.AlvinaBetrayed) or
           FlagEnabled(71200035) or
-          FlagEnabled(71200042) or
+          FlagEnabled(FLAGS.AlvinaFirstQNo) or
           FlagEnabled(1763) or
           FlagEnabled(1822) or
           FlagEnabled(1841) or
@@ -1484,11 +1495,11 @@ def Event840(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
         FlagDisabled(841) and
         FlagDisabled(842) and
         FlagDisabled(843) and
-        FlagDisabled(845) and  # note 844 is skipped
+        FlagDisabled(845) and # note 844 is skipped
         FlagDisabled(846) and
-        FlagDisabled(848) and
+        FlagDisabled(848) and # note 847 is skipped
         FlagDisabled(849) and
-            FlagDisabled(860)):  # not 850
+        FlagDisabled(860)):   # not 850
 
         ForceAnimation(PLAYER, arg_4_7, skip_transition=True)
 

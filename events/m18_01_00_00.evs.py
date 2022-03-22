@@ -9,6 +9,7 @@ from soulstruct.darksouls1r.events import *
 from ..entities.m18_01_00_00_entities import *
 from ..entities.m10_02_00_00_entities import Boxes as m10_02_Boxes, SpawnPoints as m10_02_SpawnPoints
 
+from constants.FLAGS import FLAGS
 
 def Constructor():
     """ 0: Event 0 """
@@ -27,7 +28,7 @@ def Constructor():
         initial_kindle_level=0,
     )
     RegisterLadder(start_climbing_flag=11810010, stop_climbing_flag=11810011, obj=Objects.o8500_0000)
-    DisableCollision(Collisions.h0550B1_0000)
+    DisableMapCollision(Collisions.h0550B1_0000)
     DisableFlag(11810315)
     DisableFlag(11810112)
     DisableObjectActivation(Objects.o8540_0000, obj_act_id=-1)
@@ -215,17 +216,16 @@ def Constructor():
 def Preconstructor():
     """ 50: Event 50 """
     SkipLinesIfClient(11)
-    SkipLinesIfFlagOn(10, 705)
-    IfNewGameCycleGreaterThanOrEqual(1, completion_count=1)
-    SkipLinesIfConditionFalse(8, 1)
-    EnableFlag(705)
-    EnableFlag(50000082)
-    SetRespawnPoint(SpawnPoints.SpawnPointAtStart)
-    DisableFlag(11807200)
-    DisableFlag(11807210)
-    DisableFlag(11807220)
-    DisableFlag(11807240)
-    RunEvent(11810050)
+    if FlagDisabled(FLAGS.NGPlusOrBeyond):
+        if NEW_GAME_CYCLE >= 1:
+            EnableFlag(FLAGS.NGPlusOrBeyond)
+            EnableFlag(50000082)
+            SetRespawnPoint(SpawnPoints.SpawnPointAtStart)
+            DisableFlag(11807200)
+            DisableFlag(11807210)
+            DisableFlag(11807220)
+            DisableFlag(11807240)
+            RunEvent(11810050)
     RunEvent(11810350)
     RunEvent(11810220)
     HumanityRegistration(Characters.c0000_0002, 8326)
@@ -443,9 +443,9 @@ def Event11810312():
     DisableObjectActivation(Objects.o8541_0001, obj_act_id=-1)
     SetRespawnPoint(SpawnPoints.SpawnPoint01)
     SaveRequest()
-    EnableCollision(Collisions.h0550B1_0000)
+    EnableMapCollision(Collisions.h0550B1_0000)
     ForceAnimation(Objects.o8542_0000, 3, wait_for_completion=True)
-    DisableCollision(Collisions.h0550B1_0000)
+    DisableMapCollision(Collisions.h0550B1_0000)
 
 
 def Event11810313():

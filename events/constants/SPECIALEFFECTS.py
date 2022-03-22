@@ -8,3 +8,10 @@ class SPECIALEFFECTS(int):
     IngwardRemoveCurseBuildup = 4601
     """ applied when Ingward breaks your curse for a soft humanity (humanity price not included in effect)\n
     uses special state 116, removes 99999 curse buildup """
+
+    EggHead = 5213
+    """ 50% soul gain multiplier\n
+    egg head not yet fully grown """
+    EggHeadFinal = 5214
+    """ 50% soul gain multipler\n
+    egg head fully grown """

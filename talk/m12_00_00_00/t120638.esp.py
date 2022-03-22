@@ -1,8 +1,13 @@
 from soulstruct.darksouls1r.ezstate.esd import *
+from soulstruct.darksouls1ptde.events.emevd.enums import ComparisonType, Covenant
 
+from ...events.constants.DIALOGUE import DIALOGUE
+from ...events.constants.ENUMS import PlayerStats
+from ...events.constants.FLAGS import FLAGS
+from ...events.constants.TEXT import TEXT
 
 class State_0(State):
-    """ 0: No description. """
+    """ 0: Entry point """
 
     def test(self):
         return State_7
@@ -39,7 +44,7 @@ class State_2(State):
 
 
 class State_3(State):
-    """ 3: No description. """
+    """ 3: Answered yes to 'is it not so that thou art new...' """
 
     def previous_states(self):
         return [State_6]
@@ -66,7 +71,10 @@ class State_4(State):
 
 
 class State_5(State):
-    """ 5: No description. """
+    """ 5: First conversation\n
+    'Is it not so that thou art new...\n
+	Have thine own respect, go not yonder knocking for nothing, I say!'
+    """
 
     def previous_states(self):
         return [State_7]
@@ -87,13 +95,13 @@ class State_5(State):
 
 
 class State_6(State):
-    """ 6: No description. """
+    """ 6: asks "What is your decision?" after 'is it not so...' """
 
     def previous_states(self):
         return [State_5]
 
     def enter(self):
-        OpenGenericDialog(unk1=8, text_id=10020040, unk2=3, unk3=4, display_distance=1)
+        OpenGenericDialog(unk1=8, text_id=TEXT.WhatIsYourDecision, unk2=3, unk3=4, display_distance=1)
 
     def test(self):
         if CheckSelfDeath() == 1 or IsAttackedBySomeone() == 1:
@@ -109,7 +117,7 @@ class State_6(State):
 
 
 class State_7(State):
-    """ 7: No description. """
+    """ 7: Ready to talk """
 
     def previous_states(self):
         return [State_0, State_1, State_2, State_10, State_11, State_12, State_18, State_20, State_25, State_26, State_34, State_37, State_38, State_39, State_40, State_45, State_46, State_48, State_50, State_52, State_53, State_58, State_61]
@@ -120,19 +128,28 @@ class State_7(State):
         SetFlagState(flag=11205050, state=0)
 
     def test(self):
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(1712) == 1 and GetFlagState(11200596) == 0:
+        # covenant betrayed, start berating
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(FLAGS.AlvinaBetrayed) == 1 and GetFlagState(FLAGS.AlvinaDisappear) == 0:
             return State_36
+        
+        # player attacking me, laugh at them
         if GetFlagState(71200043) == 0 and IsPlayerAttacking() == 1 and GetDistanceToPlayer() <= 20:
             return State_15
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 0 and GetFlagState(71200039) == 0 and GetFlagState(71200047) == 0 and GetFlagState(705) == 1 and ComparePlayerStatus(11, 5, 7) == 1 and GetFlagState(71200035) == 0 and GetFlagState(11200592) == 1:
+        
+        # first time talking in ng+ or beyond, already in covenant
+        # TODO: using <= instead of == here is probably a bug - test with another covenant
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 0 and GetFlagState(71200039) == 0 and GetFlagState(71200047) == 0 and GetFlagState(FLAGS.NGPlusOrBeyond) == 1 and ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.LessThanOrEqual, Covenant.ForestHunter) == 1 and GetFlagState(71200035) == 0 and GetFlagState(FLAGS.GiveCatCovenantRing) == 1:
             return State_62
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 0 and GetFlagState(71200039) == 0 and GetFlagState(71200047) == 0 and GetFlagState(705) == 1 and ComparePlayerStatus(11, 0, 7) == 1 and GetFlagState(71200035) == 0:
+        
+        # first time talking in ng+ or beyond, already in covenant but didn't have ring at cycle start
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 0 and GetFlagState(71200039) == 0 and GetFlagState(71200047) == 0 and GetFlagState(FLAGS.NGPlusOrBeyond) == 1 and ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.Equal, Covenant.ForestHunter) == 1 and GetFlagState(71200035) == 0:
             return State_60
+        
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200047) == 1 and ComparePlayerStatus(11, 5, 7) == 1:
             return State_56
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(11200592) == 1 and GetFlagState(71200037) == 0:
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(FLAGS.GiveCatCovenantRing) == 1 and GetFlagState(71200037) == 0:
             return State_54
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200047) == 1 and GetFlagState(11200592) == 0:
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200047) == 1 and GetFlagState(FLAGS.GiveCatCovenantRing) == 0:
             return State_47
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200040) == 1 and GetFlagState(71200037) == 0:
             return State_35
@@ -140,28 +157,38 @@ class State_7(State):
             return State_29
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200036) == 1 and GetFlagState(71200039) == 0:
             return State_23
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1 and GetFlagState(11200593) == 1 and GetFlagState(11200594) == 0 and ComparePlayerStatus(14, 4, 3) == 1:
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1 and GetFlagState(FLAGS.GiveDivineBlessing) == 1 and GetFlagState(FLAGS.GiveRingOfFog) == 0 and ComparePlayerStatus(PlayerStats.ForestInvadersKilled, 4, 3) == 1:
             return State_33
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1 and GetFlagState(71200038) == 0 and GetFlagState(11200593) == 0 and ComparePlayerStatus(14, 4, 1) == 1:
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1 and GetFlagState(71200038) == 0 and GetFlagState(FLAGS.GiveDivineBlessing) == 0 and ComparePlayerStatus(14, 4, 1) == 1:
             return State_32
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(11206101) == 0 and GetFlagState(71200046) == 0 and ComparePlayerStatus(14, 4, 4) == 1:
             return State_51
+        
+        # player in covenant, nothing interesting to say
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1:
             return State_53
+        
+        # player answered no to first question, talked again
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200035) == 1 and GetFlagState(71200042) == 1:
             return State_20
+        
+        # first conversation
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200035) == 0:
             return State_5
+        
         if GetOneLineHelpStatus() == 1 and (IsTalkingToSomeoneElse() or CheckSelfDeath() or IsCharacterDisabled() or IsClientPlayer() == 1 or GetRelativeAngleBetweenPlayerAndSelf() > 45 or GetDistanceToPlayer() > 3.5):
             return State_11
-        if GetOneLineHelpStatus() == 0 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetFlagState(1711) == 0 and GetFlagState(11200596) == 0:
+        
+        # display "Talk" prompt
+        if GetOneLineHelpStatus() == 0 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetFlagState(FLAGS.AlvinaGone) == 0 and GetFlagState(FLAGS.AlvinaDisappear) == 0:
             return State_10
-        if IsAttackedBySomeone() == 1 and GetFlagState(1711) == 0:
+        
+        if IsAttackedBySomeone() == 1 and GetFlagState(FLAGS.AlvinaGone) == 0:
             return State_19
 
 
 class State_8(State):
-    """ 8: No description. """
+    """ 8: Yes to first question, includes second question """
 
     def previous_states(self):
         return [State_21]
@@ -180,7 +207,7 @@ class State_8(State):
 
 
 class State_9(State):
-    """ 9: No description. """
+    """ 9: Answered no to first question """
 
     def previous_states(self):
         return [State_22]
@@ -199,7 +226,7 @@ class State_9(State):
 
 
 class State_10(State):
-    """ 10: No description. """
+    """ 10: Display "talk" prompt """
 
     def previous_states(self):
         return [State_7]
@@ -265,7 +292,7 @@ class State_14(State):
 
 
 class State_15(State):
-    """ 15: No description. """
+    """ 15: Player attacked, laugh """
 
     def previous_states(self):
         return [State_7, State_16, State_48]
@@ -347,7 +374,7 @@ class State_19(State):
 
 
 class State_20(State):
-    """ 20: No description. """
+    """ 20: Answered no to first question and talked again, be gone """
 
     def previous_states(self):
         return [State_7]
@@ -367,7 +394,7 @@ class State_20(State):
 
 
 class State_21(State):
-    """ 21: No description. """
+    """ 21: Answered yes to 'is it not so that thou art new...' """
 
     def previous_states(self):
         return [State_3]
@@ -381,7 +408,7 @@ class State_21(State):
 
 
 class State_22(State):
-    """ 22: No description. """
+    """ 22: Answered yes to 'is it not so that thou art new...' """
 
     def previous_states(self):
         return [State_4]
@@ -395,7 +422,7 @@ class State_22(State):
 
 
 class State_23(State):
-    """ 23: No description. """
+    """ 23: Answered yes to second question """
 
     def previous_states(self):
         return [State_7]
@@ -416,7 +443,7 @@ class State_23(State):
 
 
 class State_24(State):
-    """ 24: No description. """
+    """ 24: Asked the second question, awaiting response """
 
     def previous_states(self):
         return [State_8, State_23, State_35, State_56, State_63]
@@ -438,7 +465,7 @@ class State_24(State):
 
 
 class State_25(State):
-    """ 25: No description. """
+    """ 25: End of conversation, return to ready state """
 
     def previous_states(self):
         return [State_30, State_31]
@@ -551,7 +578,7 @@ class State_31(State):
 
 
 class State_32(State):
-    """ 32: No description. """
+    """ 32: Give divine blessing conversation """
 
     def previous_states(self):
         return [State_7]
@@ -571,7 +598,7 @@ class State_32(State):
 
 
 class State_33(State):
-    """ 33: No description. """
+    """ 33: Give ring of fog conversation """
 
     def previous_states(self):
         return [State_7]
@@ -591,14 +618,14 @@ class State_33(State):
 
 
 class State_34(State):
-    """ 34: No description. """
+    """ 34: Give divine blessing """
 
     def previous_states(self):
         return [State_32]
 
     def enter(self):
         SetFlagState(flag=71200038, state=1)
-        SetFlagState(flag=11200593, state=1)
+        SetFlagState(flag=FLAGS.GiveDivineBlessing, state=1)
         SetFlagState(flag=11400582, state=1)
 
     def test(self):
@@ -627,7 +654,7 @@ class State_35(State):
 
 
 class State_36(State):
-    """ 36: No description. """
+    """ 36: Covenant is betrayed, start berating """
 
     def previous_states(self):
         return [State_7]
@@ -648,21 +675,21 @@ class State_36(State):
 
 
 class State_37(State):
-    """ 37: No description. """
+    """ 37: Done berating """
 
     def previous_states(self):
         return [State_36]
 
     def enter(self):
         SetFlagState(flag=71200044, state=1)
-        SetFlagState(flag=11200596, state=1)
+        SetFlagState(flag=FLAGS.AlvinaDisappear, state=1)
 
     def test(self):
         return State_7
 
 
 class State_38(State):
-    """ 38: No description. """
+    """ 38: Give ring of fog """
 
     def previous_states(self):
         return [State_33]
@@ -670,7 +697,7 @@ class State_38(State):
     def enter(self):
         SetFlagState(flag=71200045, state=1)
         SetFlagState(flag=11206101, state=1)
-        SetFlagState(flag=11200594, state=1)
+        SetFlagState(flag=FLAGS.GiveRingOfFog, state=1)
 
     def test(self):
         return State_7
@@ -707,7 +734,7 @@ class State_40(State):
 
 
 class State_41(State):
-    """ 41: No description. """
+    """ 41: Answered yes to joining covenant """
 
     def previous_states(self):
         return [State_43]
@@ -745,7 +772,7 @@ class State_42(State):
 
 
 class State_43(State):
-    """ 43: No description. """
+    """ 43: Asking to join covenant """
 
     def previous_states(self):
         return [State_49]
@@ -823,7 +850,7 @@ class State_46(State):
 
 
 class State_47(State):
-    """ 47: No description. """
+    """ 47: "and here, taketh this ring" """
 
     def previous_states(self):
         return [State_7, State_55]
@@ -878,13 +905,13 @@ class State_49(State):
 
 
 class State_50(State):
-    """ 50: No description. """
+    """ 50: Gives the cat covenant ring """
 
     def previous_states(self):
         return [State_47]
 
     def enter(self):
-        SetFlagState(flag=11200592, state=1)
+        SetFlagState(flag=FLAGS.GiveCatCovenantRing, state=1)
 
     def test(self):
         if GetDistanceToPlayer() >= 5:
@@ -927,13 +954,13 @@ class State_52(State):
 
 
 class State_53(State):
-    """ 53: No description. """
+    """ 53: In covenant, nothing to talk about """
 
     def previous_states(self):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000320, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaAhThouDostCometh, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yesあと1')
         DisplayOneLineHelp(text_id=-1)
 
@@ -947,7 +974,7 @@ class State_53(State):
 
 
 class State_54(State):
-    """ 54: No description. """
+    """ 54: Ring explanation """
 
     def previous_states(self):
         return [State_7, State_50]
@@ -966,7 +993,7 @@ class State_54(State):
 
 
 class State_55(State):
-    """ 55: No description. """
+    """ 55: Covenant established, press OK """
 
     def previous_states(self):
         return [State_41]
@@ -981,9 +1008,9 @@ class State_55(State):
             return State_48
         if IsTalkingToSomeoneElse() or CheckSelfDeath() or IsCharacterDisabled() or IsClientPlayer() == 1 or GetRelativeAngleBetweenPlayerAndSelf() > 120 or GetDistanceToPlayer() > 5 or IsAttackedBySomeone() == 1:
             return State_46
-        if GetGenericDialogButtonResult() == 1 and IsGenericDialogOpen() == 0 and GetFlagState(11200592) == 1:
+        if GetGenericDialogButtonResult() == 1 and IsGenericDialogOpen() == 0 and GetFlagState(FLAGS.GiveCatCovenantRing) == 1:
             return State_59
-        if GetGenericDialogButtonResult() == 0 and IsGenericDialogOpen() == 0 and GetFlagState(11200592) == 1:
+        if GetGenericDialogButtonResult() == 0 and IsGenericDialogOpen() == 0 and GetFlagState(FLAGS.GiveCatCovenantRing) == 1:
             return State_59
         if GetGenericDialogButtonResult() == 0 and IsGenericDialogOpen() == 0:
             return State_47
@@ -998,7 +1025,7 @@ class State_56(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000103, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaWhatDostThouSay, unk1=-1, unk2=-1)
         DebugEvent(message='Yesあと')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)
@@ -1070,13 +1097,13 @@ class State_59(State):
 
 
 class State_60(State):
-    """ 60: No description. """
+    """ 60: NG+ or beyond: first time talking, already in covenant """
 
     def previous_states(self):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000320, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaAhThouDostCometh, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yesあと1')
         DisplayOneLineHelp(text_id=-1)
 
@@ -1090,7 +1117,7 @@ class State_60(State):
 
 
 class State_61(State):
-    """ 61: No description. """
+    """ 61: NG+ or beyond: first time talking, already in covenant """
 
     def previous_states(self):
         return [State_60]
@@ -1107,13 +1134,13 @@ class State_61(State):
 
 
 class State_62(State):
-    """ 62: No description. """
+    """ 62: NG+ and beyond: "What dost thou say? Will thou not join us?" """
 
     def previous_states(self):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000103, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaWhatDostThouSay, unk1=-1, unk2=-1)
         DebugEvent(message='Yesあと')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)

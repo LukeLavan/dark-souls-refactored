@@ -136,6 +136,10 @@ class FLAGS(Flag):
     for some reason, this flag is kept disabled when the player leaves the Kiln map\n
     disabled when the player offers all four lord souls to the Lordvessel. """
 
+    NGPlusOrBeyond = 705
+    """ enabled at the beginning of a cycle that's in NG+ or beyond\n
+    if disabled, the game is still in NG; if enabled, the game is in NG+ or beyond """
+
     WarpAllowed = 706
     """ enabled by default; disabled when the player should not be able to warp \n
     specifically, this is enabled when the player is in the Duke's Archives prison cell
@@ -193,9 +197,24 @@ class FLAGS(Flag):
     PlayerIsPyromancerClass = 740
     """ used for Laurentius dialog """
 
+    HasPvESin = 744
+    """ enabled if the player has PvE sin TODO: except for 742? """
+
+    ForestHuntersBetrayed = 746
+    """ TODO: investigate Event11205056 in m12_00 """
+
+    EggHeadActive = 753
+    """ enabled when the player has egg head status active (ie, 50% soul gain multiplier, can't 
+    equip helmet, visuals), fully grown or not"""
+
     BreakCurse = 754
     """ when enabled, the player has their curse broken and the flag is automatically disabled\n
     enabled when Ingward breaks your curse - purging stones do not use this """
+
+    ReceiveAbsolution = 755
+    """ enabled when oswald grants absolution after giving soul level * 100 souls\n
+    when enabled, the absolution event re-disables this flag and disables a whole bunch
+    of other flags - see event 770 in common """
 
     HasTitaniteShard = 780
     """ enabled when the player has at least one titanite shard; disabled otherwise\n
@@ -271,17 +290,87 @@ class FLAGS(Flag):
     """ enabled when the player is in Chaos Servant covenant; disabled otherwise\n
     used to determine if the player may offer humanity to the Fair Lady """
 
+    # NPC QUESTLINES
+
+    SolaireHostile = 1004
+
+    DarkmoonKnightessHostile = 1033
+
+    LoganHostile = 1096
+
+    GriggsHostile = 1114
+
     RheaParish = 1175
     """ when enabled, Rhea will appear at the Parish """
 
-    DeadIngward = 1315
+    RheaHostileFisticuffs = 1176
+    """ if Rhea is made hostile before Vince and Niko are killed in ToTG
+    then Rhea will fight the player with her fists """
+
+    RheaHostileNothing = 1179
+    """ if Rhea is made hostile after Vince and Niko are killed in ToTG
+    then Rhea will just stand around and do nothing """
+
+    PetrusHostileGuilty = 1195
+    """" if Petrus is made hostile after buying Lautrec's tip, this is the hostility flag enabled\n
+    specifically, his quest state needs to be at 1194 TODO: Petrus questline """
+
+    PetrusHostileInnocent = 1197
+    """ if Petrus is made hostile at any other point than after buying Lautrec's tip, this is the
+    hostility flag enabled """
+
+    VinceHostile = 1213
+
+    NicoHostile = 1223
+
+    GwyndolinHostile = 1241
+    GwyndolinDead = 1242
+
+    LaurentiusHostile = 1253
+
+    FairLadyDead = 1272
+
+    EingyiHostileFairLady = 1282
+    """ enabled when the fair lady is dead, driving Eingyi to attack """
+    EingyiHostileAttackedUnproven = 1283
+    """ enabled when Eingyi aggros normally, ie attacking him to < 90% HP,
+    except if the player has egg head Eingyi is not blocking the path to the bonfire """
+
+    EingyiHostileAttackedProven = 1287
+    """ enabled when Eingyi aggros normally while the player has egg head and 
+    Eingyi is in his spot next to the bonfire\n
+    TODO: specifically, when Eingyi is in quest state 1286 - do more thorough testing to
+    find all conditions """
+
+    QuelanaHostile = 1294
+
+    IngwardHostile = 1314
+    IngwardDead = 1315
     """ enabled when Ingward's health is <= 0 """
 
-    DeadAndre = 1322
+    AndreHostile = 1321
+    AndreDead = 1322
     """ enabled when Andre's health is <= 0 """
 
-    DeadMaleUndeadMerchant = 1402
+    VamosHostile = 1341
+
+    GiantBlacksmithHostile = 1361
+
+    RickertHostile = 1382
+
+    MaleUndeadMerchantHostile = 1401
+    MaleUndeadMerchantDead = 1402
     """ enabled when the male undead merchant's health is <= 0 """
+
+    FemaleUndeadMerchantHostile = 1411
+    """ not enabled until she makes it to her flee point behind the bars """
+
+    CrestfallenMerchantHostile = 1421
+    CrestfallenMerchantDead = 1422
+
+    DomhnallHostile = 1434
+
+    CrestfallenWarriorHostile = 1461
 
     SiegmeyerStart = 1490
     """ enabled by default, becomes disabled when Siegmeyer's quest progresses in some way """
@@ -387,8 +476,24 @@ class FLAGS(Flag):
     """ enabled when Sieglinde has awarded the player with the Titanite Slab and the player gets
     far enough away to unload Sieglinde """
 
-    DeadShiva = 1604
-    DeadShivaBodyguard = 1764
+    LautrecHostile = 1574
+    """ enabled when making Lautrec hostile at the Parish or at Firelink """
+
+    ShivaHostile = 1603
+    ShivaDead = 1604
+
+    PatchesHostile = 1627
+
+    PriscillaHostile = 1691
+
+    AlvinaStart = 1710
+    AlvinaGone = 1711
+    """ enabled when Alvina is attacked or after Alvina berates you and disappears for
+    betraying the forest hunters """
+    AlvinaBetrayed = 1712
+    """ enabled when the forest hunters are betrayed """
+
+    ShivaBodyguardDead = 1764
 
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n
@@ -422,6 +527,7 @@ class FLAGS(Flag):
     TODO: why is this like this??? what's the point??? """
 
     GiveCatCovenantRing = 11200592
+    """ enabled while talking to Alvina, re-enabled for NG+ and beyond"""
 
     GivePurgingStoneSiegmeyer = 11000591
     """ when enabled, give the player a purging stone\n
@@ -508,10 +614,6 @@ class FLAGS(Flag):
     unused item, unused flag - although enabled if player enters ng+ or beyond with the trinket,
     suggesting you could have only gotten one per character """
 
-    GiveDivineBlessing = 11200593
-    """ when enabled, give the player a divine blessing\n
-    used by alvina, when you talk to her after killing a host as a forest hunter """
-
     SiegmeyerFirelinkConversation = 11020592
     """ enabled when the player exhausts Siegmeyer's dialog at Firelink, regardless of the player's answer """
 
@@ -568,9 +670,17 @@ class FLAGS(Flag):
     PurchasedGriggsSoulSpear = 11027240
     """ enabled when Grigg's Soul Spear is purchased """
 
+    GiveDivineBlessing = 11200593
+    """ when enabled, give the player a divine blessing\n
+    used by alvina, when you talk to her after killing a host as a forest hunter """
+
     GiveRingOfFog = 11200594
     """ when enabled, give the player a ring of fog\n
     used by alvina, when you talk to her after killing three hosts as a forest hunter """
+
+    AlvinaDisappear = 11200596
+    """ when enabled along with 1712 (forest hunters betrayed), alvina will disappear
+    enabled when the player attacks Alvina """
 
     KilledMoonlightButterfly = 11200900
     """ enabled when the moonlight butterfly boss dies """
@@ -598,21 +708,23 @@ class FLAGS(Flag):
     enabled when talking to gough when kalameet is dead """
 
     ObtainedCarvingHello = 11217010
-    """ enabled when the "Hello" carving is purchased from Gough """
+    """ enabled when the "Hello" carving is purchased from Gough\n
+    re-enabled on entering NG+ or beyond if the carving is owned already """
 
     ObtainedCarvingThankYou = 11217020
-    """ enabled when the ""Thank you" carving is purchased from Gough """
+    """ enabled when the "Thank you" carving is purchased from Gough\n
+    re-enabled on entering NG+ or beyond if the carving is owned already """
 
     ObtainedCarvingVeryGood = 11217030
-    """ enabled when the player owns the "Very Good!" carving and a map is loaded in NG+ or beyond\n
+    """ enabled when the player owns the "Very Good!" carving and the game is loaded in NG+ or beyond\n
     not actually used anywhere, since this carving is a drop """
 
     ObtainedCarvingImSorry = 11217040
-    """ enabled when the player owns the "I'm sorry" carving and a map is laoded in NG+ or beyond\n
+    """ enabled when the player owns the "I'm sorry" carving and when the game is laoded in NG+ or beyond\n
     not actually used anywhere, since this carving is a drop """
 
     ObtainedCarvingHelpMe = 11217050
-    """ enabled when the player owns the "Help me" carving and a map is loaded in NG+ or beyond\b
+    """ enabled when the player owns the "Help me" carving and when the game is loaded in NG+ or beyond\b
     not actually used anywhere, since this carving is a treasure """
 
     GiveElizabethsMushroom3 = 50000520
@@ -1098,6 +1210,9 @@ class FLAGS(Flag):
     """ enabled when the item lot is awarded corresponding to the red sign soapstone pickup in the painted world """
 
     # ESP FLAGS
+
+    AlvinaFirstQNo = 71200042
+    """ enabled after answering Alvina's first question with 'no', disabled upon absolution """
 
     SiegmeyerConversationDoneSensGate2 = 71500066
     """ enabled alongside 11500591\n

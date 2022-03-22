@@ -1601,7 +1601,7 @@ def Event11100040():
 def Event11100532(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int, arg_20_23: int):
     """ 11100532: Event 11100532 """
     DisableMapPiece(1103100)
-    DisableCollision(Collisions.h0148B0_0000)
+    DisableMapCollision(Collisions.h0148B0_0000)
     DisableObject(Objects.o1604_0000)
     DeleteVFX(VFX.MultiplayerFog1, erase_root_only=False)
     IfFlagOn(0, 11100700)
@@ -1611,7 +1611,7 @@ def Event11100532(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, 
     SkipLines(1)
     EnableFlag(arg_16_19)
     EnableMapPiece(1103100)
-    EnableCollision(Collisions.h0148B0_0000)
+    EnableMapCollision(Collisions.h0148B0_0000)
     DisableObject(Objects.o1511_0000)
     EnableObject(Objects.o1604_0000)
     CreateVFX(VFX.MultiplayerFog1)
