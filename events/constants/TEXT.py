@@ -10,6 +10,8 @@ class TEXT(Text):
     """ 'By the power of the Lordvessel, you may now warp between bonfires' """
     TakenByAbyss = 10010650
     """ 'You were taken by the abyss' """
+    JoinCovenant = 10010745
+    """ 'Join Covenant? (abandons former Covenant)' """
 
     WhatIsYourDecision = 10020040
     """ 'What is your decision?' """

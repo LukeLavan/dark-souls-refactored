@@ -1211,6 +1211,9 @@ class FLAGS(Flag):
 
     # ESP FLAGS
 
+    AlvinaFirstQYes = 71200036
+    """ enabled after answering Alvina's first question with 'yes' """
+
     AlvinaFirstQNo = 71200042
     """ enabled after answering Alvina's first question with 'no', disabled upon absolution """
 
