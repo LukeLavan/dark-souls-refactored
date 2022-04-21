@@ -1211,11 +1211,22 @@ class FLAGS(Flag):
 
     # ESP FLAGS
 
+    AlvinaFirstQDone = 71200035
+    """ enabled after Alvina's first question is answered, regardless if 'yes' or 'no'\n
+    becomes enabled after the user selects the option and before the subsequent reply starts\n
+    also becomes enabled after the first conversation in NG+ if the player is already in
+    the Forest Hunter covenant before talking to Alvina for the first time """
+
     AlvinaFirstQYes = 71200036
     """ enabled after answering Alvina's first question with 'yes' """
 
     AlvinaFirstQNo = 71200042
     """ enabled after answering Alvina's first question with 'no', disabled upon absolution """
+
+    AlvinaShivaDialogue = 71200046
+    """ enabled after Alvina gives her dialogue about Shiva (player must have defeated at
+    least 4 forest invaders\n
+    when enabled, Alvina will not give this dialogue again """
 
     SiegmeyerConversationDoneSensGate2 = 71500066
     """ enabled alongside 11500591\n

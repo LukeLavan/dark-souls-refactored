@@ -79,7 +79,7 @@ class State_5(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000000, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaIsItNotSo, unk1=-1, unk2=-1)
         DebugEvent(message='初対面')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)
@@ -135,16 +135,17 @@ class State_7(State):
         if GetFlagState(71200043) == 0 and IsPlayerAttacking() == 1 and GetDistanceToPlayer() <= 20:
             return State_15
         
-        # first time talking in ng+ or beyond, already in covenant
-        # TODO: using <= instead of == here is probably a bug - test with another covenant
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 0 and GetFlagState(71200039) == 0 and GetFlagState(71200047) == 0 and GetFlagState(FLAGS.NGPlusOrBeyond) == 1 and ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.LessThanOrEqual, Covenant.ForestHunter) == 1 and GetFlagState(71200035) == 0 and GetFlagState(FLAGS.GiveCatCovenantRing) == 1:
+        # first time talking in ng+ or beyond, already in covenant and already had cat covenant ring at cycle start
+        # TODO: using <= instead of == here is probably a bug - test with another covenant (Covenant.ForestHunter == 7, none is 0 and sunbro is 3)
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 0 and GetFlagState(71200039) == 0 and GetFlagState(71200047) == 0 and GetFlagState(FLAGS.NGPlusOrBeyond) == 1 and ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.LessThanOrEqual, Covenant.ForestHunter) == 1 and GetFlagState(FLAGS.AlvinaFirstQDone) == 0 and GetFlagState(FLAGS.GiveCatCovenantRing) == 1:
             return State_62
         
         # first time talking in ng+ or beyond, already in covenant but didn't have ring at cycle start
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 0 and GetFlagState(71200039) == 0 and GetFlagState(71200047) == 0 and GetFlagState(FLAGS.NGPlusOrBeyond) == 1 and ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.Equal, Covenant.ForestHunter) == 1 and GetFlagState(71200035) == 0:
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 0 and GetFlagState(71200039) == 0 and GetFlagState(71200047) == 0 and GetFlagState(FLAGS.NGPlusOrBeyond) == 1 and ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.Equal, Covenant.ForestHunter) == 1 and GetFlagState(FLAGS.AlvinaFirstQDone) == 0:
             return State_60
         
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200047) == 1 and ComparePlayerStatus(11, 5, 7) == 1:
+        # TODO: using <= instead of == here is probably a bug - test with another covenant (Covenant.ForestHunter == 7, none is 0 and sunbro is 3)
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200047) == 1 and ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.LessThanOrEqual, Covenant.ForestHunter) == 1:
             return State_56
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(FLAGS.GiveCatCovenantRing) == 1 and GetFlagState(71200037) == 0:
             return State_54
@@ -156,23 +157,29 @@ class State_7(State):
             return State_29
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(FLAGS.AlvinaFirstQYes) == 1 and GetFlagState(71200039) == 0:
             return State_23
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1 and GetFlagState(FLAGS.GiveDivineBlessing) == 1 and GetFlagState(FLAGS.GiveRingOfFog) == 0 and ComparePlayerStatus(PlayerStats.ForestInvadersKilled, 4, 3) == 1:
+        
+        # player has defeated at least 3 forest invaders; has received divine blessing but hasn't received ring of fog yet
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1 and GetFlagState(FLAGS.GiveDivineBlessing) == 1 and GetFlagState(FLAGS.GiveRingOfFog) == 0 and ComparePlayerStatus(PlayerStats.ForestInvadersKilled, ComparisonType.GreaterThanOrEqual, 3) == 1:
             return State_33
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1 and GetFlagState(71200038) == 0 and GetFlagState(FLAGS.GiveDivineBlessing) == 0 and ComparePlayerStatus(14, 4, 1) == 1:
+        
+        # player has defeated at least 1 forest invader; hasn't received divine blessing yet
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1 and GetFlagState(71200038) == 0 and GetFlagState(FLAGS.GiveDivineBlessing) == 0 and ComparePlayerStatus(PlayerStats.ForestInvadersKilled, ComparisonType.GreaterThanOrEqual, 1) == 1:
             return State_32
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(11206101) == 0 and GetFlagState(71200046) == 0 and ComparePlayerStatus(14, 4, 4) == 1:
+
+        # player has defeated at least 4 forest invaders
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(11206101) == 0 and GetFlagState(DIALOGUE.AlvinaShivaDialogue) == 0 and ComparePlayerStatus(PlayerStats.ForestInvadersKilled, ComparisonType.GreaterThanOrEqual, 4) == 1:
             return State_51
         
         # player in covenant, nothing interesting to say
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200037) == 1:
             return State_53
         
-        # player answered no to first question, talked again
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200035) == 1 and GetFlagState(FLAGS.AlvinaFirstQNo) == 1:
+        # player answered no to first question, talked again - tell player to be gone
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(FLAGS.AlvinaFirstQDone) == 1 and GetFlagState(FLAGS.AlvinaFirstQNo) == 1:
             return State_20
         
         # first conversation
-        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(71200035) == 0:
+        if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3.5 and GetOneLineHelpStatus() == 1 and GetFlagState(FLAGS.AlvinaFirstQDone) == 0:
             return State_5
         
         if GetOneLineHelpStatus() == 1 and (IsTalkingToSomeoneElse() or CheckSelfDeath() or IsCharacterDisabled() or IsClientPlayer() == 1 or GetRelativeAngleBetweenPlayerAndSelf() > 45 or GetDistanceToPlayer() > 3.5):
@@ -193,7 +200,7 @@ class State_8(State):
         return [State_21]
 
     def enter(self):
-        TalkToPlayer(conversation=48000100, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaWellIndeed, unk1=-1, unk2=-1)
         DebugEvent(message='Yes')
 
     def test(self):
@@ -297,7 +304,7 @@ class State_15(State):
         return [State_7, State_16, State_48]
 
     def enter(self):
-        TalkToPlayer(conversation=48000800, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaDeeHeeHee, unk1=-1, unk2=-1)
         SetFlagState(flag=71200043, state=1)
         ForceCloseMenu()
 
@@ -340,7 +347,7 @@ class State_17(State):
         ClearTalkProgressData()
 
     def test(self):
-        if ComparePlayerStatus(11, 5, 7) == 1:
+        if ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.LessThanOrEqual, Covenant.ForestHunter) == 1:
             return State_58
         else:
             return State_18
@@ -379,7 +386,7 @@ class State_20(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000702, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaBeGone, unk1=-1, unk2=-1)
         DebugEvent(message='Noあと')
         DisplayOneLineHelp(text_id=-1)
 
@@ -400,7 +407,7 @@ class State_21(State):
 
     def enter(self):
         SetFlagState(flag=FLAGS.AlvinaFirstQYes, state=1)
-        SetFlagState(flag=71200035, state=1)
+        SetFlagState(flag=FLAGS.AlvinaFirstQDone, state=1)
 
     def test(self):
         return State_8
@@ -414,7 +421,7 @@ class State_22(State):
 
     def enter(self):
         SetFlagState(flag=FLAGS.AlvinaFirstQNo, state=1)
-        SetFlagState(flag=71200035, state=1)
+        SetFlagState(flag=FLAGS.AlvinaFirstQDone, state=1)
 
     def test(self):
         return State_9
@@ -427,7 +434,7 @@ class State_23(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000100, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaWellIndeed, unk1=-1, unk2=-1)
         DebugEvent(message='Yesあと')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)
@@ -895,7 +902,7 @@ class State_49(State):
         return [State_29]
 
     def test(self):
-        if ComparePlayerStatus(11, 0, 7) == 1:
+        if ComparePlayerStatus(PlayerStats.Covenant, ComparisonType.Equal, Covenant.ForestHunter) == 1:
             return State_44
         if IsMultiplayerInProgress() == 1:
             return State_57
@@ -920,13 +927,13 @@ class State_50(State):
 
 
 class State_51(State):
-    """ 51: No description. """
+    """ 51: Player has defeated at least 4 forest invaders. Give Shiva dialogue """
 
     def previous_states(self):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48001000, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=DIALOGUE.AlvinaPerchance, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yesあと2')
         DisplayOneLineHelp(text_id=-1)
 
@@ -940,13 +947,13 @@ class State_51(State):
 
 
 class State_52(State):
-    """ 52: No description. """
+    """ 52: Player has defeated at least 4 forest invaders. Gave Shiva dialogue, set flag """
 
     def previous_states(self):
         return [State_51]
 
     def enter(self):
-        SetFlagState(flag=71200046, state=1)
+        SetFlagState(flag=DIALOGUE.AlvinaShivaDialogue, state=1)
 
     def test(self):
         return State_7
@@ -1045,7 +1052,7 @@ class State_57(State):
         return [State_43, State_49]
 
     def enter(self):
-        OpenGenericDialog(unk1=7, text_id=10010747, unk2=1, unk3=0, display_distance=2)
+        OpenGenericDialog(unk1=7, text_id=TEXT.CannotEnterCovenantWithPhantomPresent, unk2=1, unk3=0, display_distance=2)
         DebugEvent(message='マルチプレイ中')
         DisplayOneLineHelp(text_id=-1)
 
@@ -1096,7 +1103,9 @@ class State_59(State):
 
 
 class State_60(State):
-    """ 60: NG+ and beyond: first time talking, already in covenant """
+    """ 60: talking to Alvina for the first time in NG+ or beyond; player already in covenant
+    and had cat covenant ring on cycle start\n
+    'Ah, thou dost cometh...' """
 
     def previous_states(self):
         return [State_7]
@@ -1116,7 +1125,9 @@ class State_60(State):
 
 
 class State_61(State):
-    """ 61: NG+ and beyond: first time talking, already in covenant """
+    """ 61: talking to Alvina for the first time in NG+ or beyond; player already in covenant
+    and had cat covenant ring on cycle start\n
+    setting flags normally set during ng """
 
     def previous_states(self):
         return [State_60]
@@ -1125,7 +1136,7 @@ class State_61(State):
         SetFlagState(flag=71200037, state=1)
         SetFlagState(flag=71200039, state=1)
         SetFlagState(flag=71200047, state=1)
-        SetFlagState(flag=71200035, state=1)
+        SetFlagState(flag=FLAGS.AlvinaFirstQDone, state=1)
         SetFlagState(flag=11206101, state=1)
 
     def test(self):
@@ -1133,7 +1144,9 @@ class State_61(State):
 
 
 class State_62(State):
-    """ 62: NG+ and beyond: "What dost thou say? Will thou not join us?" """
+    """ 62: talking to Alvina for the first time in NG+ or beyond; player already in covenant
+    and did not have cat covenant ring on cycle start\n
+    'What dost thou say?...' """
 
     def previous_states(self):
         return [State_7]
@@ -1154,8 +1167,9 @@ class State_62(State):
 
 
 class State_63(State):
-    """ 63: NG+ and beyond: "What dost thou say? Will thou not join us?",
-    setting flags before prompt """
+    """ 63: talking to Alvina for the first time in NG+ or beyond; player already in covenant
+    and did not have cat covenant ring on cycle start\n
+    setting flags normally set in ng """
 
     def previous_states(self):
         return [State_62]
@@ -1164,7 +1178,7 @@ class State_63(State):
         SetFlagState(flag=71200037, state=1)
         SetFlagState(flag=71200039, state=1)
         SetFlagState(flag=71200047, state=1)
-        SetFlagState(flag=71200035, state=1)
+        SetFlagState(flag=FLAGS.AlvinaFirstQDone, state=1)
         SetFlagState(flag=11206101, state=1)
 
     def test(self):

@@ -301,7 +301,7 @@ def Constructor():
     EnableFlagsIfOwnsItemBeyondNG(0,  ItemType.Good,     GOODS.MiracleLightningSpear,            FLAGS.ObtainedLightningSpear,               FLAGS.GiveLightningSpear)
     EnableFlagsIfOwnsItemBeyondNG(1,  ItemType.Good,     GOODS.MiracleGreatLightningSpear,       FLAGS.ObtainedGreatLightningSpear,          FLAGS.GiveGreatLightningSpear)
     EnableFlagsIfOwnsItemBeyondNG(2,  ItemType.Ring,     RINGS.CatCovenantRing,                  FLAGS.ObtainedCatCovenantRing,              FLAGS.GiveCatCovenantRing)
-    # TODO: if the player has a divine blessing in their inventory, Alvina won't give a divine blessing again?
+    # this can prevent Alvina from giving you a divine blessing if you already have one in NG+ or beyond, even if she never gave you one
     EnableFlagsIfOwnsItemBeyondNG(3,  ItemType.Good,     GOODS.DivineBlessing,                   FLAGS.ObtainedAlvinaDivineBlessing,         FLAGS.GiveDivineBlessing)
     EnableFlagsIfOwnsItemBeyondNG(4,  ItemType.Ring,     RINGS.RingOfFog,                        FLAGS.ObtainedAlvinaRingOfFog,              FLAGS.GiveRingOfFog)
     EnableFlagsIfOwnsItemBeyondNG(5,  ItemType.Weapon,   WEAPONS.GravelordSword,                 FLAGS.ObtainedGravelordSword,               FLAGS.GiveGravelordSword)
@@ -318,6 +318,7 @@ def Constructor():
     EnableFlagsIfOwnsItemBeyondNG(16, ItemType.Ring,     RINGS.DarkmoonBladeCovenantRing,        FLAGS.ObtainedDarkmoonBladeCovenantRing,    FLAGS.GiveDarkmoonBladeCovenantRing)
     EnableFlagsIfOwnsItemBeyondNG(17, ItemType.Good,     GOODS.MiracleDarkmoonBlade,             FLAGS.ObtainedDarkmoonBladeMiracle,         FLAGS.GiveDarkmoonBlade)
     EnableFlagsIfOwnsItemBeyondNG(18, ItemType.Weapon,   WEAPONS.DarkmoonTalisman,               FLAGS.ObtainedDarkmoonTalisman,             FLAGS.GiveDarkmoonTalisman)
+    # this can prevent Kaathe from giving you a dark hand if you already have one in NG+ or beyond, even if he never gave you one
     EnableFlagsIfOwnsItemBeyondNG(19, ItemType.Weapon,   WEAPONS.DarkHand,                       FLAGS.ObtainedKaatheDarkHand,               FLAGS.GiveDarkHand)
     EnableFlagsIfOwnsItemBeyondNG(20, ItemType.Good,     GOODS.RedEyeOrb,                        FLAGS.ObtainedRedEyeOrb,                    FLAGS.GiveRedEyeOrb)
     EnableFlagsIfOwnsItemBeyondNG(21, ItemType.Weapon,   WEAPONS.DarkSword,                      FLAGS.ObtainedKaatheDarkSword,              FLAGS.GiveDarkSwordAndSet)
@@ -338,6 +339,7 @@ def Constructor():
 
     EnableFlagIfOwnsItemBeyondNG(0,   ItemType.Good,     GOODS.WhiteSignSoapstone,               FLAGS.ObtainedWhiteSignSoapstone)
     EnableFlagIfOwnsItemBeyondNG(1,   ItemType.Good,     GOODS.RedSignSoapstone,                 FLAGS.ObtainedRedSignSoapstone)
+    # redundant since the Red Eye Orb is also a covenant item, already accounted for above
     EnableFlagIfOwnsItemBeyondNG(2,   ItemType.Good,     GOODS.RedEyeOrb,                        FLAGS.ObtainedRedEyeOrb)
     EnableFlagIfOwnsItemBeyondNG(3,   ItemType.Good,     GOODS.OrangeGuidanceSoapstone,          FLAGS.ObtainedOrangeSignSoapstone)
     EnableFlagIfOwnsItemBeyondNG(4,   ItemType.Good,     GOODS.BookOfTheGuilty,                  FLAGS.ObtainedBookOfTheGuilty)
@@ -1236,7 +1238,7 @@ def Event770():
     DisableFlag(1711)
     DisableFlag(1712)
     DisableFlag(11200596)
-    DisableFlag(71200035)
+    DisableFlag(FLAGS.AlvinaFirstQDone)
     DisableFlag(71200042)
     DisableFlag(1763)
     DisableFlag(1822)
@@ -1292,7 +1294,7 @@ def Event772():
           FlagEnabled(FLAGS.PriscillaHostile) or
           FlagEnabled(FLAGS.AlvinaGone) or
           FlagEnabled(FLAGS.AlvinaBetrayed) or
-          FlagEnabled(71200035) or
+          FlagEnabled(FLAGS.AlvinaFirstQDone) or
           FlagEnabled(FLAGS.AlvinaFirstQNo) or
           FlagEnabled(1763) or
           FlagEnabled(1822) or
