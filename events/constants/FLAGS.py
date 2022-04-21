@@ -484,6 +484,14 @@ class FLAGS(Flag):
 
     PatchesHostile = 1627
 
+    FramptHostile = 1646
+    """ unrelated to Frampt being mad and going away forever - unused hostility flag that's never
+    enabled and redundantly disabled on absolution """
+
+    KaatheHostile = 1675
+    """ unrelated to Kaathe being mad and going away forever - unused hostility flag that's never
+    enabled and redundantly disabled on absolution """
+
     PriscillaHostile = 1691
 
     AlvinaStart = 1710
@@ -493,7 +501,18 @@ class FLAGS(Flag):
     AlvinaBetrayed = 1712
     """ enabled when the forest hunters are betrayed """
 
+    ShivaBodyguardHostile = 1763
     ShivaBodyguardDead = 1764
+
+    GoughHostile = 1822
+
+    ChesterHostile = 1841
+
+    CiaranHostile = 1863
+
+    ElizabethHostile = 1871
+    """ Elizabeth will never turn hostile, and so this flag is never enabled;
+    disabled on absolution """
 
     TakenByAbyss = 8120
     """ enabled when the player gets taken by the abyss, \n

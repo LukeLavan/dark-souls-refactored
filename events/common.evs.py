@@ -61,7 +61,7 @@ def Constructor():
 
     Event770()
 
-    Event772()
+    MonitorPvESin()
 
     Event730()
     Event731()
@@ -1254,7 +1254,7 @@ def Event770():
     Restart()
 
 
-def Event772():
+def MonitorPvESin():
     """ 772: Waits for NPCs to become aggro and enables a flag indicating the player has PvE sin """
     AwaitFlagOff(FLAGS.HasPvESin)
 
@@ -1270,7 +1270,7 @@ def Event772():
           FlagEnabled(FLAGS.NicoHostile) or
           FlagEnabled(FLAGS.GwyndolinHostile) or
           FlagEnabled(FLAGS.LaurentiusHostile) or
-          FlagEnabled(FLAGS.EingyiHostileFairLady) or # count as sin, but re-enabled upon loading Blighttown
+          FlagEnabled(FLAGS.EingyiHostileFairLady) or # counts as sin, but re-enabled upon loading Blighttown
           FlagEnabled(FLAGS.EingyiHostileAttackedUnproven) or
           FlagEnabled(FLAGS.EingyiHostileAttackedProven) or
           FlagEnabled(FLAGS.QuelanaHostile) or
@@ -1289,21 +1289,21 @@ def Event772():
           FlagEnabled(FLAGS.LautrecHostile) or
           FlagEnabled(FLAGS.ShivaHostile) or
           FlagEnabled(FLAGS.PatchesHostile) or
-          FlagEnabled(1646) or # TODO: seemingly unused, has to do with Frampt
-          FlagEnabled(1675) or # TODO: seemingly unused, has to do with Kaathe
+          FlagEnabled(FLAGS.FramptHostile) or # never enabled
+          FlagEnabled(FLAGS.KaatheHostile) or # never enabled
           FlagEnabled(FLAGS.PriscillaHostile) or
           FlagEnabled(FLAGS.AlvinaGone) or
           FlagEnabled(FLAGS.AlvinaBetrayed) or
           FlagEnabled(FLAGS.AlvinaFirstQDone) or
           FlagEnabled(FLAGS.AlvinaFirstQNo) or
-          FlagEnabled(1763) or
-          FlagEnabled(1822) or
-          FlagEnabled(1841) or
-          FlagEnabled(1863) or
-          FlagEnabled(1871))
+          FlagEnabled(FLAGS.ShivaBodyguardHostile) or
+          FlagEnabled(FLAGS.GoughHostile) or
+          FlagEnabled(FLAGS.ChesterHostile) or
+          FlagEnabled(FLAGS.Ciaran) or
+          FlagEnabled(FLAGS.ElizabethHostile)) # never enabled
 
-    EnableFlag(744)
-    AwaitFlagOff(744)
+    EnableFlag(FLAGS.HasPveSin)
+    AwaitFlagOff(FLAGS.HasPvESin)
 
     Restart()
 
