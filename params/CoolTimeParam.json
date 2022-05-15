@@ -1,0 +1,397 @@
+{
+    "entry_id": 41,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\CoolTimeParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "COOL_TIME_PARAM_ST",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 1,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "101": {
+                "name": "乱入 レベル1",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 600.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "102": {
+                "name": "乱入 レベル2",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 600.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "103": {
+                "name": "乱入 レベル3",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "104": {
+                "name": "乱入 レベル4",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "105": {
+                "name": "乱入 レベル5",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "106": {
+                "name": "乱入 レベル6",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "107": {
+                "name": "乱入 レベル7",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "108": {
+                "name": "乱入 レベル8",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "109": {
+                "name": "乱入 レベル9",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 180.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "110": {
+                "name": "乱入 レベル10",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 180.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "201": {
+                "name": "盗賊団 レベル1",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 600.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "202": {
+                "name": "盗賊団 レベル2",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 600.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "203": {
+                "name": "盗賊団 レベル3",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "204": {
+                "name": "盗賊団 レベル4",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "205": {
+                "name": "盗賊団 レベル5",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "206": {
+                "name": "盗賊団 レベル6",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "207": {
+                "name": "盗賊団 レベル7",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "208": {
+                "name": "盗賊団 レベル8",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "209": {
+                "name": "盗賊団 レベル9",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 180.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "210": {
+                "name": "盗賊団 レベル10",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 180.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "301": {
+                "name": "王母弟 レベル1",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 600.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "302": {
+                "name": "王母弟 レベル2",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 600.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "303": {
+                "name": "王母弟 レベル3",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "304": {
+                "name": "王母弟 レベル4",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "305": {
+                "name": "王母弟 レベル5",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 480.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "306": {
+                "name": "王母弟 レベル6",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "307": {
+                "name": "王母弟 レベル7",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "308": {
+                "name": "王母弟 レベル8",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 300.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "309": {
+                "name": "王母弟 レベル9",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 180.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "310": {
+                "name": "王母弟 レベル10",
+                "limitationTime_0": 900.0,
+                "observationTime_0": 180.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 300.0,
+                "observationTime_2": 200.0
+            },
+            "401": {
+                "name": "ニトの招待状 レベル1",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "402": {
+                "name": "ニトの招待状 レベル2",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "403": {
+                "name": "ニトの招待状 レベル3",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "404": {
+                "name": "ニトの招待状 レベル4",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "405": {
+                "name": "ニトの招待状 レベル5",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "406": {
+                "name": "ニトの招待状 レベル6",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "407": {
+                "name": "ニトの招待状 レベル7",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "408": {
+                "name": "ニトの招待状 レベル8",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "409": {
+                "name": "ニトの招待状 レベル9",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            },
+            "410": {
+                "name": "ニトの招待状 レベル10",
+                "limitationTime_0": 600.0,
+                "observationTime_0": 450.0,
+                "limitationTime_1": 600.0,
+                "observationTime_1": 450.0,
+                "limitationTime_2": 600.0,
+                "observationTime_2": 450.0,
+                "limitationTime_3": 600.0,
+                "observationTime_3": 450.0
+            }
+        }
+    }
+}

@@ -1,0 +1,1106 @@
+{
+    "entry_id": 20,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\SpEffectVfxParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "SP_EFFECT_VFX_PARAM_ST",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "テスト用"
+            },
+            "1": {
+                "name": "炎"
+            },
+            "2": {
+                "name": "毒",
+                "midstSfxId": 810,
+                "midstSeId": 999999996,
+                "midstDmyId": 220,
+                "playCategory": 4,
+                "playPriority": 41,
+                "existEffectForLarge:1": true
+            },
+            "3": {
+                "name": "ヒル",
+                "midstSfxId": 890,
+                "midstDmyId": 200,
+                "playCategory": 4,
+                "playPriority": 3
+            },
+            "4": {
+                "name": "腐食",
+                "midstSfxId": 815,
+                "midstDmyId": 220,
+                "existEffectForLarge:1": true
+            },
+            "5": {
+                "name": "疫病",
+                "midstSfxId": 830,
+                "midstSeId": 999999995,
+                "midstDmyId": 220,
+                "playCategory": 4,
+                "playPriority": 40,
+                "existEffectForLarge:1": true
+            },
+            "6": {
+                "name": "出血",
+                "midstSfxId": 840,
+                "midstSeId": 999999994,
+                "midstDmyId": 220,
+                "playCategory": 4,
+                "playPriority": 42,
+                "existEffectForLarge:1": true,
+                "existEffectForSoul:1": true
+            },
+            "8": {
+                "name": "姿隠し",
+                "midstSfxId": 24027,
+                "camouflageBeginDist": 17.0,
+                "camouflageEndDist": 12.0,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 2,
+                "effectInvisibleAtCamouflage:1": true,
+                "useCamouflage:1": true,
+                "invisibleAtFriendCamouflage:1": true,
+                "halfCamouflage:1": true
+            },
+            "9": {
+                "name": "グラビティ使用者",
+                "midstSfxId": 20228,
+                "midstDmyId": 236,
+                "playCategory": 3,
+                "playPriority": 53
+            },
+            "10": {
+                "name": "状態異常回復【毒】"
+            },
+            "11": {
+                "name": "状態異常回復【疫病】"
+            },
+            "12": {
+                "name": "状態異常回復【出血】"
+            },
+            "13": {
+                "name": "状態異常回復【万能】"
+            },
+            "14": {
+                "name": "ソウルスティール",
+                "midstSfxId": 22223,
+                "midstDmyId": 200
+            },
+            "15": {
+                "name": "ズーム"
+            },
+            "16": {
+                "name": "ワープ"
+            },
+            "17": {
+                "name": "デモンズソウル"
+            },
+            "18": {
+                "name": "黒ゴースト退散"
+            },
+            "19": {
+                "name": "強ゴースト",
+                "playCategory": 3,
+                "playPriority": 255
+            },
+            "20": {
+                "name": "ホワイト希望",
+                "playCategory": 3,
+                "playPriority": 255
+            },
+            "21": {
+                "name": "ブラック希望",
+                "playCategory": 3,
+                "playPriority": 255
+            },
+            "22": {
+                "name": "黒ゴースト化",
+                "midstSfxId": 22122,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 15
+            },
+            "23": {
+                "name": "蘇生"
+            },
+            "24": {
+                "name": "魔法使用禁止",
+                "midstSfxId": 850,
+                "midstSeId": 23112,
+                "midstDmyId": 220,
+                "playCategory": 4,
+                "playPriority": 21,
+                "existEffectForLarge:1": true
+            },
+            "25": {
+                "name": "奇跡モーション延長"
+            },
+            "26": {
+                "name": "砥石"
+            },
+            "27": {
+                "name": "仮死蘇生"
+            },
+            "28": {
+                "name": "武器強化",
+                "midstSfxId": 20278,
+                "midstDmyId": 206,
+                "effectType": 1,
+                "soulParamIdForWepEnchant": 1
+            },
+            "29": {
+                "name": "防御シールド",
+                "midstSfxId": 20252,
+                "midstSeId": 20004,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 51
+            },
+            "30": {
+                "name": "糸まみれ",
+                "midstSfxId": 197,
+                "midstDmyId": 200,
+                "playCategory": 4,
+                "playPriority": 5
+            },
+            "31": {
+                "name": "【システム】ゴーストパラム変化"
+            },
+            "32": {
+                "name": "金縛り",
+                "midstSfxId": 195,
+                "midstDmyId": 200,
+                "playCategory": 4,
+                "playPriority": 6
+            },
+            "33": {
+                "name": "蠅たかり",
+                "midstSfxId": 196,
+                "midstDmyId": 200,
+                "playCategory": 4,
+                "playPriority": 7
+            },
+            "34": {
+                "name": "炎怪人_第１段階",
+                "midstSfxId": 15251,
+                "midstDmyId": 110
+            },
+            "35": {
+                "name": "炎怪人_第２段階",
+                "midstSfxId": 15255,
+                "midstDmyId": 120
+            },
+            "36": {
+                "name": "炎怪人_第３段階",
+                "midstSfxId": 14053,
+                "midstDmyId": 30
+            },
+            "37": {
+                "name": "炎怪人_第４段階"
+            },
+            "38": {
+                "name": "幻聴"
+            },
+            "39": {
+                "name": "ソウルコイン"
+            },
+            "40": {
+                "name": "強防御シールド",
+                "midstSfxId": 20253,
+                "midstSeId": 20004,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 50
+            },
+            "41": {
+                "name": "火耐性シールド",
+                "midstSfxId": 20211,
+                "midstSeId": 21112,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 52
+            },
+            "42": {
+                "name": "HP回復状態",
+                "midstSfxId": 860,
+                "midstDmyId": 220,
+                "existEffectForLarge:1": true
+            },
+            "43": {
+                "name": "強制ゴースト化 第1段階",
+                "midstSfxId": 16010,
+                "midstDmyId": 200
+            },
+            "44": {
+                "name": "強制ゴースト化 第2段階",
+                "midstSfxId": 16011,
+                "midstDmyId": 200
+            },
+            "45": {
+                "name": "強制ゴースト化 第3段階"
+            },
+            "46": {
+                "name": "フェロモン",
+                "playCategory": 3,
+                "playPriority": 255
+            },
+            "47": {
+                "name": "猫着地",
+                "midstSfxId": 20244,
+                "midstSeId": 20005,
+                "midstDmyId": 212,
+                "playCategory": 3,
+                "playPriority": 255
+            },
+            "48": {
+                "name": "ピンチ攻撃力アップ",
+                "midstSfxId": 24003,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 41
+            },
+            "49": {
+                "name": "ピンチ防御力アップ",
+                "midstSfxId": 24004,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 40
+            },
+            "50": {
+                "name": "リジェネレイト",
+                "midstSfxId": 20247,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 90
+            },
+            "51": {
+                "name": "たいまつ"
+            },
+            "52": {
+                "name": "弱リジェネレイト",
+                "midstSfxId": 24012,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 91
+            },
+            "54": {
+                "name": "弱姿隠し",
+                "midstSfxId": 20208,
+                "midstDmyId": 212,
+                "playCategory": 3,
+                "playPriority": 180,
+                "isSilence:1": true
+            },
+            "55": {
+                "name": "ヒント血文字"
+            },
+            "56": {
+                "name": "ヒル足",
+                "midstSfxId": 890,
+                "midstDmyId": 202,
+                "playCategory": 4,
+                "playPriority": 4
+            },
+            "57": {
+                "name": "黄衣",
+                "midstSfxId": 202,
+                "midstDmyId": 50
+            },
+            "58": {
+                "name": "点光源"
+            },
+            "59": {
+                "name": "血文字評価",
+                "midstSfxId": 22605,
+                "midstDmyId": 220
+            },
+            "60": {
+                "name": "武器強化【中】",
+                "midstSfxId": 20279,
+                "midstDmyId": 206,
+                "effectType": 1,
+                "soulParamIdForWepEnchant": 4
+            },
+            "61": {
+                "name": "武器強化【大】",
+                "midstSfxId": 20284,
+                "midstDmyId": 206,
+                "effectType": 1,
+                "soulParamIdForWepEnchant": 4
+            },
+            "62": {
+                "name": "炎強化",
+                "midstSfxId": 22723,
+                "midstSeId": 193,
+                "midstDmyId": 206,
+                "effectType": 1
+            },
+            "63": {
+                "name": "炎強化【大】",
+                "midstSfxId": 20242,
+                "midstDmyId": 206,
+                "effectType": 2,
+                "soulParamIdForWepEnchant": 4
+            },
+            "64": {
+                "name": "魔法強化",
+                "midstSfxId": 20257,
+                "midstDmyId": 206,
+                "effectType": 1
+            },
+            "65": {
+                "name": "キメラ強化",
+                "midstSfxId": 13045,
+                "midstDmyId": 20
+            },
+            "66": {
+                "name": "アイテムドロップ補正",
+                "playCategory": 3,
+                "playPriority": 255
+            },
+            "67": {
+                "name": "MPリジェネレイト",
+                "midstSfxId": 24006,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 100
+            },
+            "68": {
+                "name": "弱MPリジェネレイト",
+                "midstSfxId": 23228,
+                "finishSfxId": 23328,
+                "midstDmyId": 200,
+                "finishDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 101
+            },
+            "69": {
+                "name": "死んだとき復活",
+                "midstSfxId": 20250,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 80
+            },
+            "70": {
+                "name": "毒耐性UP",
+                "midstSfxId": 24009,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 151
+            },
+            "71": {
+                "name": "魔法威力UP",
+                "midstSfxId": 24010,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 71
+            },
+            "72": {
+                "name": "魔法防御UP",
+                "midstSfxId": 24011,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 70
+            },
+            "73": {
+                "name": "出血耐性UP",
+                "midstSfxId": 24025,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 152
+            },
+            "74": {
+                "name": "疫病耐性UP",
+                "midstSfxId": 24026,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 150
+            },
+            "75": {
+                "name": "スタミナ回復UP",
+                "midstSfxId": 24005,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 140
+            },
+            "76": {
+                "name": "ソウル取得UP",
+                "midstSfxId": 24021,
+                "midstDmyId": 7,
+                "playCategory": 3,
+                "playPriority": 160
+            },
+            "77": {
+                "name": "炎耐性UP",
+                "midstSfxId": 24008,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 71
+            },
+            "78": {
+                "name": "王の盾1段階左足",
+                "midstSfxId": 14995,
+                "midstDmyId": 225
+            },
+            "79": {
+                "name": "王の盾2段階左足",
+                "midstSfxId": 14996,
+                "midstDmyId": 225
+            },
+            "80": {
+                "name": "王の盾3段階左足",
+                "midstSfxId": 14997,
+                "midstDmyId": 225
+            },
+            "91": {
+                "name": "王の盾1段階右足",
+                "midstSfxId": 14995,
+                "midstDmyId": 226
+            },
+            "92": {
+                "name": "王の盾2段階右足",
+                "midstSfxId": 14996,
+                "midstDmyId": 226
+            },
+            "93": {
+                "name": "王の盾3段階右足",
+                "midstSfxId": 14997,
+                "midstDmyId": 226
+            },
+            "94": {
+                "name": "審判者腹出血"
+            },
+            "95": {
+                "name": "擬態",
+                "midstSfxId": 1,
+                "finishSfxId": 2,
+                "playCategory": 3,
+                "playPriority": 1,
+                "useCamouflage:1": true,
+                "invisibleAtFriendCamouflage:1": true,
+                "addMapAreaBlockOffset:1": true
+            },
+            "96": {
+                "name": "変身",
+                "initSfxId": 20026,
+                "finishSfxId": 20026,
+                "transformProtectorId": 1000000,
+                "initDmyId": 7,
+                "finishDmyId": 7,
+                "playCategory": 2,
+                "playPriority": 2
+            },
+            "97": {
+                "name": "ガスマン"
+            },
+            "98": {
+                "name": "探知"
+            },
+            "99": {
+                "name": "協力待ち"
+            },
+            "100": {
+                "name": "協力",
+                "midstSfxId": 213,
+                "midstDmyId": 220
+            },
+            "101": {
+                "name": "協力送信",
+                "midstSfxId": 212,
+                "midstDmyId": 220
+            },
+            "102": {
+                "name": "グラビティ",
+                "midstSfxId": 870,
+                "midstDmyId": 220,
+                "playCategory": 4,
+                "playPriority": 22,
+                "existEffectForLarge:1": true
+            },
+            "103": {
+                "name": "邪眼",
+                "midstSfxId": 12210,
+                "midstDmyId": 7
+            },
+            "104": {
+                "name": "状態解除【協力待ち】"
+            },
+            "105": {
+                "name": "エフェクトLv1",
+                "midstSfxId": 22527,
+                "midstDmyId": 220
+            },
+            "106": {
+                "name": "エフェクトLv2",
+                "midstSfxId": 22530,
+                "midstDmyId": 220
+            },
+            "107": {
+                "name": "エフェクトLv3",
+                "midstSfxId": 22533,
+                "midstDmyId": 220
+            },
+            "108": {
+                "name": "邪眼Lv1",
+                "midstSfxId": 12212,
+                "initSfxId": 12211,
+                "midstDmyId": 220,
+                "initDmyId": 220,
+                "playCategory": 4,
+                "playPriority": 2
+            },
+            "109": {
+                "name": "邪眼Lv2",
+                "midstSfxId": 12213,
+                "midstSeId": 221000003,
+                "midstDmyId": 220,
+                "playCategory": 4,
+                "playPriority": 1
+            },
+            "110": {
+                "name": "カウンター",
+                "midstSfxId": 24003,
+                "midstDmyId": 220
+            },
+            "111": {
+                "name": "植卵スタンバイ"
+            },
+            "112": {
+                "name": "植卵"
+            },
+            "113": {
+                "name": "卵頭スタンバイ"
+            },
+            "114": {
+                "name": "卵頭",
+                "initSfxId": 107,
+                "finishSfxId": 108,
+                "transformProtectorId": 1010000,
+                "initDmyId": 7,
+                "finishDmyId": 7,
+                "playCategory": 2,
+                "playPriority": 1
+            },
+            "115": {
+                "name": "超軽量移動"
+            },
+            "116": {
+                "name": "呪い"
+            },
+            "117": {
+                "name": "石化",
+                "midstSfxId": 900,
+                "midstDmyId": 200
+            },
+            "118": {
+                "name": "呪い解除"
+            },
+            "119": {
+                "name": "人間性ダメージ"
+            },
+            "120": {
+                "name": "ダメージアニメ変化_SA時限定"
+            },
+            "121": {
+                "name": "ダメージアニメ変化_追加"
+            },
+            "122": {
+                "name": "水中挙動"
+            },
+            "123": {
+                "name": "武器頭"
+            },
+            "124": {
+                "name": "武器胴"
+            },
+            "125": {
+                "name": "武器手"
+            },
+            "126": {
+                "name": "武器脚"
+            },
+            "127": {
+                "name": "眠り"
+            },
+            "128": {
+                "name": "ミミック_擬態"
+            },
+            "129": {
+                "name": "ミミック_擬態眠り"
+            },
+            "130": {
+                "name": "ミミック_通常"
+            },
+            "131": {
+                "name": "ミミック_通常眠り"
+            },
+            "132": {
+                "name": "魅了",
+                "midstSfxId": 901,
+                "midstDmyId": 199,
+                "playCategory": 4,
+                "playPriority": 19
+            },
+            "133": {
+                "name": "血文字取得",
+                "midstSfxId": 20238,
+                "playCategory": 3,
+                "playPriority": 200
+            },
+            "134": {
+                "name": "はじき変化",
+                "initSfxId": 20137,
+                "finishSfxId": 20237,
+                "initDmyId": 7,
+                "finishDmyId": 7
+            },
+            "135": {
+                "name": "ミミック_通常眠り始め"
+            },
+            "136": {
+                "name": "結晶化"
+            },
+            "137": {
+                "name": "共鳴Lv0"
+            },
+            "138": {
+                "name": "共鳴Lv1"
+            },
+            "139": {
+                "name": "共鳴Lv2"
+            },
+            "140": {
+                "name": "共鳴Lv3"
+            },
+            "141": {
+                "name": "共鳴Lv4"
+            },
+            "142": {
+                "name": "行動ID指定"
+            },
+            "143": {
+                "name": "敵_不死"
+            },
+            "144": {
+                "name": "敵_仮死"
+            },
+            "145": {
+                "name": "聖属性"
+            },
+            "146": {
+                "name": "全身砥石",
+                "initSfxId": 20343,
+                "initDmyId": 206
+            },
+            "147": {
+                "name": "ライト魔法"
+            },
+            "148": {
+                "name": "救援要請"
+            },
+            "149": {
+                "name": "白救援"
+            },
+            "150": {
+                "name": "黒救援"
+            },
+            "151": {
+                "name": "雷強化",
+                "midstSfxId": 22724,
+                "midstSeId": 195,
+                "midstDmyId": 206,
+                "effectType": 1
+            },
+            "152": {
+                "name": "毒強化",
+                "midstSfxId": 22726,
+                "midstDmyId": 206,
+                "effectType": 1
+            },
+            "153": {
+                "name": "疫病強化",
+                "midstSfxId": 20255,
+                "midstDmyId": 206,
+                "effectType": 1
+            },
+            "154": {
+                "name": "エスト使用不可",
+                "midstSfxId": 835,
+                "midstDmyId": 220,
+                "playCategory": 4,
+                "playPriority": 20,
+                "existEffectForLarge:1": true
+            },
+            "155": {
+                "name": "SA強化",
+                "midstSfxId": 24023,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 55
+            },
+            "156": {
+                "name": "耐久度減少無効"
+            },
+            "157": {
+                "name": "対霊強化",
+                "midstSfxId": 22825,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 10
+            },
+            "158": {
+                "name": "ガード強化",
+                "midstSfxId": 20241,
+                "midstDmyId": 206,
+                "effectType": 2,
+                "soulParamIdForWepEnchant": 1
+            },
+            "159": {
+                "name": "通常死んだとき指輪復活"
+            },
+            "160": {
+                "name": "呪いで死んだとき指輪復活"
+            },
+            "161": {
+                "name": "ワープB"
+            },
+            "162": {
+                "name": "ワープC"
+            },
+            "163": {
+                "name": "ワープD"
+            },
+            "164": {
+                "name": "ワープE"
+            },
+            "165": {
+                "name": "ワープA"
+            },
+            "166": {
+                "name": "誓約破棄"
+            },
+            "167": {
+                "name": "全身変身",
+                "initSfxId": 20058,
+                "finishSfxId": 20058,
+                "transformProtectorId": 1000000,
+                "initDmyId": 200,
+                "finishDmyId": 200,
+                "playCategory": 1,
+                "playPriority": 1,
+                "isFullBodyTransformProtectorId:1": true
+            },
+            "168": {
+                "name": "精密強化"
+            },
+            "169": {
+                "name": "共鳴強化"
+            },
+            "170": {
+                "name": "因果応報",
+                "midstSfxId": 20254,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 20
+            },
+            "171": {
+                "name": "因果応報爆発"
+            },
+            "172": {
+                "name": "シース無敵１",
+                "midstSfxId": 15900,
+                "midstDmyId": 100
+            },
+            "173": {
+                "name": "シース無敵２",
+                "midstSfxId": 15901,
+                "midstDmyId": 40
+            },
+            "174": {
+                "name": "シース無敵３",
+                "midstSfxId": 15902,
+                "midstDmyId": 7
+            },
+            "175": {
+                "name": "人間性復活",
+                "initSfxId": 156,
+                "initDmyId": 200
+            },
+            "176": {
+                "name": "ソウルコイン(不死系)"
+            },
+            "177": {
+                "name": "ソウルコイン(獣系)"
+            },
+            "178": {
+                "name": "味方強化魔法",
+                "midstSfxId": 820,
+                "midstDmyId": 220,
+                "existEffectForLarge:1": true
+            },
+            "179": {
+                "name": "呪い効果Lv1"
+            },
+            "180": {
+                "name": "呪い効果Lv2"
+            },
+            "181": {
+                "name": "呪い効果Lv3"
+            },
+            "182": {
+                "name": "呪い効果Lv4"
+            },
+            "183": {
+                "name": "SOS可視"
+            },
+            "184": {
+                "name": "インビジブルウェポン",
+                "midstSfxId": 20209,
+                "finishSfxId": 20209,
+                "midstDmyId": 206,
+                "finishDmyId": 206,
+                "effectType": 1,
+                "isInvisibleWeapon:1": true
+            },
+            "185": {
+                "name": "ニト効果",
+                "midstSfxId": 22887,
+                "midstDmyId": 220
+            },
+            "186": {
+                "name": "炎キック"
+            },
+            "187": {
+                "name": "死神化"
+            },
+            "188": {
+                "name": "森の盗賊団召喚希望"
+            },
+            "189": {
+                "name": "森の盗賊団テリトリ内"
+            },
+            "190": {
+                "name": "王母弟召喚希望"
+            },
+            "191": {
+                "name": "王母弟テリトリ内"
+            },
+            "192": {
+                "name": "卵頭_二段目",
+                "initSfxId": 107,
+                "finishSfxId": 108,
+                "transformProtectorId": 1020000,
+                "initDmyId": 7,
+                "finishDmyId": 7,
+                "playCategory": 2,
+                "playPriority": 1
+            },
+            "193": {
+                "name": "寿命延長"
+            },
+            "194": {
+                "name": "魔法使用回数アップ"
+            },
+            "195": {
+                "name": "ドラゴンニュートサイン"
+            },
+            "196": {
+                "name": "賞金首サイン"
+            },
+            "197": {
+                "name": "カウンターアップ"
+            },
+            "198": {
+                "name": "卵くだし"
+            },
+            "199": {
+                "name": "HPドレイン"
+            },
+            "200": {
+                "name": "狂気の力",
+                "midstSfxId": 20221,
+                "midstDmyId": 200,
+                "playCategory": 3,
+                "playPriority": 49
+            },
+            "201": {
+                "name": "魔法禁止エフェクト用",
+                "midstSfxId": 20256,
+                "midstSeId": 23112,
+                "midstDmyId": 236
+            },
+            "202": {
+                "name": "竜咆哮",
+                "midstSfxId": 825,
+                "midstDmyId": 220,
+                "playCategory": 3,
+                "playPriority": 9
+            },
+            "203": {
+                "name": "魔法使用回数ダウン"
+            },
+            "204": {
+                "name": "ガード強化【大】",
+                "midstSfxId": 20242,
+                "midstDmyId": 206,
+                "effectType": 2,
+                "soulParamIdForWepEnchant": 4
+            },
+            "205": {
+                "name": "【DLC】闇強化",
+                "midstSfxId": 845,
+                "midstDmyId": 220,
+                "existEffectForLarge:1": true
+            },
+            "206": {
+                "name": "闘技場1対1【小】テリトリ内"
+            },
+            "207": {
+                "name": "闘技場2対2【小】テリトリ内"
+            },
+            "208": {
+                "name": "闘技場バトルロイヤル【小】テリトリ内"
+            },
+            "209": {
+                "name": "闘技場1対1【小】召喚希望A"
+            },
+            "210": {
+                "name": "闘技場1対1【小】召喚希望B"
+            },
+            "211": {
+                "name": "闘技場2対2【小】召喚希望A1"
+            },
+            "212": {
+                "name": "闘技場2対2【小】召喚希望A2"
+            },
+            "213": {
+                "name": "闘技場2対2【小】召喚希望B1"
+            },
+            "214": {
+                "name": "闘技場2対2【小】召喚希望B2"
+            },
+            "215": {
+                "name": "闘技場バトルロイヤル【小】召喚希望A"
+            },
+            "216": {
+                "name": "闘技場バトルロイヤル【小】召喚希望B"
+            },
+            "217": {
+                "name": "闘技場バトルロイヤル【小】召喚希望C"
+            },
+            "218": {
+                "name": "闘技場バトルロイヤル【小】召喚希望D"
+            },
+            "219": {
+                "name": "闘技場1対1【大】テリトリ内"
+            },
+            "220": {
+                "name": "闘技場2対2【大】テリトリ内"
+            },
+            "221": {
+                "name": "闘技場バトルロイヤル【大】テリトリ内"
+            },
+            "222": {
+                "name": "闘技場1対1【大】召喚希望A"
+            },
+            "223": {
+                "name": "闘技場1対1【大】召喚希望B"
+            },
+            "224": {
+                "name": "闘技場2対2【大】召喚希望A1"
+            },
+            "225": {
+                "name": "闘技場2対2【大】召喚希望A2"
+            },
+            "226": {
+                "name": "闘技場2対2【大】召喚希望B1"
+            },
+            "227": {
+                "name": "闘技場2対2【大】召喚希望B2"
+            },
+            "228": {
+                "name": "闘技場バトルロイヤル【大】召喚希望A"
+            },
+            "229": {
+                "name": "闘技場バトルロイヤル【大】召喚希望B"
+            },
+            "230": {
+                "name": "闘技場バトルロイヤル【大】召喚希望C"
+            },
+            "231": {
+                "name": "闘技場バトルロイヤル【大】召喚希望D"
+            },
+            "232": {
+                "name": "闘技場使用禁止アイテム使用禁止"
+            },
+            "233": {
+                "name": "闘技場死亡",
+                "midstSfxId": 175,
+                "midstDmyId": 8
+            },
+            "234": {
+                "name": "闘技場暫定１位",
+                "midstSfxId": 176,
+                "midstDmyId": 211
+            },
+            "235": {
+                "name": "闘技場NoDead"
+            },
+            "236": {
+                "name": "闘技場同率１位",
+                "midstSfxId": 177,
+                "midstDmyId": 211
+            },
+            "237": {
+                "name": "黒竜の指輪",
+                "midstSfxId": 24032,
+                "midstDmyId": 211
+            },
+            "238": {
+                "name": "闘技場10勝以上",
+                "midstSfxId": 171,
+                "midstDmyId": 211
+            },
+            "239": {
+                "name": "闘技場30勝以上",
+                "midstSfxId": 172,
+                "midstDmyId": 211
+            },
+            "240": {
+                "name": "闘技場50勝以上",
+                "midstSfxId": 173,
+                "midstDmyId": 211
+            },
+            "241": {
+                "name": "闘技場100勝以上",
+                "midstSfxId": 174,
+                "midstDmyId": 211
+            },
+            "242": {
+                "name": "最大数(選択禁止)",
+                "midstSfxId": 0,
+                "midstSeId": 0,
+                "initSfxId": 0,
+                "initSeId": 0,
+                "finishSfxId": 0,
+                "finishSeId": 0,
+                "camouflageBeginDist": 0.0,
+                "camouflageEndDist": 0.0,
+                "transformProtectorId": 0,
+                "midstDmyId": 0,
+                "initDmyId": 0,
+                "finishDmyId": 0
+            }
+        }
+    }
+}

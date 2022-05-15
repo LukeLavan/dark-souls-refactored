@@ -1,0 +1,2664 @@
+{
+    "entry_id": 28,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\ShopLineupParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "SHOP_LINEUP_PARAM",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "1": {
+                "name": "消すべからず",
+                "equipId": 240,
+                "value": 100,
+                "equipType": 3
+            },
+            "1100": {
+                "name": "106橙の助言のろう石",
+                "equipId": 106,
+                "value": 100,
+                "eventFlag": 11017020,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1101": {
+                "name": "280修理の光粉",
+                "equipId": 280,
+                "value": 500,
+                "equipType": 3
+            },
+            "1102": {
+                "name": "290投げナイフ",
+                "equipId": 290,
+                "value": 10,
+                "equipType": 3
+            },
+            "1103": {
+                "name": "292火炎壷",
+                "equipId": 292,
+                "value": 50,
+                "equipType": 3
+            },
+            "1104": {
+                "name": "296氷結塊",
+                "equipId": 296,
+                "value": 500,
+                "equipType": 3
+            },
+            "1105": {
+                "name": "2021民家の鍵",
+                "equipId": 2021,
+                "value": 1000,
+                "eventFlag": 11017030,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1106": {
+                "name": "2602修理箱",
+                "equipId": 2602,
+                "value": 3000,
+                "eventFlag": 11017040,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1107": {
+                "name": "100000ダガー",
+                "equipId": 100000,
+                "value": 300
+            },
+            "1108": {
+                "name": "200000ショートソード",
+                "equipId": 200000,
+                "value": 600
+            },
+            "1110": {
+                "name": "400000シミター",
+                "equipId": 400000,
+                "value": 600
+            },
+            "1111": {
+                "name": "601000レイピア",
+                "equipId": 601000,
+                "value": 600
+            },
+            "1112": {
+                "name": "700000ハンドアクス",
+                "equipId": 700000,
+                "value": 450
+            },
+            "1113": {
+                "name": "800000クラブ",
+                "equipId": 800000,
+                "value": 150
+            },
+            "1114": {
+                "name": "809000強化クラブ",
+                "equipId": 809000,
+                "value": 350
+            },
+            "1115": {
+                "name": "1000000スピア",
+                "equipId": 1000000,
+                "value": 600
+            },
+            "1116": {
+                "name": "1200000ショートボウ",
+                "equipId": 1200000,
+                "value": 1000
+            },
+            "1117": {
+                "name": "1400000双鳥の木盾",
+                "equipId": 1400000,
+                "value": 400
+            },
+            "1118": {
+                "name": "1403000スモールレザーシールド",
+                "equipId": 1403000,
+                "value": 600
+            },
+            "1119": {
+                "name": "1405000バックラー",
+                "equipId": 1405000,
+                "value": 800
+            },
+            "1120": {
+                "name": "1408000レザーシールド",
+                "equipId": 1408000,
+                "value": 800
+            },
+            "1121": {
+                "name": "1450000ヒーターシールド",
+                "equipId": 1450000,
+                "value": 1000
+            },
+            "1122": {
+                "name": "1460000戦士の円盾",
+                "equipId": 1460000,
+                "value": 800
+            },
+            "1123": {
+                "name": "2000000ノーマル矢",
+                "equipId": 2000000,
+                "value": 10
+            },
+            "1124": {
+                "name": "2001000大きな矢",
+                "equipId": 2001000,
+                "value": 50
+            },
+            "1125": {
+                "name": "2006000安い矢",
+                "equipId": 2006000,
+                "value": 3
+            },
+            "1126": {
+                "name": "2100000普通の太矢",
+                "equipId": 2100000,
+                "value": 30
+            },
+            "1127": {
+                "name": "2101000ヘビーボルト",
+                "equipId": 2101000,
+                "value": 100
+            },
+            "1128": {
+                "name": "2103000安い太矢",
+                "equipId": 2103000,
+                "value": 10
+            },
+            "1129": {
+                "name": "チェイン装備",
+                "equipId": 170000,
+                "value": 500,
+                "equipType": 1
+            },
+            "1130": {
+                "name": "チェイン装備",
+                "equipId": 171000,
+                "value": 800,
+                "equipType": 1
+            },
+            "1131": {
+                "name": "チェイン装備",
+                "equipId": 172000,
+                "value": 500,
+                "equipType": 1
+            },
+            "1132": {
+                "name": "チェイン装備",
+                "equipId": 173000,
+                "value": 500,
+                "equipType": 1
+            },
+            "1133": {
+                "name": "2608底なしの木箱",
+                "equipId": 2608,
+                "value": 1000,
+                "eventFlag": 11007010,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1134": {
+                "name": "385Dried finger",
+                "equipId": 385,
+                "value": 2000,
+                "eventFlag": 11017210,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1200": {
+                "name": "270血赤の苔玉",
+                "equipId": 270,
+                "value": 300,
+                "equipType": 3
+            },
+            "1201": {
+                "name": "271毒紫の苔玉",
+                "equipId": 271,
+                "value": 500,
+                "equipType": 3
+            },
+            "1202": {
+                "name": "272毒紫の花苔玉",
+                "equipId": 272,
+                "value": 1000,
+                "equipType": 3
+            },
+            "1203": {
+                "name": "291毒投げナイフ",
+                "equipId": 291,
+                "value": 100,
+                "equipType": 3
+            },
+            "1204": {
+                "name": "293糞団子",
+                "equipId": 293,
+                "value": 200,
+                "equipType": 3
+            },
+            "1205": {
+                "name": "294誘い頭蓋",
+                "equipId": 294,
+                "value": 500,
+                "equipType": 3
+            },
+            "1206": {
+                "name": "310炭松脂",
+                "equipId": 310,
+                "value": 500,
+                "equipType": 3
+            },
+            "1207": {
+                "name": "312一時の呪い",
+                "equipId": 312,
+                "value": 4000,
+                "eventFlag": 11017190,
+                "sellQuantity": 4,
+                "equipType": 3
+            },
+            "1208": {
+                "name": "313腐れ松脂",
+                "equipId": 313,
+                "value": 1000,
+                "equipType": 3
+            },
+            "1209": {
+                "name": "330帰還の骨片",
+                "equipId": 330,
+                "value": 500,
+                "equipType": 3
+            },
+            "1210": {
+                "name": "370七色石",
+                "equipId": 370,
+                "value": 10,
+                "equipType": 3
+            },
+            "1211": {
+                "name": "500人間性",
+                "equipId": 500,
+                "value": 5000,
+                "eventFlag": 11027020,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1212": {
+                "name": "2003000火矢",
+                "equipId": 2003000,
+                "value": 100
+            },
+            "1213": {
+                "name": "2004000毒矢",
+                "equipId": 2004000,
+                "value": 100
+            },
+            "1214": {
+                "name": "274解呪石",
+                "equipId": 274,
+                "value": 6000,
+                "equipType": 3
+            },
+            "1215": {
+                "name": "2000000ノーマル矢",
+                "equipId": 2000000,
+                "value": 10
+            },
+            "1216": {
+                "name": "2001000大きな矢",
+                "equipId": 2001000,
+                "value": 50
+            },
+            "1217": {
+                "name": "2006000安い矢",
+                "equipId": 2006000,
+                "value": 3
+            },
+            "1218": {
+                "name": "2100000普通の太矢",
+                "equipId": 2100000,
+                "value": 30
+            },
+            "1219": {
+                "name": "2101000ヘビーボルト",
+                "equipId": 2101000,
+                "value": 100
+            },
+            "1220": {
+                "name": "2103000安い太矢",
+                "equipId": 2103000,
+                "value": 10
+            },
+            "1400": {
+                "name": "1000楔石の欠片",
+                "equipId": 1000,
+                "value": 800,
+                "equipType": 3
+            },
+            "1401": {
+                "name": "2002アルトリウスの紋章",
+                "equipId": 2002,
+                "value": 20000,
+                "eventFlag": 11017140,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1402": {
+                "name": "2600武器の鍛治箱",
+                "equipId": 2600,
+                "value": 2000,
+                "eventFlag": 11017150,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1403": {
+                "name": "2601防具の鍛治箱",
+                "equipId": 2601,
+                "value": 2000,
+                "eventFlag": 11017160,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1404": {
+                "name": "2602修理箱",
+                "equipId": 2602,
+                "value": 2000,
+                "eventFlag": 11017170,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1405": {
+                "name": "201000ロングソード",
+                "equipId": 201000,
+                "value": 1000
+            },
+            "1406": {
+                "name": "202000ブロードソード",
+                "equipId": 202000,
+                "value": 1000
+            },
+            "1407": {
+                "name": "300000バスタードソード",
+                "equipId": 300000,
+                "value": 3000
+            },
+            "1408": {
+                "name": "701000バトルアクス",
+                "equipId": 701000,
+                "value": 1000
+            },
+            "1409": {
+                "name": "803000ウォーピック",
+                "equipId": 803000,
+                "value": 800
+            },
+            "1410": {
+                "name": "901000セスタス",
+                "equipId": 901000,
+                "value": 200
+            },
+            "1411": {
+                "name": "1050000パイク",
+                "equipId": 1050000,
+                "value": 2000
+            },
+            "1412": {
+                "name": "1402000ラージレザーシールド",
+                "equipId": 1402000,
+                "value": 800
+            },
+            "1413": {
+                "name": "1452000塔のカイトシールド",
+                "equipId": 1452000,
+                "value": 1000
+            },
+            "1414": {
+                "name": "1477000双蛇のカイトシールド",
+                "equipId": 1477000,
+                "value": 1000
+            },
+            "1415": {
+                "name": "2000000ノーマル矢",
+                "equipId": 2000000,
+                "value": 10
+            },
+            "1416": {
+                "name": "2001000大きな矢",
+                "equipId": 2001000,
+                "value": 50
+            },
+            "1417": {
+                "name": "2006000安い矢",
+                "equipId": 2006000,
+                "value": 3
+            },
+            "1418": {
+                "name": "2100000普通の太矢",
+                "equipId": 2100000,
+                "value": 30
+            },
+            "1419": {
+                "name": "2101000ヘビーボルト",
+                "equipId": 2101000,
+                "value": 100
+            },
+            "1420": {
+                "name": "2103000安い太矢",
+                "equipId": 2103000,
+                "value": 10
+            },
+            "1500": {
+                "name": "311黄金松脂",
+                "equipId": 311,
+                "value": 1000,
+                "eventFlag": 11007000,
+                "sellQuantity": 3,
+                "equipType": 3
+            },
+            "1501": {
+                "name": "2608底なしの木箱",
+                "equipId": 2608,
+                "value": 1000,
+                "eventFlag": 11007010,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1502": {
+                "name": "205000結晶直剣",
+                "equipId": 205000,
+                "value": 4000
+            },
+            "1503": {
+                "name": "304000結晶大剣",
+                "equipId": 304000,
+                "value": 6000
+            },
+            "1504": {
+                "name": "1471000結晶の盾",
+                "equipId": 1471000,
+                "value": 4000
+            },
+            "1505": {
+                "name": "トリックスター装備",
+                "equipId": 110000,
+                "value": 12000,
+                "equipType": 1
+            },
+            "1506": {
+                "name": "トリックスター装備",
+                "equipId": 111000,
+                "value": 15000,
+                "equipType": 1
+            },
+            "1507": {
+                "name": "トリックスター装備",
+                "equipId": 112000,
+                "value": 10000,
+                "equipType": 1
+            },
+            "1508": {
+                "name": "トリックスター装備",
+                "equipId": 113000,
+                "value": 10000,
+                "equipType": 1
+            },
+            "1509": {
+                "name": "2000000ノーマル矢",
+                "equipId": 2000000,
+                "value": 10
+            },
+            "1510": {
+                "name": "2001000大きな矢",
+                "equipId": 2001000,
+                "value": 50
+            },
+            "1511": {
+                "name": "2006000安い矢",
+                "equipId": 2006000,
+                "value": 3
+            },
+            "1512": {
+                "name": "2100000普通の太矢",
+                "equipId": 2100000,
+                "value": 30
+            },
+            "1513": {
+                "name": "2101000ヘビーボルト",
+                "equipId": 2101000,
+                "value": 100
+            },
+            "1514": {
+                "name": "2103000安い太矢",
+                "equipId": 2103000,
+                "value": 10
+            },
+            "1550": {
+                "name": "470000ゴーレムヘルム",
+                "equipId": 470000,
+                "value": 5000,
+                "eventFlag": 11807020,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1551": {
+                "name": "471000ゴーレムアーマー",
+                "equipId": 471000,
+                "value": 7000,
+                "eventFlag": 11807030,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1552": {
+                "name": "472000ゴーレムガントレット",
+                "equipId": 472000,
+                "value": 5000,
+                "eventFlag": 11807040,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1553": {
+                "name": "473000ゴーレムレギンス",
+                "equipId": 473000,
+                "value": 5000,
+                "eventFlag": 11807050,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1554": {
+                "name": "80000スモウの兜",
+                "equipId": 80000,
+                "value": 6000,
+                "eventFlag": 11807060,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1555": {
+                "name": "81000スモウの鎧",
+                "equipId": 81000,
+                "value": 7000,
+                "eventFlag": 11807070,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1556": {
+                "name": "82000スモウの手甲",
+                "equipId": 82000,
+                "value": 5000,
+                "eventFlag": 11807080,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1557": {
+                "name": "83000スモウの足甲",
+                "equipId": 83000,
+                "value": 5000,
+                "eventFlag": 11807090,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1558": {
+                "name": "270000オーンスタインの兜",
+                "equipId": 270000,
+                "value": 7000,
+                "eventFlag": 11807100,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1559": {
+                "name": "271000オーンスタインの鎧",
+                "equipId": 271000,
+                "value": 8000,
+                "eventFlag": 11807110,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1560": {
+                "name": "272000オーンスタインの手甲",
+                "equipId": 272000,
+                "value": 6000,
+                "eventFlag": 11807120,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1561": {
+                "name": "273000オーンスタインの足甲",
+                "equipId": 273000,
+                "value": 6000,
+                "eventFlag": 11807130,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1562": {
+                "name": "540000陰の太陽の王冠",
+                "equipId": 540000,
+                "value": 10000,
+                "eventFlag": 11807230,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1563": {
+                "name": "541000月光の長衣",
+                "equipId": 541000,
+                "value": 10000,
+                "eventFlag": 11807170,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1564": {
+                "name": "542000月光の長手袋",
+                "equipId": 542000,
+                "value": 10000,
+                "eventFlag": 11807180,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1565": {
+                "name": "543000月光の腰巻き",
+                "equipId": 543000,
+                "value": 10000,
+                "eventFlag": 11807190,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1566": {
+                "name": "550000大王の王冠",
+                "equipId": 550000,
+                "value": 20000,
+                "eventFlag": 11807240,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1567": {
+                "name": "551000大王の長衣",
+                "equipId": 551000,
+                "value": 20000,
+                "eventFlag": 11807200,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1568": {
+                "name": "552000大王の腕輪",
+                "equipId": 552000,
+                "value": 20000,
+                "eventFlag": 11807210,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1569": {
+                "name": "553000大王の脚輪",
+                "equipId": 553000,
+                "value": 20000,
+                "eventFlag": 11807220,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1580": {
+                "name": "2100万能鍵",
+                "equipId": 2100,
+                "value": 5000,
+                "eventFlag": 11007020,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1581": {
+                "name": "660000アルトリウスの兜",
+                "equipId": 660000,
+                "value": 20000,
+                "eventFlag": 11217060,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1582": {
+                "name": "661000アルトリウスの鎧",
+                "equipId": 661000,
+                "value": 20000,
+                "eventFlag": 11217070,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1583": {
+                "name": "662000アルトリウスの手甲",
+                "equipId": 662000,
+                "value": 20000,
+                "eventFlag": 11217080,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1584": {
+                "name": "663000アルトリウスの足甲",
+                "equipId": 663000,
+                "value": 20000,
+                "eventFlag": 11217090,
+                "sellQuantity": 1,
+                "equipType": 1
+            },
+            "1600": {
+                "name": "109死の瞳",
+                "equipId": 109,
+                "value": 3000,
+                "eventFlag": 11307000,
+                "sellQuantity": 3,
+                "equipType": 3
+            },
+            "1601": {
+                "name": "240女神の祝福",
+                "equipId": 240,
+                "value": 20000,
+                "eventFlag": 11027040,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1602": {
+                "name": "370七色石",
+                "equipId": 370,
+                "value": 10,
+                "equipType": 3
+            },
+            "1603": {
+                "name": "500人間性",
+                "equipId": 500,
+                "value": 10000,
+                "eventFlag": 11027050,
+                "sellQuantity": 3,
+                "equipType": 3
+            },
+            "1604": {
+                "name": "501人間性の双子",
+                "equipId": 501,
+                "value": 20000,
+                "eventFlag": 11307010,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1605": {
+                "name": "奇跡：回復5000",
+                "equipId": 5000,
+                "value": 5000,
+                "eventFlag": 11027090,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1606": {
+                "name": "奇跡：限られた大回復5020",
+                "equipId": 5020,
+                "value": 10000,
+                "eventFlag": 11027100,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "1607": {
+                "name": "702000クレセントアクス",
+                "equipId": 702000,
+                "value": 10000,
+                "eventFlag": 11307020,
+                "sellQuantity": 1
+            },
+            "1608": {
+                "name": "801000メイス",
+                "equipId": 801000,
+                "value": 3000
+            },
+            "1609": {
+                "name": "1361000粗布のタリスマン",
+                "equipId": 1361000,
+                "value": 1000
+            },
+            "1610": {
+                "name": "1362000ソルロンドのタリスマン",
+                "equipId": 1362000,
+                "value": 5000
+            },
+            "1611": {
+                "name": "590000父の仮面",
+                "equipId": 590000,
+                "value": 8000,
+                "equipType": 1
+            },
+            "1612": {
+                "name": "600000母の仮面",
+                "equipId": 600000,
+                "value": 8000,
+                "equipType": 1
+            },
+            "1613": {
+                "name": "610000子の仮面",
+                "equipId": 610000,
+                "value": 8000,
+                "equipType": 1
+            },
+            "1614": {
+                "name": "神職装備",
+                "equipId": 180000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "1615": {
+                "name": "神職装備",
+                "equipId": 181000,
+                "value": 7000,
+                "equipType": 1
+            },
+            "1616": {
+                "name": "神職装備",
+                "equipId": 182000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "1617": {
+                "name": "神職装備",
+                "equipId": 183000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "1700": {
+                "name": "145東の木目指輪",
+                "equipId": 145,
+                "value": 10000,
+                "eventFlag": 11407000,
+                "sellQuantity": 1,
+                "equipType": 2
+            },
+            "1701": {
+                "name": "303000フランベルジェ",
+                "equipId": 303000,
+                "value": 10000
+            },
+            "1702": {
+                "name": "306000石の大剣",
+                "equipId": 306000,
+                "value": 15000
+            },
+            "1703": {
+                "name": "352000デーモンの大鉈",
+                "equipId": 352000,
+                "value": 10000
+            },
+            "1704": {
+                "name": "402000ショーテル",
+                "equipId": 402000,
+                "value": 10000
+            },
+            "1705": {
+                "name": "500000打刀",
+                "equipId": 500000,
+                "value": 5000
+            },
+            "1706": {
+                "name": "501000物干し竿",
+                "equipId": 501000,
+                "value": 20000
+            },
+            "1707": {
+                "name": "751000デーモンの大斧",
+                "equipId": 751000,
+                "value": 10000
+            },
+            "1708": {
+                "name": "902000かぎ爪",
+                "equipId": 902000,
+                "value": 5000
+            },
+            "1709": {
+                "name": "1003000デーモンの槍",
+                "equipId": 1003000,
+                "value": 15000
+            },
+            "2000": {
+                "name": "3000魔術：ソウルの矢",
+                "equipId": 3000,
+                "value": 1000,
+                "eventFlag": 11027130,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2001": {
+                "name": "3010魔術：強いソウルの矢",
+                "equipId": 3010,
+                "value": 6000,
+                "eventFlag": 11027140,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2002": {
+                "name": "3020魔術：ソウルの太矢",
+                "equipId": 3020,
+                "value": 2000,
+                "eventFlag": 11027150,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2003": {
+                "name": "3030魔術：強いソウルの太矢",
+                "equipId": 3030,
+                "value": 8000,
+                "eventFlag": 11027160,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2004": {
+                "name": "3100魔術：魔法の武器",
+                "equipId": 3100,
+                "value": 3000,
+                "eventFlag": 11027170,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2005": {
+                "name": "3300魔術：魔法の盾",
+                "equipId": 3300,
+                "value": 3000,
+                "eventFlag": 11027180,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2006": {
+                "name": "3520魔術：音送り",
+                "equipId": 3520,
+                "value": 1000,
+                "eventFlag": 11027190,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2007": {
+                "name": "3540魔術：落下制御",
+                "equipId": 3540,
+                "value": 1500,
+                "eventFlag": 11027200,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2008": {
+                "name": "115吠える竜印の指輪",
+                "equipId": 115,
+                "value": 20000,
+                "eventFlag": 11027210,
+                "sellQuantity": 1,
+                "equipType": 2
+            },
+            "2009": {
+                "name": "141佇む竜印の指輪",
+                "equipId": 141,
+                "value": 20000,
+                "eventFlag": 11027220,
+                "sellQuantity": 1,
+                "equipType": 2
+            },
+            "2010": {
+                "name": "1300000魔術師の杖",
+                "equipId": 1300000,
+                "value": 500
+            },
+            "2020": {
+                "name": "魔術：追尾するソウルの塊3040",
+                "equipId": 3040,
+                "value": 20000,
+                "eventFlag": 11027230,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2021": {
+                "name": "魔術：ソウルの槍3060",
+                "equipId": 3060,
+                "value": 40000,
+                "eventFlag": 11027240,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2100": {
+                "name": "3000魔術：ソウルの矢",
+                "equipId": 3000,
+                "value": 2000,
+                "eventFlag": 11607120,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2101": {
+                "name": "3020魔術：ソウルの太矢",
+                "equipId": 3020,
+                "value": 4000,
+                "eventFlag": 11607130,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2102": {
+                "name": "1300000魔術師の杖",
+                "equipId": 1300000,
+                "value": 500
+            },
+            "2200": {
+                "name": "3400魔術：見えない武器",
+                "equipId": 3400,
+                "value": 2000,
+                "eventFlag": 11207000,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2201": {
+                "name": "3410魔術：見えない体",
+                "equipId": 3410,
+                "value": 2000,
+                "eventFlag": 11207010,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2202": {
+                "name": "3500魔術：照らす光",
+                "equipId": 3500,
+                "value": 1000,
+                "eventFlag": 11207020,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2203": {
+                "name": "3530魔術：修復",
+                "equipId": 3530,
+                "value": 10000,
+                "eventFlag": 11207030,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2204": {
+                "name": "3550魔術：擬態",
+                "equipId": 3550,
+                "value": 3000,
+                "eventFlag": 11207040,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2205": {
+                "name": "1305000ウーラシールの白枝",
+                "equipId": 1305000,
+                "value": 1000
+            },
+            "2400": {
+                "name": "3600魔術：解呪",
+                "equipId": 3600,
+                "value": 5000,
+                "eventFlag": 11607000,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "2401": {
+                "name": "312一時の呪い",
+                "equipId": 312,
+                "value": 1000,
+                "equipType": 3
+            },
+            "3000": {
+                "name": "4000呪術：火球",
+                "equipId": 4000,
+                "value": 800,
+                "eventFlag": 11407030,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3001": {
+                "name": "4010呪術：火の玉",
+                "equipId": 4010,
+                "value": 8000,
+                "eventFlag": 11407040,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3002": {
+                "name": "4100呪術：発火",
+                "equipId": 4100,
+                "value": 500,
+                "eventFlag": 11407050,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3003": {
+                "name": "4300呪術：鉄の体",
+                "equipId": 4300,
+                "value": 2000,
+                "eventFlag": 11407060,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3004": {
+                "name": "4310呪術：激しい発汗",
+                "equipId": 4310,
+                "value": 2000,
+                "eventFlag": 11407070,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3200": {
+                "name": "従者一覧112",
+                "equipId": 112,
+                "value": 500,
+                "eventFlag": 11407080,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3210": {
+                "name": "275たまごくだし",
+                "equipId": 275,
+                "value": 1000,
+                "equipType": 3
+            },
+            "3211": {
+                "name": "4200呪術：毒の霧",
+                "equipId": 4200,
+                "value": 10000,
+                "eventFlag": 11407090,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3212": {
+                "name": "4210呪術：猛毒の霧",
+                "equipId": 4210,
+                "value": 25000,
+                "eventFlag": 11407100,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3400": {
+                "name": "4000呪術：火球",
+                "equipId": 4000,
+                "value": 800,
+                "eventFlag": 11407120,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3401": {
+                "name": "4010呪術：火の玉",
+                "equipId": 4010,
+                "value": 8000,
+                "eventFlag": 11407130,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3402": {
+                "name": "4020呪術：大火球",
+                "equipId": 4020,
+                "value": 20000,
+                "eventFlag": 11407150,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3403": {
+                "name": "4030呪術：炎の嵐",
+                "equipId": 4030,
+                "value": 30000,
+                "eventFlag": 11407160,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3404": {
+                "name": "4060呪術：なぎ払う炎",
+                "equipId": 4060,
+                "value": 10000,
+                "eventFlag": 11407170,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3405": {
+                "name": "4100呪術：発火",
+                "equipId": 4100,
+                "value": 500,
+                "eventFlag": 11407140,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3406": {
+                "name": "4110呪術：大発火",
+                "equipId": 4110,
+                "value": 5000,
+                "eventFlag": 11407180,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "3407": {
+                "name": "4360呪術：不死の魅了",
+                "equipId": 4360,
+                "value": 10000,
+                "eventFlag": 11407190,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4000": {
+                "name": "5000奇跡：回復",
+                "equipId": 5000,
+                "value": 4000,
+                "eventFlag": 11027260,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4001": {
+                "name": "5020奇跡：限られた大回復",
+                "equipId": 5020,
+                "value": 10000,
+                "eventFlag": 11027270,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4002": {
+                "name": "5210奇跡：帰還",
+                "equipId": 5210,
+                "value": 8000,
+                "eventFlag": 11027280,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4003": {
+                "name": "5300奇跡：フォース",
+                "equipId": 5300,
+                "value": 4000,
+                "eventFlag": 11027290,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4004": {
+                "name": "5400奇跡：助言求め",
+                "equipId": 5400,
+                "value": 2000,
+                "eventFlag": 11017180,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4005": {
+                "name": "1360000タリスマン",
+                "equipId": 1360000,
+                "value": 1000
+            },
+            "4006": {
+                "name": "1362000ソルロンドのタリスマン",
+                "equipId": 1362000,
+                "value": 5000
+            },
+            "4200": {
+                "name": "240女神の祝福",
+                "equipId": 240,
+                "value": 1000,
+                "eventFlag": 11017050,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4201": {
+                "name": "5000奇跡：回復",
+                "equipId": 5000,
+                "value": 1000,
+                "eventFlag": 11017060,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4202": {
+                "name": "5020奇跡：限られた大回復",
+                "equipId": 5020,
+                "value": 2000,
+                "eventFlag": 11017070,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4203": {
+                "name": "5210奇跡：帰還",
+                "equipId": 5210,
+                "value": 1000,
+                "eventFlag": 11017080,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4204": {
+                "name": "5300奇跡：フォース",
+                "equipId": 5300,
+                "value": 1000,
+                "eventFlag": 11017090,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4205": {
+                "name": "5010奇跡：大回復",
+                "equipId": 5010,
+                "value": 10000,
+                "eventFlag": 11017100,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4206": {
+                "name": "5310奇跡：神の怒り",
+                "equipId": 5310,
+                "value": 10000,
+                "eventFlag": 11017110,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4207": {
+                "name": "5400奇跡：助言求め",
+                "equipId": 5400,
+                "value": 500,
+                "eventFlag": 11017120,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4208": {
+                "name": "5600奇跡：魔法防護",
+                "equipId": 5600,
+                "value": 6000,
+                "eventFlag": 11017130,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4209": {
+                "name": "1360000タリスマン",
+                "equipId": 1360000,
+                "value": 200
+            },
+            "4400": {
+                "name": "108罪人一覧",
+                "equipId": 108,
+                "value": 1000,
+                "eventFlag": 11607020,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4401": {
+                "name": "274解呪石",
+                "equipId": 274,
+                "value": 3000,
+                "eventFlag": 11607110,
+                "sellQuantity": 5,
+                "equipType": 3
+            },
+            "4402": {
+                "name": "373告罪符",
+                "equipId": 373,
+                "value": 200,
+                "equipType": 3
+            },
+            "4403": {
+                "name": "5700奇跡：因果応報",
+                "equipId": 5700,
+                "value": 40000,
+                "eventFlag": 11607030,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "4404": {
+                "name": "1367000ベルカのタリスマン",
+                "equipId": 1367000,
+                "value": 5000
+            },
+            "4405": {
+                "name": "109血咬みの指輪",
+                "equipId": 109,
+                "value": 10000,
+                "eventFlag": 11607050,
+                "sellQuantity": 1,
+                "equipType": 2
+            },
+            "4406": {
+                "name": "110毒咬みの指輪",
+                "equipId": 110,
+                "value": 15000,
+                "eventFlag": 11607060,
+                "sellQuantity": 1,
+                "equipType": 2
+            },
+            "4407": {
+                "name": "126犠牲の指輪",
+                "equipId": 126,
+                "value": 5000,
+                "eventFlag": 11607080,
+                "sellQuantity": 10,
+                "equipType": 2
+            },
+            "4408": {
+                "name": "330帰還の骨片",
+                "equipId": 330,
+                "value": 500,
+                "equipType": 3
+            },
+            "5000": {
+                "name": "3000魔術：ソウルの矢",
+                "equipId": 3000,
+                "value": 1000,
+                "eventFlag": 11707000,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5001": {
+                "name": "3010魔術：強いソウルの矢",
+                "equipId": 3010,
+                "value": 6000,
+                "eventFlag": 11707010,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5002": {
+                "name": "3020魔術：ソウルの太矢",
+                "equipId": 3020,
+                "value": 2000,
+                "eventFlag": 11707020,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5003": {
+                "name": "3030魔術：強いソウルの太矢",
+                "equipId": 3030,
+                "value": 8000,
+                "eventFlag": 11707030,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5004": {
+                "name": "3040魔術：追尾するソウルの塊",
+                "equipId": 3040,
+                "value": 20000,
+                "eventFlag": 11707060,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5005": {
+                "name": "3060魔術：ソウルの槍",
+                "equipId": 3060,
+                "value": 40000,
+                "eventFlag": 11707070,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5006": {
+                "name": "3100魔術：魔法の武器",
+                "equipId": 3100,
+                "value": 3000,
+                "eventFlag": 11707040,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5007": {
+                "name": "3300魔術：魔法の盾",
+                "equipId": 3300,
+                "value": 3000,
+                "eventFlag": 11707050,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5020": {
+                "name": "3050魔術：追尾するソウルの結晶塊",
+                "equipId": 3050,
+                "value": 30000,
+                "eventFlag": 11707090,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5021": {
+                "name": "3070魔術：ソウルの結晶槍",
+                "equipId": 3070,
+                "value": 50000,
+                "eventFlag": 11707100,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5022": {
+                "name": "3120魔術：結晶魔法の武器",
+                "equipId": 3120,
+                "value": 20000,
+                "eventFlag": 11707110,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "5300": {
+                "name": "260緑花草",
+                "equipId": 260,
+                "value": 1000,
+                "equipType": 3
+            },
+            "5301": {
+                "name": "297黒い火炎壷",
+                "equipId": 297,
+                "value": 500,
+                "equipType": 3
+            },
+            "5302": {
+                "name": "1000楔石の欠片",
+                "equipId": 1000,
+                "value": 1000,
+                "equipType": 3
+            },
+            "5303": {
+                "name": "1010楔石の大欠片",
+                "equipId": 1010,
+                "value": 4000,
+                "equipType": 3
+            },
+            "5304": {
+                "name": "1020緑楔の大欠片",
+                "equipId": 1020,
+                "value": 5000,
+                "equipType": 3
+            },
+            "5306": {
+                "name": "106雷方石の指輪",
+                "equipId": 106,
+                "value": 15000,
+                "eventFlag": 11507030,
+                "sellQuantity": 1,
+                "equipType": 2
+            },
+            "5307": {
+                "name": "107魔法方石の指輪",
+                "equipId": 107,
+                "value": 15000,
+                "eventFlag": 11507040,
+                "sellQuantity": 1,
+                "equipType": 2
+            },
+            "5308": {
+                "name": "351000グレートソード",
+                "equipId": 351000,
+                "value": 8000
+            },
+            "5309": {
+                "name": "750000グレートアクス",
+                "equipId": 750000,
+                "value": 8000
+            },
+            "5310": {
+                "name": "1455000バルデルの盾",
+                "equipId": 1455000,
+                "value": 4000
+            },
+            "5311": {
+                "name": "1501000タワーシールド",
+                "equipId": 1501000,
+                "value": 8000
+            },
+            "5312": {
+                "name": "2000000ノーマル矢",
+                "equipId": 2000000,
+                "value": 10
+            },
+            "5313": {
+                "name": "2001000大きな矢",
+                "equipId": 2001000,
+                "value": 50
+            },
+            "5314": {
+                "name": "2002000羽根矢",
+                "equipId": 2002000,
+                "value": 100
+            },
+            "5315": {
+                "name": "2100000普通の太矢",
+                "equipId": 2100000,
+                "value": 30
+            },
+            "5316": {
+                "name": "2101000ヘビーボルト",
+                "equipId": 2101000,
+                "value": 100
+            },
+            "5317": {
+                "name": "2102000スナイパーボルト",
+                "equipId": 2102000,
+                "value": 250
+            },
+            "5318": {
+                "name": "カタリナ装備",
+                "equipId": 10000,
+                "value": 10000,
+                "equipType": 1
+            },
+            "5319": {
+                "name": "カタリナ装備",
+                "equipId": 11000,
+                "value": 10000,
+                "equipType": 1
+            },
+            "5320": {
+                "name": "カタリナ装備",
+                "equipId": 12000,
+                "value": 7000,
+                "equipType": 1
+            },
+            "5321": {
+                "name": "カタリナ装備",
+                "equipId": 13000,
+                "value": 7000,
+                "equipType": 1
+            },
+            "5322": {
+                "name": "鋼鉄装備",
+                "equipId": 490000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "5323": {
+                "name": "鋼鉄装備",
+                "equipId": 491000,
+                "value": 8000,
+                "equipType": 1
+            },
+            "5324": {
+                "name": "鋼鉄装備",
+                "equipId": 492000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "5325": {
+                "name": "鋼鉄装備",
+                "equipId": 493000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "5326": {
+                "name": "バルデル装備",
+                "equipId": 510000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "5327": {
+                "name": "バルデル装備",
+                "equipId": 511000,
+                "value": 8000,
+                "equipType": 1
+            },
+            "5328": {
+                "name": "バルデル装備",
+                "equipId": 512000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "5329": {
+                "name": "バルデル装備",
+                "equipId": 513000,
+                "value": 5000,
+                "equipType": 1
+            },
+            "6100": {
+                "name": "111ひび割れた赤い瞳のオーブ",
+                "equipId": 111,
+                "value": 3000,
+                "equipType": 3
+            },
+            "6200": {
+                "name": "1101000巨人のハルバード",
+                "equipId": 1101000,
+                "value": 5000
+            },
+            "6201": {
+                "name": "1502000センチネルシールド",
+                "equipId": 1502000,
+                "value": 10000
+            },
+            "6202": {
+                "name": "2005000月光矢",
+                "equipId": 2005000,
+                "value": 500
+            },
+            "6203": {
+                "name": "2007000竜狩りの大矢",
+                "equipId": 2007000,
+                "value": 500
+            },
+            "6204": {
+                "name": "2000000ノーマル矢",
+                "equipId": 2000000,
+                "value": 10
+            },
+            "6205": {
+                "name": "2001000大きな矢",
+                "equipId": 2001000,
+                "value": 50
+            },
+            "6206": {
+                "name": "2002000羽根矢",
+                "equipId": 2002000,
+                "value": 100
+            },
+            "6207": {
+                "name": "2104000雷のボルト",
+                "equipId": 2104000,
+                "value": 700
+            },
+            "6208": {
+                "name": "2100000普通の太矢",
+                "equipId": 2100000,
+                "value": 30
+            },
+            "6209": {
+                "name": "2101000ヘビーボルト",
+                "equipId": 2101000,
+                "value": 100
+            },
+            "6210": {
+                "name": "2102000スナイパーボルト",
+                "equipId": 2102000,
+                "value": 250
+            },
+            "6211": {
+                "name": "センチネル装備",
+                "equipId": 530000,
+                "value": 6000,
+                "equipType": 1
+            },
+            "6212": {
+                "name": "センチネル装備",
+                "equipId": 531000,
+                "value": 8000,
+                "equipType": 1
+            },
+            "6213": {
+                "name": "センチネル装備",
+                "equipId": 532000,
+                "value": 6000,
+                "equipType": 1
+            },
+            "6214": {
+                "name": "センチネル装備",
+                "equipId": 533000,
+                "value": 6000,
+                "equipType": 1
+            },
+            "6215": {
+                "name": "2600武器の鍛治箱",
+                "equipId": 2600,
+                "value": 2000,
+                "eventFlag": 11017150,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6216": {
+                "name": "2601防具の鍛治箱",
+                "equipId": 2601,
+                "value": 2000,
+                "eventFlag": 11017160,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6217": {
+                "name": "2602修理箱",
+                "equipId": 2602,
+                "value": 2000,
+                "eventFlag": 11017170,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6218": {
+                "name": "1000楔石の欠片",
+                "equipId": 1000,
+                "value": 800,
+                "equipType": 3
+            },
+            "6219": {
+                "name": "1010楔石の大欠片",
+                "equipId": 1010,
+                "value": 3800,
+                "equipType": 3
+            },
+            "6220": {
+                "name": "1020緑楔の大欠片",
+                "equipId": 1020,
+                "value": 4800,
+                "equipType": 3
+            },
+            "6221": {
+                "name": "1130光る楔石",
+                "equipId": 1130,
+                "value": 8000,
+                "equipType": 3
+            },
+            "6300": {
+                "name": "330帰還の骨片",
+                "equipId": 330,
+                "value": 500,
+                "equipType": 3
+            },
+            "6301": {
+                "name": "1000楔石の欠片",
+                "equipId": 1000,
+                "value": 800,
+                "equipType": 3
+            },
+            "6302": {
+                "name": "2600武器の鍛治箱",
+                "equipId": 2600,
+                "value": 2000,
+                "eventFlag": 11017150,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6303": {
+                "name": "2601防具の鍛治箱",
+                "equipId": 2601,
+                "value": 2000,
+                "eventFlag": 11017160,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6304": {
+                "name": "2602修理箱",
+                "equipId": 2602,
+                "value": 2000,
+                "eventFlag": 11017170,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6305": {
+                "name": "2000000ノーマル矢",
+                "equipId": 2000000,
+                "value": 10
+            },
+            "6306": {
+                "name": "2001000大きな矢",
+                "equipId": 2001000,
+                "value": 50
+            },
+            "6307": {
+                "name": "2006000安い矢",
+                "equipId": 2006000,
+                "value": 3
+            },
+            "6308": {
+                "name": "2100000普通の太矢",
+                "equipId": 2100000,
+                "value": 30
+            },
+            "6309": {
+                "name": "2101000ヘビーボルト",
+                "equipId": 2101000,
+                "value": 100
+            },
+            "6310": {
+                "name": "2103000安い太矢",
+                "equipId": 2103000,
+                "value": 10
+            },
+            "6410": {
+                "name": "260緑花草",
+                "equipId": 260,
+                "value": 1200,
+                "equipType": 3
+            },
+            "6411": {
+                "name": "270血赤の苔玉",
+                "equipId": 270,
+                "value": 400,
+                "equipType": 3
+            },
+            "6412": {
+                "name": "271毒紫の苔玉",
+                "equipId": 271,
+                "value": 600,
+                "equipType": 3
+            },
+            "6413": {
+                "name": "272毒紫の花苔玉",
+                "equipId": 272,
+                "value": 1500,
+                "equipType": 3
+            },
+            "6414": {
+                "name": "290投げナイフ",
+                "equipId": 290,
+                "value": 30,
+                "equipType": 3
+            },
+            "6415": {
+                "name": "292火炎壷",
+                "equipId": 292,
+                "value": 100,
+                "equipType": 3
+            },
+            "6416": {
+                "name": "294誘い頭蓋",
+                "equipId": 294,
+                "value": 800,
+                "equipType": 3
+            },
+            "6417": {
+                "name": "296氷結塊",
+                "equipId": 296,
+                "value": 800,
+                "equipType": 3
+            },
+            "6418": {
+                "name": "297黒い火炎壷",
+                "equipId": 297,
+                "value": 800,
+                "equipType": 3
+            },
+            "6419": {
+                "name": "330帰還の骨片",
+                "equipId": 330,
+                "value": 600,
+                "equipType": 3
+            },
+            "6420": {
+                "name": "500人間性",
+                "equipId": 500,
+                "value": 10000,
+                "eventFlag": 11217100,
+                "sellQuantity": 13,
+                "equipType": 3
+            },
+            "6421": {
+                "name": "2000000ノーマル矢",
+                "equipId": 2000000,
+                "value": 20
+            },
+            "6422": {
+                "name": "2001000大きな矢",
+                "equipId": 2001000,
+                "value": 100
+            },
+            "6423": {
+                "name": "2002000羽根矢",
+                "equipId": 2002000,
+                "value": 200
+            },
+            "6424": {
+                "name": "2100000普通の太矢",
+                "equipId": 2100000,
+                "value": 50
+            },
+            "6425": {
+                "name": "2101000ヘビーボルト",
+                "equipId": 2101000,
+                "value": 150
+            },
+            "6426": {
+                "name": "2102000スナイパーボルト",
+                "equipId": 2102000,
+                "value": 400
+            },
+            "6500": {
+                "name": "280修理の光粉",
+                "equipId": 280,
+                "value": 300,
+                "equipType": 3
+            },
+            "6501": {
+                "name": "311黄金松脂",
+                "equipId": 311,
+                "value": 1000,
+                "eventFlag": 11217000,
+                "sellQuantity": 6,
+                "equipType": 3
+            },
+            "6502": {
+                "name": "3400魔術：見えない武器",
+                "equipId": 3400,
+                "value": 2000,
+                "eventFlag": 11207000,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6503": {
+                "name": "3410魔術：見えない体",
+                "equipId": 3410,
+                "value": 2000,
+                "eventFlag": 11207010,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6504": {
+                "name": "3500魔術：照らす光",
+                "equipId": 3500,
+                "value": 1000,
+                "eventFlag": 11207020,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6505": {
+                "name": "3530魔術：修復",
+                "equipId": 3530,
+                "value": 10000,
+                "eventFlag": 11207030,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6506": {
+                "name": "3550魔術：擬態",
+                "equipId": 3550,
+                "value": 3000,
+                "eventFlag": 11207040,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6507": {
+                "name": "1305000ウーラシールの白枝",
+                "equipId": 1305000,
+                "value": 1000
+            },
+            "6600": {
+                "name": "293糞団子",
+                "equipId": 293,
+                "value": 200,
+                "equipType": 3
+            },
+            "6601": {
+                "name": "330帰還の骨片",
+                "equipId": 330,
+                "value": 300,
+                "equipType": 3
+            },
+            "6602": {
+                "name": "370七色石",
+                "equipId": 370,
+                "value": 10,
+                "equipType": 3
+            },
+            "6603": {
+                "name": "510人面「こんにちは」",
+                "equipId": 510,
+                "value": 5,
+                "eventFlag": 11217010,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6604": {
+                "name": "511人面「ありがとう」",
+                "equipId": 511,
+                "value": 5,
+                "eventFlag": 11217020,
+                "sellQuantity": 1,
+                "equipType": 3
+            },
+            "6608": {
+                "name": "1000楔石の欠片",
+                "equipId": 1000,
+                "value": 800,
+                "equipType": 3
+            },
+            "6609": {
+                "name": "1010楔石の大欠片",
+                "equipId": 1010,
+                "value": 3800,
+                "equipType": 3
+            },
+            "6610": {
+                "name": "1020緑楔の大欠片",
+                "equipId": 1020,
+                "value": 4800,
+                "equipType": 3
+            },
+            "6611": {
+                "name": "2008000ゴーの大矢",
+                "equipId": 2008000,
+                "value": 650
+            },
+            "10000": {
+                "name": "魔術：ソウルの矢3000",
+                "equipId": 3000,
+                "value": 0,
+                "mtrlId": 3000,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10001": {
+                "name": "魔術：強いソウルの矢3010",
+                "equipId": 3010,
+                "value": 0,
+                "mtrlId": 3010,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10002": {
+                "name": "魔術：ソウルの太矢3020",
+                "equipId": 3020,
+                "value": 0,
+                "mtrlId": 3020,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10003": {
+                "name": "魔術：強いソウルの太矢3030",
+                "equipId": 3030,
+                "value": 0,
+                "mtrlId": 3030,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10004": {
+                "name": "魔術：追尾するソウルの塊3040",
+                "equipId": 3040,
+                "value": 0,
+                "mtrlId": 3040,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10005": {
+                "name": "魔術：追尾するソウルの結晶塊3050",
+                "equipId": 3050,
+                "value": 0,
+                "mtrlId": 3050,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10008": {
+                "name": "魔術：ソウルの槍3060",
+                "equipId": 3060,
+                "value": 0,
+                "mtrlId": 3060,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10009": {
+                "name": "魔術：ソウルの結晶槍3070",
+                "equipId": 3070,
+                "value": 0,
+                "mtrlId": 3070,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10010": {
+                "name": "魔術：魔法の武器3100",
+                "equipId": 3100,
+                "value": 0,
+                "mtrlId": 3100,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10011": {
+                "name": "魔術：強い魔法の武器3110",
+                "equipId": 3110,
+                "value": 0,
+                "mtrlId": 3110,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10012": {
+                "name": "魔術：結晶魔法の武器3120",
+                "equipId": 3120,
+                "value": 0,
+                "mtrlId": 3120,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10013": {
+                "name": "魔術：魔法の盾3300",
+                "equipId": 3300,
+                "value": 0,
+                "mtrlId": 3300,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10014": {
+                "name": "魔術：強い魔法の盾3310",
+                "equipId": 3310,
+                "value": 0,
+                "mtrlId": 3310,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10015": {
+                "name": "魔術：見えない武器3400",
+                "equipId": 3400,
+                "value": 0,
+                "mtrlId": 3400,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10016": {
+                "name": "魔術：見えない体3410",
+                "equipId": 3410,
+                "value": 0,
+                "mtrlId": 3410,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10017": {
+                "name": "魔術：照らす光3500",
+                "equipId": 3500,
+                "value": 0,
+                "mtrlId": 3500,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10018": {
+                "name": "魔術：音無し3510",
+                "equipId": 3510,
+                "value": 0,
+                "mtrlId": 3510,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10019": {
+                "name": "魔術：音送り3520",
+                "equipId": 3520,
+                "value": 0,
+                "mtrlId": 3520,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10020": {
+                "name": "魔術：修復3530",
+                "equipId": 3530,
+                "value": 0,
+                "mtrlId": 3530,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10021": {
+                "name": "魔術：落下制御3540",
+                "equipId": 3540,
+                "value": 0,
+                "mtrlId": 3540,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10022": {
+                "name": "魔術：擬態3550",
+                "equipId": 3550,
+                "value": 0,
+                "mtrlId": 3550,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10023": {
+                "name": "魔術：解呪3600",
+                "equipId": 3600,
+                "value": 0,
+                "mtrlId": 3600,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10024": {
+                "name": "魔術：治癒3610",
+                "equipId": 3610,
+                "value": 0,
+                "mtrlId": 3610,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10025": {
+                "name": "魔術：白竜の息3700",
+                "equipId": 3700,
+                "value": 0,
+                "mtrlId": 3700,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10026": {
+                "name": "呪術：火球4000",
+                "equipId": 4000,
+                "value": 0,
+                "mtrlId": 4000,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10027": {
+                "name": "呪術：火の玉4010",
+                "equipId": 4010,
+                "value": 0,
+                "mtrlId": 4010,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10028": {
+                "name": "呪術：大火球4020",
+                "equipId": 4020,
+                "value": 0,
+                "mtrlId": 4020,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10029": {
+                "name": "呪術：炎の嵐4030",
+                "equipId": 4030,
+                "value": 0,
+                "mtrlId": 4030,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10030": {
+                "name": "呪術：炎の大嵐4040",
+                "equipId": 4040,
+                "value": 0,
+                "mtrlId": 4040,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10031": {
+                "name": "呪術：火炎噴流4050",
+                "equipId": 4050,
+                "value": 0,
+                "mtrlId": 4050,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10034": {
+                "name": "呪術：なぎ払う炎4060",
+                "equipId": 4060,
+                "value": 0,
+                "mtrlId": 4060,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10035": {
+                "name": "呪術：発火4100",
+                "equipId": 4100,
+                "value": 0,
+                "mtrlId": 4100,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10036": {
+                "name": "呪術：大発火4110",
+                "equipId": 4110,
+                "value": 0,
+                "mtrlId": 4110,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10037": {
+                "name": "呪術：毒の霧4200",
+                "equipId": 4200,
+                "value": 0,
+                "mtrlId": 4200,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10038": {
+                "name": "呪術：猛毒の霧4210",
+                "equipId": 4210,
+                "value": 0,
+                "mtrlId": 4210,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10039": {
+                "name": "呪術：酸の噴射4220",
+                "equipId": 4220,
+                "value": 0,
+                "mtrlId": 4220,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10040": {
+                "name": "呪術：鉄の体4300",
+                "equipId": 4300,
+                "value": 0,
+                "mtrlId": 4300,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10041": {
+                "name": "呪術：激しい発汗4310",
+                "equipId": 4310,
+                "value": 0,
+                "mtrlId": 4310,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10042": {
+                "name": "呪術：不死の魅了4360",
+                "equipId": 4360,
+                "value": 0,
+                "mtrlId": 4360,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10043": {
+                "name": "呪術：内なる大力4400",
+                "equipId": 4400,
+                "value": 0,
+                "mtrlId": 4400,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10044": {
+                "name": "呪術：混沌の大火球4500",
+                "equipId": 4500,
+                "value": 0,
+                "mtrlId": 4500,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10045": {
+                "name": "呪術：混沌の嵐4510",
+                "equipId": 4510,
+                "value": 0,
+                "mtrlId": 4510,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10046": {
+                "name": "呪術：なぎ払う混沌の炎4520",
+                "equipId": 4520,
+                "value": 0,
+                "mtrlId": 4520,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10047": {
+                "name": "奇跡：回復5000",
+                "equipId": 5000,
+                "value": 0,
+                "mtrlId": 5000,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10048": {
+                "name": "奇跡：大回復5010",
+                "equipId": 5010,
+                "value": 0,
+                "mtrlId": 5010,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10049": {
+                "name": "奇跡：限られた大回復5020",
+                "equipId": 5020,
+                "value": 0,
+                "mtrlId": 5020,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10050": {
+                "name": "奇跡：太陽の光の癒し5030",
+                "equipId": 5030,
+                "value": 0,
+                "mtrlId": 5030,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10051": {
+                "name": "奇跡：生命湧き5040",
+                "equipId": 5040,
+                "value": 0,
+                "mtrlId": 5040,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10052": {
+                "name": "奇跡：太陽の光の恵み5050",
+                "equipId": 5050,
+                "value": 0,
+                "mtrlId": 5050,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10053": {
+                "name": "奇跡：墓王の剣舞5100",
+                "equipId": 5100,
+                "value": 0,
+                "mtrlId": 5100,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10054": {
+                "name": "奇跡：墓王の大剣舞5110",
+                "equipId": 5110,
+                "value": 0,
+                "mtrlId": 5110,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10055": {
+                "name": "奇跡：死の回避5200",
+                "equipId": 5200,
+                "value": 0,
+                "mtrlId": 5200,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10056": {
+                "name": "奇跡：帰還5210",
+                "equipId": 5210,
+                "value": 0,
+                "mtrlId": 5210,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10057": {
+                "name": "奇跡：フォース5300",
+                "equipId": 5300,
+                "value": 0,
+                "mtrlId": 5300,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10058": {
+                "name": "奇跡：神の怒り5310",
+                "equipId": 5310,
+                "value": 0,
+                "mtrlId": 5310,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10059": {
+                "name": "奇跡：放つフォース5320",
+                "equipId": 5320,
+                "value": 0,
+                "mtrlId": 5320,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10060": {
+                "name": "奇跡：助言求め5400",
+                "equipId": 5400,
+                "value": 0,
+                "mtrlId": 5400,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10061": {
+                "name": "奇跡：雷の槍5500",
+                "equipId": 5500,
+                "value": 0,
+                "mtrlId": 5500,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10062": {
+                "name": "奇跡：雷の大槍5510",
+                "equipId": 5510,
+                "value": 0,
+                "mtrlId": 5510,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10063": {
+                "name": "奇跡：太陽の光の槍5520",
+                "equipId": 5520,
+                "value": 0,
+                "mtrlId": 5520,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10064": {
+                "name": "奇跡：魔法防護5600",
+                "equipId": 5600,
+                "value": 0,
+                "mtrlId": 5600,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10065": {
+                "name": "奇跡：強化魔法防護5610",
+                "equipId": 5610,
+                "value": 0,
+                "mtrlId": 5610,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10066": {
+                "name": "奇跡：因果応報5700",
+                "equipId": 5700,
+                "value": 0,
+                "mtrlId": 5700,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10068": {
+                "name": "奇跡：緩やかな平和の歩み5800",
+                "equipId": 5800,
+                "value": 0,
+                "mtrlId": 5800,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10069": {
+                "name": "奇跡：沈黙の禁則5810",
+                "equipId": 5810,
+                "value": 0,
+                "mtrlId": 5810,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10070": {
+                "name": "奇跡：太陽の光の剣5900",
+                "equipId": 5900,
+                "value": 0,
+                "mtrlId": 5900,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10071": {
+                "name": "奇跡：暗月の光の剣5910",
+                "equipId": 5910,
+                "value": 0,
+                "mtrlId": 5910,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10072": {
+                "name": "魔術：闇の玉3710",
+                "equipId": 3710,
+                "value": 0,
+                "mtrlId": 3710,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10073": {
+                "name": "魔術：闇の飛沫3720",
+                "equipId": 3720,
+                "value": 0,
+                "mtrlId": 3720,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10074": {
+                "name": "魔術：闇の霧3730",
+                "equipId": 3730,
+                "value": 0,
+                "mtrlId": 3730,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10075": {
+                "name": "魔術：追う者たち3740",
+                "equipId": 3740,
+                "value": 0,
+                "mtrlId": 3740,
+                "shopType": 2,
+                "equipType": 4
+            },
+            "10076": {
+                "name": "呪術：黒炎4530",
+                "equipId": 4530,
+                "value": 0,
+                "mtrlId": 4530,
+                "shopType": 2,
+                "equipType": 4
+            }
+        }
+    }
+}

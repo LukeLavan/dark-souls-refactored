@@ -1,0 +1,323 @@
+{
+    "entry_id": 30,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\QwcJudge.param",
+    "flags": 2,
+    "data": {
+        "param_type": "QWC_JUDGE_PARAM_ST",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "テスト用",
+                "pcJudgeUnderWB": 0,
+                "pcJudgeTopWB": 0,
+                "pcJudgeUnderLR": 0,
+                "pcJudgeTopLR": 0,
+                "areaJudgeUnderWB": 0,
+                "areaJudgeTopWB": 0,
+                "areaJudgeUnderLR": 0,
+                "areaJudgeTopLR": 0
+            },
+            "1000": {
+                "name": "敵が強くなる（LV1）↑",
+                "areaJudgeTopWB": -50
+            },
+            "1001": {
+                "name": "敵が強くなる（LV2）↑",
+                "areaJudgeTopWB": -100
+            },
+            "1002": {
+                "name": "敵が強くなる（LV3）↑",
+                "areaJudgeTopWB": -150
+            },
+            "1100": {
+                "name": "敵が弱くなる（LV1）↓",
+                "areaJudgeUnderWB": 50
+            },
+            "1101": {
+                "name": "敵が弱くなる（LV2）↓",
+                "areaJudgeUnderWB": 100
+            },
+            "1102": {
+                "name": "敵が弱くなる（LV3）↓",
+                "areaJudgeUnderWB": 150
+            },
+            "1103": {
+                "name": "敵のエリア変化を解除する",
+                "areaJudgeUnderWB": -49,
+                "areaJudgeTopWB": 49
+            },
+            "1200": {
+                "name": "手に入るソウルも増える（LV1）↑",
+                "areaJudgeTopWB": -50
+            },
+            "1201": {
+                "name": "手に入るソウルも増える（LV2）↑",
+                "areaJudgeTopWB": -100
+            },
+            "1202": {
+                "name": "手に入るソウルも増える（LV3）↑",
+                "areaJudgeTopWB": -150
+            },
+            "1300": {
+                "name": "手に入るソウルも減る（LV1）↓",
+                "areaJudgeUnderWB": 50
+            },
+            "1301": {
+                "name": "手に入るソウルも減る（LV2）↓",
+                "areaJudgeUnderWB": 100
+            },
+            "1302": {
+                "name": "手に入るソウルも減る（LV3）↓",
+                "areaJudgeUnderWB": 150
+            },
+            "1400": {
+                "name": "敵の落とすアイテムが変化する",
+                "areaJudgeTopWB": -100
+            },
+            "1500": {
+                "name": "グレイゴーストが強くなる（LV1）↑",
+                "areaJudgeUnderWB": 100
+            },
+            "1501": {
+                "name": "グレイゴーストが強くなる（LV2）↑",
+                "areaJudgeUnderWB": 150
+            },
+            "1600": {
+                "name": "グレイゴーストが弱くなる（LV1）↓",
+                "areaJudgeTopWB": -100
+            },
+            "1601": {
+                "name": "グレイゴーストが弱くなる（LV2）↓",
+                "areaJudgeTopWB": -150
+            },
+            "1602": {
+                "name": "グレイゴーストのエリア変化を解除する",
+                "areaJudgeUnderWB": -49,
+                "areaJudgeTopWB": 49
+            },
+            "1700": {
+                "name": "ブラックゴーストが強くなる（LV1）↑",
+                "areaJudgeTopWB": -100
+            },
+            "1701": {
+                "name": "ブラックゴーストが強くなる（LV2）↑",
+                "areaJudgeTopWB": -150
+            },
+            "1702": {
+                "name": "ブラックゴーストのエリア変化を解除する",
+                "areaJudgeUnderWB": -49,
+                "areaJudgeTopWB": 49
+            },
+            "1800": {
+                "name": "マルチのホワイトゴーストが強くなる（LV1）↑",
+                "areaJudgeUnderWB": 100
+            },
+            "1801": {
+                "name": "マルチのホワイトゴーストが強くなる（LV2）↑",
+                "areaJudgeUnderWB": 150
+            },
+            "1802": {
+                "name": "マルチのホワイトゴーストのエリア変化を解除する",
+                "areaJudgeUnderWB": -49,
+                "areaJudgeTopWB": 49
+            },
+            "1900": {
+                "name": "追加宝死体が登場する（LV1）",
+                "areaJudgeUnderWB": 100
+            },
+            "1901": {
+                "name": "追加宝死体が登場する（LV2）",
+                "areaJudgeUnderWB": 150
+            },
+            "2000": {
+                "name": "グレイゴーストが強くなる（LV1）",
+                "pcJudgeUnderWB": 100
+            },
+            "2001": {
+                "name": "グレイゴーストが強くなる（LV2）",
+                "pcJudgeUnderWB": 180
+            },
+            "2100": {
+                "name": "グレイゴーストが弱くなる（LV1）",
+                "pcJudgeTopWB": -100
+            },
+            "2101": {
+                "name": "グレイゴーストが弱くなる（LV2）",
+                "pcJudgeTopWB": -180
+            },
+            "2102": {
+                "name": "グレイゴーストのプレイヤー変化を解除する",
+                "pcJudgeUnderWB": -49,
+                "pcJudgeTopWB": 49
+            },
+            "2200": {
+                "name": "ブラックゴーストが強くなる（LV1）",
+                "pcJudgeTopWB": -100
+            },
+            "2201": {
+                "name": "ブラックゴーストが強くなる（LV2）",
+                "pcJudgeTopWB": -180
+            },
+            "2202": {
+                "name": "ブラックゴーストのプレイヤー変化を解除する",
+                "pcJudgeUnderWB": -49,
+                "pcJudgeTopWB": 49
+            },
+            "2300": {
+                "name": "マルチのホワイトゴーストが強くなる（LV1）",
+                "pcJudgeUnderWB": 100
+            },
+            "2301": {
+                "name": "マルチのホワイトゴーストが強くなる（LV2）",
+                "pcJudgeUnderWB": 180
+            },
+            "2302": {
+                "name": "マルチのホワイトゴーストのプレイヤー変化を解除する",
+                "pcJudgeUnderWB": -49,
+                "pcJudgeTopWB": 49
+            },
+            "10100": {
+                "name": "聖者ウルベインが冷たくなる",
+                "pcJudgeTopLR": -100
+            },
+            "10200": {
+                "name": "神の信徒その2が冷たくなる",
+                "pcJudgeTopLR": -100
+            },
+            "10300": {
+                "name": "賢者ロガーンが冷たくなる",
+                "pcJudgeUnderLR": 100
+            },
+            "10400": {
+                "name": "魔術の徒が冷たくなる",
+                "pcJudgeUnderLR": 100
+            },
+            "10500": {
+                "name": "要人が指輪をあげたくなる",
+                "pcJudgeUnderWB": 180
+            },
+            "10600": {
+                "name": "メフィストフェレスが登場したくなる",
+                "pcJudgeTopWB": -180
+            },
+            "20100": {
+                "name": "敵ブラックゴーストが登場する",
+                "areaJudgeTopWB": -100
+            },
+            "20200": {
+                "name": "鉱石の精霊が登場する",
+                "areaJudgeTopWB": -150
+            },
+            "20300": {
+                "name": "断罪者ミラルダのブラックゴーストが登場する",
+                "areaJudgeTopWB": -180
+            },
+            "20400": {
+                "name": "飛竜がいなくなっている",
+                "areaJudgeUnderWB": 150
+            },
+            "20500": {
+                "name": "断罪者ミラルダが登場する",
+                "areaJudgeUnderWB": 180
+            },
+            "20600": {
+                "name": "処刑場の扉が開いている",
+                "areaJudgeUnderWB": 180
+            },
+            "30100": {
+                "name": "敵ブラックゴーストが登場する",
+                "areaJudgeTopWB": -100
+            },
+            "30110": {
+                "name": "鉱石の精霊が登場する",
+                "areaJudgeTopWB": -150
+            },
+            "30120": {
+                "name": "マスターサツキのブラックゴーストが登場する",
+                "areaJudgeTopWB": -180
+            },
+            "30130": {
+                "name": "マスターサツキが登場する",
+                "areaJudgeUnderWB": 180
+            },
+            "30140": {
+                "name": "「誠」の宝死体が取得可能になる",
+                "areaJudgeUnderWB": 180
+            },
+            "40100": {
+                "name": "敵ブラックゴーストが登場する",
+                "areaJudgeTopWB": -100
+            },
+            "40110": {
+                "name": "鉱石の精霊が登場する",
+                "areaJudgeTopWB": -150
+            },
+            "40120": {
+                "name": "ヴィライデルのブラックゴーストが登場する",
+                "areaJudgeTopWB": -180
+            },
+            "40130": {
+                "name": "ガレキが消える",
+                "areaJudgeUnderWB": 180
+            },
+            "40140": {
+                "name": "牢城２階の鍵出現",
+                "areaJudgeUnderWB": 100
+            },
+            "40150": {
+                "name": "鉄の板出現",
+                "areaJudgeUnderWB": 180
+            },
+            "50100": {
+                "name": "敵ブラックゴーストが登場する",
+                "areaJudgeTopWB": -100
+            },
+            "50110": {
+                "name": "鉱石の精霊が登場する",
+                "areaJudgeTopWB": -150
+            },
+            "50120": {
+                "name": "セレンのブラックゴーストが登場する",
+                "areaJudgeTopWB": -180
+            },
+            "50130": {
+                "name": "セレンが登場する",
+                "areaJudgeUnderWB": 180
+            },
+            "50140": {
+                "name": "ゴールドランのブラックゴースト登場",
+                "areaJudgeUnderWB": 180
+            },
+            "50150": {
+                "name": "不浄梯子",
+                "areaJudgeUnderWB": 150
+            },
+            "60100": {
+                "name": "敵ブラックゴーストが登場する",
+                "areaJudgeTopWB": -100
+            },
+            "60110": {
+                "name": "鉱石の精霊が登場する",
+                "areaJudgeTopWB": -150
+            },
+            "60120": {
+                "name": "放浪者ハーフハンドのブラックゴーストが登場する",
+                "areaJudgeTopWB": -180
+            },
+            "60130": {
+                "name": "放浪者ハーフハンドが登場する",
+                "areaJudgeUnderWB": 180
+            },
+            "60140": {
+                "name": "固定宝竜骨砕きの場所に行けるようになる",
+                "areaJudgeUnderWB": 180
+            }
+        }
+    }
+}

@@ -1,0 +1,375 @@
+{
+    "entry_id": 32,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\SkeletonParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "SKELETON_PARAM_ST",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "動かない",
+                "neckTurnPriority": -1
+            },
+            "1": {
+                "name": "NPC共通 首",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 65
+            },
+            "2": {
+                "name": "NPC共通 胴1",
+                "neckTurnGain": 0.10000000149011612,
+                "neckTurnPriority": 1,
+                "neckTurnMaxAngle": 15
+            },
+            "3": {
+                "name": "NPC共通 胴2",
+                "neckTurnGain": 0.10000000149011612,
+                "neckTurnPriority": 2,
+                "neckTurnMaxAngle": 5
+            },
+            "100": {
+                "name": "ヒロイン",
+                "neckTurnGain": 0.05000000074505806,
+                "neckTurnMaxAngle": 50
+            },
+            "200": {
+                "name": "要人",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 50
+            },
+            "300": {
+                "name": "鍛冶屋江戸",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 40
+            },
+            "400": {
+                "name": "奴隷兵士",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 50
+            },
+            "500": {
+                "name": "元貴族婦人",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 50
+            },
+            "600": {
+                "name": "人形使い",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 50
+            },
+            "700": {
+                "name": "乞食女",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 50
+            },
+            "800": {
+                "name": "ボールドウィン",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 50
+            },
+            "900": {
+                "name": "乞食男",
+                "neckTurnGain": 0.20000000298023224,
+                "neckTurnMaxAngle": 40
+            },
+            "1000": {
+                "name": "汎用右足",
+                "minAnkleHeightMS": -200,
+                "maxAnkleHeightMS": 230,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 80
+            },
+            "1001": {
+                "name": "汎用左足",
+                "minAnkleHeightMS": -200,
+                "maxAnkleHeightMS": 230,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 80
+            },
+            "2000": {
+                "name": "ムカデーモン右足",
+                "originalGroundHeightMS": -10,
+                "minAnkleHeightMS": -200,
+                "maxAnkleHeightMS": 230,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 80
+            },
+            "2001": {
+                "name": "ムカデーモン左足",
+                "originalGroundHeightMS": -10,
+                "minAnkleHeightMS": -200,
+                "maxAnkleHeightMS": 230,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 80
+            },
+            "2010": {
+                "name": "ガーゴイル右足",
+                "originalGroundHeightMS": 10,
+                "minAnkleHeightMS": -200,
+                "maxAnkleHeightMS": 370,
+                "footRaisedAnkleHeightMS": 3,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 20,
+                "onOffGain": 80,
+                "footRaisedGain": 100
+            },
+            "2011": {
+                "name": "ガーゴイル左足",
+                "originalGroundHeightMS": 10,
+                "minAnkleHeightMS": -200,
+                "maxAnkleHeightMS": 370,
+                "footRaisedAnkleHeightMS": 3,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 20,
+                "onOffGain": 80,
+                "footRaisedGain": 100
+            },
+            "2020": {
+                "name": "アイアンゴーレム右足",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 2,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 60,
+                "footRaisedGain": 10,
+                "footPlantedGain": 60,
+                "useFootLocking": 1
+            },
+            "2021": {
+                "name": "アイアンゴーレム左足",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 2,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 60,
+                "footRaisedGain": 10,
+                "footPlantedGain": 60,
+                "useFootLocking": 1
+            },
+            "2022": {
+                "name": "アイアンゴーレム右手",
+                "minAnkleHeightMS": -200,
+                "maxAnkleHeightMS": 370,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 0,
+                "raycastDistanceDown": 0,
+                "onOffGain": 10,
+                "footRaisedGain": 0
+            },
+            "2030": {
+                "name": "ハンマーデーモン左足",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "2031": {
+                "name": "ハンマーデーモン右足",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3000": {
+                "name": "クラグ足①",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3001": {
+                "name": "クラグ足②",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3002": {
+                "name": "クラグ足③",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3003": {
+                "name": "クラグ足④",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3004": {
+                "name": "クラグ足⑤",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3005": {
+                "name": "クラグ足⑥",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3100": {
+                "name": "クラグ足⑦",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3101": {
+                "name": "クラグ足⑧",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3102": {
+                "name": "クラグ足⑨",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3103": {
+                "name": "クラグ足⑩",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3104": {
+                "name": "クラグ足⑪",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3105": {
+                "name": "クラグ足⑫",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            },
+            "3106": {
+                "name": "クラグ足⑬",
+                "minAnkleHeightMS": -300,
+                "maxAnkleHeightMS": 500,
+                "footPlantedAnkleHeightMS": 0,
+                "footRaisedAnkleHeightMS": 1,
+                "raycastDistanceUp": 250,
+                "raycastDistanceDown": 235,
+                "footEndLS_Z": 10,
+                "onOffGain": 40,
+                "footRaisedGain": 50,
+                "useFootLocking": 1
+            }
+        }
+    }
+}

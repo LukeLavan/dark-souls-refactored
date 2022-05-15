@@ -1,0 +1,431 @@
+{
+    "entry_id": 2,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\EquipParamAccessory.param",
+    "flags": 2,
+    "data": {
+        "param_type": "EQUIP_PARAM_ACCESSORY_ST",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "100": {
+                "name": "装備重量アップ",
+                "refId": 2000,
+                "sellValue": 1000,
+                "sortId": 3,
+                "iconId": 4000,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "101": {
+                "name": "ピンチ攻撃力アップ",
+                "refId": 2010,
+                "sellValue": 100,
+                "sortId": 12,
+                "iconId": 4001,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "102": {
+                "name": "暗月神の指輪",
+                "refId": 2320,
+                "sellValue": -1,
+                "sortId": 23,
+                "iconId": 4040,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "103": {
+                "name": "盗賊団の指輪",
+                "refId": 2330,
+                "sellValue": -1,
+                "sortId": 37,
+                "iconId": 4041,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "104": {
+                "name": "スタミナ回復アップ",
+                "refId": 2013,
+                "sellValue": 100,
+                "sortId": 2,
+                "iconId": 4004,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "105": {
+                "name": "炎耐性アップ",
+                "refId": 2020,
+                "sellValue": 100,
+                "sortId": 6,
+                "iconId": 4005,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "106": {
+                "name": "雷耐性アップ",
+                "refId": 2021,
+                "sellValue": 100,
+                "sortId": 7,
+                "iconId": 4006,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "107": {
+                "name": "魔法耐性アップ",
+                "refId": 2022,
+                "sellValue": 100,
+                "sortId": 5,
+                "iconId": 4007,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "108": {
+                "name": "全耐性アップ1",
+                "refId": 2024,
+                "sellValue": 100,
+                "sortId": 8,
+                "iconId": 4008,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "109": {
+                "name": "出血耐性アップ",
+                "refId": 2030,
+                "sellValue": 100,
+                "sortId": 9,
+                "iconId": 4009,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "110": {
+                "name": "毒耐性アップ",
+                "refId": 2031,
+                "sellValue": 100,
+                "sortId": 10,
+                "iconId": 4010,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "111": {
+                "name": "HP微増",
+                "refId": 2340,
+                "sellValue": 100,
+                "sortId": 1,
+                "iconId": 4042,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "113": {
+                "name": "呪耐性アップ",
+                "refId": 2034,
+                "sellValue": 100,
+                "sortId": 11,
+                "iconId": 4013,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "114": {
+                "name": "魔法スロットアップ",
+                "refId": 2040,
+                "sellValue": 100,
+                "sortId": 20,
+                "iconId": 4014,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "115": {
+                "name": "魔法威力アップ",
+                "refId": 2050,
+                "sellValue": 100,
+                "sortId": 16,
+                "iconId": 4015,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "116": {
+                "name": "MP偏重",
+                "refId": 2060,
+                "sellValue": 1000,
+                "sortId": 19,
+                "iconId": 4016,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "117": {
+                "name": "致命攻撃力アップ",
+                "refId": 36,
+                "sellValue": 1000,
+                "sortId": 28,
+                "iconId": 4017,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "119": {
+                "name": "弓の達人",
+                "refId": 2080,
+                "sellValue": 100,
+                "sortId": 27,
+                "iconId": 4019,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "120": {
+                "name": "物理防御力アップ",
+                "refId": 2023,
+                "sellValue": 100,
+                "sortId": 4,
+                "iconId": 4020,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "121": {
+                "name": "アイテムドロップアップ",
+                "refId": 2100,
+                "sellValue": 100,
+                "sortId": 32,
+                "iconId": 4021,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "122": {
+                "name": "取得ソウルアップ",
+                "refId": 2101,
+                "sellValue": 100,
+                "sortId": 33,
+                "iconId": 4022,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "123": {
+                "name": "音消去",
+                "refId": 2110,
+                "sellValue": 100,
+                "sortId": 18,
+                "iconId": 4023,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "124": {
+                "name": "石コロ帽子",
+                "refId": 2111,
+                "sellValue": 1000,
+                "sortId": 38,
+                "iconId": 4024,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "125": {
+                "name": "剛脚",
+                "refId": 2120,
+                "sellValue": 100,
+                "sortId": 31,
+                "iconId": 4025,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "126": {
+                "name": "復活",
+                "refId": 2130,
+                "sellValue": 100,
+                "sortId": 14,
+                "iconId": 4026,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "127": {
+                "name": "呪いからの復活",
+                "refId": 2131,
+                "sellValue": 100,
+                "sortId": 15,
+                "iconId": 4027,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "128": {
+                "name": "軽業",
+                "refId": 2121,
+                "sellValue": 100,
+                "sortId": 30,
+                "iconId": 4028,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "130": {
+                "name": "共鳴",
+                "refId": 2140,
+                "sellValue": 1000,
+                "sortId": 24,
+                "iconId": 4030,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "137": {
+                "name": "混沌の言葉",
+                "refId": 2190,
+                "sellValue": 1000,
+                "sortId": 36,
+                "iconId": 4037,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "138": {
+                "name": "闇歩き",
+                "refId": 2200,
+                "sellValue": -1,
+                "sortId": 34,
+                "iconId": 4002,
+                "trophySeqId": 32,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420,
+                "disableMultiDropShare:1": true
+            },
+            "139": {
+                "name": "溶岩歩き",
+                "refId": 2210,
+                "sellValue": -1,
+                "sortId": 35,
+                "iconId": 4003,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420,
+                "disableMultiDropShare:1": true
+            },
+            "141": {
+                "name": "補助魔法延長",
+                "refId": 2230,
+                "sellValue": 100,
+                "sortId": 17,
+                "iconId": 4039,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "142": {
+                "name": "HPドレイン",
+                "refId": 2240,
+                "sellValue": 500,
+                "sortId": 40,
+                "iconId": 4018,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "143": {
+                "name": "強者の呪い",
+                "refId": 2250,
+                "sellValue": 1000,
+                "sortId": 39,
+                "iconId": 4029,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420,
+                "isEquipOutBrake:1": true
+            },
+            "144": {
+                "name": "カウンター強化",
+                "refId": 2260,
+                "sellValue": 100,
+                "sortId": 25,
+                "iconId": 4031,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "145": {
+                "name": "武器を大切に",
+                "refId": 2270,
+                "sellValue": 100,
+                "sortId": 29,
+                "iconId": 4032,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "146": {
+                "name": "SAアップ",
+                "refId": 2090,
+                "sellValue": 50,
+                "sortId": 26,
+                "iconId": 4035,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "147": {
+                "name": "ピンチ防御力アップ",
+                "refId": 2290,
+                "sellValue": 100,
+                "sortId": 13,
+                "iconId": 4036,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "148": {
+                "name": "奇跡威力アップ",
+                "refId": 2300,
+                "sellValue": 1000,
+                "sortId": 22,
+                "iconId": 4011,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "149": {
+                "name": "魔法スロットアップB",
+                "refId": 2310,
+                "sellValue": 1000,
+                "sortId": 21,
+                "iconId": 4038,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            },
+            "150": {
+                "name": "【DLC】黒竜の指輪",
+                "refId": 2350,
+                "sellValue": 1000,
+                "sortId": 41,
+                "iconId": 4043,
+                "vagrantItemLotId": 101400,
+                "vagrantBonusEneDropItemLotId": 101410,
+                "vagrantItemEneDropItemLotId": 101420
+            }
+        }
+    }
+}

@@ -1,0 +1,403 @@
+{
+    "entry_id": 27,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\RagdollParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "RAGDOLL_PARAM_ST",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "動かない",
+                "hierarchyGain": 0.0,
+                "velocityDamping": 1.0,
+                "velocityGain": 1.0,
+                "positionGain": 1.0,
+                "maxLinerVelocity": 10.0,
+                "maxAngularVelocity": 10.0,
+                "snapGain": 1.0
+            },
+            "1": {
+                "name": "Havokのデフォルト値"
+            },
+            "100": {
+                "name": "ムカデの頭部",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 0
+            },
+            "101": {
+                "name": "ムカデの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "200": {
+                "name": "血ダニの本体",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 0
+            },
+            "201": {
+                "name": "血ダニのふくろ",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1000": {
+                "name": "テスト飛竜の本体",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 0
+            },
+            "1010": {
+                "name": "テスト飛竜の尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1020": {
+                "name": "テスト飛竜の右翼",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 2
+            },
+            "1050": {
+                "name": "騎士の頭部",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0
+            },
+            "1100": {
+                "name": "ムカデボスの本体",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 0
+            },
+            "1110": {
+                "name": "ムカデボスの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1120": {
+                "name": "ムカデボスの右腕",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 2
+            },
+            "1200": {
+                "name": "墓王の本体",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 0
+            },
+            "1201": {
+                "name": "墓王のすだれ①",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1202": {
+                "name": "墓王のすだれ②",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 2
+            },
+            "1203": {
+                "name": "墓王のすだれ③",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 3
+            },
+            "1210": {
+                "name": "墓王のマント",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 6
+            },
+            "1301": {
+                "name": "貪食ドラゴンの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1400": {
+                "name": "湖獣の首①",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1401": {
+                "name": "湖獣の首②",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 2
+            },
+            "1402": {
+                "name": "湖獣の首③",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 3
+            },
+            "1403": {
+                "name": "湖獣の首④",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 4
+            },
+            "1404": {
+                "name": "湖獣の首⑤",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 5
+            },
+            "1405": {
+                "name": "湖獣の首⑥",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 6
+            },
+            "1406": {
+                "name": "湖獣の首⑦",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 7
+            },
+            "1501": {
+                "name": "シースの結晶鎧",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1601": {
+                "name": "ヒロインの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1701": {
+                "name": "ヘルカイトの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1801": {
+                "name": "座禅ドラゴンの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1901": {
+                "name": "ガーゴイルの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "1902": {
+                "name": "ガーゴイル2体目破損部位",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 2
+            },
+            "2001": {
+                "name": "ガーゴイル（色違い）の尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "2101": {
+                "name": "白竜シースの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "2201": {
+                "name": "金キメラの尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            },
+            "2301": {
+                "name": "黒竜の尻尾",
+                "hierarchyGain": 0.0,
+                "accelGain": 0.0,
+                "velocityGain": 0.0,
+                "positionGain": 0.0,
+                "maxLinerVelocity": 0.0,
+                "maxAngularVelocity": 0.0,
+                "snapGain": 0.0,
+                "partsHitMaskNo": 1
+            }
+        }
+    }
+}

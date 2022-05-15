@@ -1,0 +1,6012 @@
+{
+    "entry_id": 17,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\ObjectParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "OBJECT_PARAM_ST",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "バリスタ"
+            },
+            "1": {
+                "name": "矢"
+            },
+            "2": {
+                "name": "木製【2】",
+                "hp": 1,
+                "isAttackBacklash:1": false
+            },
+            "10": {
+                "name": "箱"
+            },
+            "100": {
+                "name": "PC石像（仮モデル）",
+                "hp": 1,
+                "defense": 3,
+                "isAttackBacklash:1": false
+            },
+            "101": {
+                "name": "PC結晶石像",
+                "hp": 1,
+                "defense": 3,
+                "isAttackBacklash:1": false
+            },
+            "102": {
+                "name": "骸骨【パターン3】"
+            },
+            "103": {
+                "name": "骸骨【パターン4】"
+            },
+            "104": {
+                "name": "燭台（大）"
+            },
+            "105": {
+                "name": "樽",
+                "hp": 1,
+                "isAttackBacklash:1": false
+            },
+            "106": {
+                "name": "木箱",
+                "hp": 1,
+                "isAttackBacklash:1": false
+            },
+            "107": {
+                "name": "盾"
+            },
+            "108": {
+                "name": "折れたブロードソード"
+            },
+            "109": {
+                "name": "折れた剣"
+            },
+            "110": {
+                "name": "宝箱",
+                "isCamHit:1": true
+            },
+            "111": {
+                "name": "矢"
+            },
+            "120": {
+                "name": "石像"
+            },
+            "121": {
+                "name": "破壊後石像【パターン1】"
+            },
+            "122": {
+                "name": "破壊後石像【パターン2】"
+            },
+            "123": {
+                "name": "破壊後石像【パターン3】"
+            },
+            "124": {
+                "name": "岩"
+            },
+            "125": {
+                "name": "岩"
+            },
+            "126": {
+                "name": "頭蓋骨"
+            },
+            "130": {
+                "name": "石柱（下）"
+            },
+            "131": {
+                "name": "石柱（上）"
+            },
+            "140": {
+                "name": "火薬ダル",
+                "hp": 1,
+                "isAttackBacklash:1": false
+            },
+            "141": {
+                "name": "火薬ダル",
+                "hp": 1,
+                "isAttackBacklash:1": false
+            },
+            "200": {
+                "name": "かがり火（ろうそく）",
+                "materialId": 429,
+                "isAttackBacklash:1": false,
+                "isDamageNoHit:1": true
+            },
+            "201": {
+                "name": "鎖肉A"
+            },
+            "202": {
+                "name": "鎖肉B"
+            },
+            "205": {
+                "name": "鎖"
+            },
+            "206": {
+                "name": "鎖"
+            },
+            "207": {
+                "name": "鎖"
+            },
+            "210": {
+                "name": "スイッチ"
+            },
+            "211": {
+                "name": "スイッチ扉",
+                "isCamHit:1": true
+            },
+            "212": {
+                "name": "出口扉"
+            },
+            "220": {
+                "name": "崩落アーチA"
+            },
+            "221": {
+                "name": "崩落アーチB"
+            },
+            "222": {
+                "name": "崩れる柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isAttackBacklash:1": false
+            },
+            "223": {
+                "name": "崩落アーチC"
+            },
+            "224": {
+                "name": "崩落天井"
+            },
+            "225": {
+                "name": "崩落天井"
+            },
+            "230": {
+                "name": "崩落アーチ倒壊後"
+            },
+            "231": {
+                "name": "崩落アーチ倒壊後"
+            },
+            "240": {
+                "name": "装備品"
+            },
+            "241": {
+                "name": "装備品"
+            },
+            "242": {
+                "name": "装備品"
+            },
+            "250": {
+                "name": "灯篭"
+            },
+            "500": {
+                "name": "宝死体（一般人）",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "501": {
+                "name": "要石（仮）"
+            },
+            "502": {
+                "name": "宝死体（ウォーリアー重量）",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "503": {
+                "name": "宝死体（クレリック軽量）",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "504": {
+                "name": "宝死体（ウォーリアー重量）矢",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "1000": {
+                "name": "テーブル",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1001": {
+                "name": "テーブル",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1002": {
+                "name": "テーブル",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1005": {
+                "name": "ベンチ",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1010": {
+                "name": "ドア",
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "1011": {
+                "name": "壊れたドア",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1020": {
+                "name": "はしご",
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "1030": {
+                "name": "崩れる天井",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isBreakByPlayerCollide:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1031": {
+                "name": "崩れる屋根",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isBreakByPlayerCollide:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1040": {
+                "name": "壊れる手すり",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1041": {
+                "name": "壊れる手すり",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1042": {
+                "name": "壊れる手すり",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1048": {
+                "name": "立てかけた車輪",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1049": {
+                "name": "壊れかけ箱",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1050": {
+                "name": "要石",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "1055": {
+                "name": "隆起したヘドロ",
+                "hp": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false,
+                "breakSfxId": 100008
+            },
+            "1056": {
+                "name": "隆起したヘドロ2",
+                "hp": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false,
+                "breakSfxId": 100008
+            },
+            "1058": {
+                "name": "隆起したヘドロ3",
+                "hp": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false,
+                "breakSfxId": 100008
+            },
+            "1100": {
+                "name": "拡散のモノ【ラスボス】",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "1101": {
+                "name": "鳥群",
+                "materialId": 29
+            },
+            "1102": {
+                "name": "要人OBJ",
+                "materialId": 29,
+                "isCamHit:1": true
+            },
+            "1110": {
+                "name": "燃える死体の山",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1120": {
+                "name": "荷車A",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1122": {
+                "name": "荷車A(荷物あり)",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1129": {
+                "name": "物売りの小物",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1130": {
+                "name": "箱",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1132": {
+                "name": "長方形の箱",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1133": {
+                "name": "箱×3",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1134": {
+                "name": "長方形の箱（小物あり）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1135": {
+                "name": "桶",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1140": {
+                "name": "籠",
+                "hp": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1145": {
+                "name": "土嚢",
+                "hp": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false,
+                "breakSfxId": 100103
+            },
+            "1146": {
+                "name": "荷袋",
+                "hp": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1150": {
+                "name": "樽A",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1152": {
+                "name": "樽×3（縦）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1153": {
+                "name": "樽×5（横）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1154": {
+                "name": "不死者漬け樽",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1155": {
+                "name": "不死者漬け樽(蓋なし)",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1156": {
+                "name": "不死者漬け樽（物売り専用）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1160": {
+                "name": "テーブル　椅子",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1162": {
+                "name": "テーブル　椅子(小物1)",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1163": {
+                "name": "テーブル　椅子(小物2)",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1170": {
+                "name": "棚",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1172": {
+                "name": "棚（荷物あり）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1175": {
+                "name": "長椅子",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1176": {
+                "name": "長椅子（荷物あり）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1190": {
+                "name": "城下2　ボス部屋の柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false,
+                "breakSfxId": 100007
+            },
+            "1200": {
+                "name": "教区のレバー",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1201": {
+                "name": "木造扉",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1202": {
+                "name": "釣鐘のレバー",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1205": {
+                "name": "梯子＠下水の復帰ルート",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1206": {
+                "name": "梯子＠スタートから落ちた時の復帰",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1207": {
+                "name": "梯子＠城郭から下層に下りる",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1208": {
+                "name": "梯子＠橋脚の中のスライド式",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1209": {
+                "name": "梯子＠城郭の塔",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1210": {
+                "name": "梯子＠倉庫",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1211": {
+                "name": "梯子＠倉庫",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1212": {
+                "name": "梯子＠教会",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1213": {
+                "name": "梯子＠教会",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1214": {
+                "name": "梯子＠教会",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1215": {
+                "name": "梯子＠教会",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1216": {
+                "name": "梯子＠教会",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1217": {
+                "name": "梯子＠拠点接合部",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1218": {
+                "name": "梯子＠城下の見張り台",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1219": {
+                "name": "梯子＠ヘルカイトを避けて橋の下",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1230": {
+                "name": "教会柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1231": {
+                "name": "教会柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1232": {
+                "name": "教会柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1233": {
+                "name": "教会柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1240": {
+                "name": "教会椅子",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1241": {
+                "name": "教会椅子背もたれ",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1242": {
+                "name": "椅子",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1243": {
+                "name": "テーブル１",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1244": {
+                "name": "テーブル２",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1250": {
+                "name": "鍛冶屋のテーブル",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1251": {
+                "name": "鍛冶屋の桶",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1252": {
+                "name": "鍛冶屋の金床及び椅子",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1270": {
+                "name": "机",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1300": {
+                "name": "教会屋根の像",
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "breakSfxId": 15351
+            },
+            "1305": {
+                "name": "城下1から森への扉",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1306": {
+                "name": "城下1から城下2への扉",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1308": {
+                "name": "扉（鉄格子）",
+                "materialId": 9,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1309": {
+                "name": "扉",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1310": {
+                "name": "扉（木製）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1312": {
+                "name": "扉（木製）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1313": {
+                "name": "扉（木製）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1314": {
+                "name": "扉（鉄格子）",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1315": {
+                "name": "扉（木製）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1316": {
+                "name": "扉（木製）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1317": {
+                "name": "扉（木製）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1318": {
+                "name": "扉（木製）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1319": {
+                "name": "扉（木製）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1320": {
+                "name": "DS1棚",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1321": {
+                "name": "衝立",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1322": {
+                "name": "ネズミ箱",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1323": {
+                "name": "破壊扉",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1330": {
+                "name": "転げ落ちる樽",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1350": {
+                "name": "女神像",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1400": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1401": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1402": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1403": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1404": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1405": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1406": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1407": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1408": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1409": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1410": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1411": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1412": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1413": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1414": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1415": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1416": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1417": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1418": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1419": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1420": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1421": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1460": {
+                "name": "教会拠点エレベータ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "1465": {
+                "name": "鉄格子扉",
+                "materialId": 9
+            },
+            "1470": {
+                "name": "王母像",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1480": {
+                "name": "大扉",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1490": {
+                "name": "はしご",
+                "materialId": 4,
+                "isLadder:1": true
+            },
+            "1495": {
+                "name": "擬態の壷",
+                "hp": 1,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1496": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1497": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1500": {
+                "name": "正面扉",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1510": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1511": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1512": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1513": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "1520": {
+                "name": "ギミック扉",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "1530": {
+                "name": "壊せる扉",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1540": {
+                "name": "ギミック石像",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1550": {
+                "name": "ハンドル",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1560": {
+                "name": "壊せる灯篭",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1570": {
+                "name": "死体を吊るす紐",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1571": {
+                "name": "死体を吊るす紐",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "1580": {
+                "name": "扉",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1600": {
+                "name": "ボス部屋壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "1601": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1602": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1603": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1604": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1605": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1610": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "1800": {
+                "name": "ドラゴンゾンビ　カメラ制御１",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "1801": {
+                "name": "ドラゴンゾンビ　カメラ制御２",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isChrHit:1": false,
+                "isAttackBacklash:1": false
+            },
+            "1802": {
+                "name": "ドラゴンゾンビ　カメラ制御3",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isChrHit:1": false,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1900": {
+                "name": "石牢",
+                "defense": 3,
+                "materialId": 1,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "1910": {
+                "name": "ベンチ",
+                "hp": 1,
+                "materialId": 4,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1915": {
+                "name": "ベンチ（雪）",
+                "hp": 1,
+                "materialId": 7,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1916": {
+                "name": "ベンチ（雪壊れ）",
+                "hp": 1,
+                "materialId": 7,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1920": {
+                "name": "テーブル",
+                "hp": 1,
+                "materialId": 4,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1930": {
+                "name": "椅子",
+                "hp": 1,
+                "materialId": 4,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1940": {
+                "name": "樽",
+                "hp": 1,
+                "materialId": 7,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1945": {
+                "name": "樽（雪）",
+                "hp": 1,
+                "materialId": 7,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1946": {
+                "name": "樽（雪・横）",
+                "hp": 1,
+                "materialId": 7,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "1960": {
+                "name": "はやにえ（低）",
+                "materialId": 59,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "1965": {
+                "name": "はやにえ",
+                "materialId": 7,
+                "animBreakIdMax": 1,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "1966": {
+                "name": "はやにえ",
+                "materialId": 7,
+                "animBreakIdMax": 1,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "1967": {
+                "name": "はやにえ",
+                "materialId": 7,
+                "animBreakIdMax": 1,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "2000": {
+                "name": "旗",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "2001": {
+                "name": ""
+            },
+            "2010": {
+                "name": "ファランクスの槍",
+                "materialId": 9
+            },
+            "2020": {
+                "name": ""
+            },
+            "2030": {
+                "name": ""
+            },
+            "2040": {
+                "name": "レンドルの剣",
+                "materialId": 9
+            },
+            "2051": {
+                "name": "破壊オブジェクト",
+                "materialId": 4
+            },
+            "2060": {
+                "name": "浮いた死体",
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2100": {
+                "name": "木登りトカゲの樹",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2110": {
+                "name": "m12後半への扉",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "2111": {
+                "name": "m12ボス扉",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "2120": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2130": {
+                "name": "長い橋の壁（左）",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2131": {
+                "name": "長い橋の壁（右）",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2200": {
+                "name": "小木00",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2201": {
+                "name": "小木01",
+                "materialId": 4,
+                "isChrHit:1": false,
+                "isAttackBacklash:1": false
+            },
+            "2202": {
+                "name": "闇の木",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false,
+                "breakSfxId": 120032
+            },
+            "2203": {
+                "name": "闇の木(低い)",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false,
+                "breakSfxId": 120033
+            },
+            "2211": {
+                "name": "レバー（スイッチ）",
+                "materialId": 9
+            },
+            "2221": {
+                "name": "レバー対応扉（正面）",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2231": {
+                "name": "城内部への扉",
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "2241": {
+                "name": "レバー対応扉（右）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2250": {
+                "name": "鍛冶屋のテーブル",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2251": {
+                "name": "鍛冶屋の桶",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2252": {
+                "name": "鍛冶屋の金床及び椅子",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2253": {
+                "name": "ハンター荷物",
+                "hp": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2261": {
+                "name": "扉（蹴破り）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2271": {
+                "name": "ハシゴ",
+                "materialId": 4
+            },
+            "2280": {
+                "name": "大型バリスタ【土台】",
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "2281": {
+                "name": "大型バリスタ【本体】",
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "2282": {
+                "name": "大型バリスタ【発射装置】",
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "2290": {
+                "name": "鉄球破壊木の板",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2291": {
+                "name": "鉄球破壊木の板",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2303": {
+                "name": "カラクリ階段",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2304": {
+                "name": "犬馬車",
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "2317": {
+                "name": "血だまり",
+                "materialId": 1
+            },
+            "2318": {
+                "name": "壊れる木のでっぱり",
+                "materialId": 4
+            },
+            "2320": {
+                "name": "落ちてくるワラ",
+                "materialId": 1
+            },
+            "2321": {
+                "name": "鉄柵扉(サブイベント用）",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2322": {
+                "name": "落下馬車",
+                "materialId": 4
+            },
+            "2323": {
+                "name": "ワラ人形",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2324": {
+                "name": "落下ワラ（単品）",
+                "materialId": 1
+            },
+            "2325": {
+                "name": "破壊される柵",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true
+            },
+            "2326": {
+                "name": "落下ワラ（単品）",
+                "materialId": 1
+            },
+            "2328": {
+                "name": "木箱と樽",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2330": {
+                "name": "ボス部屋の石造(剣持ち）",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2331": {
+                "name": "ボス部屋の石造(盾持ち）",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2360": {
+                "name": "イベント円柱コリジョン",
+                "hp": 0,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "2400": {
+                "name": "滝の横の梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "2401": {
+                "name": "滝の奥の梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "2420": {
+                "name": "剣立て",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2421": {
+                "name": "ベッド",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2422": {
+                "name": "タンス",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2423": {
+                "name": "机",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2424": {
+                "name": "テーブル",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2425": {
+                "name": "武器立てA",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2426": {
+                "name": "武器たてB",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2427": {
+                "name": "豪華いす",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2428": {
+                "name": "小箱A",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2429": {
+                "name": "小箱B",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2430": {
+                "name": "腰掛",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2431": {
+                "name": "長いす",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2432": {
+                "name": "矢よけ",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2433": {
+                "name": "矢よけ壊れ",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2434": {
+                "name": "壊れ荷車",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2435": {
+                "name": "壊れ荷車",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2440": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2441": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2442": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2443": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2444": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2445": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2446": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2447": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2448": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2449": {
+                "name": "王の間瓦礫",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2450": {
+                "name": "対黒竜ブレス壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2451": {
+                "name": "旗",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "2452": {
+                "name": "旗",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "2455": {
+                "name": "奴隷兵士",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "2456": {
+                "name": "歯車",
+                "materialId": 4
+            },
+            "2460": {
+                "name": "王城４　地形破壊前",
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true
+            },
+            "2461": {
+                "name": "王城４　地形破壊中",
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true
+            },
+            "2462": {
+                "name": "王城４　地形破壊後",
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true
+            },
+            "2470": {
+                "name": "王城４　塔破壊前",
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true
+            },
+            "2471": {
+                "name": "王城４　塔破壊中",
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true
+            },
+            "2472": {
+                "name": "王城４　塔破壊後",
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true
+            },
+            "2480": {
+                "name": "王城ゴンドラ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2490": {
+                "name": "馬",
+                "materialId": 1,
+                "isAttackBacklash:1": false
+            },
+            "2500": {
+                "name": "DLC　壊れる枝",
+                "hp": 1,
+                "materialId": 4,
+                "isBreakByPlayerCollide:1": true,
+                "isChrHit:1": false,
+                "isAttackBacklash:1": false
+            },
+            "2501": {
+                "name": "要石（仮）",
+                "materialId": 1
+            },
+            "2511": {
+                "name": "ボス部屋用魔法障壁（入口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2513": {
+                "name": "ボス部屋用魔法障壁（出口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2515": {
+                "name": "マルチ用魔法障壁（入口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2521": {
+                "name": "ボス部屋用魔法障壁（入口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2523": {
+                "name": "ボス部屋用魔法障壁（出口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2525": {
+                "name": "マルチ用魔法障壁（入口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2531": {
+                "name": "ボス部屋用魔法障壁（入口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2533": {
+                "name": "ボス部屋用魔法障壁（出口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2534": {
+                "name": "王城３用",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2535": {
+                "name": "マルチ用魔法障壁（入口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2541": {
+                "name": "ボス部屋用魔法障壁（入口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2543": {
+                "name": "ボス部屋用魔法障壁（出口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2545": {
+                "name": "マルチ用魔法障壁（入口）",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2551": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2552": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2553": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2554": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2600": {
+                "name": "落下地面",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "2601": {
+                "name": "落下地面補填かけら",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "2610": {
+                "name": "壊せる石柱1",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "breakSfxId": 120071
+            },
+            "2611": {
+                "name": "壊せる石柱2",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "breakSfxId": 120072
+            },
+            "2612": {
+                "name": "壊せる石柱3",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "breakSfxId": 120073
+            },
+            "2613": {
+                "name": "壊せる石柱4",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "breakSfxId": 120074
+            },
+            "2620": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2621": {
+                "name": "消える床",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2650": {
+                "name": "蜀台",
+                "hp": 1,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2700": {
+                "name": "エレベータ",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "2701": {
+                "name": "エレベータ呼び出し",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "2710": {
+                "name": "ワープ用ダミポリ（不要だった）",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "2720": {
+                "name": "扉",
+                "materialId": 9,
+                "isCamHit:1": true
+            },
+            "2730": {
+                "name": "隠し扉",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "2731": {
+                "name": "隠し扉",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "2732": {
+                "name": "隠し扉",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "2740": {
+                "name": "机",
+                "hp": 1,
+                "materialId": 4,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "2750": {
+                "name": "いす",
+                "hp": 1,
+                "materialId": 4,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "2760": {
+                "name": "アルトリウスの墓",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "2765": {
+                "name": "ゴーの弓",
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "2770": {
+                "name": "石像",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "animBreakIdMax": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "2780": {
+                "name": "対戦マップ落とし扉",
+                "materialId": 4,
+                "isCamHit:1": true
+            },
+            "2785": {
+                "name": "対戦マップ落とし篭",
+                "materialId": 9
+            },
+            "2790": {
+                "name": "はしご",
+                "materialId": 4,
+                "isLadder:1": true
+            },
+            "2791": {
+                "name": "はしご",
+                "materialId": 4,
+                "isLadder:1": true
+            },
+            "2795": {
+                "name": "死体を吊るす紐",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "2900": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2901": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2902": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2903": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2904": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2905": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2906": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2907": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2909": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2910": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2911": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2912": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2913": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2914": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2915": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2916": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2917": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2918": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2919": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "2920": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3000": {
+                "name": "はし",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "3001": {
+                "name": "はし",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "3010": {
+                "name": "",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3011": {
+                "name": "",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3020": {
+                "name": "",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3021": {
+                "name": "",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3030": {
+                "name": "墓１崩れる足場",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true
+            },
+            "3031": {
+                "name": "墓１崩れる足場",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "3032": {
+                "name": "墓１崩れる足場",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "3033": {
+                "name": "墓１崩れる足場",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "3034": {
+                "name": "墓１崩れる足場",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "3035": {
+                "name": "墓１崩れる足場",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true,
+                "defaultLodParamId": 0
+            },
+            "3036": {
+                "name": "崩れる天井",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "3040": {
+                "name": "梯子　ｍ0730B0",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3041": {
+                "name": "梯子　ｍ0780B0",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3042": {
+                "name": "梯子　ｍ0790B0",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3043": {
+                "name": "梯子　ｍ2500B0-1",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3044": {
+                "name": "梯子　ｍ2500B0-2",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3045": {
+                "name": "梯子　ｍ0680B0",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3046": {
+                "name": "梯子　ｍ0700B0",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3047": {
+                "name": "梯子　ｍ0500B0",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3048": {
+                "name": "はしご",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3060": {
+                "name": "イベント棺",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3100": {
+                "name": "閂扉（両開き）",
+                "materialId": 4
+            },
+            "3101": {
+                "name": "ボス部屋入り口扉（両開き）",
+                "isCamHit:1": true
+            },
+            "3102": {
+                "name": "ボス部屋出口扉（両開き）",
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3103": {
+                "name": "岩（SEQ9）"
+            },
+            "3104": {
+                "name": "ボス部屋入り口イベント"
+            },
+            "3105": {
+                "name": "牢屋扉",
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3106": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3107": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3108": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3110": {
+                "name": "梯子",
+                "materialId": 4
+            },
+            "3120": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3121": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3122": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3123": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3124": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3125": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3126": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3127": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3128": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3129": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3130": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3131": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3132": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3140": {
+                "name": "梯子",
+                "defense": 90,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3141": {
+                "name": "梯子",
+                "defense": 90,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3142": {
+                "name": "梯子",
+                "defense": 90,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3143": {
+                "name": "梯子",
+                "defense": 90,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3144": {
+                "name": "梯子",
+                "defense": 90,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3145": {
+                "name": "",
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3146": {
+                "name": "",
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3147": {
+                "name": "",
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3148": {
+                "name": "",
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3160": {
+                "name": "ボス部屋壊れる柱",
+                "defense": 90,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3200": {
+                "name": "石扉（両開き）",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3201": {
+                "name": "魔法の扉",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3210": {
+                "name": "鍵付き扉",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3211": {
+                "name": "魔法の扉",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3220": {
+                "name": "床スイッチ",
+                "materialId": 2,
+                "isCamHit:1": true
+            },
+            "3221": {
+                "name": ""
+            },
+            "3230": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3231": {
+                "name": ""
+            },
+            "3240": {
+                "name": "梯子　崩落棺内",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3241": {
+                "name": "梯子　ドラゴンゾンビ帰り",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3242": {
+                "name": "梯子　崩落棺のぼり",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3243": {
+                "name": "梯子　暗所ラスト",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "3250": {
+                "name": "床板",
+                "materialId": 4
+            },
+            "3251": {
+                "name": ""
+            },
+            "3260": {
+                "name": "骸骨像",
+                "hp": 1,
+                "defense": 90,
+                "isAttackBacklash:1": false
+            },
+            "3261": {
+                "name": ""
+            },
+            "3270": {
+                "name": "デーモン像",
+                "hp": 1,
+                "defense": 90,
+                "isAttackBacklash:1": false
+            },
+            "3271": {
+                "name": ""
+            },
+            "3280": {
+                "name": "骸骨像",
+                "materialId": 29
+            },
+            "3290": {
+                "name": "嵐の戦士",
+                "materialId": 29
+            },
+            "3291": {
+                "name": "嵐の戦士すり替え用瓦礫",
+                "materialId": 2,
+                "isPenetrationBulletHit:1": true
+            },
+            "3292": {
+                "name": "嵐の戦士置き物",
+                "materialId": 29,
+                "isPenetrationBulletHit:1": true
+            },
+            "3300": {
+                "name": "白骨死体",
+                "hp": 1,
+                "materialId": 3,
+                "isBreakByPlayerCollide:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3301": {
+                "name": "白骨死体",
+                "hp": 1,
+                "materialId": 3,
+                "isBreakByPlayerCollide:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3302": {
+                "name": "つるされ",
+                "hp": 1,
+                "materialId": 3,
+                "isBreakByPlayerCollide:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3310": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3311": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3312": {
+                "name": "倒れたつぼ",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3320": {
+                "name": "墓守",
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3321": {
+                "name": "墓守",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3350": {
+                "name": "ボス部屋壁",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3400": {
+                "name": "壊れる壁",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3410": {
+                "name": "壺Ａ",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3411": {
+                "name": "壺Ｂ",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3412": {
+                "name": "壺Ｃ",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3413": {
+                "name": "壺Ｄ",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3414": {
+                "name": "壺Ｅ",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3415": {
+                "name": "壺Ｆ",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3419": {
+                "name": "壊れた旗",
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3420": {
+                "name": "旗",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3421": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3422": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3423": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3430": {
+                "name": "",
+                "materialId": 4
+            },
+            "3431": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3432": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3440": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3450": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3451": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3452": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3460": {
+                "name": "破壊木",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3461": {
+                "name": "破壊木",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3462": {
+                "name": "破壊木",
+                "hp": 1,
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3470": {
+                "name": "壊れた樽Ａ",
+                "materialId": 4
+            },
+            "3471": {
+                "name": "樽Ｂ",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3500": {
+                "name": "枝",
+                "hp": 1,
+                "materialId": 4,
+                "isBreakByPlayerCollide:1": true,
+                "isChrHit:1": false,
+                "isAttackBacklash:1": false
+            },
+            "3501": {
+                "name": "枝",
+                "hp": 1,
+                "materialId": 4,
+                "isBreakByPlayerCollide:1": true,
+                "isChrHit:1": false,
+                "isAttackBacklash:1": false
+            },
+            "3511": {
+                "name": "枝",
+                "hp": 1,
+                "materialId": 29,
+                "isBreakByPlayerCollide:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isChrHit:1": false,
+                "isAttackBacklash:1": false
+            },
+            "3512": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3515": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3521": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3522": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3525": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3531": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3532": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3535": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3600": {
+                "name": "13_01ボス部屋前",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3601": {
+                "name": "13_01ボス部屋前",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3610": {
+                "name": "骨",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isBreakByPlayerCollide:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3611": {
+                "name": "骨",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isBreakByPlayerCollide:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3612": {
+                "name": "骨",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isBreakByPlayerCollide:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3650": {
+                "name": "大骨",
+                "hp": 1,
+                "materialId": 3,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3651": {
+                "name": "大骨",
+                "hp": 1,
+                "materialId": 3,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3652": {
+                "name": "大骨",
+                "hp": 1,
+                "materialId": 3,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3653": {
+                "name": "大骨",
+                "hp": 1,
+                "materialId": 3,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3654": {
+                "name": "大骨",
+                "hp": 1,
+                "materialId": 3,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3660": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3661": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3662": {
+                "name": "",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3870": {
+                "name": "鍛冶",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3871": {
+                "name": "壁",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3872": {
+                "name": "壁裏",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3873": {
+                "name": "ポリ劇ブロック",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "3890": {
+                "name": "ポリ劇机",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "3900": {
+                "name": "墓王破壊",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 1,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "3901": {
+                "name": "墓王破壊",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 1,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "3902": {
+                "name": "墓王破壊",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 1,
+                "isAttackBacklash:1": false,
+                "defaultLodParamId": 0
+            },
+            "3950": {
+                "name": "光の壁13-0",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3951": {
+                "name": "光の壁13-0",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3952": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3953": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3954": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3955": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3960": {
+                "name": "光の壁13-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3961": {
+                "name": "光の壁13-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3962": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3963": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3964": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3965": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3970": {
+                "name": "光の壁13-2",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3971": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3972": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3973": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "3998": {
+                "name": "死体宝箱",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "3999": {
+                "name": "死体宝箱",
+                "materialId": 29,
+                "isAttackBacklash:1": false
+            },
+            "4000": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4001": {
+                "name": "",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true
+            },
+            "4002": {
+                "name": "",
+                "materialId": 1
+            },
+            "4005": {
+                "name": "",
+                "materialId": 2
+            },
+            "4006": {
+                "name": "",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4007": {
+                "name": "",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4010": {
+                "name": "",
+                "materialId": 9
+            },
+            "4020": {
+                "name": "",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "4030": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "4040": {
+                "name": "",
+                "materialId": 9
+            },
+            "4050": {
+                "name": "崩れ板",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "4060": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "4070": {
+                "name": "",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4080": {
+                "name": "",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4090": {
+                "name": "",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4100": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4101": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4102": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4103": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4104": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4105": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4106": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4107": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4108": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4109": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4110": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4111": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4112": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4113": {
+                "name": "梯子",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4114": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4115": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4116": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4117": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4118": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4119": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4120": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4121": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4122": {
+                "name": "梯子",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4123": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4124": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4125": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4126": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4127": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4128": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4129": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "4130": {
+                "name": "",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4140": {
+                "name": "",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4141": {
+                "name": "",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4150": {
+                "name": "",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4160": {
+                "name": "",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4161": {
+                "name": "",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4170": {
+                "name": "",
+                "hp": 1,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "4180": {
+                "name": "",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "4181": {
+                "name": "",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "4182": {
+                "name": "",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isAttackBacklash:1": false
+            },
+            "4200": {
+                "name": "動く床",
+                "materialId": 304,
+                "isCamHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "4201": {
+                "name": "動く床",
+                "materialId": 304,
+                "isCamHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "4202": {
+                "name": "動く床",
+                "materialId": 304,
+                "isCamHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "4215": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4300": {
+                "name": "柱",
+                "hp": 18,
+                "defense": 3,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4301": {
+                "name": "柱",
+                "hp": 18,
+                "defense": 3,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4302": {
+                "name": "柱",
+                "hp": 18,
+                "defense": 3,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4303": {
+                "name": "柱",
+                "hp": 18,
+                "defense": 3,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4304": {
+                "name": "柱",
+                "hp": 18,
+                "defense": 3,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4305": {
+                "name": "柱",
+                "hp": 18,
+                "defense": 3,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4350": {
+                "name": "障害木",
+                "hp": 1,
+                "materialId": 404,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4351": {
+                "name": "障害木",
+                "hp": 1,
+                "materialId": 404,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4352": {
+                "name": "障害木",
+                "hp": 1,
+                "materialId": 404,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4353": {
+                "name": "障害木",
+                "hp": 1,
+                "materialId": 404,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4360": {
+                "name": "破壊木",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4361": {
+                "name": "破壊木",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4362": {
+                "name": "破壊木",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4370": {
+                "name": "枝",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4400": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4401": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4402": {
+                "name": "車輪",
+                "hp": 1,
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4403": {
+                "name": "車輪",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4404": {
+                "name": "",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4405": {
+                "name": "",
+                "defense": 90,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4406": {
+                "name": "壊れ板",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4407": {
+                "name": "壊れ板",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4408": {
+                "name": "壊れ板",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4409": {
+                "name": "壊れ扉",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4410": {
+                "name": "壊れ扉",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4411": {
+                "name": "壊れ板",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4412": {
+                "name": "",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4420": {
+                "name": "",
+                "materialId": 4
+            },
+            "4421": {
+                "name": "",
+                "materialId": 4
+            },
+            "4422": {
+                "name": "",
+                "materialId": 4
+            },
+            "4423": {
+                "name": "",
+                "materialId": 4
+            },
+            "4424": {
+                "name": "",
+                "materialId": 4
+            },
+            "4430": {
+                "name": "",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4435": {
+                "name": "",
+                "materialId": 3,
+                "isPenetrationBulletHit:1": true
+            },
+            "4436": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4437": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4438": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4439": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4440": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4441": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4442": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4445": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4446": {
+                "name": "",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4460": {
+                "name": "ポリ劇ボス",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4461": {
+                "name": "ポリ劇ボス",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4510": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4511": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4512": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4515": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4521": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4522": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4525": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4531": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4532": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4535": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4550": {
+                "name": "スイッチ",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "4560": {
+                "name": "鐘",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "4570": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4600": {
+                "name": "エレベータ",
+                "materialId": 1,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "4610": {
+                "name": "封印のやり",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4611": {
+                "name": "突き破る枝",
+                "hp": 1,
+                "materialId": 3,
+                "isBreakByPlayerCollide:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4620": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4621": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4622": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4623": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4624": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4625": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4626": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4627": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4628": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4629": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4630": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4631": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4632": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4633": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4634": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4635": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4636": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4637": {
+                "name": "イザリス床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4700": {
+                "name": "とびら",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "4701": {
+                "name": "とびら",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "4750": {
+                "name": ""
+            },
+            "4751": {
+                "name": ""
+            },
+            "4800": {
+                "name": "ウジ虫が隠れる壁",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isDisableBreakForFirstAppear:1": true
+            },
+            "4810": {
+                "name": "崩れる大床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4820": {
+                "name": "変身つぼ1-0",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4830": {
+                "name": "変身石像14-1",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4840": {
+                "name": "イザリス枝",
+                "hp": 1,
+                "materialId": 3,
+                "isPenetrationBulletHit:1": true
+            },
+            "4850": {
+                "name": "イザリス槍",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4900": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4901": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4910": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4911": {
+                "name": "",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "4950": {
+                "name": "光の壁14-0",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4951": {
+                "name": "光の壁14-0",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4952": {
+                "name": "光の壁14-0",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4953": {
+                "name": "光の壁14-0",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4954": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4955": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4956": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4957": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4958": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4960": {
+                "name": "光の壁14-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4961": {
+                "name": "光の壁14-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4962": {
+                "name": "光の壁14-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4963": {
+                "name": "光の壁14-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4964": {
+                "name": "光の壁14-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4965": {
+                "name": "光の壁14-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4966": {
+                "name": "光の壁14-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4967": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4968": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4969": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4970": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4971": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4972": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "4980": {
+                "name": ""
+            },
+            "4998": {
+                "name": ""
+            },
+            "4999": {
+                "name": ""
+            },
+            "5000": {
+                "name": "ペンデュラム",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "5010": {
+                "name": "ゴロゴロ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "5100": {
+                "name": "城門",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5110": {
+                "name": "壊れる壁1",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isDisableBreakForFirstAppear:1": true
+            },
+            "5120": {
+                "name": "壊れる壁2",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isDisableBreakForFirstAppear:1": true
+            },
+            "5130": {
+                "name": "魔法の隠し扉",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5140": {
+                "name": "格子扉",
+                "materialId": 9,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "5150": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5151": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5152": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5153": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5154": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5155": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5156": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5200": {
+                "name": "ゴロゴロの回転レバー",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5300": {
+                "name": "罠エレベータ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "5301": {
+                "name": "篭牢エレベータ",
+                "materialId": 9,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "5310": {
+                "name": "篭牢",
+                "materialId": 9
+            },
+            "5400": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "5401": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "5402": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "5403": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "5404": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "5410": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "5411": {
+                "name": "梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "5550": {
+                "name": "壷１",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5551": {
+                "name": "壷２",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5552": {
+                "name": "壷３",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5560": {
+                "name": "火炎壷",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5561": {
+                "name": "火炎壷(つんである物)",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5570": {
+                "name": "机",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5580": {
+                "name": "椅子",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5600": {
+                "name": "回転エレベータ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "5610": {
+                "name": "回転大橋（描画+レバーのヒット）",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "5611": {
+                "name": "回転大橋のヒット",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "5620": {
+                "name": "回転エレベータ（屋内）",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "5630": {
+                "name": "回転エレベータ（屋内）",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "5650": {
+                "name": "破壊柱（大・像つき）",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5651": {
+                "name": "破壊柱（大・像つき）",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5652": {
+                "name": "破壊柱（大）",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5653": {
+                "name": "破壊柱（大）",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5654": {
+                "name": "破壊柱（小）",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5655": {
+                "name": "破壊柱（小）",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5700": {
+                "name": "正門",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "5710": {
+                "name": "格子扉",
+                "materialId": 9,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "5720": {
+                "name": "汎用扉",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "5730": {
+                "name": "王母扉",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "5740": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5760": {
+                "name": "正門を開けるレバー",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5800": {
+                "name": "シャンデリア",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5810": {
+                "name": "シャンデリアの鎖",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5850": {
+                "name": "でかい絵",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5860": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5861": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5862": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5863": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5864": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5865": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5866": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5867": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5868": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5869": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5870": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5871": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5900": {
+                "name": "騎士像",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "5910": {
+                "name": "椅子",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5911": {
+                "name": "六目の椅子",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5920": {
+                "name": "丸テーブル",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5930": {
+                "name": "壷のある棚",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5940": {
+                "name": "袖机",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5950": {
+                "name": "礼拝堂のベンチ",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5951": {
+                "name": "ベンチ",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5952": {
+                "name": "ミニベンチ",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5960": {
+                "name": "作業台のベンチ",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5965": {
+                "name": "巨人鍛冶屋の椅子",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5967": {
+                "name": "巨人奴隷鍛冶屋の壷",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5968": {
+                "name": "巨人奴隷鍛冶屋の樽",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5969": {
+                "name": "巨人奴隷鍛冶屋の桶",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5970": {
+                "name": "机１（大）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5971": {
+                "name": "机２（小）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5972": {
+                "name": "机３（作業台）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5980": {
+                "name": "巻物保管箱（大）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5981": {
+                "name": "巻物保管箱（大・蓋あき）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5982": {
+                "name": "巻物保管箱（小）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5983": {
+                "name": "巻物保管箱（小・蓋あき）",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "5990": {
+                "name": "高級壷",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6000": {
+                "name": "水門",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "6010": {
+                "name": "格子扉",
+                "materialId": 9,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "6100": {
+                "name": "エレベータ呼びスイッチ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "6110": {
+                "name": "水門スイッチ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "6200": {
+                "name": "ｴﾚﾍﾞｰﾀｰ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "6400": {
+                "name": "はしご",
+                "materialId": 9,
+                "isLadder:1": true
+            },
+            "6401": {
+                "name": "縄ばしご",
+                "materialId": 29,
+                "isLadder:1": true
+            },
+            "6410": {
+                "name": "スライド式はしご",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "6450": {
+                "name": "擬態の壷",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6451": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6452": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6455": {
+                "name": "擬態の壷(水没)",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6456": {
+                "name": "壷（水没）",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6457": {
+                "name": "壷（水没）",
+                "hp": 1,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6600": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6601": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6602": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6603": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6604": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6605": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6606": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6607": {
+                "name": "光の壁",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "6700": {
+                "name": "隠し扉",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAnimBreak:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7010": {
+                "name": "燭台【4面開放】"
+            },
+            "7020": {
+                "name": "燭台【2面開放】"
+            },
+            "7200": {
+                "name": "下がる階段",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "7201": {
+                "name": "レバー",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "7202": {
+                "name": "レバー（色違い）",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "7230": {
+                "name": "回転階段",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "7231": {
+                "name": "回転階段（ヒット）",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "7240": {
+                "name": "シース部屋へのゴンドラ",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "7241": {
+                "name": "最初のゴンドラ",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true,
+                "isMoveObj:1": true
+            },
+            "7250": {
+                "name": "移動本棚2階",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "7251": {
+                "name": "移動本棚1階",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "7300": {
+                "name": "牢の梯子",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "7301": {
+                "name": "牢の見張り台の梯子",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "7302": {
+                "name": "森の梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "7303": {
+                "name": "図書館後半の梯子",
+                "materialId": 4,
+                "isPenetrationBulletHit:1": true,
+                "isLadder:1": true
+            },
+            "7400": {
+                "name": "牢の扉",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "7401": {
+                "name": "牢屋の扉",
+                "materialId": 9,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "7404": {
+                "name": "警報機",
+                "defense": 3,
+                "materialId": 9,
+                "isCamHit:1": true
+            },
+            "7500": {
+                "name": "不死身結晶",
+                "hp": 1,
+                "materialId": 8,
+                "isAttackBacklash:1": false
+            },
+            "7510": {
+                "name": "固定結晶",
+                "materialId": 8,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "7511": {
+                "name": "ボス部屋用魔法障壁（入口）"
+            },
+            "7512": {
+                "name": "ボス部屋用魔法障壁（出口）"
+            },
+            "7515": {
+                "name": "マルチ用魔法障壁（入口）"
+            },
+            "7521": {
+                "name": "ボス部屋用魔法障壁（入口）"
+            },
+            "7522": {
+                "name": "ボス部屋用魔法障壁（出口）"
+            },
+            "7525": {
+                "name": "マルチ用魔法障壁（入口）"
+            },
+            "7531": {
+                "name": "ボス部屋用魔法障壁（入口）"
+            },
+            "7532": {
+                "name": "ボス部屋用魔法障壁（出口）"
+            },
+            "7535": {
+                "name": "マルチ用魔法障壁（入口）"
+            },
+            "7600": {
+                "name": "天球儀A",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7601": {
+                "name": "天球儀B",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7610": {
+                "name": "移動式階段",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7620": {
+                "name": "机",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7621": {
+                "name": "机(本あり)",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7630": {
+                "name": "椅子",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7640": {
+                "name": "棚",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7650": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7670": {
+                "name": "本立て（開き）",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7690": {
+                "name": "移動式本棚",
+                "hp": 1,
+                "defense": 3,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7700": {
+                "name": "女神像",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "7900": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7901": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7902": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7906": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7907": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "7908": {
+                "name": "光る霧",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8000": {
+                "name": "テスト用オブジェ"
+            },
+            "8050": {
+                "name": "光の壁18_00",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8051": {
+                "name": "光の壁18_00",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8100": {
+                "name": "はしご"
+            },
+            "8110": {
+                "name": "魔法壁",
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8111": {
+                "name": "光の壁（通常）",
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8120": {
+                "name": "倒れた柱"
+            },
+            "8150": {
+                "name": "擬態用の小さい柱",
+                "materialId": 1,
+                "isCamHit:1": true
+            },
+            "8200": {
+                "name": "はしご（10度）"
+            },
+            "8300": {
+                "name": "封印の扉",
+                "defense": 3,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8311": {
+                "name": "王の器",
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8400": {
+                "name": "桶",
+                "hp": 1,
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isBreakByPlayerCollide:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8401": {
+                "name": "袋１",
+                "materialId": 7,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8402": {
+                "name": "袋２",
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8403": {
+                "name": "壷",
+                "hp": 1,
+                "materialId": 3,
+                "isCamHit:1": true,
+                "isBreakByPlayerCollide:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8410": {
+                "name": "壷（教会）　縦",
+                "hp": 1,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8411": {
+                "name": "壷（教会）　横",
+                "hp": 1,
+                "materialId": 2,
+                "isCamHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8420": {
+                "name": "ガーゴイル像",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8421": {
+                "name": "ガーゴイル像(首落ち)",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8422": {
+                "name": "ガーゴイル像(羽付き)",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8425": {
+                "name": "ガーゴイル像(反転)",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8500": {
+                "name": "はしご",
+                "materialId": 9,
+                "isLadder:1": true
+            },
+            "8501": {
+                "name": "はしご",
+                "materialId": 9,
+                "isLadder:1": true
+            },
+            "8510": {
+                "name": "教会床",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isDisableBreakForFirstAppear:1": true
+            },
+            "8511": {
+                "name": "教会床下",
+                "hp": 999,
+                "defense": 999,
+                "materialId": 1,
+                "isDisableBreakForFirstAppear:1": true
+            },
+            "8520": {
+                "name": "壁",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8521": {
+                "name": "壁裏",
+                "materialId": 1
+            },
+            "8530": {
+                "name": "鉄球",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isChrHit:1": false,
+                "isAnimPauseOnRemoPlay:1": true
+            },
+            "8531": {
+                "name": "鉄球のアタリ",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8540": {
+                "name": "鉄格子扉",
+                "materialId": 9,
+                "isCamHit:1": true
+            },
+            "8541": {
+                "name": "教会扉(前)",
+                "materialId": 4,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8542": {
+                "name": "教会格子",
+                "materialId": 9,
+                "isPenetrationBulletHit:1": true
+            },
+            "8544": {
+                "name": "教会扉(奥)",
+                "materialId": 9,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8550": {
+                "name": "教会扉",
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8600": {
+                "name": "教会柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8601": {
+                "name": "教会柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8610": {
+                "name": "下水柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8611": {
+                "name": "下水柱",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8700": {
+                "name": "教会崩壊箇所",
+                "hp": 1,
+                "defense": 199,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isDisableBreakForFirstAppear:1": true
+            },
+            "8701": {
+                "name": "教会崩壊箇所",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8702": {
+                "name": "教会崩壊箇所",
+                "hp": 1,
+                "defense": 90,
+                "materialId": 1,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true
+            },
+            "8950": {
+                "name": "光の壁18-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8951": {
+                "name": "光の壁18-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8952": {
+                "name": "光の壁18-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "8953": {
+                "name": "光の壁18-1",
+                "materialId": 29,
+                "isCamHit:1": true,
+                "isPenetrationBulletHit:1": true,
+                "isAttackBacklash:1": false
+            },
+            "9010": {
+                "name": "森の扉"
+            },
+            "9120": {
+                "name": "柱01-01"
+            },
+            "9121": {
+                "name": "柱01-02"
+            },
+            "9122": {
+                "name": "柱01-03"
+            },
+            "9123": {
+                "name": "柱02-01"
+            },
+            "9124": {
+                "name": "柱01-04"
+            },
+            "9125": {
+                "name": "柱03-01"
+            },
+            "9140": {
+                "name": "燭台01-01"
+            },
+            "9141": {
+                "name": "燭台02-01"
+            },
+            "9150": {
+                "name": "かがり火"
+            },
+            "9160": {
+                "name": "柱01-05"
+            },
+            "9400": {
+                "name": "WP_A_0250 魔剣"
+            },
+            "9401": {
+                "name": "WP_A_0450　柄なし"
+            },
+            "9402": {
+                "name": "WP_A_0251"
+            },
+            "9499": {
+                "name": "仮キャラ配置用"
+            },
+            "9500": {
+                "name": "王の剣"
+            },
+            "9501": {
+                "name": "c3050_ガーゴイル"
+            },
+            "9502": {
+                "name": "c3100_岩石ミミズ"
+            },
+            "9503": {
+                "name": "c3020_灰色狼"
+            },
+            "9504": {
+                "name": ""
+            },
+            "9505": {
+                "name": ""
+            },
+            "9506": {
+                "name": ""
+            },
+            "9507": {
+                "name": ""
+            },
+            "9509": {
+                "name": "王の盾"
+            },
+            "9570": {
+                "name": "ボス蜘蛛"
+            },
+            "9580": {
+                "name": "忍者のドラゴン"
+            },
+            "9599": {
+                "name": "キャラモデル確認用"
+            },
+            "9900": {
+                "name": "重量ウィザード女性"
+            },
+            "9901": {
+                "name": "軽量クレリック女性"
+            },
+            "9903": {
+                "name": "アンダーウエア女性"
+            },
+            "9990": {
+                "name": "ミップマップテストモデル"
+            },
+            "10000": {
+                "name": "デフォルト"
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "entry_id": 38,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\HitMtrlParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "HIT_MTRL_PARAM_ST",
+        "big_endian": false,
+        "unknown": 0,
+        "paramdef_data_version": 2,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "ダミー"
+            },
+            "1": {
+                "name": "石材（屋外）"
+            },
+            "2": {
+                "name": "石材（屋内）"
+            },
+            "3": {
+                "name": "土"
+            },
+            "4": {
+                "name": "木材"
+            },
+            "5": {
+                "name": "草"
+            },
+            "6": {
+                "name": "砂利"
+            },
+            "7": {
+                "name": "雪",
+                "footEffectHeightType:2": 2,
+                "footEffectDirType:2": 1
+            },
+            "8": {
+                "name": "氷"
+            },
+            "9": {
+                "name": "鉄"
+            },
+            "10": {
+                "name": "砂"
+            },
+            "11": {
+                "name": "骨"
+            },
+            "12": {
+                "name": "灰"
+            },
+            "14": {
+                "name": "腐敗した木"
+            },
+            "15": {
+                "name": "巨木"
+            },
+            "17": {
+                "name": "雪（あしあとつかない場所用）",
+                "footEffectHeightType:2": 2,
+                "footEffectDirType:2": 1
+            },
+            "19": {
+                "name": "水（滑り降り）",
+                "aiVolumeRate": 3.0,
+                "footEffectHeightType:2": 2,
+                "floorHeightType:2": 1
+            },
+            "20": {
+                "name": "水（水溜り程度）",
+                "aiVolumeRate": 3.0,
+                "footEffectHeightType:2": 1,
+                "floorHeightType:2": 1
+            },
+            "21": {
+                "name": "水（足首程度）",
+                "aiVolumeRate": 3.0,
+                "spEffectIdOnHit0": 4100,
+                "footEffectHeightType:2": 1,
+                "floorHeightType:2": 1
+            },
+            "22": {
+                "name": "粘液",
+                "footEffectHeightType:2": 2,
+                "footEffectDirType:2": 1
+            },
+            "23": {
+                "name": "毒沼",
+                "spEffectIdOnHit0": 4100,
+                "spEffectIdOnHit1": 4020,
+                "footEffectHeightType:2": 1,
+                "floorHeightType:2": 1
+            },
+            "24": {
+                "name": "泥",
+                "spEffectIdOnHit0": 4100,
+                "footEffectHeightType:2": 1,
+                "floorHeightType:2": 1
+            },
+            "25": {
+                "name": "コールタール",
+                "spEffectIdOnHit0": 4100,
+                "footEffectHeightType:2": 2,
+                "footEffectDirType:2": 1,
+                "floorHeightType:2": 1
+            },
+            "26": {
+                "name": "キメラ沼",
+                "footEffectHeightType:2": 1,
+                "floorHeightType:2": 1
+            },
+            "27": {
+                "name": "溶岩",
+                "spEffectIdOnHit0": 4030,
+                "spEffectIdOnHit1": 4031,
+                "footEffectHeightType:2": 1,
+                "floorHeightType:2": 1
+            },
+            "28": {
+                "name": "絨毯"
+            },
+            "29": {
+                "name": "空データ何も出ない用"
+            },
+            "34": {
+                "name": "木材"
+            },
+            "40": {
+                "name": "ドボンSFX用"
+            }
+        }
+    }
+}

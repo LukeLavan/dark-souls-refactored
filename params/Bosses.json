@@ -1,0 +1,503 @@
+{
+    "entry_id": 31,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\GameAreaParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "GAME_AREA_PARAM_ST",
+        "big_endian": false,
+        "unknown": 0,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "テスト",
+                "bonusSoul_single": 10000,
+                "bonusSoul_multi": 10000
+            },
+            "1": {
+                "name": "テスト1",
+                "bonusSoul_single": 10000,
+                "bonusSoul_multi": 10000
+            },
+            "100": {
+                "name": "石柱_なりそこない",
+                "bonusSoul_single": 15000,
+                "bonusSoul_multi": 15000
+            },
+            "200": {
+                "name": "王城1_ファランクス（本体）",
+                "bonusSoul_single": 1270,
+                "bonusSoul_multi": 1270
+            },
+            "201": {
+                "name": "王城2_王の盾",
+                "bonusSoul_single": 8570,
+                "bonusSoul_multi": 8570
+            },
+            "202": {
+                "name": "王城3_王の剣",
+                "bonusSoul_single": 35850,
+                "bonusSoul_multi": 35850
+            },
+            "203": {
+                "name": "王城4_レンドル王",
+                "bonusSoul_single": 75500,
+                "bonusSoul_multi": 75500
+            },
+            "301": {
+                "name": "古砦1_審判者",
+                "bonusSoul_single": 11700,
+                "bonusSoul_multi": 11700
+            },
+            "302": {
+                "name": "古砦2_嵐の戦士",
+                "bonusSoul_single": 33750,
+                "bonusSoul_multi": 33750
+            },
+            "303": {
+                "name": "古砦3_嵐の獣",
+                "bonusSoul_single": 40400,
+                "bonusSoul_multi": 40400
+            },
+            "400": {
+                "name": "牢城1_カミサマ",
+                "bonusSoul_single": 8430,
+                "bonusSoul_multi": 8430
+            },
+            "401": {
+                "name": "牢城2_キメラ",
+                "bonusSoul_single": 13880,
+                "bonusSoul_multi": 13880
+            },
+            "402": {
+                "name": "牢城3_召喚ＮＰＣ",
+                "bonusSoul_single": 24700,
+                "bonusSoul_multi": 24700
+            },
+            "500": {
+                "name": "不浄1_蛭デーモン",
+                "bonusSoul_single": 8249,
+                "bonusSoul_multi": 8249
+            },
+            "501": {
+                "name": "不浄2_蠅たかり",
+                "bonusSoul_single": 33433,
+                "bonusSoul_multi": 33433
+            },
+            "502": {
+                "name": "不浄3_聖女リーブラ",
+                "bonusSoul_single": 23400,
+                "bonusSoul_multi": 23400
+            },
+            "600": {
+                "name": "坑道1_大蜘蛛",
+                "bonusSoul_single": 5950,
+                "bonusSoul_multi": 5950
+            },
+            "601": {
+                "name": "坑道2_炎怪人",
+                "bonusSoul_single": 22500,
+                "bonusSoul_multi": 22500
+            },
+            "602": {
+                "name": "坑道3_ドラゴンデーモン(坑道)",
+                "bonusSoul_single": 26800,
+                "bonusSoul_multi": 26800
+            },
+            "801": {
+                "name": "チュートリアル_デブデーモン",
+                "bonusSoul_single": 1000,
+                "bonusSoul_multi": 1000
+            },
+            "1000800": {
+                "name": "城下2_貪食ドラゴン",
+                "bonusSoul_single": 25000,
+                "bonusSoul_multi": 25000,
+                "humanityPointCountFlagIdTop": 8500,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1010700": {
+                "name": "城下1_ハンマーデーモン",
+                "bonusSoul_single": 3000,
+                "bonusSoul_multi": 3000,
+                "humanityPointCountFlagIdTop": 8520,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1010750": {
+                "name": "城下1_ナタデーモン",
+                "bonusSoul_single": 6000,
+                "bonusSoul_multi": 6000,
+                "humanityPointCountFlagIdTop": 8540,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1010800": {
+                "name": "城下1_ガーゴイル",
+                "bonusSoul_single": 10000,
+                "bonusSoul_multi": 10000,
+                "humanityPointCountFlagIdTop": 8560,
+                "humanityDropPoint1": 200,
+                "humanityDropPoint2": 210,
+                "humanityDropPoint3": 220,
+                "humanityDropPoint4": 240,
+                "humanityDropPoint5": 280,
+                "humanityDropPoint6": 320,
+                "humanityDropPoint7": 380,
+                "humanityDropPoint8": 440,
+                "humanityDropPoint9": 510,
+                "humanityDropPoint10": 600
+            },
+            "1100160": {
+                "name": "絵画世界_半竜プリシラ",
+                "bonusSoul_single": 30000,
+                "bonusSoul_multi": 30000,
+                "humanityPointCountFlagIdTop": 8600,
+                "humanityDropPoint1": 200,
+                "humanityDropPoint2": 210,
+                "humanityDropPoint3": 220,
+                "humanityDropPoint4": 240,
+                "humanityDropPoint5": 280,
+                "humanityDropPoint6": 320,
+                "humanityDropPoint7": 380,
+                "humanityDropPoint8": 440,
+                "humanityDropPoint9": 510,
+                "humanityDropPoint10": 600
+            },
+            "1200800": {
+                "name": "森庭_聖剣の狼",
+                "bonusSoul_single": 40000,
+                "bonusSoul_multi": 40000,
+                "humanityPointCountFlagIdTop": 8640,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1200801": {
+                "name": "森庭_カゲロウ龍",
+                "bonusSoul_single": 10000,
+                "bonusSoul_multi": 10000,
+                "humanityPointCountFlagIdTop": 8620,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1210401": {
+                "name": "過去森_黒竜",
+                "bonusSoul_single": 60000,
+                "bonusSoul_multi": 60000,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1210800": {
+                "name": "過去森_金キメラ",
+                "bonusSoul_single": 30000,
+                "bonusSoul_multi": 30000,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1210820": {
+                "name": "過去森_アルトリウス",
+                "bonusSoul_single": 50000,
+                "bonusSoul_multi": 50000,
+                "humanityPointCountFlagIdTop": 8160,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1210840": {
+                "name": "過去森_深淵の主",
+                "bonusSoul_single": 60000,
+                "bonusSoul_multi": 60000,
+                "humanityPointCountFlagIdTop": 8180,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1300800": {
+                "name": "墓地1_三人羽織",
+                "bonusSoul_single": 15000,
+                "bonusSoul_multi": 15000,
+                "humanityPointCountFlagIdTop": 8660,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1310800": {
+                "name": "墓地2_墓王ニト",
+                "bonusSoul_single": 60000,
+                "bonusSoul_multi": 60000,
+                "humanityPointCountFlagIdTop": 8680,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1400800": {
+                "name": "影町_焔の魔女クラグスパイダー",
+                "bonusSoul_single": 20000,
+                "bonusSoul_multi": 20000,
+                "humanityPointCountFlagIdTop": 8720,
+                "humanityDropPoint1": 300,
+                "humanityDropPoint2": 315,
+                "humanityDropPoint3": 330,
+                "humanityDropPoint4": 360,
+                "humanityDropPoint5": 420,
+                "humanityDropPoint6": 480,
+                "humanityDropPoint7": 570,
+                "humanityDropPoint8": 660,
+                "humanityDropPoint9": 765,
+                "humanityDropPoint10": 900
+            },
+            "1410400": {
+                "name": "廃都_デブデーモン",
+                "bonusSoul_single": 20000,
+                "bonusSoul_multi": 20000,
+                "humanityPointCountFlagIdTop": 8760,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1410600": {
+                "name": "廃都_爛れ続けるもの",
+                "bonusSoul_single": 20000,
+                "bonusSoul_multi": 20000,
+                "humanityPointCountFlagIdTop": 8740,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1410700": {
+                "name": "廃都_ムカデーモン",
+                "bonusSoul_single": 40000,
+                "bonusSoul_multi": 40000,
+                "humanityPointCountFlagIdTop": 8780,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1410800": {
+                "name": "廃都_キングイザリス",
+                "bonusSoul_single": 60000,
+                "bonusSoul_multi": 60000,
+                "humanityPointCountFlagIdTop": 8800,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1500800": {
+                "name": "王城1_アイアンゴーレム",
+                "bonusSoul_single": 40000,
+                "bonusSoul_multi": 40000,
+                "humanityPointCountFlagIdTop": 8820,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1510650": {
+                "name": "王城2_王母弟",
+                "bonusSoul_single": 40000,
+                "bonusSoul_multi": 40000
+            },
+            "1510801": {
+                "name": "王城2_ヒュージグリフィス",
+                "bonusSoul_single": 50000,
+                "bonusSoul_multi": 50000,
+                "humanityPointCountFlagIdTop": 8860,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1510811": {
+                "name": "王城2_ライトニングスモウ",
+                "bonusSoul_single": 50000,
+                "bonusSoul_multi": 50000
+            },
+            "1600800": {
+                "name": "深淵_ジャイールデーモン",
+                "bonusSoul_single": 60000,
+                "bonusSoul_multi": 60000,
+                "humanityPointCountFlagIdTop": 8880,
+                "humanityDropPoint1": 300,
+                "humanityDropPoint2": 315,
+                "humanityDropPoint3": 330,
+                "humanityDropPoint4": 360,
+                "humanityDropPoint5": 420,
+                "humanityDropPoint6": 480,
+                "humanityDropPoint7": 570,
+                "humanityDropPoint8": 660,
+                "humanityDropPoint9": 765,
+                "humanityDropPoint10": 900
+            },
+            "1700800": {
+                "name": "結晶塔_シース",
+                "bonusSoul_single": 60000,
+                "bonusSoul_multi": 60000,
+                "humanityPointCountFlagIdTop": 8920,
+                "humanityDropPoint1": 300,
+                "humanityDropPoint2": 315,
+                "humanityDropPoint3": 330,
+                "humanityDropPoint4": 360,
+                "humanityDropPoint5": 420,
+                "humanityDropPoint6": 480,
+                "humanityDropPoint7": 570,
+                "humanityDropPoint8": 660,
+                "humanityDropPoint9": 765,
+                "humanityDropPoint10": 900
+            },
+            "1800800": {
+                "name": "大墓_薪の王",
+                "bonusSoul_single": 70000,
+                "bonusSoul_multi": 70000,
+                "humanityPointCountFlagIdTop": 8940,
+                "humanityDropPoint1": 100,
+                "humanityDropPoint2": 105,
+                "humanityDropPoint3": 110,
+                "humanityDropPoint4": 120,
+                "humanityDropPoint5": 140,
+                "humanityDropPoint6": 160,
+                "humanityDropPoint7": 190,
+                "humanityDropPoint8": 220,
+                "humanityDropPoint9": 255,
+                "humanityDropPoint10": 300
+            },
+            "1810800": {
+                "name": "チュートリアル_ミニデブデーモン",
+                "bonusSoul_single": 2000,
+                "bonusSoul_multi": 2000
+            },
+            "1810810": {
+                "name": "チュートリアル_デブデーモン",
+                "bonusSoul_single": 20000,
+                "bonusSoul_multi": 20000
+            }
+        }
+    }
+}

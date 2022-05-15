@@ -1,0 +1,1393 @@
+{
+    "entry_id": 6,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\EquipMtrlSetParam.param",
+    "flags": 2,
+    "data": {
+        "param_type": "EQUIP_MTRL_SET_PARAM_ST",
+        "big_endian": false,
+        "unknown": 0,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "基本"
+            },
+            "1": {
+                "name": "基本＋１",
+                "materialId01": 1000,
+                "itemNum01": 1
+            },
+            "2": {
+                "name": "基本＋２",
+                "materialId01": 1000,
+                "itemNum01": 1
+            },
+            "3": {
+                "name": "基本＋３",
+                "materialId01": 1000,
+                "itemNum01": 2
+            },
+            "4": {
+                "name": "基本＋４",
+                "materialId01": 1000,
+                "itemNum01": 2
+            },
+            "5": {
+                "name": "基本＋５",
+                "materialId01": 1000,
+                "itemNum01": 3
+            },
+            "6": {
+                "name": "基本＋６",
+                "materialId01": 1010,
+                "itemNum01": 1
+            },
+            "7": {
+                "name": "基本＋７",
+                "materialId01": 1010,
+                "itemNum01": 1
+            },
+            "8": {
+                "name": "基本＋８",
+                "materialId01": 1010,
+                "itemNum01": 2
+            },
+            "9": {
+                "name": "基本＋９",
+                "materialId01": 1010,
+                "itemNum01": 2
+            },
+            "10": {
+                "name": "基本＋１０",
+                "materialId01": 1010,
+                "itemNum01": 3
+            },
+            "11": {
+                "name": "基本＋１１",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "12": {
+                "name": "基本＋１２",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "13": {
+                "name": "基本＋１３",
+                "materialId01": 1030,
+                "itemNum01": 2
+            },
+            "14": {
+                "name": "基本＋１４",
+                "materialId01": 1030,
+                "itemNum01": 3
+            },
+            "15": {
+                "name": "基本＋１５",
+                "materialId01": 1070,
+                "itemNum01": 1
+            },
+            "100": {
+                "name": "結晶",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "101": {
+                "name": "結晶＋１",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "102": {
+                "name": "結晶＋２",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "103": {
+                "name": "結晶＋３",
+                "materialId01": 1030,
+                "itemNum01": 2
+            },
+            "104": {
+                "name": "結晶＋４",
+                "materialId01": 1030,
+                "itemNum01": 3
+            },
+            "105": {
+                "name": "結晶＋５",
+                "materialId01": 1070,
+                "itemNum01": 1
+            },
+            "200": {
+                "name": "雷",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "201": {
+                "name": "雷＋１",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "202": {
+                "name": "雷＋２",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "203": {
+                "name": "雷＋３",
+                "materialId01": 1030,
+                "itemNum01": 2
+            },
+            "204": {
+                "name": "雷＋４",
+                "materialId01": 1030,
+                "itemNum01": 3
+            },
+            "205": {
+                "name": "雷＋５",
+                "materialId01": 1070,
+                "itemNum01": 1
+            },
+            "300": {
+                "name": "粗製",
+                "materialId01": 1010,
+                "itemNum01": 1
+            },
+            "301": {
+                "name": "粗製＋１",
+                "materialId01": 1010,
+                "itemNum01": 1
+            },
+            "302": {
+                "name": "粗製＋２",
+                "materialId01": 1010,
+                "itemNum01": 1
+            },
+            "303": {
+                "name": "粗製＋３",
+                "materialId01": 1010,
+                "itemNum01": 2
+            },
+            "304": {
+                "name": "粗製＋４",
+                "materialId01": 1010,
+                "itemNum01": 2
+            },
+            "305": {
+                "name": "粗製＋５",
+                "materialId01": 1010,
+                "itemNum01": 3
+            },
+            "400": {
+                "name": "魔法Ａ",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "401": {
+                "name": "魔法Ａ＋１",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "402": {
+                "name": "魔法Ａ＋２",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "403": {
+                "name": "魔法Ａ＋３",
+                "materialId01": 1020,
+                "itemNum01": 2
+            },
+            "404": {
+                "name": "魔法Ａ＋４",
+                "materialId01": 1020,
+                "itemNum01": 2
+            },
+            "405": {
+                "name": "魔法Ａ＋５",
+                "materialId01": 1020,
+                "itemNum01": 3
+            },
+            "406": {
+                "name": "魔法Ａ＋６",
+                "materialId01": 1040,
+                "itemNum01": 1
+            },
+            "407": {
+                "name": "魔法Ａ＋７",
+                "materialId01": 1040,
+                "itemNum01": 1
+            },
+            "408": {
+                "name": "魔法Ａ＋８",
+                "materialId01": 1040,
+                "itemNum01": 2
+            },
+            "409": {
+                "name": "魔法Ａ＋９",
+                "materialId01": 1040,
+                "itemNum01": 3
+            },
+            "410": {
+                "name": "魔法Ａ＋１０",
+                "materialId01": 1080,
+                "itemNum01": 1
+            },
+            "500": {
+                "name": "魔法B",
+                "materialId01": 1040,
+                "itemNum01": 1
+            },
+            "501": {
+                "name": "魔法B＋１",
+                "materialId01": 1040,
+                "itemNum01": 1
+            },
+            "502": {
+                "name": "魔法B＋２",
+                "materialId01": 1040,
+                "itemNum01": 1
+            },
+            "503": {
+                "name": "魔法B＋３",
+                "materialId01": 1040,
+                "itemNum01": 2
+            },
+            "504": {
+                "name": "魔法B＋４",
+                "materialId01": 1040,
+                "itemNum01": 3
+            },
+            "505": {
+                "name": "魔法B＋５",
+                "materialId01": 1080,
+                "itemNum01": 1
+            },
+            "600": {
+                "name": "神聖",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "601": {
+                "name": "神聖＋１",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "602": {
+                "name": "神聖＋２",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "603": {
+                "name": "神聖＋３",
+                "materialId01": 1020,
+                "itemNum01": 2
+            },
+            "604": {
+                "name": "神聖＋４",
+                "materialId01": 1020,
+                "itemNum01": 2
+            },
+            "605": {
+                "name": "神聖＋５",
+                "materialId01": 1020,
+                "itemNum01": 3
+            },
+            "606": {
+                "name": "神聖＋６",
+                "materialId01": 1050,
+                "itemNum01": 1
+            },
+            "607": {
+                "name": "神聖＋７",
+                "materialId01": 1050,
+                "itemNum01": 1
+            },
+            "608": {
+                "name": "神聖＋８",
+                "materialId01": 1050,
+                "itemNum01": 2
+            },
+            "609": {
+                "name": "神聖＋９",
+                "materialId01": 1050,
+                "itemNum01": 3
+            },
+            "610": {
+                "name": "神聖＋１０",
+                "materialId01": 1090,
+                "itemNum01": 1
+            },
+            "700": {
+                "name": "暗黒",
+                "materialId01": 1050,
+                "itemNum01": 1
+            },
+            "701": {
+                "name": "暗黒＋１",
+                "materialId01": 1050,
+                "itemNum01": 1
+            },
+            "702": {
+                "name": "暗黒＋２",
+                "materialId01": 1050,
+                "itemNum01": 1
+            },
+            "703": {
+                "name": "暗黒＋３",
+                "materialId01": 1050,
+                "itemNum01": 2
+            },
+            "704": {
+                "name": "暗黒＋４",
+                "materialId01": 1050,
+                "itemNum01": 3
+            },
+            "705": {
+                "name": "暗黒＋５",
+                "materialId01": 1090,
+                "itemNum01": 1
+            },
+            "800": {
+                "name": "炎",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "801": {
+                "name": "炎＋１",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "802": {
+                "name": "炎＋２",
+                "materialId01": 1020,
+                "itemNum01": 1
+            },
+            "803": {
+                "name": "炎＋３",
+                "materialId01": 1020,
+                "itemNum01": 2
+            },
+            "804": {
+                "name": "炎＋４",
+                "materialId01": 1020,
+                "itemNum01": 2
+            },
+            "805": {
+                "name": "炎＋５",
+                "materialId01": 1020,
+                "itemNum01": 3
+            },
+            "806": {
+                "name": "炎＋６",
+                "materialId01": 1060,
+                "itemNum01": 1
+            },
+            "807": {
+                "name": "炎＋７",
+                "materialId01": 1060,
+                "itemNum01": 1
+            },
+            "808": {
+                "name": "炎＋８",
+                "materialId01": 1060,
+                "itemNum01": 2
+            },
+            "809": {
+                "name": "炎＋９",
+                "materialId01": 1060,
+                "itemNum01": 3
+            },
+            "810": {
+                "name": "炎＋１０",
+                "materialId01": 1100,
+                "itemNum01": 1
+            },
+            "900": {
+                "name": "混沌の炎",
+                "materialId01": 1060,
+                "itemNum01": 1
+            },
+            "901": {
+                "name": "混沌の炎＋１",
+                "materialId01": 1060,
+                "itemNum01": 1
+            },
+            "902": {
+                "name": "混沌の炎＋２",
+                "materialId01": 1060,
+                "itemNum01": 1
+            },
+            "903": {
+                "name": "混沌の炎＋３",
+                "materialId01": 1060,
+                "itemNum01": 2
+            },
+            "904": {
+                "name": "混沌の炎＋４",
+                "materialId01": 1060,
+                "itemNum01": 3
+            },
+            "905": {
+                "name": "混沌の炎＋５",
+                "materialId01": 1100,
+                "itemNum01": 1
+            },
+            "1000": {
+                "name": "リセット"
+            },
+            "1100": {
+                "name": "ドラゴン強化"
+            },
+            "1101": {
+                "name": "ドラゴン強化＋１",
+                "materialId01": 1110,
+                "itemNum01": 1
+            },
+            "1102": {
+                "name": "ドラゴン強化＋２",
+                "materialId01": 1110,
+                "itemNum01": 1
+            },
+            "1103": {
+                "name": "ドラゴン強化＋３",
+                "materialId01": 1110,
+                "itemNum01": 2
+            },
+            "1104": {
+                "name": "ドラゴン強化＋４",
+                "materialId01": 1110,
+                "itemNum01": 2
+            },
+            "1105": {
+                "name": "ドラゴン強化＋５",
+                "materialId01": 1110,
+                "itemNum01": 4
+            },
+            "1200": {
+                "name": "特別強化"
+            },
+            "1201": {
+                "name": "特別強化＋１",
+                "materialId01": 1130,
+                "itemNum01": 1
+            },
+            "1202": {
+                "name": "特別強化＋２",
+                "materialId01": 1130,
+                "itemNum01": 1
+            },
+            "1203": {
+                "name": "特別強化＋３",
+                "materialId01": 1130,
+                "itemNum01": 2
+            },
+            "1204": {
+                "name": "特別強化＋４",
+                "materialId01": 1130,
+                "itemNum01": 2
+            },
+            "1205": {
+                "name": "特別強化＋５",
+                "materialId01": 1130,
+                "itemNum01": 4
+            },
+            "1300": {
+                "name": "転職",
+                "materialId01": 701,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "1301": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1302": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1303": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1304": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1305": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "1400": {
+                "name": "転職",
+                "materialId01": 702,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "1401": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1402": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1403": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1404": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1405": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "1500": {
+                "name": "転職",
+                "materialId01": 700,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "1501": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1502": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1503": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1504": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1505": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "1600": {
+                "name": "転職",
+                "materialId01": 704,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "1601": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1602": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1603": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1604": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1605": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "1700": {
+                "name": "転職",
+                "materialId01": 705,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "1701": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1702": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1703": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1704": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1705": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "1800": {
+                "name": "転職",
+                "materialId01": 703,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "1801": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1802": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1803": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1804": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1805": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "1900": {
+                "name": "転職",
+                "materialId01": 706,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "1901": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1902": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "1903": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1904": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "1905": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "2000": {
+                "name": "転職",
+                "materialId01": 707,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "2001": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2002": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2003": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2004": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2005": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "2100": {
+                "name": "転職",
+                "materialId01": 708,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "2101": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2102": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2103": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2104": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2105": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "2200": {
+                "name": "転職",
+                "materialId01": 703,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "2201": {
+                "name": "強化＋１",
+                "materialId01": 1110,
+                "itemNum01": 1
+            },
+            "2202": {
+                "name": "強化＋２",
+                "materialId01": 1110,
+                "itemNum01": 1
+            },
+            "2203": {
+                "name": "強化＋３",
+                "materialId01": 1110,
+                "itemNum01": 2
+            },
+            "2204": {
+                "name": "強化＋４",
+                "materialId01": 1110,
+                "itemNum01": 2
+            },
+            "2205": {
+                "name": "強化＋５",
+                "materialId01": 1110,
+                "itemNum01": 4
+            },
+            "2300": {
+                "name": "転職"
+            },
+            "2301": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2302": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2303": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2304": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2305": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "2400": {
+                "name": "転職",
+                "materialId01": 710,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "2401": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2402": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2403": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2404": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2405": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "2500": {
+                "name": "転職",
+                "materialId01": 711,
+                "itemNum01": 1,
+                "isDisableDispNum01:1": true
+            },
+            "2501": {
+                "name": "強化＋１",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2502": {
+                "name": "強化＋２",
+                "materialId01": 1120,
+                "itemNum01": 1
+            },
+            "2503": {
+                "name": "強化＋３",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2504": {
+                "name": "強化＋４",
+                "materialId01": 1120,
+                "itemNum01": 2
+            },
+            "2505": {
+                "name": "強化＋５",
+                "materialId01": 1120,
+                "itemNum01": 4
+            },
+            "3000": {
+                "name": "EN弾Ａ",
+                "materialId01": 3000,
+                "itemNum01": 1
+            },
+            "3010": {
+                "name": "EN弾Ａ２",
+                "materialId01": 3010,
+                "itemNum01": 1
+            },
+            "3020": {
+                "name": "EN弾Ｂ",
+                "materialId01": 3020,
+                "itemNum01": 1
+            },
+            "3030": {
+                "name": "EN弾Ｂ２",
+                "materialId01": 3030,
+                "itemNum01": 1
+            },
+            "3040": {
+                "name": "EN弾Ｃ",
+                "materialId01": 3040,
+                "itemNum01": 1
+            },
+            "3050": {
+                "name": "EN弾Ｃ２",
+                "materialId01": 3050,
+                "itemNum01": 1
+            },
+            "3060": {
+                "name": "EN弾Ｄ",
+                "materialId01": 3060,
+                "itemNum01": 1
+            },
+            "3070": {
+                "name": "EN弾Ｄ２",
+                "materialId01": 3070,
+                "itemNum01": 1
+            },
+            "3100": {
+                "name": "武器魔法強化1",
+                "materialId01": 3100,
+                "itemNum01": 1
+            },
+            "3110": {
+                "name": "武器魔法強化2",
+                "materialId01": 3110,
+                "itemNum01": 1
+            },
+            "3120": {
+                "name": "武器魔法強化3",
+                "materialId01": 3120,
+                "itemNum01": 1
+            },
+            "3300": {
+                "name": "盾強化1",
+                "materialId01": 3300,
+                "itemNum01": 1
+            },
+            "3310": {
+                "name": "盾強化2",
+                "materialId01": 3310,
+                "itemNum01": 1
+            },
+            "3400": {
+                "name": "インビジブルウェポン",
+                "materialId01": 3400,
+                "itemNum01": 1
+            },
+            "3410": {
+                "name": "インビジブルボディ",
+                "materialId01": 3410,
+                "itemNum01": 1
+            },
+            "3500": {
+                "name": "ライト",
+                "materialId01": 3500,
+                "itemNum01": 1
+            },
+            "3510": {
+                "name": "サイレンス",
+                "materialId01": 3510,
+                "itemNum01": 1
+            },
+            "3520": {
+                "name": "サウンド",
+                "materialId01": 3520,
+                "itemNum01": 1
+            },
+            "3530": {
+                "name": "修復",
+                "materialId01": 3530,
+                "itemNum01": 1
+            },
+            "3540": {
+                "name": "フォーリングコントロール",
+                "materialId01": 3540,
+                "itemNum01": 1
+            },
+            "3550": {
+                "name": "擬態",
+                "materialId01": 3550,
+                "itemNum01": 1
+            },
+            "3600": {
+                "name": "解呪",
+                "materialId01": 3600,
+                "itemNum01": 1
+            },
+            "3610": {
+                "name": "治癒",
+                "materialId01": 3610,
+                "itemNum01": 1
+            },
+            "3700": {
+                "name": "結晶ビーム",
+                "materialId01": 3700,
+                "itemNum01": 1
+            },
+            "3710": {
+                "name": "【DLC】闇の玉",
+                "materialId01": 3710,
+                "itemNum01": 1
+            },
+            "3720": {
+                "name": "【DLC】闇の飛沫",
+                "materialId01": 3720,
+                "itemNum01": 1
+            },
+            "3730": {
+                "name": "【DLC】闇の霧",
+                "materialId01": 3730,
+                "itemNum01": 1
+            },
+            "3740": {
+                "name": "【DLC】追う者たち",
+                "materialId01": 3740,
+                "itemNum01": 1
+            },
+            "4000": {
+                "name": "ファイアボール",
+                "materialId01": 4000,
+                "itemNum01": 1
+            },
+            "4010": {
+                "name": "ファイアボール２",
+                "materialId01": 4010,
+                "itemNum01": 1
+            },
+            "4020": {
+                "name": "ファイアボール３",
+                "materialId01": 4020,
+                "itemNum01": 1
+            },
+            "4030": {
+                "name": "ファイアストーム",
+                "materialId01": 4030,
+                "itemNum01": 1
+            },
+            "4040": {
+                "name": "ファイアストーム２",
+                "materialId01": 4040,
+                "itemNum01": 1
+            },
+            "4050": {
+                "name": "火炎放射",
+                "materialId01": 4050,
+                "itemNum01": 1
+            },
+            "4060": {
+                "name": "炎のムチ",
+                "materialId01": 4060,
+                "itemNum01": 1
+            },
+            "4100": {
+                "name": "近接炎1",
+                "materialId01": 4100,
+                "itemNum01": 1
+            },
+            "4110": {
+                "name": "近接炎2",
+                "materialId01": 4110,
+                "itemNum01": 1
+            },
+            "4200": {
+                "name": "毒の霧",
+                "materialId01": 4200,
+                "itemNum01": 1
+            },
+            "4210": {
+                "name": "猛毒の霧",
+                "materialId01": 4210,
+                "itemNum01": 1
+            },
+            "4220": {
+                "name": "酸の霧",
+                "materialId01": 4220,
+                "itemNum01": 1
+            },
+            "4300": {
+                "name": "鉄の体",
+                "materialId01": 4300,
+                "itemNum01": 1
+            },
+            "4310": {
+                "name": "水のヴェール",
+                "materialId01": 4310,
+                "itemNum01": 1
+            },
+            "4360": {
+                "name": "魅了",
+                "materialId01": 4360,
+                "itemNum01": 1
+            },
+            "4400": {
+                "name": "狂気の力",
+                "materialId01": 4400,
+                "itemNum01": 1
+            },
+            "4500": {
+                "name": "カオス_ファイアボール",
+                "materialId01": 4500,
+                "itemNum01": 1
+            },
+            "4510": {
+                "name": "カオス_ファイアストーム",
+                "materialId01": 4510,
+                "itemNum01": 1
+            },
+            "4520": {
+                "name": "カオス炎のムチ",
+                "materialId01": 4520,
+                "itemNum01": 1
+            },
+            "4530": {
+                "name": "【DLC】黒炎",
+                "materialId01": 4530,
+                "itemNum01": 1
+            },
+            "5000": {
+                "name": "回復1",
+                "materialId01": 5000,
+                "itemNum01": 1
+            },
+            "5010": {
+                "name": "回復2",
+                "materialId01": 5010,
+                "itemNum01": 1
+            },
+            "5020": {
+                "name": "回復3",
+                "materialId01": 5020,
+                "itemNum01": 1
+            },
+            "5030": {
+                "name": "回復4",
+                "materialId01": 5030,
+                "itemNum01": 1
+            },
+            "5040": {
+                "name": "リジェネ",
+                "materialId01": 5040,
+                "itemNum01": 1
+            },
+            "5050": {
+                "name": "グレートリジェネ",
+                "materialId01": 5050,
+                "itemNum01": 1
+            },
+            "5100": {
+                "name": "召喚1",
+                "materialId01": 5100,
+                "itemNum01": 1
+            },
+            "5110": {
+                "name": "召喚2",
+                "materialId01": 5110,
+                "itemNum01": 1
+            },
+            "5200": {
+                "name": "一度きり復活",
+                "materialId01": 5200,
+                "itemNum01": 1
+            },
+            "5210": {
+                "name": "帰還",
+                "materialId01": 5210,
+                "itemNum01": 1
+            },
+            "5300": {
+                "name": "フォース1",
+                "materialId01": 5300,
+                "itemNum01": 1
+            },
+            "5310": {
+                "name": "フォース2",
+                "materialId01": 5310,
+                "itemNum01": 1
+            },
+            "5320": {
+                "name": "フォース3",
+                "materialId01": 5320,
+                "itemNum01": 1
+            },
+            "5400": {
+                "name": "ヒント",
+                "materialId01": 5400,
+                "itemNum01": 1
+            },
+            "5500": {
+                "name": "雷1",
+                "materialId01": 5500,
+                "itemNum01": 1
+            },
+            "5510": {
+                "name": "雷2",
+                "materialId01": 5510,
+                "itemNum01": 1
+            },
+            "5520": {
+                "name": "雷3",
+                "materialId01": 5520,
+                "itemNum01": 1
+            },
+            "5600": {
+                "name": "魔法防護1",
+                "materialId01": 5600,
+                "itemNum01": 1
+            },
+            "5610": {
+                "name": "魔法防護2",
+                "materialId01": 5610,
+                "itemNum01": 1
+            },
+            "5700": {
+                "name": "因果応報",
+                "materialId01": 5700,
+                "itemNum01": 1
+            },
+            "5800": {
+                "name": "グラビティ",
+                "materialId01": 5800,
+                "itemNum01": 1
+            },
+            "5810": {
+                "name": "反魔法領域",
+                "materialId01": 5810,
+                "itemNum01": 1
+            },
+            "5900": {
+                "name": "太陽の剣",
+                "materialId01": 5900,
+                "itemNum01": 1
+            },
+            "5910": {
+                "name": "月光の剣",
+                "materialId01": 5910,
+                "itemNum01": 1
+            },
+            "7000": {
+                "name": "なし"
+            },
+            "7001": {
+                "name": "強化＋１",
+                "materialId01": 1000,
+                "itemNum01": 1
+            },
+            "7002": {
+                "name": "強化＋２",
+                "materialId01": 1000,
+                "itemNum01": 1
+            },
+            "7003": {
+                "name": "強化＋３",
+                "materialId01": 1000,
+                "itemNum01": 2
+            },
+            "7004": {
+                "name": "強化＋４",
+                "materialId01": 1010,
+                "itemNum01": 1
+            },
+            "7005": {
+                "name": "強化＋５",
+                "materialId01": 1010,
+                "itemNum01": 1
+            },
+            "7006": {
+                "name": "強化＋６",
+                "materialId01": 1010,
+                "itemNum01": 2
+            },
+            "7007": {
+                "name": "強化＋７",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "7008": {
+                "name": "強化＋８",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "7009": {
+                "name": "強化＋９",
+                "materialId01": 1030,
+                "itemNum01": 2
+            },
+            "7010": {
+                "name": "強化＋１０",
+                "materialId01": 1070,
+                "itemNum01": 1
+            },
+            "7100": {
+                "name": "なし"
+            },
+            "7101": {
+                "name": "強化＋１",
+                "materialId01": 1130,
+                "itemNum01": 1
+            },
+            "7102": {
+                "name": "強化＋２",
+                "materialId01": 1130,
+                "itemNum01": 1
+            },
+            "7103": {
+                "name": "強化＋３",
+                "materialId01": 1130,
+                "itemNum01": 2
+            },
+            "7104": {
+                "name": "強化＋４",
+                "materialId01": 1130,
+                "itemNum01": 2
+            },
+            "7105": {
+                "name": "強化＋５",
+                "materialId01": 1130,
+                "itemNum01": 4
+            },
+            "7200": {
+                "name": "なし"
+            },
+            "7201": {
+                "name": "強化＋１",
+                "materialId01": 1000,
+                "itemNum01": 1
+            },
+            "7202": {
+                "name": "強化＋２",
+                "materialId01": 1000,
+                "itemNum01": 2
+            },
+            "7203": {
+                "name": "強化＋３",
+                "materialId01": 1000,
+                "itemNum01": 3
+            },
+            "7204": {
+                "name": "強化＋４",
+                "materialId01": 1010,
+                "itemNum01": 1
+            },
+            "7205": {
+                "name": "強化＋５",
+                "materialId01": 1010,
+                "itemNum01": 2
+            },
+            "7206": {
+                "name": "強化＋６",
+                "materialId01": 1010,
+                "itemNum01": 3
+            },
+            "7207": {
+                "name": "強化＋７",
+                "materialId01": 1030,
+                "itemNum01": 1
+            },
+            "7208": {
+                "name": "強化＋８",
+                "materialId01": 1030,
+                "itemNum01": 2
+            },
+            "7209": {
+                "name": "強化＋９",
+                "materialId01": 1030,
+                "itemNum01": 3
+            },
+            "7210": {
+                "name": "強化＋１０",
+                "materialId01": 1070,
+                "itemNum01": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,191 @@
+{
+    "entry_id": 5,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\ReinforceParamProtector.param",
+    "flags": 2,
+    "data": {
+        "param_type": "REINFORCE_PARAM_PROTECTOR_ST",
+        "big_endian": false,
+        "unknown": 0,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "通常"
+            },
+            "1": {
+                "name": "通常＋1",
+                "physicsDefRate": 1.100000023841858,
+                "magicDefRate": 1.100000023841858,
+                "fireDefRate": 1.100000023841858,
+                "thunderDefRate": 1.100000023841858,
+                "materialSetId": 1
+            },
+            "2": {
+                "name": "通常＋2",
+                "physicsDefRate": 1.2000000476837158,
+                "magicDefRate": 1.2000000476837158,
+                "fireDefRate": 1.2000000476837158,
+                "thunderDefRate": 1.2000000476837158,
+                "materialSetId": 2
+            },
+            "3": {
+                "name": "通常＋3",
+                "physicsDefRate": 1.2999999523162842,
+                "magicDefRate": 1.2999999523162842,
+                "fireDefRate": 1.2999999523162842,
+                "thunderDefRate": 1.2999999523162842,
+                "materialSetId": 3
+            },
+            "4": {
+                "name": "通常＋4",
+                "physicsDefRate": 1.4299999475479126,
+                "magicDefRate": 1.4299999475479126,
+                "fireDefRate": 1.4299999475479126,
+                "thunderDefRate": 1.4299999475479126,
+                "resistPoisonRate": 1.0499999523162842,
+                "resistDiseaseRate": 1.0499999523162842,
+                "resistBloodRate": 1.0499999523162842,
+                "resistCurseRate": 1.0499999523162842,
+                "materialSetId": 4
+            },
+            "5": {
+                "name": "通常＋5",
+                "physicsDefRate": 1.559999942779541,
+                "magicDefRate": 1.559999942779541,
+                "fireDefRate": 1.559999942779541,
+                "thunderDefRate": 1.559999942779541,
+                "resistPoisonRate": 1.100000023841858,
+                "resistDiseaseRate": 1.100000023841858,
+                "resistBloodRate": 1.100000023841858,
+                "resistCurseRate": 1.100000023841858,
+                "materialSetId": 5
+            },
+            "6": {
+                "name": "通常＋6",
+                "physicsDefRate": 1.690000057220459,
+                "magicDefRate": 1.690000057220459,
+                "fireDefRate": 1.690000057220459,
+                "thunderDefRate": 1.690000057220459,
+                "resistPoisonRate": 1.149999976158142,
+                "resistDiseaseRate": 1.149999976158142,
+                "resistBloodRate": 1.149999976158142,
+                "resistCurseRate": 1.149999976158142,
+                "materialSetId": 6
+            },
+            "7": {
+                "name": "通常＋7",
+                "physicsDefRate": 1.850000023841858,
+                "magicDefRate": 1.850000023841858,
+                "fireDefRate": 1.850000023841858,
+                "thunderDefRate": 1.850000023841858,
+                "resistPoisonRate": 1.2000000476837158,
+                "resistDiseaseRate": 1.2000000476837158,
+                "resistBloodRate": 1.2000000476837158,
+                "resistCurseRate": 1.2000000476837158,
+                "materialSetId": 7
+            },
+            "8": {
+                "name": "通常＋8",
+                "physicsDefRate": 2.009999990463257,
+                "magicDefRate": 2.009999990463257,
+                "fireDefRate": 2.009999990463257,
+                "thunderDefRate": 2.009999990463257,
+                "resistPoisonRate": 1.25,
+                "resistDiseaseRate": 1.25,
+                "resistBloodRate": 1.25,
+                "resistCurseRate": 1.25,
+                "materialSetId": 8
+            },
+            "9": {
+                "name": "通常＋9",
+                "physicsDefRate": 2.1700000762939453,
+                "magicDefRate": 2.1700000762939453,
+                "fireDefRate": 2.1700000762939453,
+                "thunderDefRate": 2.1700000762939453,
+                "resistPoisonRate": 1.2999999523162842,
+                "resistDiseaseRate": 1.2999999523162842,
+                "resistBloodRate": 1.2999999523162842,
+                "resistCurseRate": 1.2999999523162842,
+                "materialSetId": 9
+            },
+            "10": {
+                "name": "通常＋10",
+                "physicsDefRate": 2.4200000762939453,
+                "magicDefRate": 2.4200000762939453,
+                "fireDefRate": 2.4200000762939453,
+                "thunderDefRate": 2.4200000762939453,
+                "resistPoisonRate": 1.399999976158142,
+                "resistDiseaseRate": 1.399999976158142,
+                "resistBloodRate": 1.399999976158142,
+                "resistCurseRate": 1.399999976158142,
+                "materialSetId": 10
+            },
+            "100": {
+                "name": "特殊"
+            },
+            "101": {
+                "name": "特殊＋1",
+                "physicsDefRate": 1.0800000429153442,
+                "magicDefRate": 1.0800000429153442,
+                "fireDefRate": 1.0800000429153442,
+                "thunderDefRate": 1.0800000429153442,
+                "resistPoisonRate": 1.0499999523162842,
+                "resistDiseaseRate": 1.0499999523162842,
+                "resistBloodRate": 1.0499999523162842,
+                "resistCurseRate": 1.0499999523162842,
+                "materialSetId": 1
+            },
+            "102": {
+                "name": "特殊＋2",
+                "physicsDefRate": 1.190000057220459,
+                "magicDefRate": 1.190000057220459,
+                "fireDefRate": 1.190000057220459,
+                "thunderDefRate": 1.190000057220459,
+                "resistPoisonRate": 1.090000033378601,
+                "resistDiseaseRate": 1.090000033378601,
+                "resistBloodRate": 1.090000033378601,
+                "resistCurseRate": 1.090000033378601,
+                "materialSetId": 2
+            },
+            "103": {
+                "name": "特殊＋3",
+                "physicsDefRate": 1.2899999618530273,
+                "magicDefRate": 1.2899999618530273,
+                "fireDefRate": 1.2899999618530273,
+                "thunderDefRate": 1.2899999618530273,
+                "resistPoisonRate": 1.1399999856948853,
+                "resistDiseaseRate": 1.1399999856948853,
+                "resistBloodRate": 1.1399999856948853,
+                "resistCurseRate": 1.1399999856948853,
+                "materialSetId": 3
+            },
+            "104": {
+                "name": "特殊＋4",
+                "physicsDefRate": 1.3899999856948853,
+                "magicDefRate": 1.3899999856948853,
+                "fireDefRate": 1.3899999856948853,
+                "thunderDefRate": 1.3899999856948853,
+                "resistPoisonRate": 1.1799999475479126,
+                "resistDiseaseRate": 1.1799999475479126,
+                "resistBloodRate": 1.1799999475479126,
+                "resistCurseRate": 1.1799999475479126,
+                "materialSetId": 4
+            },
+            "105": {
+                "name": "特殊＋5",
+                "physicsDefRate": 1.5499999523162842,
+                "magicDefRate": 1.5499999523162842,
+                "fireDefRate": 1.5499999523162842,
+                "thunderDefRate": 1.5499999523162842,
+                "resistPoisonRate": 1.2699999809265137,
+                "resistDiseaseRate": 1.2699999809265137,
+                "resistBloodRate": 1.2699999809265137,
+                "resistCurseRate": 1.2699999809265137,
+                "materialSetId": 5
+            }
+        }
+    }
+}

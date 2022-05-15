@@ -1,0 +1,4111 @@
+{
+    "entry_id": 4,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\ReinforceParamWeapon.param",
+    "flags": 2,
+    "data": {
+        "param_type": "REINFORCE_PARAM_WEAPON_ST",
+        "big_endian": false,
+        "unknown": 0,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": -1,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "通常"
+            },
+            "1": {
+                "name": "通常＋1",
+                "physicsAtkRate": 1.100000023841858,
+                "staminaAtkRate": 1.100000023841858,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 1,
+                "reinforcementLevel": 1
+            },
+            "2": {
+                "name": "通常＋2",
+                "physicsAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 1.2000000476837158,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 2,
+                "reinforcementLevel": 2
+            },
+            "3": {
+                "name": "通常＋3",
+                "physicsAtkRate": 1.2999999523162842,
+                "staminaAtkRate": 1.2999999523162842,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 3
+            },
+            "4": {
+                "name": "通常＋4",
+                "physicsAtkRate": 1.399999976158142,
+                "staminaAtkRate": 1.399999976158142,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 4,
+                "reinforcementLevel": 4
+            },
+            "5": {
+                "name": "通常＋5",
+                "physicsAtkRate": 1.5,
+                "staminaAtkRate": 1.5,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 5
+            },
+            "6": {
+                "name": "通常＋6",
+                "physicsAtkRate": 1.600000023841858,
+                "staminaAtkRate": 1.600000023841858,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 6,
+                "reinforcementLevel": 6
+            },
+            "7": {
+                "name": "通常＋7",
+                "physicsAtkRate": 1.7000000476837158,
+                "staminaAtkRate": 1.7000000476837158,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 7,
+                "reinforcementLevel": 7
+            },
+            "8": {
+                "name": "通常＋8",
+                "physicsAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 1.7999999523162842,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 8,
+                "reinforcementLevel": 8
+            },
+            "9": {
+                "name": "通常＋9",
+                "physicsAtkRate": 1.899999976158142,
+                "staminaAtkRate": 1.899999976158142,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 9,
+                "reinforcementLevel": 9
+            },
+            "10": {
+                "name": "通常＋10",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 10,
+                "reinforcementLevel": 10
+            },
+            "11": {
+                "name": "通常＋11",
+                "physicsAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 11,
+                "reinforcementLevel": 11
+            },
+            "12": {
+                "name": "通常＋12",
+                "physicsAtkRate": 2.200000047683716,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 12,
+                "reinforcementLevel": 12
+            },
+            "13": {
+                "name": "通常＋13",
+                "physicsAtkRate": 2.299999952316284,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 13,
+                "reinforcementLevel": 13
+            },
+            "14": {
+                "name": "通常＋14",
+                "physicsAtkRate": 2.4000000953674316,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "materialSetId": 14,
+                "reinforcementLevel": 14
+            },
+            "15": {
+                "name": "通常＋15",
+                "physicsAtkRate": 2.5,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "materialSetId": 15,
+                "reinforcementLevel": 15
+            },
+            "100": {
+                "name": "結晶",
+                "physicsAtkRate": 2.200000047683716,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "reinforcementLevel": 10
+            },
+            "101": {
+                "name": "結晶＋1",
+                "physicsAtkRate": 2.299999952316284,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "102": {
+                "name": "結晶＋2",
+                "physicsAtkRate": 2.4000000953674316,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "103": {
+                "name": "結晶＋3",
+                "physicsAtkRate": 2.5,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "104": {
+                "name": "結晶＋4",
+                "physicsAtkRate": 2.5999999046325684,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "105": {
+                "name": "結晶＋5",
+                "physicsAtkRate": 2.700000047683716,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "200": {
+                "name": "雷",
+                "physicsAtkRate": 1.7999999523162842,
+                "thunderAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "201": {
+                "name": "雷＋1",
+                "physicsAtkRate": 1.940000057220459,
+                "thunderAtkRate": 1.940000057220459,
+                "staminaAtkRate": 2.0999999046325684,
+                "thunderGuardCutRate": 1.0800000429153442,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "202": {
+                "name": "雷＋2",
+                "physicsAtkRate": 2.0799999237060547,
+                "thunderAtkRate": 2.0799999237060547,
+                "staminaAtkRate": 2.200000047683716,
+                "thunderGuardCutRate": 1.159999966621399,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "203": {
+                "name": "雷＋3",
+                "physicsAtkRate": 2.2200000286102295,
+                "thunderAtkRate": 2.2200000286102295,
+                "staminaAtkRate": 2.299999952316284,
+                "thunderGuardCutRate": 1.2400000095367432,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "204": {
+                "name": "雷＋4",
+                "physicsAtkRate": 2.359999895095825,
+                "thunderAtkRate": 2.359999895095825,
+                "staminaAtkRate": 2.4000000953674316,
+                "thunderGuardCutRate": 1.3200000524520874,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "205": {
+                "name": "雷＋5",
+                "physicsAtkRate": 2.5,
+                "thunderAtkRate": 2.5,
+                "staminaAtkRate": 2.5,
+                "thunderGuardCutRate": 1.399999976158142,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "300": {
+                "name": "粗製",
+                "physicsAtkRate": 1.5,
+                "staminaAtkRate": 1.7000000476837158,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "reinforcementLevel": 5
+            },
+            "301": {
+                "name": "粗製＋1",
+                "physicsAtkRate": 1.600000023841858,
+                "staminaAtkRate": 1.7999999523162842,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "302": {
+                "name": "粗製＋2",
+                "physicsAtkRate": 1.7000000476837158,
+                "staminaAtkRate": 1.899999976158142,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "303": {
+                "name": "粗製＋3",
+                "physicsAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "304": {
+                "name": "粗製＋4",
+                "physicsAtkRate": 1.899999976158142,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "305": {
+                "name": "粗製＋5",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "400": {
+                "name": "魔法A",
+                "physicsAtkRate": 1.5,
+                "magicAtkRate": 1.5,
+                "staminaAtkRate": 1.5,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "reinforcementLevel": 5
+            },
+            "401": {
+                "name": "魔法A＋1",
+                "physicsAtkRate": 1.600000023841858,
+                "magicAtkRate": 1.600000023841858,
+                "staminaAtkRate": 1.600000023841858,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "402": {
+                "name": "魔法A＋2",
+                "physicsAtkRate": 1.7000000476837158,
+                "magicAtkRate": 1.7000000476837158,
+                "staminaAtkRate": 1.7000000476837158,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "403": {
+                "name": "魔法A＋3",
+                "physicsAtkRate": 1.7999999523162842,
+                "magicAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 1.7999999523162842,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "404": {
+                "name": "魔法A＋4",
+                "physicsAtkRate": 1.899999976158142,
+                "magicAtkRate": 1.899999976158142,
+                "staminaAtkRate": 1.899999976158142,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "405": {
+                "name": "魔法A＋5",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "406": {
+                "name": "魔法A＋6",
+                "physicsAtkRate": 2.0999999046325684,
+                "magicAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "407": {
+                "name": "魔法A＋7",
+                "physicsAtkRate": 2.200000047683716,
+                "magicAtkRate": 2.200000047683716,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "408": {
+                "name": "魔法A＋8",
+                "physicsAtkRate": 2.299999952316284,
+                "magicAtkRate": 2.299999952316284,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "409": {
+                "name": "魔法A＋9",
+                "physicsAtkRate": 2.4000000953674316,
+                "magicAtkRate": 2.4000000953674316,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.2000000476837158,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "410": {
+                "name": "魔法A＋10",
+                "physicsAtkRate": 2.5,
+                "magicAtkRate": 2.5,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.2000000476837158,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "500": {
+                "name": "魔法B",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "reinforcementLevel": 10
+            },
+            "501": {
+                "name": "魔法B＋1",
+                "physicsAtkRate": 2.0799999237060547,
+                "magicAtkRate": 2.059999942779541,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.2799999713897705,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "502": {
+                "name": "魔法B＋2",
+                "physicsAtkRate": 2.1600000858306885,
+                "magicAtkRate": 2.119999885559082,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.409999966621399,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "503": {
+                "name": "魔法B＋3",
+                "physicsAtkRate": 2.240000009536743,
+                "magicAtkRate": 2.180000066757202,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.5399999618530273,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "504": {
+                "name": "魔法B＋4",
+                "physicsAtkRate": 2.319999933242798,
+                "magicAtkRate": 2.240000009536743,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.6699999570846558,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "505": {
+                "name": "魔法B＋5",
+                "physicsAtkRate": 2.4000000953674316,
+                "magicAtkRate": 2.319999933242798,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.7999999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "600": {
+                "name": "神聖",
+                "physicsAtkRate": 1.5,
+                "magicAtkRate": 1.5,
+                "staminaAtkRate": 1.5,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "reinforcementLevel": 5
+            },
+            "601": {
+                "name": "神聖＋1",
+                "physicsAtkRate": 1.600000023841858,
+                "magicAtkRate": 1.600000023841858,
+                "staminaAtkRate": 1.600000023841858,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "602": {
+                "name": "神聖＋2",
+                "physicsAtkRate": 1.7000000476837158,
+                "magicAtkRate": 1.7000000476837158,
+                "staminaAtkRate": 1.7000000476837158,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "603": {
+                "name": "神聖＋3",
+                "physicsAtkRate": 1.7999999523162842,
+                "magicAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 1.7999999523162842,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "604": {
+                "name": "神聖＋4",
+                "physicsAtkRate": 1.899999976158142,
+                "magicAtkRate": 1.899999976158142,
+                "staminaAtkRate": 1.899999976158142,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "605": {
+                "name": "神聖＋5",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "606": {
+                "name": "神聖＋6",
+                "physicsAtkRate": 2.0999999046325684,
+                "magicAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "607": {
+                "name": "神聖＋7",
+                "physicsAtkRate": 2.200000047683716,
+                "magicAtkRate": 2.200000047683716,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "608": {
+                "name": "神聖＋8",
+                "physicsAtkRate": 2.299999952316284,
+                "magicAtkRate": 2.299999952316284,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "609": {
+                "name": "神聖＋9",
+                "physicsAtkRate": 2.4000000953674316,
+                "magicAtkRate": 2.4000000953674316,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "610": {
+                "name": "神聖＋10",
+                "physicsAtkRate": 2.5,
+                "magicAtkRate": 2.5,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "700": {
+                "name": "暗黒",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "reinforcementLevel": 10
+            },
+            "701": {
+                "name": "暗黒＋1",
+                "physicsAtkRate": 2.119999885559082,
+                "magicAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "702": {
+                "name": "暗黒＋2",
+                "physicsAtkRate": 2.240000009536743,
+                "magicAtkRate": 2.200000047683716,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "703": {
+                "name": "暗黒＋3",
+                "physicsAtkRate": 2.359999895095825,
+                "magicAtkRate": 2.299999952316284,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "704": {
+                "name": "暗黒＋4",
+                "physicsAtkRate": 2.4800000190734863,
+                "magicAtkRate": 2.4000000953674316,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "705": {
+                "name": "暗黒＋5",
+                "physicsAtkRate": 2.5999999046325684,
+                "magicAtkRate": 2.5,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "800": {
+                "name": "炎",
+                "physicsAtkRate": 1.2999999523162842,
+                "fireAtkRate": 1.2999999523162842,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "801": {
+                "name": "炎＋1",
+                "physicsAtkRate": 1.399999976158142,
+                "fireAtkRate": 1.399999976158142,
+                "staminaAtkRate": 1.600000023841858,
+                "fireGuardCutRate": 1.0099999904632568,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "802": {
+                "name": "炎＋2",
+                "physicsAtkRate": 1.5,
+                "fireAtkRate": 1.5,
+                "staminaAtkRate": 1.7000000476837158,
+                "fireGuardCutRate": 1.0199999809265137,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "803": {
+                "name": "炎＋3",
+                "physicsAtkRate": 1.600000023841858,
+                "fireAtkRate": 1.600000023841858,
+                "staminaAtkRate": 1.7999999523162842,
+                "fireGuardCutRate": 1.0299999713897705,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "804": {
+                "name": "炎＋4",
+                "physicsAtkRate": 1.7000000476837158,
+                "fireAtkRate": 1.7000000476837158,
+                "staminaAtkRate": 1.899999976158142,
+                "fireGuardCutRate": 1.0399999618530273,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "805": {
+                "name": "炎＋5",
+                "physicsAtkRate": 1.7999999523162842,
+                "fireAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 2.0,
+                "fireGuardCutRate": 1.0499999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "806": {
+                "name": "炎＋6",
+                "physicsAtkRate": 1.9199999570846558,
+                "fireAtkRate": 1.9199999570846558,
+                "staminaAtkRate": 2.0999999046325684,
+                "fireGuardCutRate": 1.059999942779541,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "807": {
+                "name": "炎＋7",
+                "physicsAtkRate": 2.0399999618530273,
+                "fireAtkRate": 2.0399999618530273,
+                "staminaAtkRate": 2.200000047683716,
+                "fireGuardCutRate": 1.0700000524520874,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "808": {
+                "name": "炎＋8",
+                "physicsAtkRate": 2.1600000858306885,
+                "fireAtkRate": 2.1600000858306885,
+                "staminaAtkRate": 2.299999952316284,
+                "fireGuardCutRate": 1.0800000429153442,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "809": {
+                "name": "炎＋9",
+                "physicsAtkRate": 2.2799999713897705,
+                "fireAtkRate": 2.2799999713897705,
+                "staminaAtkRate": 2.4000000953674316,
+                "fireGuardCutRate": 1.090000033378601,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "810": {
+                "name": "炎＋10",
+                "physicsAtkRate": 2.4000000953674316,
+                "fireAtkRate": 2.4000000953674316,
+                "staminaAtkRate": 2.5,
+                "fireGuardCutRate": 1.100000023841858,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "900": {
+                "name": "混沌の炎",
+                "physicsAtkRate": 1.7999999523162842,
+                "fireAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "901": {
+                "name": "混沌の炎＋1",
+                "physicsAtkRate": 1.899999976158142,
+                "fireAtkRate": 1.899999976158142,
+                "staminaAtkRate": 2.0999999046325684,
+                "fireGuardCutRate": 1.0199999809265137,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "902": {
+                "name": "混沌の炎＋2",
+                "physicsAtkRate": 2.0,
+                "fireAtkRate": 2.0,
+                "staminaAtkRate": 2.200000047683716,
+                "fireGuardCutRate": 1.0399999618530273,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "903": {
+                "name": "混沌の炎＋3",
+                "physicsAtkRate": 2.0999999046325684,
+                "fireAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.299999952316284,
+                "fireGuardCutRate": 1.059999942779541,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "904": {
+                "name": "混沌の炎＋4",
+                "physicsAtkRate": 2.200000047683716,
+                "fireAtkRate": 2.200000047683716,
+                "staminaAtkRate": 2.4000000953674316,
+                "fireGuardCutRate": 1.0800000429153442,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "905": {
+                "name": "混沌の炎＋5",
+                "physicsAtkRate": 2.299999952316284,
+                "fireAtkRate": 2.299999952316284,
+                "staminaAtkRate": 2.5,
+                "fireGuardCutRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "1000": {
+                "name": "デーモン",
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 5
+            },
+            "1001": {
+                "name": "デーモン＋1",
+                "physicsAtkRate": 1.100000023841858,
+                "magicAtkRate": 1.100000023841858,
+                "fireAtkRate": 1.100000023841858,
+                "thunderAtkRate": 1.100000023841858,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 7
+            },
+            "1002": {
+                "name": "デーモン＋2",
+                "physicsAtkRate": 1.2000000476837158,
+                "magicAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 9
+            },
+            "1003": {
+                "name": "デーモン＋3",
+                "physicsAtkRate": 1.2999999523162842,
+                "magicAtkRate": 1.2999999523162842,
+                "fireAtkRate": 1.2999999523162842,
+                "thunderAtkRate": 1.2999999523162842,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 11
+            },
+            "1004": {
+                "name": "デーモン＋4",
+                "physicsAtkRate": 1.399999976158142,
+                "magicAtkRate": 1.399999976158142,
+                "fireAtkRate": 1.399999976158142,
+                "thunderAtkRate": 1.399999976158142,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 13
+            },
+            "1005": {
+                "name": "デーモン＋5",
+                "physicsAtkRate": 1.5,
+                "magicAtkRate": 1.5,
+                "fireAtkRate": 1.5,
+                "thunderAtkRate": 1.5,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "1100": {
+                "name": "ドラゴン",
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 5
+            },
+            "1101": {
+                "name": "ドラゴン＋1",
+                "physicsAtkRate": 1.100000023841858,
+                "magicAtkRate": 1.100000023841858,
+                "fireAtkRate": 1.100000023841858,
+                "thunderAtkRate": 1.100000023841858,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "correctMagicRate": 1.0499999523162842,
+                "correctFaithRate": 1.0499999523162842,
+                "materialSetId": 1,
+                "reinforcementLevel": 7
+            },
+            "1102": {
+                "name": "ドラゴン＋2",
+                "physicsAtkRate": 1.2000000476837158,
+                "magicAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 2,
+                "reinforcementLevel": 9
+            },
+            "1103": {
+                "name": "ドラゴン＋3",
+                "physicsAtkRate": 1.2999999523162842,
+                "magicAtkRate": 1.2999999523162842,
+                "fireAtkRate": 1.2999999523162842,
+                "thunderAtkRate": 1.2999999523162842,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 3,
+                "reinforcementLevel": 11
+            },
+            "1104": {
+                "name": "ドラゴン＋4",
+                "physicsAtkRate": 1.399999976158142,
+                "magicAtkRate": 1.399999976158142,
+                "fireAtkRate": 1.399999976158142,
+                "thunderAtkRate": 1.399999976158142,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 13
+            },
+            "1105": {
+                "name": "ドラゴン＋5",
+                "physicsAtkRate": 1.5,
+                "magicAtkRate": 1.5,
+                "fireAtkRate": 1.5,
+                "thunderAtkRate": 1.5,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "1200": {
+                "name": "特別",
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 5
+            },
+            "1201": {
+                "name": "特別＋1",
+                "physicsAtkRate": 1.100000023841858,
+                "magicAtkRate": 1.100000023841858,
+                "fireAtkRate": 1.100000023841858,
+                "thunderAtkRate": 1.100000023841858,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 7
+            },
+            "1202": {
+                "name": "特別＋2",
+                "physicsAtkRate": 1.2000000476837158,
+                "magicAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 9
+            },
+            "1203": {
+                "name": "特別＋3",
+                "physicsAtkRate": 1.2999999523162842,
+                "magicAtkRate": 1.2999999523162842,
+                "fireAtkRate": 1.2999999523162842,
+                "thunderAtkRate": 1.2999999523162842,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 11
+            },
+            "1204": {
+                "name": "特別＋4",
+                "physicsAtkRate": 1.399999976158142,
+                "magicAtkRate": 1.399999976158142,
+                "fireAtkRate": 1.399999976158142,
+                "thunderAtkRate": 1.399999976158142,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 13
+            },
+            "1205": {
+                "name": "特別＋5",
+                "physicsAtkRate": 1.5,
+                "magicAtkRate": 1.5,
+                "fireAtkRate": 1.5,
+                "thunderAtkRate": 1.5,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "1300": {
+                "name": "【盾】特別",
+                "staminaAtkRate": 2.0
+            },
+            "1301": {
+                "name": "【盾】特別＋1",
+                "physicsAtkRate": 1.0499999523162842,
+                "magicAtkRate": 1.0499999523162842,
+                "fireAtkRate": 1.0499999523162842,
+                "thunderAtkRate": 1.0499999523162842,
+                "staminaAtkRate": 2.0999999046325684,
+                "staminaGuardDefRate": 1.0499999523162842,
+                "materialSetId": 1,
+                "reinforcementLevel": 3
+            },
+            "1302": {
+                "name": "【盾】特別＋2",
+                "physicsAtkRate": 1.100000023841858,
+                "magicAtkRate": 1.100000023841858,
+                "fireAtkRate": 1.100000023841858,
+                "thunderAtkRate": 1.100000023841858,
+                "staminaAtkRate": 2.200000047683716,
+                "staminaGuardDefRate": 1.100000023841858,
+                "materialSetId": 2,
+                "reinforcementLevel": 6
+            },
+            "1303": {
+                "name": "【盾】特別＋3",
+                "physicsAtkRate": 1.149999976158142,
+                "magicAtkRate": 1.149999976158142,
+                "fireAtkRate": 1.149999976158142,
+                "thunderAtkRate": 1.149999976158142,
+                "staminaAtkRate": 2.299999952316284,
+                "staminaGuardDefRate": 1.149999976158142,
+                "materialSetId": 3,
+                "reinforcementLevel": 9
+            },
+            "1304": {
+                "name": "【盾】特別＋4",
+                "physicsAtkRate": 1.2000000476837158,
+                "magicAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.4000000953674316,
+                "staminaGuardDefRate": 1.2000000476837158,
+                "materialSetId": 4,
+                "reinforcementLevel": 12
+            },
+            "1305": {
+                "name": "【盾】特別＋5",
+                "physicsAtkRate": 1.25,
+                "magicAtkRate": 1.25,
+                "fireAtkRate": 1.25,
+                "thunderAtkRate": 1.25,
+                "staminaAtkRate": 2.5,
+                "staminaGuardDefRate": 1.2999999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "1400": {
+                "name": "【盾】特別",
+                "staminaAtkRate": 2.0
+            },
+            "1401": {
+                "name": "【盾】特別＋1",
+                "physicsAtkRate": 1.0499999523162842,
+                "magicAtkRate": 1.0499999523162842,
+                "fireAtkRate": 1.0499999523162842,
+                "thunderAtkRate": 1.0499999523162842,
+                "staminaAtkRate": 2.0999999046325684,
+                "staminaGuardDefRate": 1.0399999618530273,
+                "materialSetId": 1,
+                "reinforcementLevel": 3
+            },
+            "1402": {
+                "name": "【盾】特別＋2",
+                "physicsAtkRate": 1.100000023841858,
+                "magicAtkRate": 1.100000023841858,
+                "fireAtkRate": 1.100000023841858,
+                "thunderAtkRate": 1.100000023841858,
+                "staminaAtkRate": 2.200000047683716,
+                "staminaGuardDefRate": 1.0800000429153442,
+                "materialSetId": 2,
+                "reinforcementLevel": 6
+            },
+            "1403": {
+                "name": "【盾】特別＋3",
+                "physicsAtkRate": 1.149999976158142,
+                "magicAtkRate": 1.149999976158142,
+                "fireAtkRate": 1.149999976158142,
+                "thunderAtkRate": 1.149999976158142,
+                "staminaAtkRate": 2.299999952316284,
+                "staminaGuardDefRate": 1.1200000047683716,
+                "materialSetId": 3,
+                "reinforcementLevel": 9
+            },
+            "1404": {
+                "name": "【盾】特別＋4",
+                "physicsAtkRate": 1.2000000476837158,
+                "magicAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.4000000953674316,
+                "staminaGuardDefRate": 1.159999966621399,
+                "materialSetId": 4,
+                "reinforcementLevel": 12
+            },
+            "1405": {
+                "name": "【盾】特別＋5",
+                "physicsAtkRate": 1.25,
+                "magicAtkRate": 1.25,
+                "fireAtkRate": 1.25,
+                "thunderAtkRate": 1.25,
+                "staminaAtkRate": 2.5,
+                "staminaGuardDefRate": 1.2000000476837158,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "1500": {
+                "name": "【盾】特別",
+                "staminaAtkRate": 2.0
+            },
+            "1501": {
+                "name": "【盾】特別＋1",
+                "physicsAtkRate": 1.0499999523162842,
+                "magicAtkRate": 1.0499999523162842,
+                "fireAtkRate": 1.0499999523162842,
+                "thunderAtkRate": 1.0499999523162842,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 3
+            },
+            "1502": {
+                "name": "【盾】特別＋2",
+                "physicsAtkRate": 1.100000023841858,
+                "magicAtkRate": 1.100000023841858,
+                "fireAtkRate": 1.100000023841858,
+                "thunderAtkRate": 1.100000023841858,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 6
+            },
+            "1503": {
+                "name": "【盾】特別＋3",
+                "physicsAtkRate": 1.149999976158142,
+                "magicAtkRate": 1.149999976158142,
+                "fireAtkRate": 1.149999976158142,
+                "thunderAtkRate": 1.149999976158142,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 9
+            },
+            "1504": {
+                "name": "【盾】特別＋4",
+                "physicsAtkRate": 1.2000000476837158,
+                "magicAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 12
+            },
+            "1505": {
+                "name": "【盾】特別＋5",
+                "physicsAtkRate": 1.25,
+                "magicAtkRate": 1.25,
+                "fireAtkRate": 1.25,
+                "thunderAtkRate": 1.25,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "2000": {
+                "name": "【クラブ専用】通常"
+            },
+            "2001": {
+                "name": "【クラブ専用】通常＋1",
+                "physicsAtkRate": 1.100000023841858,
+                "staminaAtkRate": 1.100000023841858,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 1,
+                "reinforcementLevel": 1
+            },
+            "2002": {
+                "name": "【クラブ専用】通常＋2",
+                "physicsAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 1.2000000476837158,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 2,
+                "reinforcementLevel": 2
+            },
+            "2003": {
+                "name": "【クラブ専用】通常＋3",
+                "physicsAtkRate": 1.2999999523162842,
+                "staminaAtkRate": 1.2999999523162842,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 3
+            },
+            "2004": {
+                "name": "【クラブ専用】通常＋4",
+                "physicsAtkRate": 1.399999976158142,
+                "staminaAtkRate": 1.399999976158142,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 4,
+                "reinforcementLevel": 4
+            },
+            "2005": {
+                "name": "【クラブ専用】通常＋5",
+                "physicsAtkRate": 1.5,
+                "staminaAtkRate": 1.5,
+                "correctStrengthRate": 1.0499999523162842,
+                "correctAgilityRate": 1.0499999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 5
+            },
+            "2006": {
+                "name": "【クラブ専用】通常＋6",
+                "physicsAtkRate": 1.5700000524520874,
+                "staminaAtkRate": 1.600000023841858,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 6,
+                "reinforcementLevel": 6
+            },
+            "2007": {
+                "name": "【クラブ専用】通常＋7",
+                "physicsAtkRate": 1.6399999856948853,
+                "staminaAtkRate": 1.7000000476837158,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 7,
+                "reinforcementLevel": 7
+            },
+            "2008": {
+                "name": "【クラブ専用】通常＋8",
+                "physicsAtkRate": 1.7100000381469727,
+                "staminaAtkRate": 1.7999999523162842,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 8,
+                "reinforcementLevel": 8
+            },
+            "2009": {
+                "name": "【クラブ専用】通常＋9",
+                "physicsAtkRate": 1.7799999713897705,
+                "staminaAtkRate": 1.899999976158142,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 9,
+                "reinforcementLevel": 9
+            },
+            "2010": {
+                "name": "【クラブ専用】通常＋10",
+                "physicsAtkRate": 1.850000023841858,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 10,
+                "reinforcementLevel": 10
+            },
+            "2011": {
+                "name": "【クラブ専用】通常＋11",
+                "physicsAtkRate": 1.899999976158142,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 11,
+                "reinforcementLevel": 11
+            },
+            "2012": {
+                "name": "【クラブ専用】通常＋12",
+                "physicsAtkRate": 1.9500000476837158,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 12,
+                "reinforcementLevel": 12
+            },
+            "2013": {
+                "name": "【クラブ専用】通常＋13",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 13,
+                "reinforcementLevel": 13
+            },
+            "2014": {
+                "name": "【クラブ専用】通常＋14",
+                "physicsAtkRate": 2.049999952316284,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "materialSetId": 14,
+                "reinforcementLevel": 14
+            },
+            "2015": {
+                "name": "【クラブ専用】通常＋15",
+                "physicsAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "materialSetId": 15,
+                "reinforcementLevel": 15
+            },
+            "2100": {
+                "name": "【クラブ専用】結晶",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "reinforcementLevel": 10
+            },
+            "2101": {
+                "name": "【クラブ専用】結晶＋1",
+                "physicsAtkRate": 2.049999952316284,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "2102": {
+                "name": "【クラブ専用】結晶＋2",
+                "physicsAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "2103": {
+                "name": "【クラブ専用】結晶＋3",
+                "physicsAtkRate": 2.1500000953674316,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "2104": {
+                "name": "【クラブ専用】結晶＋4",
+                "physicsAtkRate": 2.200000047683716,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "2105": {
+                "name": "【クラブ専用】結晶＋5",
+                "physicsAtkRate": 2.25,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "2200": {
+                "name": "【クラブ専用】雷",
+                "physicsAtkRate": 1.7100000381469727,
+                "thunderAtkRate": 1.7100000381469727,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "2201": {
+                "name": "【クラブ専用】雷＋1",
+                "physicsAtkRate": 1.7699999809265137,
+                "thunderAtkRate": 1.7699999809265137,
+                "staminaAtkRate": 2.0999999046325684,
+                "thunderGuardCutRate": 1.0800000429153442,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "2202": {
+                "name": "【クラブ専用】雷＋2",
+                "physicsAtkRate": 1.8300000429153442,
+                "thunderAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.200000047683716,
+                "thunderGuardCutRate": 1.159999966621399,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "2203": {
+                "name": "【クラブ専用】雷＋3",
+                "physicsAtkRate": 1.8899999856948853,
+                "thunderAtkRate": 1.8899999856948853,
+                "staminaAtkRate": 2.299999952316284,
+                "thunderGuardCutRate": 1.2400000095367432,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "2204": {
+                "name": "【クラブ専用】雷＋4",
+                "physicsAtkRate": 1.9500000476837158,
+                "thunderAtkRate": 1.9500000476837158,
+                "staminaAtkRate": 2.4000000953674316,
+                "thunderGuardCutRate": 1.3200000524520874,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "2205": {
+                "name": "【クラブ専用】雷＋5",
+                "physicsAtkRate": 2.0399999618530273,
+                "thunderAtkRate": 2.0399999618530273,
+                "staminaAtkRate": 2.5,
+                "thunderGuardCutRate": 1.399999976158142,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "2300": {
+                "name": "【クラブ専用】粗製",
+                "physicsAtkRate": 1.5,
+                "staminaAtkRate": 1.7000000476837158,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "reinforcementLevel": 5
+            },
+            "2301": {
+                "name": "【クラブ専用】粗製＋1",
+                "physicsAtkRate": 1.5700000524520874,
+                "staminaAtkRate": 1.7999999523162842,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "2302": {
+                "name": "【クラブ専用】粗製＋2",
+                "physicsAtkRate": 1.6399999856948853,
+                "staminaAtkRate": 1.899999976158142,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "2303": {
+                "name": "【クラブ専用】粗製＋3",
+                "physicsAtkRate": 1.7100000381469727,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "2304": {
+                "name": "【クラブ専用】粗製＋4",
+                "physicsAtkRate": 1.7799999713897705,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "2305": {
+                "name": "【クラブ専用】粗製＋5",
+                "physicsAtkRate": 1.850000023841858,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "2400": {
+                "name": "【クラブ専用】魔法A",
+                "physicsAtkRate": 1.5,
+                "magicAtkRate": 1.5,
+                "staminaAtkRate": 1.5,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "reinforcementLevel": 5
+            },
+            "2401": {
+                "name": "【クラブ専用】魔法A＋1",
+                "physicsAtkRate": 1.5700000524520874,
+                "magicAtkRate": 1.5700000524520874,
+                "staminaAtkRate": 1.600000023841858,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "2402": {
+                "name": "【クラブ専用】魔法A＋2",
+                "physicsAtkRate": 1.6399999856948853,
+                "magicAtkRate": 1.6399999856948853,
+                "staminaAtkRate": 1.7000000476837158,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "2403": {
+                "name": "【クラブ専用】魔法A＋3",
+                "physicsAtkRate": 1.7100000381469727,
+                "magicAtkRate": 1.7100000381469727,
+                "staminaAtkRate": 1.7999999523162842,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "2404": {
+                "name": "【クラブ専用】魔法A＋4",
+                "physicsAtkRate": 1.7799999713897705,
+                "magicAtkRate": 1.7799999713897705,
+                "staminaAtkRate": 1.899999976158142,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "2405": {
+                "name": "【クラブ専用】魔法A＋5",
+                "physicsAtkRate": 1.850000023841858,
+                "magicAtkRate": 1.850000023841858,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctMagicRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "2406": {
+                "name": "【クラブ専用】魔法A＋6",
+                "physicsAtkRate": 1.899999976158142,
+                "magicAtkRate": 1.899999976158142,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "2407": {
+                "name": "【クラブ専用】魔法A＋7",
+                "physicsAtkRate": 1.9500000476837158,
+                "magicAtkRate": 1.9500000476837158,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "2408": {
+                "name": "【クラブ専用】魔法A＋8",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "2409": {
+                "name": "【クラブ専用】魔法A＋9",
+                "physicsAtkRate": 2.049999952316284,
+                "magicAtkRate": 2.049999952316284,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.2000000476837158,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "2410": {
+                "name": "【クラブ専用】魔法A＋10",
+                "physicsAtkRate": 2.0999999046325684,
+                "magicAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.2000000476837158,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "2500": {
+                "name": "【クラブ専用】魔法B",
+                "physicsAtkRate": 1.7999999523162842,
+                "magicAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.149999976158142,
+                "reinforcementLevel": 10
+            },
+            "2501": {
+                "name": "【クラブ専用】魔法B＋1",
+                "physicsAtkRate": 1.7400000095367432,
+                "magicAtkRate": 1.7300000190734863,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.2799999713897705,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "2502": {
+                "name": "【クラブ専用】魔法B＋2",
+                "physicsAtkRate": 1.7899999618530273,
+                "magicAtkRate": 1.7799999713897705,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.409999966621399,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "2503": {
+                "name": "【クラブ専用】魔法B＋3",
+                "physicsAtkRate": 1.840000033378601,
+                "magicAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.5399999618530273,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "2504": {
+                "name": "【クラブ専用】魔法B＋4",
+                "physicsAtkRate": 1.8899999856948853,
+                "magicAtkRate": 1.8799999952316284,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.6699999570846558,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "2505": {
+                "name": "【クラブ専用】魔法B＋5",
+                "physicsAtkRate": 1.940000057220459,
+                "magicAtkRate": 1.9299999475479126,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.7999999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "2600": {
+                "name": "【クラブ専用】神聖",
+                "physicsAtkRate": 1.5,
+                "magicAtkRate": 1.5,
+                "staminaAtkRate": 1.5,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "reinforcementLevel": 5
+            },
+            "2601": {
+                "name": "【クラブ専用】神聖＋1",
+                "physicsAtkRate": 1.5700000524520874,
+                "magicAtkRate": 1.5700000524520874,
+                "staminaAtkRate": 1.600000023841858,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "2602": {
+                "name": "【クラブ専用】神聖＋2",
+                "physicsAtkRate": 1.6399999856948853,
+                "magicAtkRate": 1.6399999856948853,
+                "staminaAtkRate": 1.7000000476837158,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "2603": {
+                "name": "【クラブ専用】神聖＋3",
+                "physicsAtkRate": 1.7100000381469727,
+                "magicAtkRate": 1.7100000381469727,
+                "staminaAtkRate": 1.7999999523162842,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "2604": {
+                "name": "【クラブ専用】神聖＋4",
+                "physicsAtkRate": 1.7799999713897705,
+                "magicAtkRate": 1.7799999713897705,
+                "staminaAtkRate": 1.899999976158142,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "2605": {
+                "name": "【クラブ専用】神聖＋5",
+                "physicsAtkRate": 1.850000023841858,
+                "magicAtkRate": 1.850000023841858,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.100000023841858,
+                "correctAgilityRate": 1.100000023841858,
+                "correctFaithRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "2606": {
+                "name": "【クラブ専用】神聖＋6",
+                "physicsAtkRate": 1.899999976158142,
+                "magicAtkRate": 1.899999976158142,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "2607": {
+                "name": "【クラブ専用】神聖＋7",
+                "physicsAtkRate": 1.9500000476837158,
+                "magicAtkRate": 1.9500000476837158,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "2608": {
+                "name": "【クラブ専用】神聖＋8",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "2609": {
+                "name": "【クラブ専用】神聖＋9",
+                "physicsAtkRate": 2.049999952316284,
+                "magicAtkRate": 2.049999952316284,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "2610": {
+                "name": "【クラブ専用】神聖＋10",
+                "physicsAtkRate": 2.0999999046325684,
+                "magicAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "2700": {
+                "name": "【クラブ専用】暗黒",
+                "physicsAtkRate": 1.850000023841858,
+                "magicAtkRate": 1.850000023841858,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "reinforcementLevel": 10
+            },
+            "2701": {
+                "name": "【クラブ専用】暗黒＋1",
+                "physicsAtkRate": 1.909999966621399,
+                "magicAtkRate": 1.899999976158142,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "2702": {
+                "name": "【クラブ専用】暗黒＋2",
+                "physicsAtkRate": 1.9700000286102295,
+                "magicAtkRate": 1.9500000476837158,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "2703": {
+                "name": "【クラブ専用】暗黒＋3",
+                "physicsAtkRate": 2.0299999713897705,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctFaithRate": 1.149999976158142,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "2704": {
+                "name": "【クラブ専用】暗黒＋4",
+                "physicsAtkRate": 2.0899999141693115,
+                "magicAtkRate": 2.049999952316284,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "2705": {
+                "name": "【クラブ専用】暗黒＋5",
+                "physicsAtkRate": 2.1500000953674316,
+                "magicAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctFaithRate": 1.2000000476837158,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "2800": {
+                "name": "【クラブ専用】炎",
+                "physicsAtkRate": 1.340000033378601,
+                "fireAtkRate": 1.340000033378601,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "2801": {
+                "name": "【クラブ専用】炎＋1",
+                "physicsAtkRate": 1.409999966621399,
+                "fireAtkRate": 1.409999966621399,
+                "staminaAtkRate": 1.600000023841858,
+                "fireGuardCutRate": 1.0099999904632568,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "2802": {
+                "name": "【クラブ専用】炎＋2",
+                "physicsAtkRate": 1.4800000190734863,
+                "fireAtkRate": 1.4800000190734863,
+                "staminaAtkRate": 1.7000000476837158,
+                "fireGuardCutRate": 1.0199999809265137,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "2803": {
+                "name": "【クラブ専用】炎＋3",
+                "physicsAtkRate": 1.5499999523162842,
+                "fireAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 1.7999999523162842,
+                "fireGuardCutRate": 1.0299999713897705,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "2804": {
+                "name": "【クラブ専用】炎＋4",
+                "physicsAtkRate": 1.6200000047683716,
+                "fireAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 1.899999976158142,
+                "fireGuardCutRate": 1.0399999618530273,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "2805": {
+                "name": "【クラブ専用】炎＋5",
+                "physicsAtkRate": 1.7100000381469727,
+                "fireAtkRate": 1.7100000381469727,
+                "staminaAtkRate": 2.0,
+                "fireGuardCutRate": 1.0499999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "2806": {
+                "name": "【クラブ専用】炎＋6",
+                "physicsAtkRate": 1.75,
+                "fireAtkRate": 1.75,
+                "staminaAtkRate": 2.0999999046325684,
+                "fireGuardCutRate": 1.059999942779541,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "2807": {
+                "name": "【クラブ専用】炎＋7",
+                "physicsAtkRate": 1.7899999618530273,
+                "fireAtkRate": 1.7899999618530273,
+                "staminaAtkRate": 2.200000047683716,
+                "fireGuardCutRate": 1.0700000524520874,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "2808": {
+                "name": "【クラブ専用】炎＋8",
+                "physicsAtkRate": 1.8300000429153442,
+                "fireAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.299999952316284,
+                "fireGuardCutRate": 1.0800000429153442,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "2809": {
+                "name": "【クラブ専用】炎＋9",
+                "physicsAtkRate": 1.8700000047683716,
+                "fireAtkRate": 1.8700000047683716,
+                "staminaAtkRate": 2.4000000953674316,
+                "fireGuardCutRate": 1.090000033378601,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "2810": {
+                "name": "【クラブ専用】炎＋10",
+                "physicsAtkRate": 1.9500000476837158,
+                "fireAtkRate": 1.9500000476837158,
+                "staminaAtkRate": 2.5,
+                "fireGuardCutRate": 1.100000023841858,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "2900": {
+                "name": "【クラブ専用】混沌の炎",
+                "physicsAtkRate": 1.7100000381469727,
+                "fireAtkRate": 1.7100000381469727,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "2901": {
+                "name": "【クラブ専用】混沌の炎＋1",
+                "physicsAtkRate": 1.7400000095367432,
+                "fireAtkRate": 1.7400000095367432,
+                "staminaAtkRate": 2.0999999046325684,
+                "fireGuardCutRate": 1.0199999809265137,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "2902": {
+                "name": "【クラブ専用】混沌の炎＋2",
+                "physicsAtkRate": 1.7699999809265137,
+                "fireAtkRate": 1.7699999809265137,
+                "staminaAtkRate": 2.200000047683716,
+                "fireGuardCutRate": 1.0399999618530273,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "2903": {
+                "name": "【クラブ専用】混沌の炎＋3",
+                "physicsAtkRate": 1.7999999523162842,
+                "fireAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 2.299999952316284,
+                "fireGuardCutRate": 1.059999942779541,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "2904": {
+                "name": "【クラブ専用】混沌の炎＋4",
+                "physicsAtkRate": 1.8300000429153442,
+                "fireAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "fireGuardCutRate": 1.0800000429153442,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "2905": {
+                "name": "【クラブ専用】混沌の炎＋5",
+                "physicsAtkRate": 1.8799999952316284,
+                "fireAtkRate": 1.8799999952316284,
+                "staminaAtkRate": 2.5,
+                "fireGuardCutRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "3200": {
+                "name": "【コンポジット】雷",
+                "physicsAtkRate": 2.4000000953674316,
+                "thunderAtkRate": 2.799999952316284,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "3201": {
+                "name": "【コンポジット】雷＋1",
+                "physicsAtkRate": 2.5799999237060547,
+                "thunderAtkRate": 2.9800000190734863,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "3202": {
+                "name": "【コンポジット】雷＋2",
+                "physicsAtkRate": 2.759999990463257,
+                "thunderAtkRate": 3.1600000858306885,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "3203": {
+                "name": "【コンポジット】雷＋3",
+                "physicsAtkRate": 2.940000057220459,
+                "thunderAtkRate": 3.3399999141693115,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "3204": {
+                "name": "【コンポジット】雷＋4",
+                "physicsAtkRate": 3.119999885559082,
+                "thunderAtkRate": 3.5199999809265137,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "3205": {
+                "name": "【コンポジット】雷＋5",
+                "physicsAtkRate": 3.299999952316284,
+                "thunderAtkRate": 3.700000047683716,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "3800": {
+                "name": "【コンポジット】炎",
+                "physicsAtkRate": 1.5,
+                "fireAtkRate": 1.5,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "3801": {
+                "name": "【コンポジット】炎＋1",
+                "physicsAtkRate": 1.6799999475479126,
+                "fireAtkRate": 1.6799999475479126,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "3802": {
+                "name": "【コンポジット】炎＋2",
+                "physicsAtkRate": 1.8600000143051147,
+                "fireAtkRate": 1.8600000143051147,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "3803": {
+                "name": "【コンポジット】炎＋3",
+                "physicsAtkRate": 2.0399999618530273,
+                "fireAtkRate": 2.0399999618530273,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "3804": {
+                "name": "【コンポジット】炎＋4",
+                "physicsAtkRate": 2.2200000286102295,
+                "fireAtkRate": 2.2200000286102295,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "3805": {
+                "name": "【コンポジット】炎＋5",
+                "physicsAtkRate": 2.4000000953674316,
+                "fireAtkRate": 2.4000000953674316,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "3806": {
+                "name": "【コンポジット】炎＋6",
+                "physicsAtkRate": 2.5799999237060547,
+                "fireAtkRate": 2.5799999237060547,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "3807": {
+                "name": "【コンポジット】炎＋7",
+                "physicsAtkRate": 2.759999990463257,
+                "fireAtkRate": 2.759999990463257,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "3808": {
+                "name": "【コンポジット】炎＋8",
+                "physicsAtkRate": 2.940000057220459,
+                "fireAtkRate": 2.940000057220459,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "3809": {
+                "name": "【コンポジット】炎＋9",
+                "physicsAtkRate": 3.119999885559082,
+                "fireAtkRate": 3.119999885559082,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "3810": {
+                "name": "【コンポジット】炎＋10",
+                "physicsAtkRate": 3.299999952316284,
+                "fireAtkRate": 3.299999952316284,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "3900": {
+                "name": "【コンポジット】混沌",
+                "physicsAtkRate": 1.899999976158142,
+                "fireAtkRate": 2.0999999046325684,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "3901": {
+                "name": "【コンポジット】混沌＋1",
+                "physicsAtkRate": 2.049999952316284,
+                "fireAtkRate": 2.2899999618530273,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "3902": {
+                "name": "【コンポジット】混沌＋2",
+                "physicsAtkRate": 2.200000047683716,
+                "fireAtkRate": 2.4800000190734863,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "3903": {
+                "name": "【コンポジット】混沌＋3",
+                "physicsAtkRate": 2.3499999046325684,
+                "fireAtkRate": 2.6700000762939453,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "3904": {
+                "name": "【コンポジット】混沌＋4",
+                "physicsAtkRate": 2.5,
+                "fireAtkRate": 2.859999895095825,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "3905": {
+                "name": "【コンポジット】混沌＋5",
+                "physicsAtkRate": 2.6500000953674316,
+                "fireAtkRate": 3.049999952316284,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "5000": {
+                "name": "【盾】通常"
+            },
+            "5001": {
+                "name": "【盾】通常＋1",
+                "physicsAtkRate": 1.0499999523162842,
+                "staminaAtkRate": 1.100000023841858,
+                "staminaGuardDefRate": 1.0099999904632568,
+                "materialSetId": 1,
+                "reinforcementLevel": 1
+            },
+            "5002": {
+                "name": "【盾】通常＋2",
+                "physicsAtkRate": 1.100000023841858,
+                "staminaAtkRate": 1.2000000476837158,
+                "staminaGuardDefRate": 1.0199999809265137,
+                "materialSetId": 2,
+                "reinforcementLevel": 2
+            },
+            "5003": {
+                "name": "【盾】通常＋3",
+                "physicsAtkRate": 1.149999976158142,
+                "staminaAtkRate": 1.2999999523162842,
+                "staminaGuardDefRate": 1.0299999713897705,
+                "materialSetId": 3,
+                "reinforcementLevel": 3
+            },
+            "5004": {
+                "name": "【盾】通常＋4",
+                "physicsAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 1.399999976158142,
+                "staminaGuardDefRate": 1.0399999618530273,
+                "materialSetId": 4,
+                "reinforcementLevel": 4
+            },
+            "5005": {
+                "name": "【盾】通常＋5",
+                "physicsAtkRate": 1.25,
+                "staminaAtkRate": 1.5,
+                "staminaGuardDefRate": 1.0499999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 5
+            },
+            "5006": {
+                "name": "【盾】通常＋6",
+                "physicsAtkRate": 1.309999942779541,
+                "staminaAtkRate": 1.600000023841858,
+                "staminaGuardDefRate": 1.0800000429153442,
+                "materialSetId": 6,
+                "reinforcementLevel": 6
+            },
+            "5007": {
+                "name": "【盾】通常＋7",
+                "physicsAtkRate": 1.3700000047683716,
+                "staminaAtkRate": 1.7000000476837158,
+                "staminaGuardDefRate": 1.090000033378601,
+                "materialSetId": 7,
+                "reinforcementLevel": 7
+            },
+            "5008": {
+                "name": "【盾】通常＋8",
+                "physicsAtkRate": 1.4299999475479126,
+                "staminaAtkRate": 1.7999999523162842,
+                "staminaGuardDefRate": 1.100000023841858,
+                "materialSetId": 8,
+                "reinforcementLevel": 8
+            },
+            "5009": {
+                "name": "【盾】通常＋9",
+                "physicsAtkRate": 1.4900000095367432,
+                "staminaAtkRate": 1.899999976158142,
+                "staminaGuardDefRate": 1.1100000143051147,
+                "materialSetId": 9,
+                "reinforcementLevel": 9
+            },
+            "5010": {
+                "name": "【盾】通常＋10",
+                "physicsAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "staminaGuardDefRate": 1.1200000047683716,
+                "materialSetId": 10,
+                "reinforcementLevel": 10
+            },
+            "5011": {
+                "name": "【盾】通常＋11",
+                "physicsAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "staminaGuardDefRate": 1.1399999856948853,
+                "materialSetId": 11,
+                "reinforcementLevel": 11
+            },
+            "5012": {
+                "name": "【盾】通常＋12",
+                "physicsAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "staminaGuardDefRate": 1.149999976158142,
+                "materialSetId": 12,
+                "reinforcementLevel": 12
+            },
+            "5013": {
+                "name": "【盾】通常＋13",
+                "physicsAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "staminaGuardDefRate": 1.159999966621399,
+                "materialSetId": 13,
+                "reinforcementLevel": 13
+            },
+            "5014": {
+                "name": "【盾】通常＋14",
+                "physicsAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "staminaGuardDefRate": 1.1799999475479126,
+                "materialSetId": 14,
+                "reinforcementLevel": 14
+            },
+            "5015": {
+                "name": "【盾】通常＋15",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "staminaGuardDefRate": 1.2000000476837158,
+                "materialSetId": 15,
+                "reinforcementLevel": 15
+            },
+            "5100": {
+                "name": "【盾】結晶",
+                "physicsAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "staminaGuardDefRate": 1.2000000476837158,
+                "reinforcementLevel": 10
+            },
+            "5101": {
+                "name": "【盾】結晶＋1",
+                "physicsAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "staminaGuardDefRate": 1.2100000381469727,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "5102": {
+                "name": "【盾】結晶＋2",
+                "physicsAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "staminaGuardDefRate": 1.2200000286102295,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "5103": {
+                "name": "【盾】結晶＋3",
+                "physicsAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "staminaGuardDefRate": 1.2300000190734863,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "5104": {
+                "name": "【盾】結晶＋4",
+                "physicsAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "staminaGuardDefRate": 1.2400000095367432,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "5105": {
+                "name": "【盾】結晶＋5",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "staminaGuardDefRate": 1.25,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "5200": {
+                "name": "【盾】雷",
+                "physicsAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.0,
+                "thunderGuardCutRate": 1.1200000047683716,
+                "reinforcementLevel": 10
+            },
+            "5201": {
+                "name": "【盾】雷＋1",
+                "physicsAtkRate": 1.2799999713897705,
+                "thunderAtkRate": 1.2799999713897705,
+                "staminaAtkRate": 2.0999999046325684,
+                "thunderGuardCutRate": 1.1399999856948853,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "5202": {
+                "name": "【盾】雷＋2",
+                "physicsAtkRate": 1.3600000143051147,
+                "thunderAtkRate": 1.3600000143051147,
+                "staminaAtkRate": 2.200000047683716,
+                "thunderGuardCutRate": 1.149999976158142,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "5203": {
+                "name": "【盾】雷＋3",
+                "physicsAtkRate": 1.440000057220459,
+                "thunderAtkRate": 1.440000057220459,
+                "staminaAtkRate": 2.299999952316284,
+                "thunderGuardCutRate": 1.159999966621399,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "5204": {
+                "name": "【盾】雷＋4",
+                "physicsAtkRate": 1.5199999809265137,
+                "thunderAtkRate": 1.5199999809265137,
+                "staminaAtkRate": 2.4000000953674316,
+                "thunderGuardCutRate": 1.1799999475479126,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "5205": {
+                "name": "【盾】雷＋5",
+                "physicsAtkRate": 1.600000023841858,
+                "thunderAtkRate": 1.600000023841858,
+                "staminaAtkRate": 2.5,
+                "thunderGuardCutRate": 1.2000000476837158,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "5400": {
+                "name": "【盾】魔法A",
+                "physicsAtkRate": 1.25,
+                "magicAtkRate": 1.25,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "5401": {
+                "name": "【盾】魔法A＋1",
+                "physicsAtkRate": 1.309999942779541,
+                "magicAtkRate": 1.309999942779541,
+                "staminaAtkRate": 1.600000023841858,
+                "magicGuardCutRate": 1.0199999809265137,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "5402": {
+                "name": "【盾】魔法A＋2",
+                "physicsAtkRate": 1.3700000047683716,
+                "magicAtkRate": 1.3700000047683716,
+                "staminaAtkRate": 1.7000000476837158,
+                "magicGuardCutRate": 1.0399999618530273,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "5403": {
+                "name": "【盾】魔法A＋3",
+                "physicsAtkRate": 1.4299999475479126,
+                "magicAtkRate": 1.4299999475479126,
+                "staminaAtkRate": 1.7999999523162842,
+                "magicGuardCutRate": 1.059999942779541,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "5404": {
+                "name": "【盾】魔法A＋4",
+                "physicsAtkRate": 1.4900000095367432,
+                "magicAtkRate": 1.4900000095367432,
+                "staminaAtkRate": 1.899999976158142,
+                "magicGuardCutRate": 1.0800000429153442,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "5405": {
+                "name": "【盾】魔法A＋5",
+                "physicsAtkRate": 1.5499999523162842,
+                "magicAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "magicGuardCutRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "5406": {
+                "name": "【盾】魔法A＋6",
+                "physicsAtkRate": 1.6200000047683716,
+                "magicAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "magicGuardCutRate": 1.1200000047683716,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "5407": {
+                "name": "【盾】魔法A＋7",
+                "physicsAtkRate": 1.690000057220459,
+                "magicAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "magicGuardCutRate": 1.1399999856948853,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "5408": {
+                "name": "【盾】魔法A＋8",
+                "physicsAtkRate": 1.7599999904632568,
+                "magicAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "magicGuardCutRate": 1.159999966621399,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "5409": {
+                "name": "【盾】魔法A＋9",
+                "physicsAtkRate": 1.8300000429153442,
+                "magicAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "magicGuardCutRate": 1.1799999475479126,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "5410": {
+                "name": "【盾】魔法A＋10",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "magicGuardCutRate": 1.2000000476837158,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "5600": {
+                "name": "【盾】神聖",
+                "physicsAtkRate": 1.25,
+                "magicAtkRate": 1.25,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "5601": {
+                "name": "【盾】神聖＋1",
+                "physicsAtkRate": 1.309999942779541,
+                "magicAtkRate": 1.309999942779541,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "5602": {
+                "name": "【盾】神聖＋2",
+                "physicsAtkRate": 1.3700000047683716,
+                "magicAtkRate": 1.3700000047683716,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "5603": {
+                "name": "【盾】神聖＋3",
+                "physicsAtkRate": 1.4299999475479126,
+                "magicAtkRate": 1.4299999475479126,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "5604": {
+                "name": "【盾】神聖＋4",
+                "physicsAtkRate": 1.4900000095367432,
+                "magicAtkRate": 1.4900000095367432,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "5605": {
+                "name": "【盾】神聖＋5",
+                "physicsAtkRate": 1.5499999523162842,
+                "magicAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "5606": {
+                "name": "【盾】神聖＋6",
+                "physicsAtkRate": 1.6200000047683716,
+                "magicAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "5607": {
+                "name": "【盾】神聖＋7",
+                "physicsAtkRate": 1.690000057220459,
+                "magicAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "5608": {
+                "name": "【盾】神聖＋8",
+                "physicsAtkRate": 1.7599999904632568,
+                "magicAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "5609": {
+                "name": "【盾】神聖＋9",
+                "physicsAtkRate": 1.8300000429153442,
+                "magicAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "5610": {
+                "name": "【盾】神聖＋10",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "5800": {
+                "name": "【盾】炎",
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "5801": {
+                "name": "【盾】炎＋1",
+                "physicsAtkRate": 1.0399999618530273,
+                "fireAtkRate": 1.0399999618530273,
+                "staminaAtkRate": 1.600000023841858,
+                "fireGuardCutRate": 1.0199999809265137,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "5802": {
+                "name": "【盾】炎＋2",
+                "physicsAtkRate": 1.0800000429153442,
+                "fireAtkRate": 1.0800000429153442,
+                "staminaAtkRate": 1.7000000476837158,
+                "fireGuardCutRate": 1.0399999618530273,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "5803": {
+                "name": "【盾】炎＋3",
+                "physicsAtkRate": 1.1200000047683716,
+                "fireAtkRate": 1.1200000047683716,
+                "staminaAtkRate": 1.7999999523162842,
+                "fireGuardCutRate": 1.059999942779541,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "5804": {
+                "name": "【盾】炎＋4",
+                "physicsAtkRate": 1.159999966621399,
+                "fireAtkRate": 1.159999966621399,
+                "staminaAtkRate": 1.899999976158142,
+                "fireGuardCutRate": 1.0800000429153442,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "5805": {
+                "name": "【盾】炎＋5",
+                "physicsAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.0,
+                "fireGuardCutRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "5806": {
+                "name": "【盾】炎＋6",
+                "physicsAtkRate": 1.2699999809265137,
+                "fireAtkRate": 1.2699999809265137,
+                "staminaAtkRate": 2.0999999046325684,
+                "fireGuardCutRate": 1.1200000047683716,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "5807": {
+                "name": "【盾】炎＋7",
+                "physicsAtkRate": 1.340000033378601,
+                "fireAtkRate": 1.340000033378601,
+                "staminaAtkRate": 2.200000047683716,
+                "fireGuardCutRate": 1.1399999856948853,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "5808": {
+                "name": "【盾】炎＋8",
+                "physicsAtkRate": 1.409999966621399,
+                "fireAtkRate": 1.409999966621399,
+                "staminaAtkRate": 2.299999952316284,
+                "fireGuardCutRate": 1.159999966621399,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "5809": {
+                "name": "【盾】炎＋9",
+                "physicsAtkRate": 1.4800000190734863,
+                "fireAtkRate": 1.4800000190734863,
+                "staminaAtkRate": 2.4000000953674316,
+                "fireGuardCutRate": 1.1799999475479126,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "5810": {
+                "name": "【盾】炎＋10",
+                "physicsAtkRate": 1.5499999523162842,
+                "fireAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.5,
+                "fireGuardCutRate": 1.2000000476837158,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "6000": {
+                "name": "【盾_伸び＋】通常"
+            },
+            "6001": {
+                "name": "【盾_伸び＋】通常＋1",
+                "physicsAtkRate": 1.0499999523162842,
+                "staminaAtkRate": 1.100000023841858,
+                "staminaGuardDefRate": 1.0199999809265137,
+                "materialSetId": 1,
+                "reinforcementLevel": 1
+            },
+            "6002": {
+                "name": "【盾_伸び＋】通常＋2",
+                "physicsAtkRate": 1.100000023841858,
+                "staminaAtkRate": 1.2000000476837158,
+                "staminaGuardDefRate": 1.0399999618530273,
+                "materialSetId": 2,
+                "reinforcementLevel": 2
+            },
+            "6003": {
+                "name": "【盾_伸び＋】通常＋3",
+                "physicsAtkRate": 1.149999976158142,
+                "staminaAtkRate": 1.2999999523162842,
+                "staminaGuardDefRate": 1.059999942779541,
+                "materialSetId": 3,
+                "reinforcementLevel": 3
+            },
+            "6004": {
+                "name": "【盾_伸び＋】通常＋4",
+                "physicsAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 1.399999976158142,
+                "staminaGuardDefRate": 1.0800000429153442,
+                "materialSetId": 4,
+                "reinforcementLevel": 4
+            },
+            "6005": {
+                "name": "【盾_伸び＋】通常＋5",
+                "physicsAtkRate": 1.25,
+                "staminaAtkRate": 1.5,
+                "staminaGuardDefRate": 1.100000023841858,
+                "materialSetId": 5,
+                "reinforcementLevel": 5
+            },
+            "6006": {
+                "name": "【盾_伸び＋】通常＋6",
+                "physicsAtkRate": 1.309999942779541,
+                "staminaAtkRate": 1.600000023841858,
+                "staminaGuardDefRate": 1.1200000047683716,
+                "materialSetId": 6,
+                "reinforcementLevel": 6
+            },
+            "6007": {
+                "name": "【盾_伸び＋】通常＋7",
+                "physicsAtkRate": 1.3700000047683716,
+                "staminaAtkRate": 1.7000000476837158,
+                "staminaGuardDefRate": 1.1399999856948853,
+                "materialSetId": 7,
+                "reinforcementLevel": 7
+            },
+            "6008": {
+                "name": "【盾_伸び＋】通常＋8",
+                "physicsAtkRate": 1.4299999475479126,
+                "staminaAtkRate": 1.7999999523162842,
+                "staminaGuardDefRate": 1.159999966621399,
+                "materialSetId": 8,
+                "reinforcementLevel": 8
+            },
+            "6009": {
+                "name": "【盾_伸び＋】通常＋9",
+                "physicsAtkRate": 1.4900000095367432,
+                "staminaAtkRate": 1.899999976158142,
+                "staminaGuardDefRate": 1.1799999475479126,
+                "materialSetId": 9,
+                "reinforcementLevel": 9
+            },
+            "6010": {
+                "name": "【盾_伸び＋】通常＋10",
+                "physicsAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "staminaGuardDefRate": 1.2000000476837158,
+                "materialSetId": 10,
+                "reinforcementLevel": 10
+            },
+            "6011": {
+                "name": "【盾_伸び＋】通常＋11",
+                "physicsAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "staminaGuardDefRate": 1.2100000381469727,
+                "materialSetId": 11,
+                "reinforcementLevel": 11
+            },
+            "6012": {
+                "name": "【盾_伸び＋】通常＋12",
+                "physicsAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "staminaGuardDefRate": 1.2200000286102295,
+                "materialSetId": 12,
+                "reinforcementLevel": 12
+            },
+            "6013": {
+                "name": "【盾_伸び＋】通常＋13",
+                "physicsAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "staminaGuardDefRate": 1.2300000190734863,
+                "materialSetId": 13,
+                "reinforcementLevel": 13
+            },
+            "6014": {
+                "name": "【盾_伸び＋】通常＋14",
+                "physicsAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "staminaGuardDefRate": 1.2400000095367432,
+                "materialSetId": 14,
+                "reinforcementLevel": 14
+            },
+            "6015": {
+                "name": "【盾_伸び＋】通常＋15",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "staminaGuardDefRate": 1.25,
+                "materialSetId": 15,
+                "reinforcementLevel": 15
+            },
+            "6100": {
+                "name": "【盾_伸び＋】結晶",
+                "physicsAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "staminaGuardDefRate": 1.25,
+                "reinforcementLevel": 10
+            },
+            "6101": {
+                "name": "【盾_伸び＋】結晶＋1",
+                "physicsAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "staminaGuardDefRate": 1.2599999904632568,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "6102": {
+                "name": "【盾_伸び＋】結晶＋2",
+                "physicsAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "staminaGuardDefRate": 1.2699999809265137,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "6103": {
+                "name": "【盾_伸び＋】結晶＋3",
+                "physicsAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "staminaGuardDefRate": 1.2799999713897705,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "6104": {
+                "name": "【盾_伸び＋】結晶＋4",
+                "physicsAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "staminaGuardDefRate": 1.2899999618530273,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "6105": {
+                "name": "【盾_伸び＋】結晶＋5",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "staminaGuardDefRate": 1.2999999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "6200": {
+                "name": "【盾_伸び＋】雷",
+                "physicsAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.0,
+                "thunderGuardCutRate": 1.2000000476837158,
+                "reinforcementLevel": 10
+            },
+            "6201": {
+                "name": "【盾_伸び＋】雷＋1",
+                "physicsAtkRate": 1.2799999713897705,
+                "thunderAtkRate": 1.2799999713897705,
+                "staminaAtkRate": 2.0999999046325684,
+                "thunderGuardCutRate": 1.2200000286102295,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "6202": {
+                "name": "【盾_伸び＋】雷＋2",
+                "physicsAtkRate": 1.3600000143051147,
+                "thunderAtkRate": 1.3600000143051147,
+                "staminaAtkRate": 2.200000047683716,
+                "thunderGuardCutRate": 1.2400000095367432,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "6203": {
+                "name": "【盾_伸び＋】雷＋3",
+                "physicsAtkRate": 1.440000057220459,
+                "thunderAtkRate": 1.440000057220459,
+                "staminaAtkRate": 2.299999952316284,
+                "thunderGuardCutRate": 1.2599999904632568,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "6204": {
+                "name": "【盾_伸び＋】雷＋4",
+                "physicsAtkRate": 1.5199999809265137,
+                "thunderAtkRate": 1.5199999809265137,
+                "staminaAtkRate": 2.4000000953674316,
+                "thunderGuardCutRate": 1.2799999713897705,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "6205": {
+                "name": "【盾_伸び＋】雷＋5",
+                "physicsAtkRate": 1.600000023841858,
+                "thunderAtkRate": 1.600000023841858,
+                "staminaAtkRate": 2.5,
+                "thunderGuardCutRate": 1.2999999523162842,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "6400": {
+                "name": "【盾_伸び＋】魔法A",
+                "physicsAtkRate": 1.25,
+                "magicAtkRate": 1.25,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "6401": {
+                "name": "【盾_伸び＋】魔法A＋1",
+                "physicsAtkRate": 1.309999942779541,
+                "magicAtkRate": 1.309999942779541,
+                "staminaAtkRate": 1.600000023841858,
+                "magicGuardCutRate": 1.0299999713897705,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "6402": {
+                "name": "【盾_伸び＋】魔法A＋2",
+                "physicsAtkRate": 1.3700000047683716,
+                "magicAtkRate": 1.3700000047683716,
+                "staminaAtkRate": 1.7000000476837158,
+                "magicGuardCutRate": 1.059999942779541,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "6403": {
+                "name": "【盾_伸び＋】魔法A＋3",
+                "physicsAtkRate": 1.4299999475479126,
+                "magicAtkRate": 1.4299999475479126,
+                "staminaAtkRate": 1.7999999523162842,
+                "magicGuardCutRate": 1.090000033378601,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "6404": {
+                "name": "【盾_伸び＋】魔法A＋4",
+                "physicsAtkRate": 1.4900000095367432,
+                "magicAtkRate": 1.4900000095367432,
+                "staminaAtkRate": 1.899999976158142,
+                "magicGuardCutRate": 1.1200000047683716,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "6405": {
+                "name": "【盾_伸び＋】魔法A＋5",
+                "physicsAtkRate": 1.5499999523162842,
+                "magicAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "magicGuardCutRate": 1.149999976158142,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "6406": {
+                "name": "【盾_伸び＋】魔法A＋6",
+                "physicsAtkRate": 1.6200000047683716,
+                "magicAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "magicGuardCutRate": 1.1799999475479126,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "6407": {
+                "name": "【盾_伸び＋】魔法A＋7",
+                "physicsAtkRate": 1.690000057220459,
+                "magicAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "magicGuardCutRate": 1.2100000381469727,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "6408": {
+                "name": "【盾_伸び＋】魔法A＋8",
+                "physicsAtkRate": 1.7599999904632568,
+                "magicAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "magicGuardCutRate": 1.2400000095367432,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "6409": {
+                "name": "【盾_伸び＋】魔法A＋9",
+                "physicsAtkRate": 1.8300000429153442,
+                "magicAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "magicGuardCutRate": 1.2699999809265137,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "6410": {
+                "name": "【盾_伸び＋】魔法A＋10",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "magicGuardCutRate": 1.2999999523162842,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "6600": {
+                "name": "【盾_伸び＋】神聖",
+                "physicsAtkRate": 1.25,
+                "magicAtkRate": 1.25,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "6601": {
+                "name": "【盾_伸び＋】神聖＋1",
+                "physicsAtkRate": 1.309999942779541,
+                "magicAtkRate": 1.309999942779541,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "6602": {
+                "name": "【盾_伸び＋】神聖＋2",
+                "physicsAtkRate": 1.3700000047683716,
+                "magicAtkRate": 1.3700000047683716,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "6603": {
+                "name": "【盾_伸び＋】神聖＋3",
+                "physicsAtkRate": 1.4299999475479126,
+                "magicAtkRate": 1.4299999475479126,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "6604": {
+                "name": "【盾_伸び＋】神聖＋4",
+                "physicsAtkRate": 1.4900000095367432,
+                "magicAtkRate": 1.4900000095367432,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "6605": {
+                "name": "【盾_伸び＋】神聖＋5",
+                "physicsAtkRate": 1.5499999523162842,
+                "magicAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "6606": {
+                "name": "【盾_伸び＋】神聖＋6",
+                "physicsAtkRate": 1.6200000047683716,
+                "magicAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "6607": {
+                "name": "【盾_伸び＋】神聖＋7",
+                "physicsAtkRate": 1.690000057220459,
+                "magicAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "6608": {
+                "name": "【盾_伸び＋】神聖＋8",
+                "physicsAtkRate": 1.7599999904632568,
+                "magicAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "6609": {
+                "name": "【盾_伸び＋】神聖＋9",
+                "physicsAtkRate": 1.8300000429153442,
+                "magicAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "6610": {
+                "name": "【盾_伸び＋】神聖＋10",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "6800": {
+                "name": "【盾_伸び＋】炎",
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "6801": {
+                "name": "【盾_伸び＋】炎＋1",
+                "physicsAtkRate": 1.0399999618530273,
+                "fireAtkRate": 1.0399999618530273,
+                "staminaAtkRate": 1.600000023841858,
+                "fireGuardCutRate": 1.0299999713897705,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "6802": {
+                "name": "【盾_伸び＋】炎＋2",
+                "physicsAtkRate": 1.0800000429153442,
+                "fireAtkRate": 1.0800000429153442,
+                "staminaAtkRate": 1.7000000476837158,
+                "fireGuardCutRate": 1.059999942779541,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "6803": {
+                "name": "【盾_伸び＋】炎＋3",
+                "physicsAtkRate": 1.1200000047683716,
+                "fireAtkRate": 1.1200000047683716,
+                "staminaAtkRate": 1.7999999523162842,
+                "fireGuardCutRate": 1.090000033378601,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "6804": {
+                "name": "【盾_伸び＋】炎＋4",
+                "physicsAtkRate": 1.159999966621399,
+                "fireAtkRate": 1.159999966621399,
+                "staminaAtkRate": 1.899999976158142,
+                "fireGuardCutRate": 1.1200000047683716,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "6805": {
+                "name": "【盾_伸び＋】炎＋5",
+                "physicsAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.0,
+                "fireGuardCutRate": 1.149999976158142,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "6806": {
+                "name": "【盾_伸び＋】炎＋6",
+                "physicsAtkRate": 1.2699999809265137,
+                "fireAtkRate": 1.2699999809265137,
+                "staminaAtkRate": 2.0999999046325684,
+                "fireGuardCutRate": 1.1799999475479126,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "6807": {
+                "name": "【盾_伸び＋】炎＋7",
+                "physicsAtkRate": 1.340000033378601,
+                "fireAtkRate": 1.340000033378601,
+                "staminaAtkRate": 2.200000047683716,
+                "fireGuardCutRate": 1.2100000381469727,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "6808": {
+                "name": "【盾_伸び＋】炎＋8",
+                "physicsAtkRate": 1.409999966621399,
+                "fireAtkRate": 1.409999966621399,
+                "staminaAtkRate": 2.299999952316284,
+                "fireGuardCutRate": 1.2400000095367432,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "6809": {
+                "name": "【盾_伸び＋】炎＋9",
+                "physicsAtkRate": 1.4800000190734863,
+                "fireAtkRate": 1.4800000190734863,
+                "staminaAtkRate": 2.4000000953674316,
+                "fireGuardCutRate": 1.2699999809265137,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "6810": {
+                "name": "【盾_伸び＋】炎＋10",
+                "physicsAtkRate": 1.5499999523162842,
+                "fireAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.5,
+                "fireGuardCutRate": 1.2999999523162842,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "7200": {
+                "name": "【盾_伸び＋】雷",
+                "physicsAtkRate": 1.2000000476837158,
+                "thunderAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "7201": {
+                "name": "【盾_伸び＋】雷＋1",
+                "physicsAtkRate": 1.2799999713897705,
+                "thunderAtkRate": 1.2799999713897705,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "7202": {
+                "name": "【盾_伸び＋】雷＋2",
+                "physicsAtkRate": 1.3600000143051147,
+                "thunderAtkRate": 1.3600000143051147,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "7203": {
+                "name": "【盾_伸び＋】雷＋3",
+                "physicsAtkRate": 1.440000057220459,
+                "thunderAtkRate": 1.440000057220459,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "7204": {
+                "name": "【盾_伸び＋】雷＋4",
+                "physicsAtkRate": 1.5199999809265137,
+                "thunderAtkRate": 1.5199999809265137,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "7205": {
+                "name": "【盾_伸び＋】雷＋5",
+                "physicsAtkRate": 1.600000023841858,
+                "thunderAtkRate": 1.600000023841858,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "7400": {
+                "name": "【盾_伸び＋】魔法A",
+                "physicsAtkRate": 1.25,
+                "magicAtkRate": 1.25,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "7401": {
+                "name": "【盾_伸び＋】魔法A＋1",
+                "physicsAtkRate": 1.309999942779541,
+                "magicAtkRate": 1.309999942779541,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "7402": {
+                "name": "【盾_伸び＋】魔法A＋2",
+                "physicsAtkRate": 1.3700000047683716,
+                "magicAtkRate": 1.3700000047683716,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "7403": {
+                "name": "【盾_伸び＋】魔法A＋3",
+                "physicsAtkRate": 1.4299999475479126,
+                "magicAtkRate": 1.4299999475479126,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "7404": {
+                "name": "【盾_伸び＋】魔法A＋4",
+                "physicsAtkRate": 1.4900000095367432,
+                "magicAtkRate": 1.4900000095367432,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "7405": {
+                "name": "【盾_伸び＋】魔法A＋5",
+                "physicsAtkRate": 1.5499999523162842,
+                "magicAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "7406": {
+                "name": "【盾_伸び＋】魔法A＋6",
+                "physicsAtkRate": 1.6200000047683716,
+                "magicAtkRate": 1.6200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "7407": {
+                "name": "【盾_伸び＋】魔法A＋7",
+                "physicsAtkRate": 1.690000057220459,
+                "magicAtkRate": 1.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "7408": {
+                "name": "【盾_伸び＋】魔法A＋8",
+                "physicsAtkRate": 1.7599999904632568,
+                "magicAtkRate": 1.7599999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "7409": {
+                "name": "【盾_伸び＋】魔法A＋9",
+                "physicsAtkRate": 1.8300000429153442,
+                "magicAtkRate": 1.8300000429153442,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "7410": {
+                "name": "【盾_伸び＋】魔法A＋10",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "7800": {
+                "name": "【盾_伸び＋】炎",
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "7801": {
+                "name": "【盾_伸び＋】炎＋1",
+                "physicsAtkRate": 1.0399999618530273,
+                "fireAtkRate": 1.0399999618530273,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "7802": {
+                "name": "【盾_伸び＋】炎＋2",
+                "physicsAtkRate": 1.0800000429153442,
+                "fireAtkRate": 1.0800000429153442,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "7803": {
+                "name": "【盾_伸び＋】炎＋3",
+                "physicsAtkRate": 1.1200000047683716,
+                "fireAtkRate": 1.1200000047683716,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "7804": {
+                "name": "【盾_伸び＋】炎＋4",
+                "physicsAtkRate": 1.159999966621399,
+                "fireAtkRate": 1.159999966621399,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "7805": {
+                "name": "【盾_伸び＋】炎＋5",
+                "physicsAtkRate": 1.2000000476837158,
+                "fireAtkRate": 1.2000000476837158,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "7806": {
+                "name": "【盾_伸び＋】炎＋6",
+                "physicsAtkRate": 1.2699999809265137,
+                "fireAtkRate": 1.2699999809265137,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "7807": {
+                "name": "【盾_伸び＋】炎＋7",
+                "physicsAtkRate": 1.340000033378601,
+                "fireAtkRate": 1.340000033378601,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "7808": {
+                "name": "【盾_伸び＋】炎＋8",
+                "physicsAtkRate": 1.409999966621399,
+                "fireAtkRate": 1.409999966621399,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "7809": {
+                "name": "【盾_伸び＋】炎＋9",
+                "physicsAtkRate": 1.4800000190734863,
+                "fireAtkRate": 1.4800000190734863,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "7810": {
+                "name": "【盾_伸び＋】炎＋10",
+                "physicsAtkRate": 1.5499999523162842,
+                "fireAtkRate": 1.5499999523162842,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "8000": {
+                "name": "【弩】通常"
+            },
+            "8001": {
+                "name": "【弩】通常＋1",
+                "physicsAtkRate": 1.7000000476837158,
+                "staminaAtkRate": 1.100000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 1
+            },
+            "8002": {
+                "name": "【弩】通常＋2",
+                "physicsAtkRate": 2.0,
+                "staminaAtkRate": 1.2000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 2
+            },
+            "8003": {
+                "name": "【弩】通常＋3",
+                "physicsAtkRate": 2.299999952316284,
+                "staminaAtkRate": 1.2999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 3
+            },
+            "8004": {
+                "name": "【弩】通常＋4",
+                "physicsAtkRate": 2.5999999046325684,
+                "staminaAtkRate": 1.399999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 4
+            },
+            "8005": {
+                "name": "【弩】通常＋5",
+                "physicsAtkRate": 2.9000000953674316,
+                "staminaAtkRate": 1.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 5
+            },
+            "8006": {
+                "name": "【弩】通常＋6",
+                "physicsAtkRate": 3.299999952316284,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 6,
+                "reinforcementLevel": 6
+            },
+            "8007": {
+                "name": "【弩】通常＋7",
+                "physicsAtkRate": 3.5999999046325684,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 7,
+                "reinforcementLevel": 7
+            },
+            "8008": {
+                "name": "【弩】通常＋8",
+                "physicsAtkRate": 3.9000000953674316,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 8,
+                "reinforcementLevel": 8
+            },
+            "8009": {
+                "name": "【弩】通常＋9",
+                "physicsAtkRate": 4.199999809265137,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 9,
+                "reinforcementLevel": 9
+            },
+            "8010": {
+                "name": "【弩】通常＋10",
+                "physicsAtkRate": 4.5,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 10,
+                "reinforcementLevel": 10
+            },
+            "8011": {
+                "name": "【弩】通常＋11",
+                "physicsAtkRate": 4.900000095367432,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 11,
+                "reinforcementLevel": 11
+            },
+            "8012": {
+                "name": "【弩】通常＋12",
+                "physicsAtkRate": 5.199999809265137,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 12,
+                "reinforcementLevel": 12
+            },
+            "8013": {
+                "name": "【弩】通常＋13",
+                "physicsAtkRate": 5.5,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 13,
+                "reinforcementLevel": 13
+            },
+            "8014": {
+                "name": "【弩】通常＋14",
+                "physicsAtkRate": 5.800000190734863,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 14,
+                "reinforcementLevel": 14
+            },
+            "8015": {
+                "name": "【弩】通常＋15",
+                "physicsAtkRate": 6.199999809265137,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 15,
+                "reinforcementLevel": 15
+            },
+            "8100": {
+                "name": "【弩】結晶",
+                "physicsAtkRate": 5.199999809265137,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "8101": {
+                "name": "【弩】結晶＋1",
+                "physicsAtkRate": 5.5,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "8102": {
+                "name": "【弩】結晶＋2",
+                "physicsAtkRate": 5.800000190734863,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "8103": {
+                "name": "【弩】結晶＋3",
+                "physicsAtkRate": 6.099999904632568,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "8104": {
+                "name": "【弩】結晶＋4",
+                "physicsAtkRate": 6.400000095367432,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "8105": {
+                "name": "【弩】結晶＋5",
+                "physicsAtkRate": 6.800000190734863,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "8200": {
+                "name": "【弩】雷",
+                "physicsAtkRate": 2.799999952316284,
+                "thunderAtkRate": 2.5999999046325684,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "8201": {
+                "name": "【弩】雷＋1",
+                "physicsAtkRate": 3.0,
+                "thunderAtkRate": 2.799999952316284,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "8202": {
+                "name": "【弩】雷＋2",
+                "physicsAtkRate": 3.200000047683716,
+                "thunderAtkRate": 3.0,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "8203": {
+                "name": "【弩】雷＋3",
+                "physicsAtkRate": 3.4000000953674316,
+                "thunderAtkRate": 3.200000047683716,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "8204": {
+                "name": "【弩】雷＋4",
+                "physicsAtkRate": 3.5999999046325684,
+                "thunderAtkRate": 3.4000000953674316,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "8205": {
+                "name": "【弩】雷＋5",
+                "physicsAtkRate": 3.799999952316284,
+                "thunderAtkRate": 3.5999999046325684,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "8400": {
+                "name": "【弩】魔法A",
+                "physicsAtkRate": 2.5,
+                "magicAtkRate": 2.299999952316284,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "8401": {
+                "name": "【弩】魔法A＋1",
+                "physicsAtkRate": 2.7899999618530273,
+                "magicAtkRate": 2.5799999237060547,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "8402": {
+                "name": "【弩】魔法A＋2",
+                "physicsAtkRate": 3.0799999237060547,
+                "magicAtkRate": 2.859999895095825,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "8403": {
+                "name": "【弩】魔法A＋3",
+                "physicsAtkRate": 3.369999885559082,
+                "magicAtkRate": 3.140000104904175,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "8404": {
+                "name": "【弩】魔法A＋4",
+                "physicsAtkRate": 3.6600000858306885,
+                "magicAtkRate": 3.4200000762939453,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "8405": {
+                "name": "【弩】魔法A＋5",
+                "physicsAtkRate": 3.950000047683716,
+                "magicAtkRate": 3.700000047683716,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "8406": {
+                "name": "【弩】魔法A＋6",
+                "physicsAtkRate": 4.239999771118164,
+                "magicAtkRate": 3.9800000190734863,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "8407": {
+                "name": "【弩】魔法A＋7",
+                "physicsAtkRate": 4.53000020980835,
+                "magicAtkRate": 4.260000228881836,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "8408": {
+                "name": "【弩】魔法A＋8",
+                "physicsAtkRate": 4.820000171661377,
+                "magicAtkRate": 4.539999961853027,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "8409": {
+                "name": "【弩】魔法A＋9",
+                "physicsAtkRate": 5.110000133514404,
+                "magicAtkRate": 4.820000171661377,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "8410": {
+                "name": "【弩】魔法A＋10",
+                "physicsAtkRate": 5.400000095367432,
+                "magicAtkRate": 5.139999866485596,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "8600": {
+                "name": "【弩】神聖",
+                "physicsAtkRate": 2.5,
+                "magicAtkRate": 2.5,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "8601": {
+                "name": "【弩】神聖＋1",
+                "physicsAtkRate": 2.799999952316284,
+                "magicAtkRate": 2.799999952316284,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "8602": {
+                "name": "【弩】神聖＋2",
+                "physicsAtkRate": 3.0999999046325684,
+                "magicAtkRate": 3.0999999046325684,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "8603": {
+                "name": "【弩】神聖＋3",
+                "physicsAtkRate": 3.4000000953674316,
+                "magicAtkRate": 3.4000000953674316,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "8604": {
+                "name": "【弩】神聖＋4",
+                "physicsAtkRate": 3.700000047683716,
+                "magicAtkRate": 3.700000047683716,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "8605": {
+                "name": "【弩】神聖＋5",
+                "physicsAtkRate": 4.0,
+                "magicAtkRate": 4.0,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "8606": {
+                "name": "【弩】神聖＋6",
+                "physicsAtkRate": 4.300000190734863,
+                "magicAtkRate": 4.300000190734863,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "8607": {
+                "name": "【弩】神聖＋7",
+                "physicsAtkRate": 4.599999904632568,
+                "magicAtkRate": 4.599999904632568,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "8608": {
+                "name": "【弩】神聖＋8",
+                "physicsAtkRate": 4.900000095367432,
+                "magicAtkRate": 4.900000095367432,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "8609": {
+                "name": "【弩】神聖＋9",
+                "physicsAtkRate": 5.199999809265137,
+                "magicAtkRate": 5.199999809265137,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "8610": {
+                "name": "【弩】神聖＋10",
+                "physicsAtkRate": 5.5,
+                "magicAtkRate": 5.5,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "8800": {
+                "name": "【弩】炎",
+                "physicsAtkRate": 1.7999999523162842,
+                "fireAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "8801": {
+                "name": "【弩】炎＋1",
+                "physicsAtkRate": 2.0299999713897705,
+                "fireAtkRate": 2.0299999713897705,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "8802": {
+                "name": "【弩】炎＋2",
+                "physicsAtkRate": 2.259999990463257,
+                "fireAtkRate": 2.259999990463257,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "8803": {
+                "name": "【弩】炎＋3",
+                "physicsAtkRate": 2.490000009536743,
+                "fireAtkRate": 2.490000009536743,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "8804": {
+                "name": "【弩】炎＋4",
+                "physicsAtkRate": 2.7200000286102295,
+                "fireAtkRate": 2.7200000286102295,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "8805": {
+                "name": "【弩】炎＋5",
+                "physicsAtkRate": 2.950000047683716,
+                "fireAtkRate": 2.950000047683716,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "8806": {
+                "name": "【弩】炎＋6",
+                "physicsAtkRate": 3.200000047683716,
+                "fireAtkRate": 3.200000047683716,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "8807": {
+                "name": "【弩】炎＋7",
+                "physicsAtkRate": 3.430000066757202,
+                "fireAtkRate": 3.430000066757202,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "8808": {
+                "name": "【弩】炎＋8",
+                "physicsAtkRate": 3.6600000858306885,
+                "fireAtkRate": 3.6600000858306885,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "8809": {
+                "name": "【弩】炎＋9",
+                "physicsAtkRate": 3.890000104904175,
+                "fireAtkRate": 3.890000104904175,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "8810": {
+                "name": "【弩】炎＋10",
+                "physicsAtkRate": 4.150000095367432,
+                "fireAtkRate": 4.150000095367432,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "9200": {
+                "name": "【弓】雷",
+                "physicsAtkRate": 3.700000047683716,
+                "thunderAtkRate": 4.099999904632568,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "9201": {
+                "name": "【弓】雷＋1",
+                "physicsAtkRate": 3.880000114440918,
+                "thunderAtkRate": 4.28000020980835,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "9202": {
+                "name": "【弓】雷＋2",
+                "physicsAtkRate": 4.059999942779541,
+                "thunderAtkRate": 4.460000038146973,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "9203": {
+                "name": "【弓】雷＋3",
+                "physicsAtkRate": 4.239999771118164,
+                "thunderAtkRate": 4.639999866485596,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "9204": {
+                "name": "【弓】雷＋4",
+                "physicsAtkRate": 4.420000076293945,
+                "thunderAtkRate": 4.820000171661377,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "9205": {
+                "name": "【弓】雷＋5",
+                "physicsAtkRate": 4.599999904632568,
+                "thunderAtkRate": 5.0,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "9500": {
+                "name": "【弓】魔法B",
+                "physicsAtkRate": 2.0,
+                "magicAtkRate": 2.0,
+                "staminaAtkRate": 2.0,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.0499999523162842,
+                "reinforcementLevel": 10
+            },
+            "9501": {
+                "name": "【弓】魔法B＋1",
+                "physicsAtkRate": 2.0799999237060547,
+                "magicAtkRate": 2.059999942779541,
+                "staminaAtkRate": 2.0999999046325684,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.1200000047683716,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "9502": {
+                "name": "【弓】魔法B＋2",
+                "physicsAtkRate": 2.1600000858306885,
+                "magicAtkRate": 2.119999885559082,
+                "staminaAtkRate": 2.200000047683716,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.190000057220459,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "9503": {
+                "name": "【弓】魔法B＋3",
+                "physicsAtkRate": 2.240000009536743,
+                "magicAtkRate": 2.180000066757202,
+                "staminaAtkRate": 2.299999952316284,
+                "correctStrengthRate": 1.149999976158142,
+                "correctAgilityRate": 1.149999976158142,
+                "correctMagicRate": 1.2599999904632568,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "9504": {
+                "name": "【弓】魔法B＋4",
+                "physicsAtkRate": 2.319999933242798,
+                "magicAtkRate": 2.240000009536743,
+                "staminaAtkRate": 2.4000000953674316,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.3300000429153442,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "9505": {
+                "name": "【弓】魔法B＋5",
+                "physicsAtkRate": 2.4000000953674316,
+                "magicAtkRate": 2.319999933242798,
+                "staminaAtkRate": 2.5,
+                "correctStrengthRate": 1.2000000476837158,
+                "correctAgilityRate": 1.2000000476837158,
+                "correctMagicRate": 1.399999976158142,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            },
+            "9800": {
+                "name": "【弓】炎",
+                "physicsAtkRate": 1.7999999523162842,
+                "fireAtkRate": 1.7999999523162842,
+                "staminaAtkRate": 1.5,
+                "reinforcementLevel": 5
+            },
+            "9801": {
+                "name": "【弓】炎＋1",
+                "physicsAtkRate": 2.069999933242798,
+                "fireAtkRate": 2.069999933242798,
+                "staminaAtkRate": 1.600000023841858,
+                "materialSetId": 1,
+                "reinforcementLevel": 6
+            },
+            "9802": {
+                "name": "【弓】炎＋2",
+                "physicsAtkRate": 2.3399999141693115,
+                "fireAtkRate": 2.3399999141693115,
+                "staminaAtkRate": 1.7000000476837158,
+                "materialSetId": 2,
+                "reinforcementLevel": 7
+            },
+            "9803": {
+                "name": "【弓】炎＋3",
+                "physicsAtkRate": 2.609999895095825,
+                "fireAtkRate": 2.609999895095825,
+                "staminaAtkRate": 1.7999999523162842,
+                "materialSetId": 3,
+                "reinforcementLevel": 8
+            },
+            "9804": {
+                "name": "【弓】炎＋4",
+                "physicsAtkRate": 2.880000114440918,
+                "fireAtkRate": 2.880000114440918,
+                "staminaAtkRate": 1.899999976158142,
+                "materialSetId": 4,
+                "reinforcementLevel": 9
+            },
+            "9805": {
+                "name": "【弓】炎＋5",
+                "physicsAtkRate": 3.1500000953674316,
+                "fireAtkRate": 3.1500000953674316,
+                "staminaAtkRate": 2.0,
+                "materialSetId": 5,
+                "reinforcementLevel": 10
+            },
+            "9806": {
+                "name": "【弓】炎＋6",
+                "physicsAtkRate": 3.4200000762939453,
+                "fireAtkRate": 3.4200000762939453,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 6,
+                "reinforcementLevel": 11
+            },
+            "9807": {
+                "name": "【弓】炎＋7",
+                "physicsAtkRate": 3.690000057220459,
+                "fireAtkRate": 3.690000057220459,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 7,
+                "reinforcementLevel": 12
+            },
+            "9808": {
+                "name": "【弓】炎＋8",
+                "physicsAtkRate": 3.9600000381469727,
+                "fireAtkRate": 3.9600000381469727,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 8,
+                "reinforcementLevel": 13
+            },
+            "9809": {
+                "name": "【弓】炎＋9",
+                "physicsAtkRate": 4.230000019073486,
+                "fireAtkRate": 4.230000019073486,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 9,
+                "reinforcementLevel": 14
+            },
+            "9810": {
+                "name": "【弓】炎＋10",
+                "physicsAtkRate": 4.5,
+                "fireAtkRate": 4.5,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 10,
+                "reinforcementLevel": 15
+            },
+            "9900": {
+                "name": "【弓】混沌",
+                "physicsAtkRate": 2.5,
+                "fireAtkRate": 2.700000047683716,
+                "staminaAtkRate": 2.0,
+                "reinforcementLevel": 10
+            },
+            "9901": {
+                "name": "【弓】混沌＋1",
+                "physicsAtkRate": 2.799999952316284,
+                "fireAtkRate": 3.0399999618530273,
+                "staminaAtkRate": 2.0999999046325684,
+                "materialSetId": 1,
+                "reinforcementLevel": 11
+            },
+            "9902": {
+                "name": "【弓】混沌＋2",
+                "physicsAtkRate": 3.0999999046325684,
+                "fireAtkRate": 3.380000114440918,
+                "staminaAtkRate": 2.200000047683716,
+                "materialSetId": 2,
+                "reinforcementLevel": 12
+            },
+            "9903": {
+                "name": "【弓】混沌＋3",
+                "physicsAtkRate": 3.4000000953674316,
+                "fireAtkRate": 3.7200000286102295,
+                "staminaAtkRate": 2.299999952316284,
+                "materialSetId": 3,
+                "reinforcementLevel": 13
+            },
+            "9904": {
+                "name": "【弓】混沌＋4",
+                "physicsAtkRate": 3.700000047683716,
+                "fireAtkRate": 4.059999942779541,
+                "staminaAtkRate": 2.4000000953674316,
+                "materialSetId": 4,
+                "reinforcementLevel": 14
+            },
+            "9905": {
+                "name": "【弓】混沌＋5",
+                "physicsAtkRate": 4.0,
+                "fireAtkRate": 4.400000095367432,
+                "staminaAtkRate": 2.5,
+                "materialSetId": 5,
+                "reinforcementLevel": 15
+            }
+        }
+    }
+}

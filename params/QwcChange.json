@@ -1,0 +1,70 @@
+{
+    "entry_id": 29,
+    "path": "N:\\FRPG\\data\\INTERROOT_x64\\param\\GameParam\\QwcChange.param",
+    "flags": 2,
+    "data": {
+        "param_type": "QWC_CHANGE_PARAM_ST",
+        "big_endian": false,
+        "unknown": 1,
+        "paramdef_data_version": 1,
+        "flags1": 2,
+        "flags2": 0,
+        "paramdef_format_version": 0,
+        "undecodable_row_names": [],
+        "rows": {
+            "0": {
+                "name": "テスト用"
+            },
+            "1": {
+                "name": "test1",
+                "pcAttrW": 20,
+                "areaAttrB": 10
+            },
+            "2": {
+                "name": "test2",
+                "pcAttrB": 30,
+                "pcAttrR": 20,
+                "areaAttrR": 10
+            },
+            "100": {
+                "name": "ゴースト化する",
+                "areaAttrB": 60
+            },
+            "110": {
+                "name": "トゥルーデスする",
+                "areaAttrB": 30
+            },
+            "200": {
+                "name": "マルチでホワイトゴーストを復活させる",
+                "pcAttrW": 10,
+                "areaAttrW": 60
+            },
+            "210": {
+                "name": "マルチでホストを倒す",
+                "pcAttrB": 80
+            },
+            "220": {
+                "name": "マルチでホワイトゴーストを倒す",
+                "pcAttrB": 80,
+                "areaAttrB": 30
+            },
+            "230": {
+                "name": "マルチでブラックゴーストを倒す",
+                "pcAttrW": 80,
+                "areaAttrW": 60
+            },
+            "80000": {
+                "name": "賢者ロガーンにDSを渡す",
+                "pcAttrL": 30
+            },
+            "80010": {
+                "name": "魔女ユーリアにDSを渡す",
+                "pcAttrL": 40
+            },
+            "80020": {
+                "name": "聖者ウルベインにDSを渡す",
+                "pcAttrR": 40
+            }
+        }
+    }
+}
