@@ -7,11 +7,23 @@ class CHARACTERS:
     class UNDEADBURG_UNDEADPARISH(Character):
         """ m10_01_00_00 """
 
+        Solaire = 6001
+        """ c0000_0002 """
+
+        Griggs = 6040
+        """ c0000_0003 """
+
+        Rhea = 6072
+        """ c0000_0005 """
+
         Andre = 6190
         """ c2640_0000 """
 
         MaleUndeadMerchant = 6230
         """ c2510_0000 """
+
+        Lautrec = 6300
+        """ c0000_0006 """
     
     class FIRELINK(Character):
         """ m10_02_00_00 """

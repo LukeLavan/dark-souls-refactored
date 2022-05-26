@@ -197,11 +197,33 @@ class FLAGS(Flag):
     PlayerIsPyromancerClass = 740
     """ used for Laurentius dialog """
 
+    CovenantHardBetrayal = 742
+    """ enabled when a covenant is hard-betrayed; namely:\n
+        - forest hunters: TODO: flag 11205051 in m12_00 and event 11400504 in m14_00\n
+        - chaos servants: killing fair lady while in covenant\n
+        - darkmoon blade: challenging Gwyndolin while in covenant\n
+        - princess guard: destroying Gwynevere illusion while in covenant\n
+    disabled on absolution """
+
+    GwyndolinAngry = 743
+    """ enabled when killing Gwynevere or entering Gwyndolin's boss fog\n
+    when enabled, Gwyndolin's 'Kneel' prompt will not appear\n
+    disabled on absolution, but does not count towards having sin
+    (another valid sin must be active to receive absolution) """
+
     HasPvESin = 744
-    """ enabled if the player has PvE sin TODO: except for 742? """
+    """ enabled if the player has PvE sin (excluding covenant hard betrayals), meaning an NPC has been aggro'd\n
+    see common event 772 for full list of triggers\n
+    disabled on absolution """
+
+    ShivaOrBodyguardDead = 745
+    """ enabled when either Shiva or his bodyguard dies\n
+    causes a hard betrayal of the Forest Hunters covenant\n
+    disabled on absolution """
 
     ForestHuntersBetrayed = 746
-    """ TODO: investigate Event11205056 in m12_00 """
+    """ TODO: investigate Event11205056 in m12_00 for exact triggers\n
+    disabled on absolution """
 
     EggHeadActive = 753
     """ enabled when the player has egg head status active (ie, 50% soul gain multiplier, can't 
@@ -212,7 +234,7 @@ class FLAGS(Flag):
     enabled when Ingward breaks your curse - purging stones do not use this """
 
     ReceiveAbsolution = 755
-    """ enabled when oswald grants absolution after giving soul level * 100 souls\n
+    """ enabled when oswald grants absolution after giving soul level * 500 souls\n
     when enabled, the absolution event re-disables this flag and disables a whole bunch
     of other flags - see event 770 in common """
 
@@ -356,7 +378,8 @@ class FLAGS(Flag):
 
     GiantBlacksmithHostile = 1361
 
-    RickertHostile = 1382
+    RickertHostile = 1381
+    RickertDead = 1382
 
     MaleUndeadMerchantHostile = 1401
     MaleUndeadMerchantDead = 1402
@@ -545,8 +568,6 @@ class FLAGS(Flag):
     Lordvessel or Rite of Kindling will prevent those statuses from displaying as normal\n
     TODO: why is this like this??? what's the point??? """
 
-    GiveCatCovenantRing = 11200592
-    """ enabled while talking to Alvina, re-enabled for NG+ and beyond"""
 
     GivePurgingStoneSiegmeyer = 11000591
     """ when enabled, give the player a purging stone\n
@@ -689,10 +710,11 @@ class FLAGS(Flag):
     PurchasedGriggsSoulSpear = 11027240
     """ enabled when Grigg's Soul Spear is purchased """
 
+    GiveCatCovenantRing = 11200592
+    """ enabled while talking to Alvina, re-enabled for NG+ and beyond """
     GiveDivineBlessing = 11200593
     """ when enabled, give the player a divine blessing\n
     used by alvina, when you talk to her after killing a host as a forest hunter """
-
     GiveRingOfFog = 11200594
     """ when enabled, give the player a ring of fog\n
     used by alvina, when you talk to her after killing three hosts as a forest hunter """
@@ -911,6 +933,9 @@ class FLAGS(Flag):
     SiegmeyerConversationDoneSensGate = 11500591
     """ enabled after the player finishes Siegmeyer's first conversation, in front of Sen's Fortress\n
     once this flag is on, Siegmeyer will instead say his "Still closed..." dialog in front of Sen's """
+
+    GwynevereKilled = 11510400
+    """ enabled when Gwynevere is killed and Anor Londo is made dark """
 
     GiveDarkmoonBladeCovenantRing = 11510580
     """ when enabled, the darkmoon blade covenant ring is awarded\n

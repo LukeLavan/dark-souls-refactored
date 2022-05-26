@@ -2084,13 +2084,13 @@ def Event11510120():
     """ 11510120: Event 11510120 """
     DisableNetworkSync()
     EndIfClient()
-    IfFlagOn(1, 743)
-    IfFlagOn(1, 12)
-    IfFlagOff(1, 11510900)
-    IfFlagOn(1, 11510400)
+    IfFlagOn(1, 743) # gwynevere killed or gwyndolin fog entered
+    IfFlagOn(1, 12) # O&S killed
+    IfFlagOff(1, 11510900) # gwyndolin dead
+    IfFlagOn(1, 11510400) # dark anor londo activated
     IfCharacterInsideRegion(-1, PLAYER, region=Boxes.AnorLondoPalaceArea)
-    IfStandingOnCollision(-1, 1513405)
-    IfStandingOnCollision(-1, 1513100)
+    IfStandingOnCollision(-1, 1513405) # first gargoyle side of spiral elevator
+    IfStandingOnCollision(-1, 1513100) # darkmoon tomb bonfire
     IfConditionTrue(1, input_condition=-1)
     IfConditionTrue(0, input_condition=1)
     AddSpecialEffect(PLAYER, 4501)

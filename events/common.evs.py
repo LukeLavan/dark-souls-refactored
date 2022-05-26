@@ -19,11 +19,19 @@ from constants.TEXT import TEXT
 from constants.VISUALEFFECTS import VISUALEFFECTS
 from constants.WEAPONS import WEAPONS
 
-
+def TestCondition():
+    """ 69: when is this condition ever false??? """
+    Await(not IsHuman(PLAYER) and not IsHollow(PLAYER))
+    DisplayBanner(BannerType.HumanityRestored)
+    Await(IsHuman(PLAYER) or IsHollow(PLAYER))
+    DisplayBanner(BannerType.RareRingRevival)
+    Restart()
 
 def Constructor():
     """ 0: Event 0 """
     EndIfClient()
+
+    TestCondition()
 
     DisableFlag(760)
     DisableFlag(762)
@@ -59,7 +67,7 @@ def Constructor():
 
     IngwardCurseRemoval()
 
-    Event770()
+    HandleAbsolution()
 
     MonitorPvESin()
 
@@ -1173,16 +1181,27 @@ def IngwardCurseRemoval():
     Restart()
 
 
-def Event770():
-    """ 770: Event 770 """
+def HandleAbsolution():
+    """ 770: waits until the absolution flag is enabled, then disables all npc hostility flags """
     AwaitFlagOn(FLAGS.ReceiveAbsolution)
 
     DisableFlag(FLAGS.ReceiveAbsolution)
-    DisableFlag(742)
-    DisableFlag(743)
-    DisableFlag(744)
-    DisableFlag(745)
-    DisableFlag(746)
+
+    # either or both of these flags must already be on, otherwise 'You have not sinned'
+    DisableFlag(FLAGS.HasPvESin)
+    DisableFlag(FLAGS.CovenantHardBetrayal)
+
+    # these flags are disabled, but are not sufficient to be able to recieve absolution
+    # even if enabled, unless either or both af the above flags are also enabled,
+    # requesting absolution results in the 'You have not sinned' prompt
+    DisableFlag(FLAGS.GwyndolinAngry)
+    DisableFlag(FLAGS.ShivaOrBodyguardDead)
+    DisableFlag(FLAGS.ForestHuntersBetrayed)
+
+    # these are event slot flags for NPC hostility events
+    # if these are disabled while the corresponding hostility flag is enabled,
+    # the npc will be disabled and the event slot flag won't be re-enabled
+    # TODO: any hostility event slot flags fall outside of these ranges?
     DisableFlagRange((11000501, 11000519))
     DisableFlagRange((11010501, 11010519))
     DisableFlagRange((11020501, 11020529))
@@ -1200,57 +1219,60 @@ def Event770():
     DisableFlagRange((11800501, 11800519))
     DisableFlagRange((11810501, 11810519))
     DisableFlagRange((11210501, 11210519))
-    DisableFlag(1004)
-    DisableFlag(1033)
-    DisableFlag(1096)
-    DisableFlag(1114)
-    DisableFlag(1176)
-    DisableFlag(1179)
-    DisableFlag(1195)
-    DisableFlag(1197)
-    DisableFlag(1213)
-    DisableFlag(1223)
-    DisableFlag(1241)
-    DisableFlag(1253)
-    DisableFlag(1282)
-    DisableFlag(1283)
-    DisableFlag(1287)
-    DisableFlag(1294)
-    DisableFlag(1314)
-    DisableFlag(1321)
-    DisableFlag(1341)
-    DisableFlag(1361)
-    DisableFlag(1381)
-    DisableFlag(1401)
-    DisableFlag(1411)
-    DisableFlag(1421)
-    DisableFlag(1434)
-    DisableFlag(1461)
-    DisableFlag(1512)
-    DisableFlag(1547)
-    DisableFlag(1574)
-    DisableFlag(1603)
-    DisableFlag(1627)
-    DisableFlag(1646)
-    DisableFlag(1675)
-    DisableFlag(1691)
-    EnableFlag(1710)  # one of these is not like the others
-    DisableFlag(1711)
-    DisableFlag(1712)
-    DisableFlag(11200596)
+    # all of the flags that trigger flag 744 (HasPvESin)
+    DisableFlag(FLAGS.SolaireHostile)
+    DisableFlag(FLAGS.DarkmoonKnightessHostile)
+    DisableFlag(FLAGS.LoganHostile)
+    DisableFlag(FLAGS.GriggsHostile)
+    DisableFlag(FLAGS.RheaHostileFisticuffs)
+    DisableFlag(FLAGS.RheaHostileNothing)
+    DisableFlag(FLAGS.PetrusHostileGuilty)
+    DisableFlag(FLAGS.PetrusHostileInnocent)
+    DisableFlag(FLAGS.VinceHostile)
+    DisableFlag(FLAGS.NicoHostile)
+    DisableFlag(FLAGS.GwyndolinHostile)
+    DisableFlag(FLAGS.LaurentiusHostile)
+    DisableFlag(FLAGS.EingyiHostileFairLady)
+    DisableFlag(FLAGS.EingyiHostileAttackedUnproven)
+    DisableFlag(FLAGS.EingyiHostileAttackedProven)
+    DisableFlag(FLAGS.QuelanaHostile)
+    DisableFlag(FLAGS.IngwardHostile)
+    DisableFlag(FLAGS.AndreHostile)
+    DisableFlag(FLAGS.VamosHostile)
+    DisableFlag(FLAGS.GiantBlacksmithHostile)
+    DisableFlag(FLAGS.RickertHostile)
+    DisableFlag(FLAGS.MaleUndeadMerchantHostile)
+    DisableFlag(FLAGS.FemaleUndeadMerchantHostile)
+    DisableFlag(FLAGS.CrestfallenMerchantHostile)
+    DisableFlag(FLAGS.DomhnallHostile)
+    DisableFlag(FLAGS.CrestfallenWarriorHostile)
+    DisableFlag(FLAGS.SiegmeyerHostile)
+    DisableFlag(FLAGS.SieglindeHostile)
+    DisableFlag(FLAGS.LautrecHostile)
+    DisableFlag(FLAGS.ShivaHostile)
+    DisableFlag(FLAGS.PatchesHostile)
+    DisableFlag(FLAGS.FramptHostile)
+    DisableFlag(FLAGS.KaatheHostile)
+    DisableFlag(FLAGS.PriscillaHostile)
+    EnableFlag(FLAGS.AlvinaStart)  # one of these is not like the others
+    DisableFlag(FLAGS.AlvinaGone)
+    DisableFlag(FLAGS.AlvinaBetrayed)
+    DisableFlag(FLAGS.AlvinaDisappear)
     DisableFlag(FLAGS.AlvinaFirstQDone)
-    DisableFlag(71200042)
-    DisableFlag(1763)
-    DisableFlag(1822)
-    DisableFlag(1841)
-    DisableFlag(1863)
-    DisableFlag(1871)
-    SetTeamType(6001, TeamType.Ally)
-    SetTeamType(6040, TeamType.Ally)
-    SetTeamType(6072, TeamType.Ally)
-    SetTeamType(6190, TeamType.Ally)
-    SetTeamType(6230, TeamType.Ally)
-    SetTeamType(6300, TeamType.Ally)
+    DisableFlag(FLAGS.AlvinaFirstQNo)
+    DisableFlag(FLAGS.ShivaBodyguardHostile)
+    DisableFlag(FLAGS.GoughHostile)
+    DisableFlag(FLAGS.ChesterHostile)
+    DisableFlag(FLAGS.CiaranHostile)
+    DisableFlag(FLAGS.ElizabethHostile)
+    # Finally, un-aggro affected NPCs in loaded map (would remain hostile until next reload otherwise)
+    # m10_01 is the only loaded map near Oswald; a separate event in m10_01 resets their positions
+    SetTeamType(CHARACTERS.UNDEADBURG_UNDEADPARISH.Solaire, TeamType.Ally)
+    SetTeamType(CHARACTERS.UNDEADBURG_UNDEADPARISH.Griggs, TeamType.Ally)
+    SetTeamType(CHARACTERS.UNDEADBURG_UNDEADPARISH.Rhea, TeamType.Ally)
+    SetTeamType(CHARACTERS.UNDEADBURG_UNDEADPARISH.Andre, TeamType.Ally)
+    SetTeamType(CHARACTERS.UNDEADBURG_UNDEADPARISH.MaleUndeadMerchant, TeamType.Ally)
+    SetTeamType(CHARACTERS.UNDEADBURG_UNDEADPARISH.Lautrec, TeamType.Ally)
     Restart()
 
 
@@ -1299,10 +1321,10 @@ def MonitorPvESin():
           FlagEnabled(FLAGS.ShivaBodyguardHostile) or
           FlagEnabled(FLAGS.GoughHostile) or
           FlagEnabled(FLAGS.ChesterHostile) or
-          FlagEnabled(FLAGS.Ciaran) or
+          FlagEnabled(FLAGS.CiaranHostile) or
           FlagEnabled(FLAGS.ElizabethHostile)) # never enabled
 
-    EnableFlag(FLAGS.HasPveSin)
+    EnableFlag(FLAGS.HasPvESin)
     AwaitFlagOff(FLAGS.HasPvESin)
 
     Restart()
